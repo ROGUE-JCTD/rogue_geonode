@@ -56,6 +56,11 @@ DATA_DIR_URL="http://build.geonode.org/geoserver/latest/data.zip"
 JETTY_RUNNER_URL="http://repo2.maven.org/maven2/org/mortbay/jetty/jetty-runner/8.1.8.v20121106/jetty-runner-8.1.8.v20121106.jar"
 
 @task
+def build_geoserver(options):
+    with pushd('geoserver_ext'):
+        sh('mvn clean install -DskipTests')
+
+@task
 @cmdopts([
     ('fast', 'f', 'Fast. Skip some operations for speed.'),
 ])
@@ -67,13 +72,16 @@ def setup_geoserver(options):
         download_dir.makedirs()
 
     geoserver_dir = path('geoserver')
+    geoserver_bin = path('geoserver_ext/target/geoserver.war')
 
-    geoserver_bin = download_dir / os.path.basename(ROGUE_GEOSERVER_URL)
+    if not geoserver_bin.exists():
+        geoserver_bin = download_dir / os.path.basename(ROGUE_GEOSERVER_URL)
+        grab(ROGUE_GEOSERVER_URL, geoserver_bin, "geoserver binary")
+    
     jetty_runner = download_dir / os.path.basename(JETTY_RUNNER_URL)
-    #data_dir = download_dir / os.path.basename(DATA_DIR_URL)
-
-    grab(ROGUE_GEOSERVER_URL, geoserver_bin, "geoserver binary")
     grab(JETTY_RUNNER_URL, jetty_runner, "jetty runner")
+
+    #data_dir = download_dir / os.path.basename(DATA_DIR_URL)
     #grab(DATA_DIR_URL, data_dir, "data dir")
 
     if not geoserver_dir.exists():
