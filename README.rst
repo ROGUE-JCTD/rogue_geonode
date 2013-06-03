@@ -9,20 +9,14 @@ Installation
 With GeoNode's virtualenv activated in development or production mode, do the following::
 
 
-    $ git clone git://github.com/GeoNode/geonode-project.git
-    $ django-admin.py startproject --template=geonode-project -epy,rst my_geonode 
-
-Usage
------
-
-    $ pip install -e my_geonode
-    $ cd my_geonode
+    $ git clone https://github.com/ROGUE-JCTD/rogue_geonode.git
+    $ cd rogue_geonode
+    $ pip install -e .
+    $ python manage.py syncdb 
     $ python manage.py runserver
 
 To install on a virtual environment do::
 
-    $ pip install -e my_geonode
-
-Replace all uses of ``geonode.settings`` for ``my_geonode.settings``.
+    $ pip install -e rogue_geonode
 
 In production, you can modify the 'geonode' binary tool and geonode.wsgi file to point to this one.
