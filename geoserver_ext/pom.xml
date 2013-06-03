@@ -154,7 +154,7 @@
     <dependency>
       <groupId>org.opengeo</groupId>
       <artifactId>geonode-geoserver-ext</artifactId>
-      <version>${geoserver.version}</version>
+      <version>0.3</version>
     </dependency>
     <dependency>
       <groupId>org.geoserver.extension</groupId>
