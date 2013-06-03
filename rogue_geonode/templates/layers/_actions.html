@@ -2,7 +2,7 @@
 <ul class="nav nav-tabs">
   <li class="active"><a href="#info" data-toggle="tab"><i class="icon-info-sign"></i>{% trans "Info" %}</a></li>
   <li><a href="#attributes" data-toggle="tab"><i class="icon-list"></i>{% trans "Attributes" %}</a></li>
-  {% if layer.get_store_type == "GeoGIT" %}
+  {% if layer.store_type == "GeoGIT" %}
   <li><a href="#history" data-toggle="tab"><i class="icon-list"></i>{% trans "History" %}</a></li>
   {% endif %}
   <li><a href="#share" data-toggle="tab"><i class="icon-share"></i>{% trans "Share" %}</a></li>
