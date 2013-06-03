@@ -9,7 +9,7 @@ ROGUE GeoNode Project.
 Installation
 ------------
 
-You will need to start with a GeoNode production or development setup. 
+You will need to start with a GeoNode production or development setup. You can follow GeoNode's development or production setup instructions here https://github.com/GeoNode/geonode/blob/master/README
 
 With GeoNode's virtualenv activated in development or production mode, do the following::
 
