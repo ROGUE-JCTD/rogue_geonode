@@ -2,6 +2,7 @@ ROGUE GeoNode
 =============
 
 ROGUE GeoNode Project.
+
  * Custom GeoServer
  * Salamti GXP Client
 
