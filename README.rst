@@ -1,7 +1,9 @@
 ROGUE GeoNode
 =============
 
-You should write some docs, it's good for the soul.
+ROGUE GeoNode Project.
+ * Custom GeoServer
+ * Salamti GXP Client
 
 Installation
 ------------
