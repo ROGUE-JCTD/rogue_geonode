@@ -1,9 +1,0 @@
-[03/Jun/2013 11:52:50] INFO [geonode.people.management:33] Notifications Configured for geonode.people.managment.commands
-[03/Jun/2013 11:52:50] INFO [geonode.layers.management:35] Notifications Configured for geonode.layers.managment.commands
-[03/Jun/2013 11:52:50] INFO [geonode.maps.management:35] Notifications Configured for geonode.maps.management.commands
-[03/Jun/2013 11:53:01] DEBUG [geonode.search.views:207] cached search results 84
-[03/Jun/2013 11:53:01] DEBUG [geonode.search.views:144] generated combined search results in 0.0183780193329, 9.53674316406e-07
-[03/Jun/2013 11:53:01] DEBUG [geonode.search.views:145] with 6 db queries
-[03/Jun/2013 11:53:24] DEBUG [geonode.search.views:207] cached search results 84
-[03/Jun/2013 11:53:24] DEBUG [geonode.search.views:144] generated combined search results in 0.0152750015259, 9.53674316406e-07
-[03/Jun/2013 11:53:24] DEBUG [geonode.search.views:145] with 6 db queries
