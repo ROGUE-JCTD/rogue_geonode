@@ -2,3 +2,4 @@ downloaded/
 geoserver/
 *.egg-info/
 */uploaded/
+geoserver_ext/target/
