@@ -1,0 +1,5 @@
+geoserver-geonode-rogue (2.0) precise; urgency=low
+
+  * Initial Release 2.0
+
+ -- Michael Weisman <mweisman@opengeo.org>  Tue, 04 Jun 2013 11:23:45 +0800
