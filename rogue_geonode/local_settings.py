@@ -16,7 +16,7 @@ DATABASES = {
 #Import uploaded shapefiles into a database such as PostGIS?
 DB_DATASTORE = True
 
-UPLOADER_SHOW_TIME_STEP=True
+UPLOADER_SHOW_TIME_STEP=False
 
 #Database datastore connection settings
 DB_DATASTORE_DATABASE = 'geonode_imports'
@@ -28,4 +28,4 @@ DB_DATASTORE_TYPE = 'postgis'
 DB_DATASTORE_NAME = 'geonode_imports'
 
 #Database datastore connection settings
-GEOGIT_DATASTORE_NAME = 'geogit-repo'
+#GEOGIT_DATASTORE_NAME = 'geogit-repo'
