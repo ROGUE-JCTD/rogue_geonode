@@ -192,14 +192,6 @@ LOGGING = {
             'level':'ERROR',
             'class':'django.utils.log.NullHandler',
         },
-	'logfile': {
-	     'level':'DEBUG',
-	     'class':'logging.handlers.RotatingFileHandler',
-             'filename':PROJECT_ROOT + "/debug.log",
-	     'maxBytes': 50000,
-	     'backupCount': 2,
-	     'formatter': 'standard'	
-	},
         'console':{
             'level':'ERROR',
             'class':'logging.StreamHandler',
@@ -216,7 +208,7 @@ LOGGING = {
             "level": "ERROR",
         },
         "geonode": {
-            "handlers": ["console", "logfile"],
+            "handlers": ["console"],
             "level": "DEBUG",
         },
 
@@ -466,12 +458,6 @@ MAP_BASELAYERS = [{
     "name":"naip",
     "group":"background",
     "visibility": False
-  }, {
-    "source": {"ptype": "gxp_bingsource"},
-    "name": "AerialWithLabels",
-    "fixed": True,
-    "visibility": False,
-    "group":"background"
   },{
     "source": {"ptype": "gxp_mapboxsource"},
   }, {

@@ -1,0 +1,5 @@
+geonode-rogue (2.0.0+alpha7) precise; urgency=low
+
+  First release with ROGUE components
+
+ -- Michael Weisman <mweisman@opengeo.org>  Mon, 10 Jun 2013 09:32:00 +0800

@@ -183,9 +183,12 @@ def package(options):
     # Create a distribution in zip format for the geonode python package.
     dist_dir = path('dist')
     dist_dir.rmtree()
+    with pushd('../geonode'):
+        sh('python setup.py sdist --format=zip')
+        
     sh('python setup.py sdist --format=zip')
 
-    with pushd('package'):
+    with pushd('package/geonode'):
 
         #Delete old tar files in that directory
         for f in glob.glob('GeoNode*.tar.gz'):
@@ -201,15 +204,18 @@ def package(options):
         out_pkg.rmtree()
         out_pkg.makedirs()
 
-        support_folder = path('support')
-        install_file = path('install.sh')
+        support_folder = path('../support')
+        install_file = path('../install.sh')
 
         # And copy the default files from the package folder.
         justcopy(support_folder, out_pkg / 'support')
         justcopy(install_file, out_pkg)
 
-        geonode_dist = path('..') / 'dist' / 'GeoNode-%s.zip' % version
+        geonode_dist = path('../../..') / 'geonode' / 'dist' / 'GeoNode-%s.zip' % version
         justcopy(geonode_dist, out_pkg)
+        
+        rogue_dist = path('../..') / 'dist' / 'rogue_geonode-0.1.zip'
+        justcopy(rogue_dist, out_pkg)
 
         # Create a tar file with all files in the output package folder.
         tar = tarfile.open(out_pkg_tar, "w:gz")
@@ -217,7 +223,7 @@ def package(options):
             tar.add(file)
 
         # Add the README with the license and important links to documentation.
-        tar.add('README', arcname=('%s/README.rst' % out_pkg))
+        tar.add('../README', arcname=('%s/README.rst' % out_pkg))
         tar.close()
 
         # Remove all the files in the temporary output package directory.
@@ -454,24 +460,24 @@ def deb(options):
 
     info('Creating package for GeoNode version %s' % version)
 
-    with pushd('package'):
+    with pushd('package/geonode'):
         # Get rid of any uncommitted changes to debian/changelog
         info('Getting rid of any uncommitted changes in debian/changelog')
-        sh('git checkout debian/changelog')
+        #sh('git checkout debian/changelog')
 
         # Workaround for git-dch bug
         # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=594580
-        path('.git').makedirs()
+        #path('.git').makedirs()
 
         # Install requirements
         #sh('sudo apt-get -y install debhelper devscripts git-buildpackage')
 
-        sh(('git-dch --spawn-editor=snapshot --git-author --new-version=%s'
-            ' --id-length=6 --ignore-branch --release' % (
-            simple_version)))
+        #sh(('git-dch --spawn-editor=snapshot --git-author --new-version=%s'
+        #    ' --id-length=6 --ignore-branch --release' % (
+        #    simple_version)))
 
         ## Revert workaround for git-dhc bug
-        path('.git').rmtree()
+        #path('.git').rmtree()
 
         if key is None and ppa is None:
             # A local installable package

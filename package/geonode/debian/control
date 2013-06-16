@@ -1,0 +1,19 @@
+Source: geonode-rogue
+Section: science
+Priority: extra
+Maintainer: Michael Weisman <mweisman@opengeo.org>
+Build-Depends: debhelper (>= 7.0.50~), unzip
+Standards-Version: 3.8.4
+Homepage: http://geonode.org/
+Vcs-Browser:  https://github.com/GeoNode/geonode
+Vcs-git: git://github.com/GeoNode/geonode.git
+
+Package: geonode-rogue
+Architecture: all
+Depends: geoserver-geonode-rogue, python-virtualenv, python-imaging, python-lxml, python-pyproj, python-shapely, python-nose, python-httplib2, gdal-bin, libgeos-dev, gettext, postgresql-contrib, postgresql-9.1-postgis | postgresql-8.4-postgis, libpq-dev, zip, unzip, libjpeg-dev, libpng-dev, python-gdal, libproj-dev, python-psycopg2, apache2, libapache2-mod-wsgi, ${misc:Depends},  ${python:Depends}
+Description: Allows the creation, sharing, and collaborative use of geospatial data. 
+ At its core, the GeoNode has a stack based on GeoServer, 
+ Django, and GeoExt that provides a platform for sophisticated 
+ web browser spatial visualization and analysis. Atop this stack, 
+ the project has built a map composer and viewer, tools for
+ analysis, and reporting tools.
