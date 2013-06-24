@@ -14,10 +14,10 @@ You will need to start with a GeoNode production or development setup. You can f
 With GeoNode's virtualenv activated in development or production mode, do the following::
 
     $ mkvirtualenv rogue_geonode
-    $ pip install -e git+https://github.com/GeoNode/geonode.git
+    $ pip install -e git+https://github.com/GeoNode/geonode.git#egg=geonode
     $ git clone https://github.com/ROGUE-JCTD/rogue_geonode.git
     $ cd rogue_geonode 
-    $ paver build
+    $ paver build_geoserver
     $ paver setup
     $ paver start
 

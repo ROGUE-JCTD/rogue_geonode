@@ -21,6 +21,6 @@ setup(
     url='https://github.com/rogue_geonode/rogue_geonode',
     packages=['rogue_geonode',],
     include_package_data=True,
-    install_requires=["geonode==2.0b10"],
+    #install_requires=["geonode==2.0b10"],
     zip_safe=False,
 )
