@@ -161,6 +161,7 @@ INSTALLED_APPS = (
     'user_messages',
 
     # GeoNode internal apps
+    'geonode',
     'geonode.people',
     'geonode.base',
     'geonode.layers',
@@ -512,6 +513,9 @@ ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
 # Require the user to confirm their email
 # Disabled by default, requires a mail server to be configured
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+
+CACHE_TIME=0
+METADATA_DOWNLOAD_ALLOWS=True
 
 # Load more settings from a file called local_settings.py if it exists
 try:
