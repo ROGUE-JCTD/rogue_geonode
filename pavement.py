@@ -463,37 +463,37 @@ def deb(options):
     with pushd('package/geonode'):
         # Get rid of any uncommitted changes to debian/changelog
         info('Getting rid of any uncommitted changes in debian/changelog')
-        #sh('git checkout debian/changelog')
+        sh('git checkout debian/changelog')
 
         # Workaround for git-dch bug
         # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=594580
-        #path('.git').makedirs()
+        path('.git').makedirs()
 
         # Install requirements
         #sh('sudo apt-get -y install debhelper devscripts git-buildpackage')
 
-        #sh(('git-dch --spawn-editor=snapshot --git-author --new-version=%s'
-        #    ' --id-length=6 --ignore-branch --release' % (
-        #    simple_version)))
+        sh(('git-dch --spawn-editor=snapshot --git-author --new-version=%s'
+            ' --id-length=6 --ignore-branch --release --since 5f5308' % (
+            simple_version)))
 
         ## Revert workaround for git-dhc bug
-        #path('.git').rmtree()
+        path('.git').rmtree()
 
         if key is None and ppa is None:
             # A local installable package
             sh('debuild -uc -us -A')
-	elif key is None and ppa is not None:
+        elif key is None and ppa is not None:
             # A sources package, signed by daemon
             sh('debuild -S')
-	elif key is not None and ppa is None:
+        elif key is not None and ppa is None:
             # A signed installable package
             sh('debuild -k%s -A' % key)
-	elif key is not None and ppa is not None:
+        elif key is not None and ppa is not None:
             # A signed, source package
             sh('debuild -k%s -S' % key)
 
-    if ppa is not None:
-        sh('dput ppa:%s geonode_%s_source.changes' % (ppa, simple_version))
+        if ppa is not None:
+            sh('dput ppa:%s ../geonode-rogue_%s_source.changes' % (ppa, simple_version))
 
 
 def kill(arg1, arg2):
