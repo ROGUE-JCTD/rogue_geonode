@@ -29,3 +29,6 @@ DB_DATASTORE_NAME = 'geonode_imports'
 
 #Database datastore connection settings
 #GEOGIT_DATASTORE_NAME = 'geogit-repo'
+
+# Use the printNG geoserver lib
+PRINTNG_ENABLED=True
