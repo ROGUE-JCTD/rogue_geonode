@@ -1,6 +1,8 @@
+#!/bin/bash
+set -e
+
 # Setup environment variables.
 PYENV_HOME=$WORKSPACE/.pyenv/
-DL_ROOT=/var/www/geonode
 GIT_REV=$(git log -1 --pretty=format:%h)
 
 # Delete previously built virtualenv
@@ -8,31 +10,24 @@ if [ -d $PYENV_HOME ]; then
     rm -rf $PYENV_HOME
 fi
 
+# Delete previously built geonode
+if [ -d ../geonode ]; then
+    rm -rf ../geonode
+fi
+
 # Setup the virtualenv
 virtualenv --no-site-packages $PYENV_HOME
 source $PYENV_HOME/bin/activate
-
-# Make the debian package
-if [ -d $DL_ROOT/$GIT_REV ]; then
-    rm -rf $DL_ROOT/$GIT_REV
-fi
+pip install -U Paver
 
 # Setup and Build GeoNode
-git clean -dxff
-pip install -e .
-#pip install -r requirements.txt
+git clone https://github.com/GeoNode/geonode.git ../geonode
+
+# Build basic Geonode deb
+pushd ../geonode
 paver setup
+popd
 
-# Make the Debian package (locally)
-paver deb
-mkdir $DL_ROOT/$GIT_REV
-cp *.deb $DL_ROOT/$GIT_REV/.
-cp *.build $DL_ROOT/$GIT_REV/.
-cp *.changes $DL_ROOT/$GIT_REV/.
-cp package/*.gz $DL_ROOT/$GIT_REV/.
-
-# Make the Debian package (upload to ppa)
-paver deb -p geonode/snapshots
-
-rm -rf $DL_ROOT/latest
-ln -sf $DL_ROOT/$GIT_REV $DL_ROOT/latest
+# Build ROGUE geonode
+paver setup
+paver deb -p rogue-jctd/rogue -k ECFC1E52

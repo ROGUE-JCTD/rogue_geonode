@@ -12,6 +12,9 @@ Ext.onReady(function() {
 {% autoescape off %}
     var config = Ext.apply({
         authStatus: {% if user.is_authenticated %} 200{% else %} 401{% endif %},
+        username: {% if user.is_authenticated %} "{{ user.username }}" {% else %} undefined {% endif %},
+	userprofilename: {% if user.is_authenticated %} "{{ user.profile.name }}" {% else %} undefined {% endif %},
+        userprofileemail: {% if user.is_authenticated %} "{{ user.profile.email }}" {% else %} undefined {% endif %},
         proxy: "/proxy/?url=",
         printService: "{{GEOSERVER_BASE_URL}}pdf/",
         /* The URL to a REST map configuration service.  This service 
