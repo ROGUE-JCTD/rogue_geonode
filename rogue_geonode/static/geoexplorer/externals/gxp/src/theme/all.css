@@ -38,7 +38,8 @@ div.info {
 
 .gxp-grid-font-cls .x-grid3-row .x-grid3-cell-inner{
 	font-size: 11px;
-	height: 15px;
+	height: auto;
+	white-space: normal;
 }
 
 .gxp-grid-hd-font-cls .x-grid3-hd-row .x-grid3-hd-inner {
