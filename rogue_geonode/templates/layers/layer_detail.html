@@ -115,7 +115,7 @@
             </table>
         {% endif %}
       </article>
-      {% if layer.get_store_type == "GeoGIT" %}
+      {% if layer.store_type == "GeoGIT" %}
       <article id="history" class="tab-pane"> 
       {% include "geonode/geogit_history_panel.html" with resourcebase=layer %}
       </article>
