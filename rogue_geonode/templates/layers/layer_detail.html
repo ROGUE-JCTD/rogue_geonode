@@ -116,7 +116,7 @@
         {% endif %}
       </article>
       {% if layer.store_type == "GeoGIT" %}
-      <article id="history" class="tab-pane"> 
+      <article id="history" class="tab-pane">
       {% include "geonode/geogit_history_panel.html" with resourcebase=layer %}
       </article>
       {% endif %}
@@ -257,7 +257,7 @@
     		}
     		
     		var options = {
-    			url: '{{ GEOSERVER_BASE_URL }}geogit',
+    			url: '{{ GEOSERVER_BASE_URL }}',
     			workspace: '{{ layer.workspace }}',
     			store: '{{ layer.store }}',
     			layername: '{{ layer.name }}',
