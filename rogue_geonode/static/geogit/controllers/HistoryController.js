@@ -1,10 +1,11 @@
 GeoGit.geogitApp.controller("HistoryController", function($scope, $http){
+
 	$scope.fetchHistory = function(){
 		if(GeoGit.url && GeoGit.workspace && GeoGit.store){
-			var request = GeoGit.url + "/" + GeoGit.workspace + ":" + GeoGit.store + "/log?";
+			var request = GeoGit.url + "geogit/" + GeoGit.workspace + ":" + GeoGit.store + "/log?";
 			
 			if(GeoGit.layername){
-				request += "path=" + GeoGit.layername + "&";
+				request += "path=" + GeoGit.nativename + "&";
 			}
 			
 			request += "output_format=JSON&callback=JSON_CALLBACK";
