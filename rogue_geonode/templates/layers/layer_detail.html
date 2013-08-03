@@ -19,11 +19,10 @@
 {% block body_class %}data{% endblock %}
 
 {% block body_outer %}
-  <div class="span6">
+  <div class="span5">
     <h2 class="page-title">{{ layer.title|default:layer.typename }}</h2>
   </div>
-  <div class="span6 action-group">
-    <div class="pull-right">
+  <div class="span7 action-group pull-right">
       <div class="btn-group">
         <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
           {% trans "Download Layer" %}
@@ -46,7 +45,6 @@
           {% endfor %}
         </ul>
       </div>
-    </div>
     {% has_obj_perm user layer "layer.change_layer" as can_edit_layer %}
     {% if can_edit_layer %}
     <div class="btn-group pull-right">
