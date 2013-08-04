@@ -27,6 +27,11 @@ DATABASES = {
     }
 }
 
+FIXTURE_DIRS = (
+  os.path.join(PROJECT_ROOT, 'fixtures'),
+)
+
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -342,12 +347,12 @@ NOSE_ARGS = [
 # GeoNode specific settings
 #
 
-SITEURL = "http://localhost:8000/"
+SITEURL = "http://localhost:8001/"
 
 # GeoServer information
 
 # The FULLY QUALIFIED url to the GeoServer instance for this GeoNode.
-GEOSERVER_BASE_URL = "http://localhost:8080/geoserver/"
+GEOSERVER_BASE_URL = "http://192.168.1.3/geoserver/"
 
 # The username and password for a user that can add and
 # edit layer details on GeoServer
