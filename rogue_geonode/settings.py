@@ -347,12 +347,12 @@ NOSE_ARGS = [
 # GeoNode specific settings
 #
 
-SITEURL = "http://localhost:8001/"
+SITEURL = "http://localhost:8000/"
 
 # GeoServer information
 
 # The FULLY QUALIFIED url to the GeoServer instance for this GeoNode.
-GEOSERVER_BASE_URL = "http://192.168.1.3/geoserver/"
+GEOSERVER_BASE_URL = "http://localhost:8080/geoserver/"
 
 # The username and password for a user that can add and
 # edit layer details on GeoServer
