@@ -346,7 +346,6 @@ NOSE_ARGS = [
 #
 # GeoNode specific settings
 #
-
 SITEURL = "http://localhost:8000/"
 
 # GeoServer information
@@ -525,5 +524,12 @@ METADATA_DOWNLOAD_ALLOWS=True
 # Load more settings from a file called local_settings.py if it exists
 try:
     from local_settings import *
+except ImportError:
+    pass
+
+# Load more settings from a file called dev_settings.py if it exists
+# dev_settings.py should be untracked in the git repository
+try:
+    from dev_settings import *
 except ImportError:
     pass
