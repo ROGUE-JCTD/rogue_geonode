@@ -247,6 +247,7 @@
     <script src="{{ STATIC_URL }}geogit/controllers/CommitController.js"></script>
     <script src="{{ STATIC_URL }}geogit/controllers/DiffController.js"></script>
     <script src="{{ STATIC_URL }}history/geogit-history.js"></script>
+    {% if layer.store_type == "GeoGIT" %}
     <script>
     	$(document).ready(function(){
     		var base_url = new String("{{ GEOSERVER_BASE_URL }}");
@@ -268,6 +269,7 @@
     		HistoryApp.init();
     	});
     </script>
+    {% endif %}
     {% if request.user.is_authenticated %}
         {% user_rating_js request.user layer "layer" %}
     {% else %}
