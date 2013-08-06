@@ -3,3 +3,4 @@ geoserver/
 *.egg-info/
 */uploaded/
 geoserver_ext/target/
+rogue_geonode/dev_settings.py

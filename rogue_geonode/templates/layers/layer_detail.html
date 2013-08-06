@@ -212,15 +212,15 @@
     {% endif %}
     <div class="well">
       <h2>{% trans "About" %}</h2>
-      {% trans "Layer Owner" %}
+      <p>{% trans "Layer Owner" %}</p>
       {% with layer.owner.profile as profile %}
         {% include "people/_profile_about_item.html" %}
       {% endwith %}
-      {% trans "Point of Contact" %}
+      <p>{% trans "Point of Contact" %}</p>
       {% with layer.poc as profile %}
         {% include "people/_profile_about_item.html" %}
       {% endwith %}
-      {% trans "Metadata Author" %}
+      <p>{% trans "Metadata Author" %}</p>
       {% with layer.metadata_author as profile %}
         {% include "people/_profile_about_item.html" %}
       {% endwith %}
@@ -247,6 +247,7 @@
     <script src="{{ STATIC_URL }}geogit/controllers/CommitController.js"></script>
     <script src="{{ STATIC_URL }}geogit/controllers/DiffController.js"></script>
     <script src="{{ STATIC_URL }}history/geogit-history.js"></script>
+    {% if layer.store_type == "GeoGIT" %}
     <script>
     	$(document).ready(function(){
     		var base_url = new String("{{ GEOSERVER_BASE_URL }}");
@@ -268,6 +269,7 @@
     		HistoryApp.init();
     	});
     </script>
+    {% endif %}
     {% if request.user.is_authenticated %}
         {% user_rating_js request.user layer "layer" %}
     {% else %}
