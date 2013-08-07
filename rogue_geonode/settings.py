@@ -521,6 +521,15 @@ ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
 CACHE_TIME=0
 METADATA_DOWNLOAD_ALLOWS=True
 
+# Require users to authenticate before using Geonode
+LOCKDOWN_GEONODE = False
+
+# Add additional paths (as regular expressions) that don't require authentication.
+AUTH_EXEMPT_URLS = ()
+
+if LOCKDOWN_GEONODE:
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('rogue_geonode.middleware.ROGUELoginRequiredMiddleware',)
+
 # Load more settings from a file called local_settings.py if it exists
 try:
     from local_settings import *
