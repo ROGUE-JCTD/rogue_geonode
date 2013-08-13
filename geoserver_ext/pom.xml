@@ -281,7 +281,7 @@
     <geotools.version>9-SNAPSHOT</geotools.version>
     <geoserver.version>2.3-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
-    <geogit.version>0.3-SNAPSHOT</geogit.version>
+    <geogit.version>0.5-SNAPSHOT</geogit.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles></profiles>
