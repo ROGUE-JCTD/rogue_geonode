@@ -22,7 +22,9 @@
   <div class="span5">
     <h2 class="page-title">{{ layer.title|default:layer.typename }}</h2>
   </div>
-  <div class="span7 action-group pull-right">
+  <div class="span5 action-group">
+    <div class="btn-group pull-right">
+      <!-- download layer -->
       <div class="btn-group">
         <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
           {% trans "Download Layer" %}
@@ -34,6 +36,7 @@
           {% endfor %}
         </ul>
       </div>
+      <!-- download metadata -->
       <div class="btn-group">
         <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
           {% trans "Download Metadata" %}
@@ -45,24 +48,26 @@
           {% endfor %}
         </ul>
       </div>
-    {% has_obj_perm user layer "layer.change_layer" as can_edit_layer %}
-    {% if can_edit_layer %}
-    <div class="btn-group pull-right">
-      <a class="btn btn-large btn-info dropdown-toggle" data-toggle="dropdown" href="#">
-        {% trans "Edit Layer" %}
-        <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <!--li><a href="">Edit Layer Data <i class="icon-chevron-right"></i></a></li-->
-        <li><a href="{% url "layer_metadata" layer.typename %}">{% trans "Edit Metadata" %} <i class="icon-chevron-right"></i></a></li>
-        <!--li><a href="{% url "layer_style" layer.typename %}">{% trans "Edit Styles" %} <i class="icon-chevron-right"></i></a></li-->
-        <li><a href="#modal_perms" data-toggle="modal">{% trans "Edit Permissions" %} <i class="icon-chevron-right"></i></a></li>
-        <li><a class="style-edit" href="#">{% trans "Edit Styles" %} <i class="icon-chevron-right"></i></a></li>
-        <li><a href="{% url "layer_replace" layer.typename %}">{% trans "Replace this Layer" %} <i class="icon-chevron-right"></i></a></li>
-        <li><a href="{% url "layer_remove" layer.typename %}">{% trans "Remove this Layer" %} <i class="icon-chevron-right"></i></a></li>
-      </ul>
+      {% has_obj_perm user layer "layers.change_layer" as can_edit_layer %}
+      {% if can_edit_layer %}
+      <!-- edit layer dropdown -->
+      <div class="btn-group">
+        <a class="btn btn-large btn-info dropdown-toggle" data-toggle="dropdown" href="#">
+          {% trans "Edit Layer" %}
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <!--li><a href="">Edit Layer Data <i class="icon-chevron-right"></i></a></li-->
+          <li><a href="{% url "layer_metadata" layer.typename %}">{% trans "Edit Metadata" %} <i class="icon-chevron-right"></i></a></li>
+          <li><a href="#modal_perms" data-toggle="modal">{% trans "Edit Permissions" %} <i class="icon-chevron-right"></i></a></li>
+          <li><a href="{% url "layer_style_manage" layer.typename %}">{% trans "Manage Styles" %} <i class="icon-chevron-right"></i></a></li>
+          <li><a class="style-edit" href="#">{% trans "Edit Styles" %} <i class="icon-chevron-right"></i></a></li>
+          <li><a href="{% url "layer_replace" layer.typename %}">{% trans "Replace this Layer" %} <i class="icon-chevron-right"></i></a></li>
+          <li><a href="{% url "layer_remove" layer.typename %}">{% trans "Remove this Layer" %} <i class="icon-chevron-right"></i></a></li>
+        </ul>
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
   </div>
   <div class="span12">
     <div id="embedded_map" class="mrg-btm">
@@ -121,10 +126,10 @@
       <article id="share" class="tab-pane">
         <!-- TODO: Move this to a reusable template snippet -->
         <header>
-            <h3>{% trans "Share This Layer" %}</h3>
+          <h3>{% trans "Share This Layer" %}</h3>
         </header>
-        <g:plusone size="small" href="http://{{ request.get_host }}{{ request.get_full_path }}"></g:plusone>
-        <div class="fb-like" data-href="http://{{ request.get_host }}{{ request.get_full_path }}" data-send="false" data-width="50" data-layout="button_count" data-show-faces="false"></div>
+          <g:plusone size="small" href="http://{{ request.get_host }}{{ request.get_full_path }}"></g:plusone>
+          <div class="fb-like" data-href="http://{{ request.get_host }}{{ request.get_full_path }}" data-send="false" data-width="50" data-layout="button_count" data-show-faces="false"></div>
         <!-- TODO: Add more sharing options -->
       </article>
       <!--article id="flag" class="tab-pane">
@@ -181,7 +186,7 @@
         <p>{% trans "Click the button below to generate a new map based on this layer." %}</p>
         <a href="{% url "new_map" %}?layer={{layer.typename}}" class="btn btn-large">{% trans "Create a Map" %}</a>
     </div>
-    {% has_obj_perm user layer "layer.change_layer_permissions" as can_change_permissions %}
+    {% has_obj_perm user layer "layers.change_layer_permissions" as can_change_permissions %}
     {% if can_change_permissions %}
     <div class="well">
         <h2>{% trans "Permissions" %}</h2>
@@ -254,7 +259,7 @@
     		if(base_url.charAt(base_url.length - 1) !== '/'){
     			base_url += '/';
     		}
-    		
+
     		var options = {
     			url: '{{ GEOSERVER_BASE_URL }}',
     			workspace: '{{ layer.workspace }}',
@@ -262,9 +267,9 @@
     			layername: '{{ layer.name }}',
     			historyOptions: {
     				element: 'geogitHistory'
-    			} 
+    			}
     		};
-    		
+
     		GeoGit.init(options);
     		HistoryApp.init();
     	});
@@ -272,8 +277,6 @@
     {% endif %}
     {% if request.user.is_authenticated %}
         {% user_rating_js request.user layer "layer" %}
-    {% else %}
-        <script src="{{ STATIC_URL }}libs/js/jquery.raty.js"></script>
     {% endif %}
     <script type="text/javascript">
     $(function() {
@@ -281,7 +284,7 @@
             half: true,
             readOnly: true,
             start: $('div.overall_rating').data('rating'),
-            path: "{{ STATIC_URL }}agon_ratings/img/"
+            path: "{{ STATIC_URL }}lib/img/"
         });
     });
     </script>
