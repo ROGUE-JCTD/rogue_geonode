@@ -19,7 +19,7 @@ class ROGUELoginRequiredMiddleware(object):
         '/static/*',
     )
 
-    white_list = map(compile, white_list_paths + getattr(settings, "AUTH_EXEMPT_URLS", list()))
+    white_list = map(compile, white_list_paths + getattr(settings, "AUTH_EXEMPT_URLS", ()))
     redirect_to = reverse('account_login')
 
     def process_request(self, request):
