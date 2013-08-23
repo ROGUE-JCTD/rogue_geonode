@@ -528,7 +528,7 @@ LOCKDOWN_GEONODE = False
 AUTH_EXEMPT_URLS = ()
 
 if LOCKDOWN_GEONODE:
-    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('rogue_geonode.middleware.ROGUELoginRequiredMiddleware',)
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
 
 # Load more settings from a file called local_settings.py if it exists
 try:
