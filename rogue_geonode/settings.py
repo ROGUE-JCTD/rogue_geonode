@@ -519,6 +519,24 @@ ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
 
 CACHE_TIME=0
+
+# OGC (WMS/WFS/WCS) Server Settings
+OGC_SERVER = {
+    'default' : {
+        'BACKEND' : 'geonode.geoserver',
+        'LOCATION' : 'http://localhost/geoserver/',
+        'USER' : 'admin',
+        'PASSWORD' : 'geoserver',
+        'OPTIONS' : {
+            'MAPFISH_PRINT_ENABLED' : True,
+            'PRINTNG_ENABLED' : True,
+            'GEONODE_SECURITY_ENABLED' : True,
+            'GEOGIT_ENABLED' : True,
+            'WMST_ENABLED' : False
+        }
+    }
+}
+
 METADATA_DOWNLOAD_ALLOWS=True
 
 # Require users to authenticate before using Geonode
