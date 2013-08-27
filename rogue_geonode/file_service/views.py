@@ -65,7 +65,7 @@ class UploadImage(BasicAuthView):
         http = httplib2.Http()
         url = "http://127.0.0.1:8080/file-service/services/document/upload"
         #headers = dict(CONTENT_TYPE=self.request.META.get('CONTENT_TYPE', ''))
-	regex = re.compile('^HTTP_')
+	#regex = re.compile('^HTTP_')
 	#headers = dict((regex.sub('', header), value) for (header, value)
 	#	in self.request.META.items() if header.startswith('HTTP_'))
 	headers = dict((header, value) for header, value 
