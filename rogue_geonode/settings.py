@@ -27,10 +27,38 @@ DATABASES = {
     }
 }
 
+# OGC (WMS/WFS/WCS) Server Settings
+OGC_SERVER = {
+    'default': {
+        'BACKEND': 'geonode.geoserver',
+        'LOCATION': 'http://localhost/geoserver/',
+        'USER': 'admin',
+        'PASSWORD': 'geoserver',
+        'OPTIONS': {
+            'MAPFISH_PRINT_ENABLED': True,
+            'PRINTNG_ENABLED': True,
+            'GEONODE_SECURITY_ENABLED': True,
+            'GEOGIT_ENABLED': True,
+            'WMST_ENABLED': False,
+
+            # This replaces DB_DATASTORE=True
+            # If DATASTORE != '' then geonode will use the datastore backend
+            'DATASTORE': '',
+        }
+    }
+}
+
+UPLOADER = {
+    'OPTIONS' : {
+        'TIME_ENABLED' : False,
+        'GEOGIT_ENABLED' : False,
+    }
+}
+
+
 FIXTURE_DIRS = (
   os.path.join(PROJECT_ROOT, 'fixtures'),
 )
-
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -348,11 +376,6 @@ NOSE_ARGS = [
 #
 SITEURL = "http://localhost:8000/"
 
-# GeoServer information
-
-# The FULLY QUALIFIED url to the GeoServer instance for this GeoNode.
-GEOSERVER_BASE_URL = "http://localhost:8080/geoserver/"
-
 # The username and password for a user that can add and
 # edit layer details on GeoServer
 GEOSERVER_CREDENTIALS = "admin", "geoserver"
@@ -433,10 +456,57 @@ DEFAULT_MAP_CENTER = (0, 0)
 # maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
 DEFAULT_MAP_ZOOM = 0
 
+
+#The name of the store in Geoserver
+
+LEAFLET_CONFIG = {
+    'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
+}
+
+# Default TopicCategory to be used for resources. Use the slug field here
+DEFAULT_TOPICCATEGORY = 'location'
+
+MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
+
+# Notify the user via email when their password is changed.
+# Disabled by default since this view will throw a 500 if no mail server is configured
+ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
+
+# Require the user to confirm their email
+# Disabled by default, requires a mail server to be configured
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+
+CACHE_TIME=0
+
+METADATA_DOWNLOAD_ALLOWS=True
+
+# Require users to authenticate before using Geonode
+LOCKDOWN_GEONODE = False
+
+# Add additional paths (as regular expressions) that don't require authentication.
+AUTH_EXEMPT_URLS = ()
+
+if LOCKDOWN_GEONODE:
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
+
+# Load more settings from a file called local_settings.py if it exists
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+# Load more settings from a file called dev_settings.py if it exists
+# dev_settings.py should be untracked in the git repository
+try:
+    from dev_settings import *
+except ImportError:
+    pass
+
+
 MAP_BASELAYERS = [{
     "source": {
         "ptype": "gxp_wmscsource",
-        "url": GEOSERVER_BASE_URL + "wms",
+        "url": OGC_SERVER['default']['LOCATION'] + "wms",
         "restUrl": "/gs/rest"
      }
   },{
@@ -484,80 +554,3 @@ MAP_BASELAYERS = [{
     ]
 
 }]
-
-# GeoNode vector data backend configuration.
-
-#Import uploaded shapefiles into a database such as PostGIS?
-DB_DATASTORE = False
-
-#Database datastore connection settings
-DB_DATASTORE_DATABASE = ''
-DB_DATASTORE_USER = ''
-DB_DATASTORE_PASSWORD = ''
-DB_DATASTORE_HOST = ''
-DB_DATASTORE_PORT = ''
-DB_DATASTORE_TYPE = ''
-DB_DATASTORE_NAME = ''
-
-#The name of the store in Geoserver
-
-LEAFLET_CONFIG = {
-    'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
-}
-
-# Default TopicCategory to be used for resources. Use the slug field here
-DEFAULT_TOPICCATEGORY = 'location'
-
-MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
-
-# Notify the user via email when their password is changed.
-# Disabled by default since this view will throw a 500 if no mail server is configured
-ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
-
-# Require the user to confirm their email
-# Disabled by default, requires a mail server to be configured
-ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
-
-CACHE_TIME=0
-
-# OGC (WMS/WFS/WCS) Server Settings
-OGC_SERVER = {
-    'default': {
-        'BACKEND': 'geonode.geoserver',
-        'LOCATION': 'http://localhost/geoserver/',
-        'USER': 'admin',
-        'PASSWORD': 'geoserver',
-        'OPTIONS': {
-            'MAPFISH_PRINT_ENABLED': True,
-            'PRINTNG_ENABLED': True,
-            'GEONODE_SECURITY_ENABLED': True,
-            'GEOGIT_ENABLED': True,
-            'WMST_ENABLED': False,
-            'DATASTORE': '',
-        }
-    }
-}
-
-METADATA_DOWNLOAD_ALLOWS=True
-
-# Require users to authenticate before using Geonode
-LOCKDOWN_GEONODE = False
-
-# Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ()
-
-if LOCKDOWN_GEONODE:
-    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
-
-# Load more settings from a file called local_settings.py if it exists
-try:
-    from local_settings import *
-except ImportError:
-    pass
-
-# Load more settings from a file called dev_settings.py if it exists
-# dev_settings.py should be untracked in the git repository
-try:
-    from dev_settings import *
-except ImportError:
-    pass
