@@ -40,14 +40,8 @@ OGC_SERVER = {
     }
 }
 
-#Import uploaded shapefiles into a database such as PostGIS?
-DB_DATASTORE = True
-
-UPLOADER_SHOW_TIME_STEP = True
-
 #Database datastore connection settings
 GEOGIT_DATASTORE_NAME = 'geogit-repo'
-GEOGIT_DATASTORE = True
 
 # Use the printNG geoserver lib
 PRINTNG_ENABLED = True
@@ -55,3 +49,9 @@ PRINTNG_ENABLED = True
 # Uploader backend (rest or importer)
 UPLOADER_BACKEND_URL = 'importer'
 
+UPLOADER = {
+    'OPTIONS' : {
+        'TIME_ENABLED' : False,
+        'GEOGIT_ENABLED' : False,
+    }
+}
