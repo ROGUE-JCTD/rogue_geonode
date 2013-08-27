@@ -1,4 +1,5 @@
 import httplib2
+#import re
 from django.contrib.auth import authenticate
 from django.http import HttpResponse
 from django.views.generic import View
@@ -44,7 +45,7 @@ class GetImage(BasicAuthView):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
-        redirect_url = "http://192.168.10.134/file-service/services/document/download?blobKey={0}".format(kwargs.get('key'))
+        redirect_url = "http://127.0.0.1:8080/file-service/services/document/download?blobKey={0}".format(kwargs.get('key'))
         http = httplib2.Http()
         response, content = http.request(redirect_url, "GET")
 
@@ -62,10 +63,16 @@ class UploadImage(BasicAuthView):
     def post(self, *args, **kwargs):
         logger.debug('HERE')
         http = httplib2.Http()
-        url = "http://192.168.10.134/file-service/services/document/upload"
-        headers = dict(CONTENT_TYPE=self.request.META.get('CONTENT_TYPE', ''))
-
-        response, content = http.request(url, body=self.request.body, method='post', headers=headers)
+        url = "http://127.0.0.1:8080/file-service/services/document/upload"
+        #headers = dict(CONTENT_TYPE=self.request.META.get('CONTENT_TYPE', ''))
+	regex = re.compile('^HTTP_')
+	#headers = dict((regex.sub('', header), value) for (header, value)
+	#	in self.request.META.items() if header.startswith('HTTP_'))
+	headers = dict((header, value) for header, value 
+		in self.request.META.items() if header.startswith('HTTP_'))
+	headers['CONTENT-TYPE'] = self.request.META.get('CONTENT_TYPE', '')
+	headers['HOST'] = '127.0.0.1'
+        response, content = http.request(url, body=self.request.body, method='POST', headers=headers)
         return HttpResponse(content=content, status=response.status, mimetype=response.get("content-type", "text/plain"))
 
     @method_decorator(csrf_exempt)
