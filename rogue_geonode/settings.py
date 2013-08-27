@@ -481,7 +481,7 @@ CACHE_TIME=0
 METADATA_DOWNLOAD_ALLOWS=True
 
 # Require users to authenticate before using Geonode
-LOCKDOWN_GEONODE = False
+LOCKDOWN_GEONODE = True
 
 # Add additional paths (as regular expressions) that don't require authentication.
 AUTH_EXEMPT_URLS = ()
