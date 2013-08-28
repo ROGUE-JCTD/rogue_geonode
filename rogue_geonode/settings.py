@@ -205,6 +205,7 @@ INSTALLED_APPS = (
     'geonode.search',
     'geonode.catalogue',
     'geonode.documents',
+    'rogue_geonode.file_service'
 )
 
 LOGGING = {
