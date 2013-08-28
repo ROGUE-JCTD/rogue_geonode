@@ -9,7 +9,7 @@ DATABASES = {
         'HOST': '<APPLICATION_DB_HOST>',
         'PORT': '<APPLICATION_DB_PORT>',
     },
-    'datastore': {
+    '<DB_DATASTORE_NAME>': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': '<DB_DATASTORE_NAME>',
         'USER': '<DB_DATASTORE_USER>',
@@ -35,7 +35,7 @@ OGC_SERVER = {
 
             # This replaces DB_DATASTORE=True
             # If DATASTORE != '' then geonode will use the datastore backend
-            'DATASTORE': 'datastore',
+            'DATASTORE': '<DB_DATASTORE_NAME>',
         }
     }
 }
@@ -46,12 +46,10 @@ GEOGIT_DATASTORE_NAME = 'geogit-repo'
 # Use the printNG geoserver lib
 PRINTNG_ENABLED = True
 
-# Uploader backend (rest or importer)
-UPLOADER_BACKEND_URL = 'importer'
-
 UPLOADER = {
+    'BACKEND' : 'geonode.importer',
     'OPTIONS' : {
-        'TIME_ENABLED' : False,
-        'GEOGIT_ENABLED' : False,
+        'TIME_ENABLED' : True,
+        'GEOGIT_ENABLED' : True,
     }
 }
