@@ -269,6 +269,10 @@ p.css-vertical-text {
     background-image: url(img/71-compass.png);
 }
 
+.x-btn .salamati-icon-refresh-layers {
+    background-image: url(img/78-stopwatch.png);
+}
+
 .x-btn .salamati-icon-getfeatureinfo {
     background-image: url(img/42-info@2x.png);
     height: 60px !important;
