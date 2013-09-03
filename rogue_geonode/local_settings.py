@@ -26,19 +26,16 @@ OGC_SERVER = {
         'LOCATION': 'http://localhost/geoserver/', # This replaces GEOSERVER_BASE_URL
         'USER': 'admin',
         'PASSWORD': 'geoserver',
-        'OPTIONS': {
-            'MAPFISH_PRINT_ENABLED': True,
-            'PRINTNG_ENABLED': True,
-            'GEONODE_SECURITY_ENABLED': True,
-            'GEOGIT_ENABLED': True,
-            'WMST_ENABLED': False,
-
-            # This replaces DB_DATASTORE=True
-            # If DATASTORE != '' then geonode will use the datastore backend
-            'DATASTORE': '<DB_DATASTORE_NAME>',
+        'MAPFISH_PRINT_ENABLED': True,
+        'PRINTNG_ENABLED': True,
+        'GEONODE_SECURITY_ENABLED': True,
+        'GEOGIT_ENABLED': True,
+        'WMST_ENABLED': False,
+        # This replaces DB_DATASTORE=True
+        # If DATASTORE != '' then geonode will use the datastore backend
+        'DATASTORE': '<DB_DATASTORE_NAME>',
         }
     }
-}
 
 #Database datastore connection settings
 GEOGIT_DATASTORE_NAME = 'geogit-repo'
