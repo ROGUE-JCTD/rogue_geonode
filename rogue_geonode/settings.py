@@ -19,6 +19,8 @@ GEONODE_ROOT = os.path.abspath(os.path.dirname(geonode.__file__))
 # present pretty error pages.
 DEBUG = TEMPLATE_DEBUG = True
 
+ALLOWED_HOSTS = ()
+
 # Defines settings for development
 DATABASES = {
     'default': {
@@ -34,24 +36,22 @@ OGC_SERVER = {
         'LOCATION': 'http://localhost/geoserver/',
         'USER': 'admin',
         'PASSWORD': 'geoserver',
-        'OPTIONS': {
-            'MAPFISH_PRINT_ENABLED': True,
-            'PRINTNG_ENABLED': True,
-            'GEONODE_SECURITY_ENABLED': True,
-            'GEOGIT_ENABLED': True,
-            'WMST_ENABLED': False,
+        'MAPFISH_PRINT_ENABLED': True,
+        'PRINTNG_ENABLED': True,
+        'GEONODE_SECURITY_ENABLED': True,
+        'GEOGIT_ENABLED': True,
+        'WMST_ENABLED': False,
 
-            # This replaces DB_DATASTORE=True
-            # If DATASTORE != '' then geonode will use the datastore backend
-            'DATASTORE': '',
-        }
+        # This replaces DB_DATASTORE=True
+        # If DATASTORE != '' then geonode will use the datastore backend
+        'DATASTORE': '',
     }
 }
 
 UPLOADER = {
     'OPTIONS' : {
-        'TIME_ENABLED' : False,
-        'GEOGIT_ENABLED' : False,
+        'TIME_ENABLED' : True,
+        'GEOGIT_ENABLED' : True,
     }
 }
 
@@ -377,9 +377,61 @@ NOSE_ARGS = [
 #
 SITEURL = "http://localhost:8000/"
 
-# The username and password for a user that can add and
-# edit layer details on GeoServer
-GEOSERVER_CREDENTIALS = "admin", "geoserver"
+# GeoNode javascript client configuration
+
+# Where should newly created maps be focused?
+DEFAULT_MAP_CENTER = (0, 0)
+
+# How tightly zoomed should newly created maps be?
+# 0 = entire world;
+# maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
+DEFAULT_MAP_ZOOM = 0
+
+#The name of the store in Geoserver
+
+LEAFLET_CONFIG = {
+    'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
+}
+
+# Default TopicCategory to be used for resources. Use the slug field here
+DEFAULT_TOPICCATEGORY = 'location'
+
+MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
+
+# Notify the user via email when their password is changed.
+# Disabled by default since this view will throw a 500 if no mail server is configured
+ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
+
+# Require the user to confirm their email
+# Disabled by default, requires a mail server to be configured
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+
+CACHE_TIME=0
+
+METADATA_DOWNLOAD_ALLOWS=True
+
+# Require users to authenticate before using Geonode
+LOCKDOWN_GEONODE = True
+
+# Add additional paths (as regular expressions) that don't require authentication.
+AUTH_EXEMPT_URLS = ('/file-service/*',)
+
+if LOCKDOWN_GEONODE:
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
+
+# Load more settings from a file called local_settings.py if it exists
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+# Load more settings from a file called dev_settings.py if it exists
+# dev_settings.py should be untracked in the git repository
+try:
+    from dev_settings import *
+except ImportError:
+    pass
+
 
 # CSW settings
 CATALOGUE = {
@@ -446,62 +498,6 @@ PYCSW = {
         }
     }
 }
-
-# GeoNode javascript client configuration
-
-# Where should newly created maps be focused?
-DEFAULT_MAP_CENTER = (0, 0)
-
-# How tightly zoomed should newly created maps be?
-# 0 = entire world;
-# maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
-DEFAULT_MAP_ZOOM = 0
-
-
-#The name of the store in Geoserver
-
-LEAFLET_CONFIG = {
-    'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
-}
-
-# Default TopicCategory to be used for resources. Use the slug field here
-DEFAULT_TOPICCATEGORY = 'location'
-
-MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
-
-# Notify the user via email when their password is changed.
-# Disabled by default since this view will throw a 500 if no mail server is configured
-ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
-
-# Require the user to confirm their email
-# Disabled by default, requires a mail server to be configured
-ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
-
-CACHE_TIME=0
-
-METADATA_DOWNLOAD_ALLOWS=True
-
-# Require users to authenticate before using Geonode
-LOCKDOWN_GEONODE = True
-
-# Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ('/file-service/*',)
-
-if LOCKDOWN_GEONODE:
-    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
-
-# Load more settings from a file called local_settings.py if it exists
-try:
-    from local_settings import *
-except ImportError:
-    pass
-
-# Load more settings from a file called dev_settings.py if it exists
-# dev_settings.py should be untracked in the git repository
-try:
-    from dev_settings import *
-except ImportError:
-    pass
 
 
 MAP_BASELAYERS = [{

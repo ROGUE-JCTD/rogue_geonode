@@ -1,5 +1,8 @@
 # These settings override the default settings
 
+# The geonode location.
+SITEURL = "http://localhost:8000/"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
