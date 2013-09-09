@@ -18,9 +18,15 @@ setup(
     ],
     license="BSD",
     keywords="rogue_geonode geonode django",
-    url='https://github.com/rogue_geonode/rogue_geonode',
+    url='https://github.com/ROGUE-JCTD/rogue_geonode',
     packages=['rogue_geonode',],
     include_package_data=True,
-    #install_requires=["geonode==2.0b10"],
+    install_requires=[
+        #"geonode==2.0b10"
+
+        # Override the PyPI gsconfig with the rogue_geonode fork until 0.6.4 is released.
+        "gsconfig>=0.6.4a1"
+    ],
+    dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/master#egg=gsconfig-0.6.4a1'],
     zip_safe=False,
 )
