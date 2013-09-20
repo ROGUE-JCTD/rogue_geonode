@@ -1,0 +1,6 @@
+include README.rst
+include MANIFEST.in
+recursive-include rogue_geonode/ *
+recursive-exclude * *.py[co]
+prune rogue_geonode/uploaded/
+exclude rogue_geonode/dev_settings.py
