@@ -18,8 +18,10 @@ GEONODE_ROOT = os.path.abspath(os.path.dirname(geonode.__file__))
 # Setting debug to true makes Django serve static media and
 # present pretty error pages.
 DEBUG = TEMPLATE_DEBUG = True
-
 ALLOWED_HOSTS = ()
+
+# Set to True to load non-minified versions of (static) client dependencies
+DEBUG_STATIC = False
 
 # This is needed for integration tests, they require
 # geonode to be listening for GeoServer auth requests.
@@ -32,37 +34,6 @@ DATABASES = {
         'NAME': os.path.join(PROJECT_ROOT, 'development.db'),
     }
 }
-
-# OGC (WMS/WFS/WCS) Server Settings
-OGC_SERVER = {
-    'default': {
-        'BACKEND': 'geonode.geoserver',
-        'LOCATION': 'http://localhost/geoserver/',
-        'USER': 'admin',
-        'PASSWORD': 'geoserver',
-        'MAPFISH_PRINT_ENABLED': True,
-        'PRINTNG_ENABLED': True,
-        'GEONODE_SECURITY_ENABLED': True,
-        'GEOGIT_ENABLED': True,
-        'WMST_ENABLED': False,
-
-        # This replaces DB_DATASTORE=True
-        # If DATASTORE != '' then geonode will use the datastore backend
-        'DATASTORE': '',
-    }
-}
-
-UPLOADER = {
-    'OPTIONS' : {
-        'TIME_ENABLED' : True,
-        'GEOGIT_ENABLED' : True,
-    }
-}
-
-
-FIXTURE_DIRS = (
-  os.path.join(PROJECT_ROOT, 'fixtures'),
-)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -83,8 +54,14 @@ LANGUAGES = (
     ('de', 'Deutsch'),
     ('el', 'Ελληνικά'),
     ('id', 'Bahasa Indonesia'),
-#    ('zh', '中文'),
+    ('zh-cn', '中文'),
     ('ja', '日本人'),
+    ('fa', 'Persian'),
+    ('pt', 'Portuguese'),
+    ('ru', 'Russian'),
+    ('vi', 'Vietnamese'),
+    #('fil', 'Filipino'),
+    
 )
 
 WSGI_APPLICATION = "rogue_geonode.wsgi.application"
@@ -104,7 +81,7 @@ MEDIA_URL = "/uploaded/"
 
 # Absolute path to the directory that holds static files like app media.
 # Example: "/home/media/media.lawrence.com/apps/"
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "static_root/")
+STATIC_ROOT = os.path.join(PROJECT_ROOT, "static_root")
 
 # URL that handles the static files like app media.
 # Example: "http://media.lawrence.com"
@@ -216,15 +193,16 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
-	'standard': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt' : "%d/%b/%Y %H:%M:%S"
-        },
         'verbose': {
             'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
         },
         'simple': {
             'format': '%(message)s',        },
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+     }
     },
     'handlers': {
         'null': {
@@ -238,6 +216,7 @@ LOGGING = {
         },
         'mail_admins': {
             'level': 'ERROR',
+            'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler',
         }
     },
@@ -285,6 +264,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
     'account.context_processors.account',
+    'pinax_theme_bootstrap_account.context_processors.theme',
     # The context processor below adds things like SITEURL
     # and GEOSERVER_BASE_URL to all pages that use a RequestContext
     'geonode.context_processors.resource_urls',
@@ -300,6 +280,11 @@ MIDDLEWARE_CLASSES = (
     'pagination.middleware.PaginationMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    # This middleware allows to print private layers for the users that have 
+    # the permissions to view them.
+    # It sets temporary the involved layers as public before restoring the permissions.
+    # Beware that for few seconds the involved layers are public there could be risks.
+    #'geonode.middleware.PrintProxyMiddleware',
 )
 
 
@@ -362,6 +347,9 @@ SOUTH_TESTS_MIGRATE=False
 AUTH_PROFILE_MODULE = 'people.Profile'
 REGISTRATION_OPEN = False
 
+# Email for users to contact admins.
+THEME_ACCOUNT_CONTACT_EMAIL = 'admin@example.com'
+
 #
 # Test Settings
 #
@@ -411,6 +399,38 @@ ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
 
 CACHE_TIME=0
+
+META_DOWNLOAD_ALLOWS = True
+
+# OGC (WMS/WFS/WCS) Server Settings
+OGC_SERVER = {
+    'default' : {
+        'BACKEND' : 'geonode.geoserver',
+        'LOCATION' : 'http://localhost:8080/geoserver/',
+        'PUBLIC_LOCATION' : 'http://localhost:8080/geoserver/',
+        'USER' : 'admin',
+        'PASSWORD' : 'geoserver',
+        'MAPFISH_PRINT_ENABLED' : True,
+        'PRINTNG_ENABLED' : True,
+        'GEONODE_SECURITY_ENABLED' : True,
+        'GEOGIT_ENABLED' : False,
+        'WMST_ENABLED' : False,
+        'BACKEND_WRITE_ENABLED': True,
+        'WPS_ENABLED' : False,
+        # Set to name of database in DATABASES dictionary to enable
+        'DATASTORE': '', #'datastore',
+    }
+}
+
+# Uploader Settings
+UPLOADER = {
+    'BACKEND' : 'geonode.rest',
+    'OPTIONS' : {
+        'TIME_ENABLED': False,
+        'GEOGIT_ENABLED': False,
+    }
+}
+
 
 METADATA_DOWNLOAD_ALLOWS=True
 
@@ -503,6 +523,7 @@ PYCSW = {
     }
 }
 
+# GeoNode javascript client configuration
 
 MAP_BASELAYERS = [{
     "source": {

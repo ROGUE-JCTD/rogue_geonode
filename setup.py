@@ -64,10 +64,11 @@ setup(
     data_files=data_files,
     include_package_data=True,
     install_requires=[
-        #"geonode==2.0b10"
+        "geonode==2.0b61",
         # Override the PyPI gsconfig with the rogue_geonode fork until 0.6.5 is released.
-        "gsconfig>=0.6.5a1"
+        "gsconfig==0.6.5a1"
     ],
-    dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1'],
+    dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
+                      'https://github.com/GeoNode/geonode/archive/debian/2.0.0+beta61.tar.gz#egg=geonode-2.061'],
     zip_safe=False,
 )
