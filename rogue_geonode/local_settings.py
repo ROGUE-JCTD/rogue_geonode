@@ -33,6 +33,7 @@ OGC_SERVER = {
         'PRINTNG_ENABLED': True,
         'GEONODE_SECURITY_ENABLED': True,
         'GEOGIT_ENABLED': True,
+        'GEOGIT_DATASTORE_DIR':'/data/geogit/',
         'WMST_ENABLED': False,
         # This replaces DB_DATASTORE=True
         # If DATASTORE != '' then geonode will use the datastore backend
