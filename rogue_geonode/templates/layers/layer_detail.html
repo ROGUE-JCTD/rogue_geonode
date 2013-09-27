@@ -80,7 +80,7 @@
     </div>
     <div class="tab-content">
 
-    {% include "base/resourcebase_info_panel.html" with resourcebase=layer %}
+    {% include "base/resourcebase_info_panel.html" with resourcebase=layer resourcebase_type="layer" %}
 
       <article id="attributes" class="tab-pane">
         {% if layer.attribute_set.all %}
@@ -123,15 +123,6 @@
       {% include "geonode/geogit_history_panel.html" with resourcebase=layer %}
       </article>
       {% endif %}
-      <article id="share" class="tab-pane">
-        <!-- TODO: Move this to a reusable template snippet -->
-        <header>
-          <h3>{% trans "Share This Layer" %}</h3>
-        </header>
-          <g:plusone size="small" href="http://{{ request.get_host }}{{ request.get_full_path }}"></g:plusone>
-          <div class="fb-like" data-href="http://{{ request.get_host }}{{ request.get_full_path }}" data-send="false" data-width="50" data-layout="button_count" data-show-faces="false"></div>
-        <!-- TODO: Add more sharing options -->
-      </article>
       <!--article id="flag" class="tab-pane">
         <p>Flag this Layer</p>
       </article-->
@@ -139,20 +130,6 @@
         {% with layer as obj %}
           {% include "_comments.html" %}
         {% endwith %}
-      </article>
-      <article id="rate" class="tab-pane">
-        <!-- TODO: Move this to a reusable template snippet -->
-        {% if request.user.is_authenticated %}
-        <h3>{% trans "Rate this layer" %}</h3>
-        {% user_rating request.user layer "layer" as user_layer_rating %}
-        <div id="user_rating" class="category-layer"></div>
-        {% endif %}
-        <h3>{% trans 'Average Rating' %}</h3>
-        {% overall_rating layer "layer" as layer_rating %}
-        {% num_ratings layer as num_votes %}
-        <div class="overall_rating" style="float:left" data-rating="{{ layer_rating }}"></div> ({{num_votes}})
-        
-        <!-- TODO: Add display of who gave what rating based -->
       </article>
     </div>
   </div>
@@ -282,9 +259,9 @@
     $(function() {
         $('div.overall_rating').raty({
             half: true,
-            readOnly: true,
             start: $('div.overall_rating').data('rating'),
-            path: "{{ STATIC_URL }}lib/img/"
+            path: "{{ STATIC_URL }}lib/img/",
+            readonly: true,
         });
     });
     </script>
