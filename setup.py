@@ -52,8 +52,6 @@ setup(
     author_email="",
     description="rogue_geonode, based on GeoNode",
     long_description=(read('README.rst')),
-    # Full list of classifiers can be found at:
-    # http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         'Development Status :: 1 - Planning',
     ],
@@ -64,11 +62,10 @@ setup(
     data_files=data_files,
     include_package_data=True,
     install_requires=[
-        "geonode==2.0b61",
-        # Override the PyPI gsconfig with the rogue_geonode fork until 0.6.5 is released.
-        "gsconfig==0.6.5a1"
+        "geonode==2.0b63",
+        "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
     ],
     dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
-                      'https://github.com/GeoNode/geonode/archive/debian/2.0.0+beta61.tar.gz#egg=geonode-2.061'],
+                      'https://github.com/GeoNode/geonode/archive/2.0b63.tar.gz#egg=geonode-2.0b63'],
     zip_safe=False,
 )
