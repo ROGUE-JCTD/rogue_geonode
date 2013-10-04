@@ -64,6 +64,7 @@ setup(
     install_requires=[
         "geonode==2.0b63",
         "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
+        "django-classification-banner>=0.1.2",
     ],
     dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
                       'https://github.com/GeoNode/geonode/archive/2.0b63.tar.gz#egg=geonode-2.0b63'],

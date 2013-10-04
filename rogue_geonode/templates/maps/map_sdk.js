@@ -27,7 +27,11 @@ Ext.onReady(function() {
         portalItems: [{
             xtype: "container",
             layout: "fit",
+            {% if classification_banner_enabled %}
+            height: 99,
+            {% else %}
             height: 81,
+            {% endif %}
             region: "north"
         }],
         localGeoServerBaseUrl: "{{ GEOSERVER_BASE_URL }}",

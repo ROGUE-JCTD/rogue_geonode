@@ -1,4 +1,4 @@
-{% load i18n avatar_tags %}
+{% load i18n avatar_tags classification_banner %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,9 +20,16 @@
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+  {% if classification_banner_enabled %}
+  <link href="{{ STATIC_URL }}lib/css/django_classification_banner_overrides.css" rel="stylesheet"/>
+  {% classification_banner %}
+  {% endif %}
+
   <body class="{% block body_class %}{% endblock %}">
+
     {% block header %}
-    <div class="navbar navbar-fixed-top">
+
+        <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <section>
         <div class="container">

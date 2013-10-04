@@ -1,0 +1,14 @@
+/* Overrides the base.css when the classification banner is enabled. */
+
+.navbar-fixed-top{
+    padding-top: 18px;
+}
+
+.body{
+    padding-top:92px;
+    position: absolute;
+}
+
+.content-wrap{
+    padding-top:42px;
+}

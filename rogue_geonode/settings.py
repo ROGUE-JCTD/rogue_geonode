@@ -149,6 +149,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
 
     # Third party apps
+    'django_classification_banner',
 
     # Utility
     'pagination',
@@ -268,6 +269,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     # The context processor below adds things like SITEURL
     # and GEOSERVER_BASE_URL to all pages that use a RequestContext
     'geonode.context_processors.resource_urls',
+    'django_classification_banner.context_processors.classification',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -310,6 +312,7 @@ LOGIN_REDIRECT_URL = "/"
 #
 DEFAULT_SEARCH_SIZE = 10
 
+CLASSIFICATION_BANNER_ENABLED = False
 
 #
 # Settings for third party apps
