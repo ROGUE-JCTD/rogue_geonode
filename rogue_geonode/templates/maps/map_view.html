@@ -6,9 +6,44 @@
 
 {% block head %}
 {{ block.super }}
+<style>
 
-{% include 'maps/map_sdk.js' %}
+body{
+    padding-bottom: 0px;
+    overflow: hidden;
+}
 
+.maploom{
+    width: 100%;
+    border:0px;
+
+}
+
+</style>
+{% endblock %}
+
+{% block extra_script %}
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+          var setHeight = function(){
+            return $('.maploom').css({height:$(window).height()-$('.navbar').height()});
+          }
+
+          setHeight();
+
+          $(window).resize(function(){
+                  setHeight();
+                  });
+
+          });
+    </script>
+{% endblock %}
+
+{% block header %}{{ block.super }} {% endblock %}
+
+{% block middle %}
+        <iframe src="{% if map %}{% url 'maploom-map-view' map.id %}{% else %}{% url 'maploom-map-new' %}{% if request.GET.urlencode %}?{{ request.GET.urlencode }}{% endif %}{% endif %}" scrolling="auto" class="maploom"></iframe>
 {% endblock %}
 
 {% block footer %}{% endblock %}

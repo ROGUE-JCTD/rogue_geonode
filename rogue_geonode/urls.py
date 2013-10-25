@@ -27,12 +27,20 @@ urlpatterns = patterns('',
     url(r'^help/$', TemplateView.as_view(template_name="help.html"), name='help'), 
     url(r'^developer/$', TemplateView.as_view(template_name="developer.html"), name='developer'),
     url(r'^about/$', TemplateView.as_view(template_name="about.html"), name='about'),
-
     # Layer views
+    url(r'^layers/resolve_user/?$', 'rogue_geonode.views.resolve_user', name='layer_resolve_user'),
     (r'^layers/', include('geonode.layers.urls')),
 
     # Map views
     (r'^maps/', include('geonode.maps.urls')),
+
+    # MapLoom Urls
+    url(r'^maploom/maps/new', 'geonode.maps.views.new_map', {'template': 'maps/maploom.html'}, name='maploom-map-new'),
+    
+    url(r'^maploom/maps/(?P<mapid>\d+)/view',
+        'geonode.maps.views.map_view',
+        {'template': 'maps/maploom.html'},
+        name='maploom-map-view'),
 
     # Catalogue views
     (r'^catalogue/', include('geonode.catalogue.urls')),
@@ -73,7 +81,7 @@ urlpatterns = patterns('',
     (r'^i18n/', include('django.conf.urls.i18n')),
     (r'^admin/', include(admin.site.urls)),
     (r'^file-service/', include('rogue_geonode.file_service.urls')),
-
+    (r'^proxy/', 'rogue_geonode.views.proxy'),
     )
 
 #Documents views
