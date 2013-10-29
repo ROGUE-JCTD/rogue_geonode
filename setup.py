@@ -2,7 +2,6 @@ import os
 from distutils.core import setup
 from distutils.command.install import INSTALL_SCHEMES
 
-
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
@@ -48,8 +47,8 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
 setup(
     name="rogue_geonode",
     version="0.1",
-    author="",
-    author_email="",
+    author="LMN Solutions",
+    author_email="rogue@lmnsolutions.com",
     description="rogue_geonode, based on GeoNode",
     long_description=(read('README.rst')),
     classifiers=[
