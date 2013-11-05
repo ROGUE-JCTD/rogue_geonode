@@ -138,7 +138,7 @@
       <version>${geotools.version}</version>
     </dependency>
     <!-- ROGUE Extras
-    
+
     + geogit (should build against the nightlies)
     ✓ suite importer (including the required restlet jar and latest geogit changes)
     ✓ geoservices rest (in geoserver-exts)
@@ -256,7 +256,7 @@
       <version>2.3</version>
       <scope>test</scope>
     </dependency>
-    
+
     <!-- Jetty runner dependencies -->
     <dependency>
       <groupId>org.mortbay.jetty</groupId>
@@ -281,7 +281,7 @@
     <geotools.version>9-SNAPSHOT</geotools.version>
     <geoserver.version>2.3-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
-    <geogit.version>0.5-SNAPSHOT</geogit.version>
+    <geogit.version>0.6-SNAPSHOT</geogit.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles></profiles>
@@ -311,7 +311,7 @@
           <stopKey>geonode-stop</stopKey>
           <scanIntervalSeconds>30</scanIntervalSeconds>
           <contextPath>/geoserver</contextPath>
-          
+
           <webApp>${project.build.directory}/geoserver</webApp>
         </configuration>
       </plugin>
