@@ -61,11 +61,11 @@ setup(
     data_files=data_files,
     include_package_data=True,
     install_requires=[
-        "geonode==2.0c1",
+        "geonode==2.0c2a",
         "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
         "django-classification-banner>=0.1.2",
     ],
     dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
-                      'https://github.com/GeoNode/geonode/archive/2.0c1.tar.gz#egg=geonode-2.0c1'],
+                      'https://github.com/GeoNode/geonode/archive/49d125ad674aa1cc212e24222c0e111d09628e26.tar.gz#egg=geonode-2.0c2a'],
     zip_safe=False,
 )
