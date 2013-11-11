@@ -259,9 +259,10 @@
     $(function() {
         $('div.overall_rating').raty({
             half: true,
+            score: $('div.overall_rating').data('rating'),
             start: $('div.overall_rating').data('rating'),
             path: "{{ STATIC_URL }}lib/img/",
-            readonly: true,
+            readOnly: true
         });
     });
     </script>

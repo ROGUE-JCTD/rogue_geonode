@@ -73,8 +73,7 @@
         {% num_ratings resourcebase as num_votes %}
         <strong>{% trans 'Overall Rating' %}:</strong>
         {% overall_rating resourcebase resourcebase_type|default:"layer" as overall_rating %}
-        {% user_rating request.user resourcebase resourcebase_type|default:"layer" as user_rating %}
-        <div class="overall_rating" style="" data-rating="{{ overall_rating }}" data-user-rating="{{ user_rating }}"></div> ({{ num_votes }} vote{{ num_votes|pluralize }})
+        <div class="overall_rating" style="" data-rating="{{ overall_rating }}"></div> ({{ num_votes }} vote{{ num_votes|pluralize }})
     </li>
 
     {% if request.user.is_authenticated %}
