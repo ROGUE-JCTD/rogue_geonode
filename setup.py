@@ -61,7 +61,7 @@ setup(
     data_files=data_files,
     include_package_data=True,
     install_requires=[
-        "geonode==2.0c3",
+        "geonode==2.0c4",
         "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
         "django-classification-banner>=0.1.2",
     ],
