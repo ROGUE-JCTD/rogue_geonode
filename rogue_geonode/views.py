@@ -52,6 +52,9 @@ def proxy(request):
     if request.method in ("POST", "PUT") and "CONTENT_TYPE" in request.META:
         headers["Content-Type"] = request.META["CONTENT_TYPE"]
 
+    if request.META.get('HTTP_ACCEPT'):
+        headers['ACCEPT'] = request.META['HTTP_ACCEPT']
+
     logger.debug('Outgoing request method: {0}'.format(request.method))
     logger.debug('Outgoing request locator: {0}{1}'.format(url.hostname, locator))
     logger.debug('Outgoing request headers: {0}'.format(headers))
