@@ -213,9 +213,9 @@ LOGGING = {
             'class':'django.utils.log.NullHandler',
         },
         'console':{
-            'level':'ERROR',
+            'level':'DEBUG',
             'class':'logging.StreamHandler',
-            'formatter': 'simple'
+            'formatter': 'verbose'
         },
         'mail_admins': {
             'level': 'ERROR',
@@ -227,6 +227,10 @@ LOGGING = {
         "django": {
             "handlers": ["console"],
             "level": "ERROR",
+        },
+        "rogue_geonode": {
+            "handlers": ["console"],
+            "level": "DEBUG",
         },
         "geonode": {
             "handlers": ["console"],
