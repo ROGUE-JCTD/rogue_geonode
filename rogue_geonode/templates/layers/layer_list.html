@@ -6,13 +6,13 @@
 {% load staticfiles %}
 {% load url from future %}
 
-{% block title %} {% trans "Layers" %} - {{ block.super }} {% endblock %}
+{% block title %} {% trans "Explore Layers" %} - {{ block.super }} {% endblock %}
 
 {% block body_class %}data data-list explore{% endblock %}
 
 {% block body %}
   <div class="span12">
-    <h2 class="page-title">{% trans "Layers" %}</h2>
+    <h2 class="page-title">{% trans "Explore Layers" %}</h2>
   </div>
   <div class="span8 filter">      
     {% include "search/_sort_filters.html" %}
@@ -33,7 +33,8 @@
         </div>
         <div id="slide-pane">
           <a href="#" class="toggle toggle-pane"><i class="icon-chevron-left"></i></a>
-          {% with type='layer' %} 
+          {% with type='layer' %}
+          {% include "search/_layertype_filters.html" %}
           {% include "search/_general_filters.html" %}
           {% endwith %}
         </div>

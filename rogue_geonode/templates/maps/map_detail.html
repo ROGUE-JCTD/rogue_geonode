@@ -83,6 +83,28 @@
       	{% include "_comments.html" %}
     	{% endwith %}
       </article>
+      <article class="tab-pane" id="rate">
+        <!-- TODO: Move this to a reusable template snippet -->
+        {% if request.user.is_authenticated %}
+        <h3>{% trans "Rate this Map" %}</h3>
+        {% user_rating request.user map "map" as user_map_rating %}
+        <div id="user_rating" class="category-map"></div>
+        {% endif %}
+        <h3>{% trans 'Average Rating' %}</h3>
+        {% overall_rating map "map" as map_rating %}
+        {% num_ratings map as num_votes %}
+        <div class="overall_rating" style="float:left" data-rating="{{ map_rating }}"></div> ({{num_votes}})
+        <!-- TODO: Add display of who gave what rating based -->
+      </article>
+      <article class="tab-pane" id="share">
+        <!-- TODO: Move this to a reusable template snippet -->
+        <header>
+            <h3>{% trans "Share This Map" %}</h3>
+        </header>
+        <g:plusone size="small" href="http://{{ request.get_host }}{{ request.get_full_path }}"></g:plusone>
+        <div class="fb-like" data-href="http://{{ request.get_host }}{{ request.get_full_path }}" data-send="false" data-width="50" data-layout="button_count" data-show-faces="false"></div>
+        <!-- TODO: Add more sharing options -->
+      </article>
       <!--article class="tab-pane" id="flag">
         <h2>{% trans "Flag" %}</h2>
       </article-->
@@ -109,7 +131,7 @@
         <h2>{% trans "Documents related to this map" %}</h2>
         <p>{% trans "List of documents related to this map:" %}</p>
         <ul class="unstyled space">
-          {% for document in documents %}
+          {% for document in documents %} 
             <li><a href="{{ document.get_absolute_url }}">{{ document.title }}</a></li>
           {% endfor %}
         </ul>
@@ -134,7 +156,7 @@
       <h2>{% trans "Map WMS" %}</h2>
       <dl>{% if map.layer_group %}
         <dt>{% trans "WMS layer group for local map layers" %}:</dt>
-        <dd><em>{{ map.layer_group.name }}</em> {% trans "on" %} <a href="{{ ows }}?request=GetCapabilities">{% trans "local OWS" %}</a>)</dd>
+        <dd><em>{{ map.layer_group.name }}</em> ({% trans "on" %} <a href="{{ ows }}?request=GetCapabilities">{% trans "local OWS" %}</a>)</dd>
       {% endif %}</dl>
       {% if can_edit_map %}
       <p>{% trans "Publish local map layers as WMS layer group" %}</p>
@@ -147,6 +169,14 @@
     <h2>{% trans "About" %}</h2>
     <p>{% trans "Map Owner" %}</p>
       {% with map.owner.profile as profile %}
+        {% include "people/_profile_about_item.html" %} 
+      {% endwith %}
+      <p>{% trans "Point of Contact" %}</p>
+      {% with map.poc as profile %}
+        {% include "people/_profile_about_item.html" %}
+      {% endwith %}
+      <p>{% trans "Metadata Author" %}</p>
+      {% with map.metadata_author as profile %}
         {% include "people/_profile_about_item.html" %}
       {% endwith %}
     </div>
@@ -155,6 +185,7 @@
 {% endblock %}
 
 {% block extra_script %}
+{% if SOCIAL_BUTTONS %}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -163,14 +194,14 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+{% endif %}
 {% if request.user.is_authenticated %}
- {% user_rating_js request.user map "map" %}
+      {% user_rating_js request.user map "map" %}
 {% endif %}
 <script type="text/javascript" src="{{ STATIC_URL}}geonode/js/thumbnail/map_thumbnail.js"></script>
 <script type="text/javascript">
  $(function() {
-   $('div.overall_rating').raty({
+   $('.overall_rating').raty({
      half: true,
      readOnly: true,
      start: $('div.overall_rating').data('rating'),
@@ -178,7 +209,6 @@
      cancel: true,
      path: "{{ STATIC_URL }}lib/img/"
    });
-
 
   {% verbatim %}
   // Publish layer group
@@ -220,13 +250,13 @@
 
 
  });
-
+{% if SOCIAL_BUTTONS %}
  (function() {
    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
    po.src = 'https://apis.google.com/js/plusone.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
  })();
-
+{% endif %}
   $("#comment_submit_btn").click(function(event) {
     $.ajax({
       type: "POST",
@@ -234,7 +264,7 @@
       data: $("#form_post_comment").serialize(),
       success: function() {
         $('#form_post_comment_div').modal('hide');
-        $('#comments_section').load(window.location.pathname + ' #comments_section',
+        $('#comments_section').load(window.location.pathname + ' #comments_section', 
         		function(){$(this).children().unwrap()})
       }
     });
@@ -246,7 +276,7 @@
     return createMapThumbnail();
   });
 {% endif %}
-
+ 
 </script>
 {% include "_permissions_form_js.html" %}
 {% endblock %}

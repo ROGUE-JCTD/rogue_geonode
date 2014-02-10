@@ -129,9 +129,12 @@ LOGOUT_URL = '/account/logout/'
 
 # Activate the Documents application
 DOCUMENTS_APP = True
+
 ALLOWED_DOCUMENT_TYPES = [
-    'doc', 'docx', 'xls', 'xslx', 'pdf', 'zip', 'jpg', 'jpeg', 'tif', 'tiff', 'png', 'gif', 'txt'
+    'doc', 'docx','gif', 'jpg', 'jpeg', 'ods', 'odt', 'pdf', 'png', 'ppt',
+    'rar', 'tif', 'tiff', 'txt', 'xls', 'xlsx', 'xml', 'zip',
 ]
+
 MAX_DOCUMENT_SIZE = 2 # MB
 
 
@@ -339,7 +342,7 @@ AGON_RATINGS_CATEGORY_CHOICES = {
 
 # Activity Stream
 ACTSTREAM_SETTINGS = {
-    'MODELS': ('auth.user', 'layers.layer', 'maps.map', 'dialogos.comment'),
+    'MODELS': ('auth.user', 'layers.layer', 'maps.map', 'dialogos.comment', 'documents.document'),
     'FETCH_RELATIONS': True,
     'USE_PREFETCH': True,
     'USE_JSONFIELD': True,
@@ -397,6 +400,8 @@ LEAFLET_CONFIG = {
 # Default TopicCategory to be used for resources. Use the slug field here
 DEFAULT_TOPICCATEGORY = 'location'
 
+MODIFY_TOPICCATEGORY = False
+
 MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
 
 # Notify the user via email when their password is changed.
@@ -428,6 +433,7 @@ OGC_SERVER = {
         'WPS_ENABLED' : False,
         # Set to name of database in DATABASES dictionary to enable
         'DATASTORE': '', #'datastore',
+        'TIMEOUT': 10, # The maximum time to wait for the server to respond.
     }
 }
 
@@ -441,7 +447,9 @@ UPLOADER = {
 }
 
 
-METADATA_DOWNLOAD_ALLOWS=True
+METADATA_DOWNLOAD_ALLOWS = True
+
+SOCIAL_BUTTONS = False
 
 # Require users to authenticate before using Geonode
 LOCKDOWN_GEONODE = True
@@ -451,6 +459,18 @@ AUTH_EXEMPT_URLS = ('/file-service/*',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
+
+
+DOWNLOAD_FORMATS_METADATA = [
+    'Atom', 'DIF', 'Dublin Core', 'ebRIM', 'FGDC', 'TC211',
+]
+DOWNLOAD_FORMATS_VECTOR = [
+    'JPEG', 'PDF', 'PNG', 'Zipped Shapefile', 'GML 2.0', 'GML 3.1.1', 'CSV',
+    'Excel', 'GeoJSON', 'KML', 'View in Google Earth', 'Tiles',
+]
+DOWNLOAD_FORMATS_RASTER = [
+    'JPEG', 'PDF', 'PNG' 'Tiles',
+]
 
 # Load more settings from a file called local_settings.py if it exists
 try:

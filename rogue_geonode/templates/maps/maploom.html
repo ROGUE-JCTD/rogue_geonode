@@ -19,8 +19,10 @@
         userprofilename: {% if user.is_authenticated %} "{{ user.profile.name }}" {% else %} undefined {% endif %},
         userprofileemail: {% if user.is_authenticated %} "{{ user.profile.email }}" {% else %} undefined {% endif %},
         currentLanguage: "{{language|default:'en'}}",
-        proxy: "/proxy/?url=",
+        proxy: '{{ PROXY_URL }}',
+        {% if MF_PRINT_ENABLED %}
         printService: "{{GEOSERVER_BASE_URL}}pdf/",
+        {% else %}
         /* The URL to a REST map configuration service.  This service
          * provides listing and, with an authenticated user, saving of
          * maps on the server for sharing and editing.

@@ -1,4 +1,4 @@
-{% load i18n avatar_tags classification_banner announcements_tags %}
+{% load i18n avatar_tags announcements_tags classification_banner %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +14,8 @@
       {% else %}
       <link href="{{ STATIC_URL }}lib/css/assets.min.css" rel="stylesheet"/>
       {% endif %}
-      {% block extra_head %}{% endblock %}
+      {% block extra_head %}
+      {% endblock %}
     {% endblock %}
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,10 +27,8 @@
   {% endif %}
 
   <body class="{% block body_class %}{% endblock %}">
-
     {% block header %}
-
-        <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <section>
         <div class="container">
@@ -52,6 +51,7 @@
                         </a>
                         <ul class="dropdown-menu">
                           <li><a href="{{ user.get_profile.get_absolute_url }}"><i class="icon-user"></i> {% trans "Profile" %}</a></li>
+                          <li><a href="{% url "messages_inbox" %}"><i class="icon-inbox"></i> {% trans "Inbox" %}</a></li>
                           {% if user.is_staff %}
                             <li><a href="{% url "admin:index" %}"><i class="icon-cog"></i> {% trans "Admin" %}</a></li>
                           {% endif %}
@@ -140,7 +140,7 @@
                 </ul>
               </nav>
             </div> <!-- ./span10 -->
-            {% block social %}
+            {% if SOCIAL_BUTTONS %}
             <div class="span2">
               <ul class="social">
                   <li><a href="http://www.facebook.com/sharer.php?u=http://{{ request.get_host }}{{ request.get_full_path }}" class="fb">facebook</a></li>
@@ -148,7 +148,7 @@
                   <li><a href="https://plusone.google.com/_/1/confirm?hl=en&url=http://{{ request.get_host }}{{ request.get_full_path }}" class="gp">google+</a></li>
               </ul>
             </div> <!-- /.span2 -->
-            {% endblock %}
+            {% endif %}
           </div> <!-- /.row nav-box -->
         </div> <!-- /.container -->
         </section>
@@ -162,10 +162,11 @@
       {% if site_wide_announcements %}
       <div id="site_wide_announcements">
         {% for announcement in site_wide_announcements %}
-          <div class="alert alert-block announcement">
+        <div class="alert alert-block announcement">
           <a type="button" class="close" data-dismiss="alert" data-dismiss-url="{% url "announcements_dismiss" announcement.pk %}" href="#">×</a>
           <h4><a href="{{ announcement.get_absolute_url }}">{{ announcement }}</a></h4>
           <p><small><em>{{ announcement.creation_date }}</em></small></p>
+          <div>{{ announcement.content }}</div>
         </div>
         {% endfor %}
       </div>
@@ -230,7 +231,6 @@
     {% endif %}
     <script src="{{ STATIC_URL }}geonode/js/utils/utils.js"></script>
     <script src="{{ STATIC_URL }}geonode/js/base/base.js"></script>
-
     <script>
       $("#search").select2({
         minimumInputLength: 1,
@@ -252,17 +252,25 @@
             var more = (page * 10) < data.total;
             return {
               results: $.map(data.results,function(object){
-                return {id: object.id, text: object.title};
+                return {id: object.id, text: object.title, url: object.detail };
               }),
               more: more
             }
           }          
         },
-        createSearchChoice:function(term, data) { if ($(data).filter(function() { return this.text.localeCompare(term)===0; }).length===0) {return {id:term, text:term};} 
+        createSearchChoice:function(term, data) { 
+            if ($(data).filter(function() { 
+                return this.text.localeCompare(term)===0; }).length===0) {
+                    return {id:term, text:term};
+                    } 
         },
         formatSelection: function(item){
-          $('#search').val(item.text);
-          $('#search').parent().submit();
+          if(item.url != undefined) {
+            window.location.href = item.url;
+          } else {
+            $('#search').val(item.text);
+            $('#search').parent().submit();
+          };
         }
       });
     </script>

@@ -40,21 +40,28 @@
       {% endfor %}
     </li>
   {% endif %}
-
+          
   {% if resourcebase.category %}
     <li>
       <strong>{% trans "Category" %}:</strong>
       {{ resourcebase.category }}
     </li>
   {% endif %}
-
+  
   {% if resourcebase.regions.all %}
    <li>
       <strong>{% trans "Regions" %}:</strong>
         {{ resourcebase.regions.all|join:", " }}
     </li>
   {% endif %}
-
+  
+  {% if resourcebase.license %}
+    <li>
+      <strong>{% trans "License" %}:</strong>
+      {{ resourcebase.license.name }}
+    </li>
+  {% endif %}
+          
   {% if resourcebase.owner %}
     <li>
       <strong>{% trans "Owner" %}:</strong>
@@ -84,11 +91,11 @@
         </li>
     {% endif %}
 
-    </ul>
+  </ul>
 
   <a href="#more" data-toggle="collapse" data-target=".more">Show/Hide</a>
 
-  <div class="more collapse">
+  <div class="more collapse"> 
     <ul class="unstyled wide">
     {% if resourcebase.maintenance_frequency %}
       <li>
@@ -96,7 +103,7 @@
         {{ resourcebase.maintenance_frequency_title }}
       </li>
     {% endif %}
-
+    
     {% if resourcebase.restriction_code_type or resourcebase.constraints_other %}
       <li>
         <strong>{% trans "Restrictions" %}:</strong>
@@ -107,7 +114,7 @@
         {% endif %}
       </li>
     {% endif %}
-
+          
     {% if resourcebase.edition %}
       <li>
         <strong>{% trans "Edition" %}:</strong>
@@ -143,11 +150,9 @@
       </li>
     {% endif %}
 
-
-
     {% if resourcebase.supplemental_information %}
       <li>
-        <strong>{% trans "Supplemental Information" %}:</strong>
+        <strong>{% trans "Supplemental Information" %}:</strong> 
         {{ resourcebase.supplemental_information|truncatechars:160|escape|urlize|linebreaks|safe }}
       </li>
     {% endif %}

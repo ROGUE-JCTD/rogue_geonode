@@ -13,10 +13,14 @@ Ext.onReady(function() {
     var config = Ext.apply({
         authStatus: {% if user.is_authenticated %} 200{% else %} 401{% endif %},
         username: {% if user.is_authenticated %} "{{ user.username }}" {% else %} undefined {% endif %},
-	userprofilename: {% if user.is_authenticated %} "{{ user.profile.name }}" {% else %} undefined {% endif %},
+	    userprofilename: {% if user.is_authenticated %} "{{ user.profile.name }}" {% else %} undefined {% endif %},
         userprofileemail: {% if user.is_authenticated %} "{{ user.profile.email }}" {% else %} undefined {% endif %},
-        proxy: "/proxy/?url=",
+        proxy: '{{ PROXY_URL }}',
+        {% if MF_PRINT_ENABLED %}
         printService: "{{GEOSERVER_BASE_URL}}pdf/",
+        {% else %}
+        printService: "",
+        {% endif %}
         /* The URL to a REST map configuration service.  This service 
          * provides listing and, with an authenticated user, saving of 
          * maps on the server for sharing and editing.

@@ -61,12 +61,13 @@ setup(
     data_files=data_files,
     include_package_data=True,
     install_requires=[
-        "geonode==2.0c5",
+        "geonode==2.0.1a1",
         "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
         "django-classification-banner>=0.1.2",
         "django-maploom>=0.0.1"
     ],
-    dependency_links=['https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
+    dependency_links=['https://github.com/GeoNode/geonode/archive/75f7b8a16930df078a644edbdedc9e57ee4386fa.tar.gz#egg=geonode-2.0.1a1',
+                      'https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
                       'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1',
                       ],
     zip_safe=False,
