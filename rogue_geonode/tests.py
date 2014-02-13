@@ -6,6 +6,7 @@ from lxml import etree
 import logging
 logger = logging.getLogger(__name__)
 
+
 class ROGUETests(TestCase):
 
     def setUp(self):
@@ -17,8 +18,6 @@ class ROGUETests(TestCase):
             self.user.set_password(self.password)
             self.user.save()
 
-
-
     def test_jpeg_decoder(self):
         """
         Ensure the jpeg decoder is installed.
@@ -29,7 +28,7 @@ class ROGUETests(TestCase):
 
         try:
             from PIL.Image import core
-            decoder = getattr(core, "jpeg_decoder")
+            getattr(core, "jpeg_decoder")
         except IOError:
             self.fail("JPEG Decoder not installed.")
         except ImportError:
@@ -62,13 +61,3 @@ class ROGUETests(TestCase):
             self.assertNotIn('Explore',
                              page_title[0].text,
                              msg="'Explore' was found in the {} template.".format(template))
-
-
-
-
-
-
-
-
-
-

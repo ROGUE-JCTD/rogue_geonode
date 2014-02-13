@@ -12,15 +12,14 @@ from urlparse import urlsplit
 
 logger = logging.getLogger(__name__)
 
+
 def proxy(request):
     PROXY_ALLOWED_HOSTS = (ogc_server_settings.hostname,) + getattr(settings, 'PROXY_ALLOWED_HOSTS', ())
 
     if 'url' not in request.GET:
-        return HttpResponse(
-                "The proxy service requires a URL-encoded URL as a parameter.",
-                status=400,
-                content_type="text/plain"
-                )
+        return HttpResponse("The proxy service requires a URL-encoded URL as a parameter.",
+                            status=400,
+                            content_type="text/plain")
 
     raw_url = request.GET['url']
     url = urlsplit(raw_url)
@@ -35,12 +34,12 @@ def proxy(request):
 
     if not settings.DEBUG:
         if not validate_host(url.hostname, PROXY_ALLOWED_HOSTS):
-            return HttpResponse(
-                    "DEBUG is set to False but the host of the path provided to the proxy service is not in the"
-                    " PROXY_ALLOWED_HOSTS setting.",
-                    status=403,
-                    content_type="text/plain"
-                    )
+            return HttpResponse("DEBUG is set to False but the host of the path provided "
+                                "to the proxy service is not in the "
+                                "PROXY_ALLOWED_HOSTS setting.",
+                                status=403,
+                                content_type="text/plain"
+                                )
     headers = {}
 
     if settings.SESSION_COOKIE_NAME in request.COOKIES and is_safe_url(url=raw_url, host=ogc_server_settings.netloc):
@@ -66,17 +65,17 @@ def proxy(request):
     logger.debug('Response headers: {0}'.format(result.getheaders()))
     logger.debug('Response status: {0}'.format(result.status))
 
-    response = HttpResponse(
-            result.read(),
-            status=result.status,
-            content_type=result.getheader("Content-Type", "text/plain"),
-            )
+    response = HttpResponse(result.read(),
+                            status=result.status,
+                            content_type=result.getheader("Content-Type", "text/plain"),
+                            )
 
     if result.getheader('www-authenticate'):
         response['www-authenticate'] = result.getheader('www-authenticate').replace('realm="',
                                                                                     'realm="{0} '.format(url.hostname))
 
     return response
+
 
 def resolve_user(request):
 

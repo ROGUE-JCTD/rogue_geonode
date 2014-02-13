@@ -61,7 +61,6 @@ LANGUAGES = (
     ('ru', 'Russian'),
     ('vi', 'Vietnamese'),
     #('fil', 'Filipino'),
-    
 )
 
 WSGI_APPLICATION = "rogue_geonode.wsgi.application"
@@ -98,7 +97,6 @@ STATICFILES_DIRS = [
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Note that Django automatically includes the "templates" dir in all the
@@ -131,11 +129,11 @@ LOGOUT_URL = '/account/logout/'
 DOCUMENTS_APP = True
 
 ALLOWED_DOCUMENT_TYPES = [
-    'doc', 'docx','gif', 'jpg', 'jpeg', 'ods', 'odt', 'pdf', 'png', 'ppt',
+    'doc', 'docx', 'gif', 'jpg', 'jpeg', 'ods', 'odt', 'pdf', 'png', 'ppt',
     'rar', 'tif', 'tiff', 'txt', 'xls', 'xlsx', 'xml', 'zip',
 ]
 
-MAX_DOCUMENT_SIZE = 2 # MB
+MAX_DOCUMENT_SIZE = 2  # MB
 
 
 INSTALLED_APPS = (
@@ -203,21 +201,21 @@ LOGGING = {
             'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
         },
         'simple': {
-            'format': '%(message)s',        },
+            'format': '%(message)s'},
     },
     'filters': {
         'require_debug_false': {
             '()': 'django.utils.log.RequireDebugFalse'
-     }
+        }
     },
     'handlers': {
         'null': {
-            'level':'ERROR',
-            'class':'django.utils.log.NullHandler',
+            'level': 'ERROR',
+            'class': 'django.utils.log.NullHandler',
         },
-        'console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
             'formatter': 'verbose'
         },
         'mail_admins': {
@@ -303,6 +301,7 @@ MIDDLEWARE_CLASSES = (
 # permissions per object.
 AUTHENTICATION_BACKENDS = ('geonode.security.auth.GranularBackend',)
 
+
 def get_user_url(u):
     return u.profile.get_absolute_url()
 
@@ -353,7 +352,7 @@ ACTSTREAM_SETTINGS = {
 SOUTH_MIGRATION_MODULES = {
     'avatar': 'geonode.migrations.avatar',
 }
-SOUTH_TESTS_MIGRATE=False
+SOUTH_TESTS_MIGRATE = False
 
 # Settings for Social Apps
 AUTH_PROFILE_MODULE = 'people.Profile'
@@ -372,11 +371,11 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 # Arguments for the test runner
 NOSE_ARGS = [
-      '--nocapture',
-      '--detailed-errors',
-      ]
+    '--nocapture',
+    '--detailed-errors',
+]
 
-#
+
 # GeoNode specific settings
 #
 SITEURL = "http://localhost:8000/"
@@ -412,35 +411,35 @@ ACCOUNT_NOTIFY_ON_PASSWORD_CHANGE = False
 # Disabled by default, requires a mail server to be configured
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
 
-CACHE_TIME=0
+CACHE_TIME = 0
 
 META_DOWNLOAD_ALLOWS = True
 
 # OGC (WMS/WFS/WCS) Server Settings
 OGC_SERVER = {
-    'default' : {
-        'BACKEND' : 'geonode.geoserver',
-        'LOCATION' : 'http://localhost:8080/geoserver/',
-        'PUBLIC_LOCATION' : 'http://localhost:8080/geoserver/',
-        'USER' : 'admin',
-        'PASSWORD' : 'geoserver',
-        'MAPFISH_PRINT_ENABLED' : True,
-        'PRINTNG_ENABLED' : True,
-        'GEONODE_SECURITY_ENABLED' : True,
-        'GEOGIT_ENABLED' : False,
-        'WMST_ENABLED' : False,
+    'default': {
+        'BACKEND': 'geonode.geoserver',
+        'LOCATION': 'http://localhost:8080/geoserver/',
+        'PUBLIC_LOCATION': 'http://localhost:8080/geoserver/',
+        'USER': 'admin',
+        'PASSWORD': 'geoserver',
+        'MAPFISH_PRINT_ENABLED': True,
+        'PRINTNG_ENABLED': True,
+        'GEONODE_SECURITY_ENABLED': True,
+        'GEOGIT_ENABLED': False,
+        'WMST_ENABLED': False,
         'BACKEND_WRITE_ENABLED': True,
-        'WPS_ENABLED' : False,
+        'WPS_ENABLED': False,
         # Set to name of database in DATABASES dictionary to enable
-        'DATASTORE': '', #'datastore',
-        'TIMEOUT': 10, # The maximum time to wait for the server to respond.
+        'DATASTORE': '',
+        'TIMEOUT': 10,  # The maximum time to wait for the server to respond.
     }
 }
 
 # Uploader Settings
 UPLOADER = {
-    'BACKEND' : 'geonode.rest',
-    'OPTIONS' : {
+    'BACKEND': 'geonode.rest',
+    'OPTIONS': {
         'TIME_ENABLED': False,
         'GEOGIT_ENABLED': False,
     }
@@ -516,7 +515,8 @@ PYCSW = {
     'CONFIGURATION': {
         'metadata:main': {
             'identification_title': 'GeoNode Catalogue',
-            'identification_abstract': 'GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data',
+            'identification_abstract': 'GeoNode is an open source platform that facilitates the creation, \
+             sharing, and collaborative use of geospatial data',
             'identification_keywords': 'sdi,catalogue,discovery,metadata,GeoNode',
             'identification_keywords_type': 'theme',
             'identification_fees': 'None',
@@ -554,22 +554,25 @@ PYCSW = {
 
 # GeoNode javascript client configuration
 
-MAP_BASELAYERS = [{
-   "source": {
-       "ptype": "gxp_wmscsource",
-       "url": OGC_SERVER['default']['LOCATION'] + "wms",
-       "restUrl": "/gs/rest",
-       "name": "local geoserver"
+MAP_BASELAYERS = [
+    {
+        "source": {
+            "ptype": "gxp_wmscsource",
+            "url": OGC_SERVER['default']['LOCATION'] + "wms",
+            "restUrl": "/gs/rest",
+            "name": "local geoserver"
+        }
+    },
+    {
+        "source": {"ptype": "gxp_osmsource", "name": "OpenStreetMap"},
+        "type": "OpenLayers.Layer.OSM",
+        "name": "mapnik",
+        "title": "OpenStreetMap",
+        "args": ["OpenStreetMap"],
+        "visibility": True,
+        "fixed": True,
+        "group":"background"
     }
- }, {
-   "source": {"ptype": "gxp_osmsource", "name":"OpenStreetMap"},
-   "type":"OpenLayers.Layer.OSM",
-   "name":"mapnik",
-   "title":"OpenStreetMap",
-   "args":["OpenStreetMap"],
-   "visibility": True,
-   "fixed": True,
-   "group":"background"
- }
 ]
+
 

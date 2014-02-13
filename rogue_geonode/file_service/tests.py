@@ -9,6 +9,7 @@ from django.test import Client, TestCase
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 
+
 class SimpleTest(TestCase):
 
     def setUp(self):
@@ -32,7 +33,6 @@ class SimpleTest(TestCase):
         # Non-authenticated user should return 401
         self.assertEqual(response.status_code, 401)
 
-
         logged_in = c.login(username='test_admin', password='admin')
         self.assertTrue(logged_in)
 
@@ -44,17 +44,10 @@ class SimpleTest(TestCase):
 
         # A client should get a 200 response with basic authorization
         headers = dict(HTTP_AUTHORIZATION="basic dGVzdF9hZG1pbjphZG1pbg==")
-        response = c.get(reverse('file_service', kwargs=dict(key='test')), **headers )
+        response = c.get(reverse('file_service', kwargs=dict(key='test')), **headers)
         self.assertEqual(response.status_code, 200)
 
         # A client should get a 401 response with incorrect basic authorization
         headers = dict(HTTP_AUTHORIZATION="basic dGasdasdsabg==")
-        response = c.get(reverse('file_service', kwargs=dict(key='test')), **headers )
+        response = c.get(reverse('file_service', kwargs=dict(key='test')), **headers)
         self.assertEqual(response.status_code, 401)
-
-
-
-
-
-
-

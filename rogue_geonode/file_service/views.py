@@ -44,7 +44,8 @@ class GetImage(BasicAuthView):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
-        redirect_url = "http://127.0.0.1:8080/file-service/services/document/download?blobKey={0}".format(kwargs.get('key'))
+        key = kwargs.get('key')
+        redirect_url = "http://127.0.0.1:8080/file-service/services/document/download?blobKey={}".format(key)
         http = httplib2.Http()
         response, content = http.request(redirect_url, "GET")
 
@@ -52,6 +53,7 @@ class GetImage(BasicAuthView):
             content=content,
             status=response.status,
             mimetype=response.get("content-type", "text/plain"))
+
 
 class UploadImage(BasicAuthView):
     """
@@ -62,14 +64,16 @@ class UploadImage(BasicAuthView):
     def post(self, *args, **kwargs):
         http = httplib2.Http()
         url = "http://127.0.0.1:8080/file-service/services/document/upload"
-
-        headers = dict((header, value) for header, value
-            in self.request.META.items() if header.startswith('HTTP_'))
+        headers = dict((header, value) for header, value in self.request.META.items()
+                       if header.startswith('HTTP_'))
 
         headers['CONTENT-TYPE'] = self.request.META.get('CONTENT_TYPE', '')
         headers['HOST'] = '127.0.0.1'
         response, content = http.request(url, body=self.request.body, method='POST', headers=headers)
-        return HttpResponse(content=content, status=response.status, mimetype=response.get("content-type", "text/plain"))
+
+        return HttpResponse(content=content,
+                            status=response.status,
+                            mimetype=response.get("content-type", "text/plain"))
 
     @method_decorator(csrf_exempt)
     def dispatch(self, *args, **kwargs):
