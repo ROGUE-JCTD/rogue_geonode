@@ -190,7 +190,9 @@ INSTALLED_APPS = (
     'geonode.documents',
     'geonode.social',
     'rogue_geonode.file_service',
-    'maploom'
+    'rogue_geonode.core',
+    'maploom',
+
 )
 
 LOGGING = {
@@ -454,7 +456,7 @@ SOCIAL_BUTTONS = False
 LOCKDOWN_GEONODE = True
 
 # Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ('/file-service/*',)
+AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
