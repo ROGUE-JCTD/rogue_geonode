@@ -69,7 +69,7 @@ class UploadImage(BasicAuthView):
 
         headers['CONTENT-TYPE'] = self.request.META.get('CONTENT_TYPE', '')
         headers['HOST'] = '127.0.0.1'
-        response, content = http.request(url, body=self.request.body, method='POST', headers=headers)
+        response, content = http.request(url, body=self.body, method='POST', headers=headers)
 
         return HttpResponse(content=content,
                             status=response.status,
@@ -77,4 +77,5 @@ class UploadImage(BasicAuthView):
 
     @method_decorator(csrf_exempt)
     def dispatch(self, *args, **kwargs):
+        self.body = self.request.body
         return super(UploadImage, self).dispatch(*args, **kwargs)
