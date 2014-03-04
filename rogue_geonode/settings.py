@@ -469,8 +469,10 @@ DOWNLOAD_FORMATS_VECTOR = [
     'JPEG', 'PDF', 'PNG', 'Zipped Shapefile', 'GML 2.0', 'GML 3.1.1', 'CSV',
     'Excel', 'GeoJSON', 'KML', 'View in Google Earth', 'Tiles',
 ]
+
 DOWNLOAD_FORMATS_RASTER = [
-    'JPEG', 'PDF', 'PNG' 'Tiles',
+    'JPEG', 'PDF', 'PNG', 'ArcGrid', 'GeoTIFF', 'Gtopo30', 'ImageMosaic', 'KML',
+    'View in Google Earth', 'Tiles',
 ]
 
 # Load more settings from a file called local_settings.py if it exists
