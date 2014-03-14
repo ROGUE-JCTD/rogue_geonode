@@ -1,0 +1,25 @@
+.. ROGUE documentation master file, created by
+   sphinx-quickstart on Fri Mar 14 11:19:18 2014.
+ 
+
+ROGUE GeoNode Help
+=================================
+
+These pages provide guidance on using the different tools in GeoNode and in the web map for discovering geospatial information, editing, and viewing history.  
+
+
+.. toctree::
+   :maxdepth: 2
+   
+   accounts/index
+   search/find
+   layers/index
+   maps/index
+   documents/index
+   edit/index
+   sync/index
+   admin/index
+   integration/index
+
+
+

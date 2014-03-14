@@ -85,6 +85,7 @@
                   <li><a href="{{ GEOSERVER_BASE_URL }}"><i class="icon-globe"></i> {% trans "GeoServer" %}</a></li>
                   {% endif %}
                   <li><a href="{% url "recent-activity" %}"><i class="icon-fire"></i> {% trans "Recent Activity" %}</a></li>
+                  <li><a href="/docs"><i class="icon-book"></i> {% trans "Documentation" %}</a></li>
                   <li class="divider"></li>
                   <li>
                     <form action="{% url "account_logout" %}?next={{ request.path }}" id="logout_form" method="post">
@@ -176,7 +177,8 @@
         <div class="pull-left">
           {% trans "Powered by" %} <a href="http://geonode.org">{% trans "GeoNode" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
           <a href="{% url "developer" %}">{% trans "Developers" %}</a> |
-          <a href="{% url "about" %}">{% trans "About" %}</a>
+          <a href="{% url "about" %}">{% trans "About" %}</a> |
+          <a href="/docs">{% trans "Documentation" %}</a>
         </div>
         <div class="pull-right">
         {% if csrf_token != "NOTPROVIDED" %}

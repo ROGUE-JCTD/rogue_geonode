@@ -1,0 +1,7 @@
+.. _admin:
+
+Uploading Documents
+=========================
+
+GeoNode lets you upload documents to associate to layers or maps.
+

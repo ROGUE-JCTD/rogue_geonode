@@ -54,6 +54,11 @@ tests_requires = [
     "lxml==3.3.1",
 ]
 
+docs_requires = [
+    "sphinx-rtd-theme==0.1.5",
+    "Sphinx==1.2.2",
+]
+
 setup(
     name="rogue_geonode",
     version="0.1.1",
@@ -72,7 +77,8 @@ setup(
     include_package_data=True,
     install_requires=install_requires,
     extras_require={
-        'tests': install_requires + tests_requires
+        'tests': install_requires + tests_requires,
+        'docs':  docs_requires
     },
     dependency_links=['https://github.com/garnertb/geonode/archive/td4.tar.gz'
                       '#egg=geonode-2.0.1a1',

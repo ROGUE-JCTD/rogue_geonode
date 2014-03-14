@@ -77,3 +77,14 @@ class ROGUETests(TestCase):
         PROXY_ALLOWED_HOSTS = ('.openstreetmap.com',)
         warnings = security_warnings(None, PROXY_ALLOWED_HOSTS)
         self.assertDictEqual(warnings, {'warnings': []})
+
+    def test_documentation_links(self):
+        """
+        Ensures that links to the documentation are included in the templates.
+        """
+
+        c = Client()
+        c.login(username=self.username, password=self.password)
+        resp = c.get(reverse('home'), follow=True)
+        docs_links = self.get_elements_from_xpath(resp.content, xpath='//a[@href="/docs"]')
+        self.assertTrue(len(docs_links) > 0)

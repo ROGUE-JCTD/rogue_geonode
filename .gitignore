@@ -6,5 +6,6 @@ geoserver_ext/target/
 rogue_geonode/dev_settings.py
 build/*
 dist/*
+docs/build/*
 .idea/*
 *.pyc
