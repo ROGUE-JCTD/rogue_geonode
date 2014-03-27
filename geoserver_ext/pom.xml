@@ -363,7 +363,7 @@
     <geotools.version>10.5</geotools.version>
     <geoserver.version>2.4-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
-    <geogit.version>0.7-SNAPSHOT</geogit.version>
+    <geogit.version>0.8-SNAPSHOT</geogit.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles>
