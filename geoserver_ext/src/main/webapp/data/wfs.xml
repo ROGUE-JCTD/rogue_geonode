@@ -52,7 +52,7 @@ data.
       <version>V_11</version>
       <gml>
         <srsNameStyle>URN</srsNameStyle>
-        <overrideGMLAttributes>false</overrideGMLAttributes>
+        <overrideGMLAttributes>true</overrideGMLAttributes>
       </gml>
     </entry>
   </gml>
