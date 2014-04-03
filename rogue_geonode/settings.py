@@ -482,14 +482,6 @@ try:
 except ImportError:
     pass
 
-# Load more settings from a file called dev_settings.py if it exists
-# dev_settings.py should be untracked in the git repository
-try:
-    from dev_settings import *
-except ImportError:
-    pass
-
-
 # CSW settings
 CATALOGUE = {
     'default': {
