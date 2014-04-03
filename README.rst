@@ -1,3 +1,7 @@
+.. image:: https://secure.travis-ci.org/ROGUE-JCTD/rogue_geonode.png
+    :alt: Build Status
+    :target: http://travis-ci.org/ROGUE-JCTD/rogue_geonode
+
 ROGUE GeoNode
 =============
 

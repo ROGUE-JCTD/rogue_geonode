@@ -1,0 +1,28 @@
+language: python
+
+branches:
+  only:
+    - master
+
+python:
+  - "2.7"
+
+before_install:
+  - "easy_install pip==1.4.1"
+  - pip install flake8
+
+install:
+  - pip install -e .
+  - paver sync
+
+script:
+  - python manage.py test rogue_geonode.core.tests
+  - flake8 rogue_geonode
+
+after_script:
+  - paver reset_hard
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#rogue"

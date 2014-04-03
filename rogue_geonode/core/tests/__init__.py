@@ -1,8 +1,6 @@
-from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.test import Client, TestCase
-from django.test.utils import override_settings
 from rogue_geonode.core.context_processors import security_warnings
 from lxml import etree
 
@@ -79,5 +77,3 @@ class ROGUETests(TestCase):
         PROXY_ALLOWED_HOSTS = ('.openstreetmap.com',)
         warnings = security_warnings(None, PROXY_ALLOWED_HOSTS)
         self.assertDictEqual(warnings, {'warnings': []})
-
-

@@ -60,7 +60,6 @@ LANGUAGES = (
     ('pt', 'Portuguese'),
     ('ru', 'Russian'),
     ('vi', 'Vietnamese'),
-    #('fil', 'Filipino'),
 )
 
 WSGI_APPLICATION = "rogue_geonode.wsgi.application"
@@ -292,11 +291,11 @@ MIDDLEWARE_CLASSES = (
     'pagination.middleware.PaginationMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # This middleware allows to print private layers for the users that have 
+    # This middleware allows to print private layers for the users that have
     # the permissions to view them.
     # It sets temporary the involved layers as public before restoring the permissions.
     # Beware that for few seconds the involved layers are public there could be risks.
-    #'geonode.middleware.PrintProxyMiddleware',
+    # 'geonode.middleware.PrintProxyMiddleware',
 )
 
 
@@ -393,7 +392,7 @@ DEFAULT_MAP_CENTER = (0, 0)
 # maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
 DEFAULT_MAP_ZOOM = 0
 
-#The name of the store in Geoserver
+# The name of the store in Geoserver
 
 LEAFLET_CONFIG = {
     'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
@@ -478,7 +477,7 @@ DOWNLOAD_FORMATS_RASTER = [
 
 # Load more settings from a file called local_settings.py if it exists
 try:
-    from local_settings import *
+    from local_settings import *  # noqa
 except ImportError:
     pass
 
@@ -489,16 +488,16 @@ CATALOGUE = {
         # default is pycsw in local mode (tied directly to GeoNode Django DB)
         'ENGINE': 'geonode.catalogue.backends.pycsw_local',
         # pycsw in non-local mode
-        #'ENGINE': 'geonode.catalogue.backends.pycsw_http',
+        # 'ENGINE': 'geonode.catalogue.backends.pycsw_http',
         # GeoNetwork opensource
-        #'ENGINE': 'geonode.catalogue.backends.geonetwork',
+        # 'ENGINE': 'geonode.catalogue.backends.geonetwork',
         # deegree and others
-        #'ENGINE': 'geonode.catalogue.backends.generic',
+        # 'ENGINE': 'geonode.catalogue.backends.generic',
 
         # The FULLY QUALIFIED base url to the CSW instance for this GeoNode
         'URL': '%scatalogue/csw' % SITEURL,
-        #'URL': 'http://localhost:8080/geonetwork/srv/en/csw',
-        #'URL': 'http://localhost:8080/deegree-csw-demo-3.0.4/services',
+        # 'URL': 'http://localhost:8080/geonetwork/srv/en/csw',
+        # 'URL': 'http://localhost:8080/deegree-csw-demo-3.0.4/services',
 
         # login credentials (for GeoNetwork)
         'USER': 'admin',
@@ -571,5 +570,3 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
-
-
