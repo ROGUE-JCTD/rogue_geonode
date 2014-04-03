@@ -279,6 +279,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     # and GEOSERVER_BASE_URL to all pages that use a RequestContext
     'geonode.context_processors.resource_urls',
     'django_classification_banner.context_processors.classification',
+    'rogue_geonode.core.context_processors.security_warnings'
 )
 
 MIDDLEWARE_CLASSES = (

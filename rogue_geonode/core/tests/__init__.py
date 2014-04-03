@@ -1,6 +1,9 @@
+from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.test import Client, TestCase
+from django.test.utils import override_settings
+from rogue_geonode.core.context_processors import security_warnings
 from lxml import etree
 
 import logging
@@ -61,3 +64,20 @@ class ROGUETests(TestCase):
             self.assertNotIn('Explore',
                              page_title[0].text,
                              msg="'Explore' was found in the {} template.".format(template))
+
+    def test_security_warnings(self):
+        """
+        Tests the security warnings context processor.
+        """
+
+        PROXY_ALLOWED_HOSTS = ('*',)
+        warnings = security_warnings(None, PROXY_ALLOWED_HOSTS)
+        self.assertDictEqual(warnings, {'warnings': [{'description': u'A wildcard is included in '
+                                                                     u'the PROXY_ALLOWED_HOSTS setting.',
+                                                      'title': u'Insecure setting detected.'}]})
+
+        PROXY_ALLOWED_HOSTS = ('.openstreetmap.com',)
+        warnings = security_warnings(None, PROXY_ALLOWED_HOSTS)
+        self.assertDictEqual(warnings, {'warnings': []})
+
+

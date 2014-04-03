@@ -171,6 +171,19 @@
         {% endfor %}
       </div>
       {% endif %}
+
+      {% if request.user.is_superuser %}
+          <div id="site_wide_announcements">
+          {% for warning in warnings %}
+            <div class="alert alert-block announcement">
+              <h4>{{ warning.title }}</h4>
+              <p><small><em>{% now "jS F Y H:i" %}</em></small></p>
+              <div>{{ warning.description }}</div>
+            </div>
+          {% endfor %}
+          </div>
+      {% endif %}
+
       <div class="container">
         <div class="row">
         {% block body_outer %}
