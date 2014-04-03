@@ -46,7 +46,7 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
 
 install_requires = [
         "geonode==2.0.1a1",
-        "gsconfig==0.6.5a1", # This is a custom version of gsconfig.
+        "gsconfig==0.6.6a1",  # This is a custom version of gsconfig.
         "django-classification-banner>=0.1.2",
         "django-maploom>=0.0.1",
         "gsimporter==0.1"
@@ -77,7 +77,7 @@ setup(
         'tests': install_requires + tests_requires
     },
     dependency_links=['https://github.com/garnertb/geonode/archive/importer_fix.tar.gz#egg=geonode-2.0.1a1',
-                      'https://github.com/ROGUE-JCTD/gsconfig.py/tarball/data_store_type#egg=gsconfig-0.6.5a1',
+                      'https://github.com/ROGUE-JCTD/gsconfig.py/tarball/advertised_layers_fix#egg=gsconfig-0.6.6a1',
                       'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1',
                       'https://github.com/boundlessgeo/gsimporter/archive/fddab7fb5f90fea0fbc52c3dc545d90f40c8e25c.tar.gz#egg=gsimporter-0.1',
                       ],
