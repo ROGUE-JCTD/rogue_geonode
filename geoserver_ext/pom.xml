@@ -271,19 +271,19 @@
     </dependency>
     <!-- GeoGit -->
     <dependency>
-      <groupId>org.geogit</groupId>
-      <artifactId>geogit-web-api</artifactId>
-      <version>${geogit.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.geogit</groupId>
-      <artifactId>geogit-geotools</artifactId>
-      <version>${geogit.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.geogit</groupId>
-      <artifactId>geogit-geoserver</artifactId>
-      <version>${geogit.version}</version>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gs-geogit</artifactId>
+      <version>${geoserver.version}</version>
+      <classifier>shaded-plugin</classifier>
+      <exclusions>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-core</artifactId></exclusion>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-geotools</artifactId></exclusion>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-web-api</artifactId></exclusion>
+        <exclusion><groupId>com.google.code.findbugs</groupId><artifactId>jsr305</artifactId></exclusion>
+        <exclusion><groupId>com.google.guava</groupId><artifactId>guava</artifactId></exclusion>
+        <exclusion><groupId>org.geotools</groupId><artifactId>gt-geojson</artifactId></exclusion>
+        <exclusion><groupId>org.geotools.jdbc</groupId><artifactId>gt-jdbc-spatialite</artifactId></exclusion>
+      </exclusions>
     </dependency>
     <!--  test dependencies  -->
     <dependency>
