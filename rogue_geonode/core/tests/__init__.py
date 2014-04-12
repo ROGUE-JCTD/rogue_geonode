@@ -48,7 +48,7 @@ class ROGUETests(TestCase):
         c = Client()
         c.login(username=self.username, password=self.password)
 
-        custom_views = ['layer_browse', 'documents_browse', 'maps_browse', 'profile_browse']
+        custom_views = ['layer_browse', 'documents_browse', 'maps_browse', 'profile_browse', 'group_list']
 
         for template in custom_views:
             resp = c.get(reverse(template), follow=True)

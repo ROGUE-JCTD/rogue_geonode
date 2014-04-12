@@ -67,6 +67,8 @@ urlpatterns = patterns('',
                        # Accounts
                        url(r'^account/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
                        url(r'^account/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
+                       url(r'^security/permissions/(?P<type>[^/]*)/(?P<resource_id>\d+)$',
+                           'geonode.security.views.resource_permissions', name='resource_permissions'),
 
                        # Meta
                        url(r'^lang\.js$', TemplateView.as_view(template_name="lang.js"), name='lang'),
@@ -77,10 +79,11 @@ urlpatterns = patterns('',
                        (r'^i18n/', include('django.conf.urls.i18n')),
                        (r'^admin/', include(admin.site.urls)),
                        (r'^file-service/', include('rogue_geonode.file_service.urls')),
-                       (r'^proxy/', 'rogue_geonode.views.proxy'),)
+                       (r'^proxy/', 'rogue_geonode.views.proxy'),
+                       (r'^groups/', include('geonode.contrib.groups.urls')),)
 
 # Documents views
-if settings.DOCUMENTS_APP:
+if 'geonode.documents' in settings.INSTALLED_APPS:
     urlpatterns += patterns('', (r'^documents/', include('geonode.documents.urls')),)
 
 urlpatterns += geonode.proxy.urls.urlpatterns

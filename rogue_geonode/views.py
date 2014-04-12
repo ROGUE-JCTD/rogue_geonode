@@ -6,20 +6,24 @@ from django.http.request import validate_host
 from django.utils.http import is_safe_url
 from django.utils.translation import ugettext as _
 from django.utils import simplejson as json
-from geonode.utils import ogc_server_settings, _get_basic_auth_info
+from geonode.utils import _get_basic_auth_info
 from httplib import HTTPConnection
 from urlparse import urlsplit
+from geonode.geoserver.helpers import ogc_server_settings
 
 logger = logging.getLogger(__name__)
 
 
 def proxy(request):
-    PROXY_ALLOWED_HOSTS = (ogc_server_settings.hostname,) + getattr(settings, 'PROXY_ALLOWED_HOSTS', ())
+    PROXY_ALLOWED_HOSTS = getattr(settings, 'PROXY_ALLOWED_HOSTS', ())
+    hostname = (ogc_server_settings.hostname,) if ogc_server_settings else ()
+    PROXY_ALLOWED_HOSTS += hostname
 
     if 'url' not in request.GET:
         return HttpResponse("The proxy service requires a URL-encoded URL as a parameter.",
                             status=400,
-                            content_type="text/plain")
+                            content_type="text/plain"
+                            )
 
     raw_url = request.GET['url']
     url = urlsplit(raw_url)
