@@ -71,8 +71,7 @@ def proxy(request):
                             )
 
     if result.getheader('www-authenticate'):
-        response['www-authenticate'] = result.getheader('www-authenticate').replace('realm="',
-                                                                                    'realm="{0} '.format(url.hostname))
+        response['www-authenticate'] = "GeoNode"
 
     return response
 
