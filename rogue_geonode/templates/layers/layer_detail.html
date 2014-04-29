@@ -6,15 +6,12 @@
 {% load bootstrap_tags %}
 {% load url from future %}
 {% load base_tags %}
-
 {% block title %}{{ layer.title|default:layer.typename }} — {{ block.super }}{% endblock %}
-
 {% block head %}
 {% include "layers/layer_map.html" %}
 
 {{ block.super }}
 {% endblock %}
-
 
 {% block body_class %}data{% endblock %}
 
@@ -32,7 +29,7 @@
         </a>
         <ul class="dropdown-menu">
           {% for link in links %}
-            <li><a href="{{ link.url }}">{{ link.name }} <i class="icon-chevron-right"></i></a></li>
+            <li><a href="{{ link.url }}">{% trans link.name %} <i class="icon-chevron-right"></i></a></li>
           {% endfor %}
         </ul>
       </div>
@@ -120,7 +117,7 @@
             </table>
         {% endif %}
       </article>
-      {% if layer.store_type == "GeoGIT" %}
+      {% if geoserver.store_type == "GeoGIT" %}
       <article id="history" class="tab-pane">
       {% include "geonode/geogit_history_panel.html" with resourcebase=layer %}
       </article>
@@ -247,7 +244,8 @@
     <script src="{{ STATIC_URL }}geogit/controllers/CommitController.js"></script>
     <script src="{{ STATIC_URL }}geogit/controllers/DiffController.js"></script>
     <script src="{{ STATIC_URL }}history/geogit-history.js"></script>
-    {% if layer.store_type == "GeoGIT" %}
+
+    {% if geoserver.store_type == "GeoGIT" %}
     <script>
     	$(document).ready(function(){
     		var base_url = new String("{{ GEOSERVER_BASE_URL }}");
@@ -270,6 +268,7 @@
     	});
     </script>
     {% endif %}
+
     {% if request.user.is_authenticated %}
         {% user_rating_js request.user layer "layer" %}
     {% endif %}

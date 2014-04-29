@@ -55,7 +55,7 @@ LANGUAGES = (
     ('el', 'Ελληνικά'),
     ('id', 'Bahasa Indonesia'),
     ('zh-cn', '中文'),
-    ('ja', '日本人'),
+    ('ja', '日本語'),
     ('fa', 'Persian'),
     ('pt', 'Portuguese'),
     ('ru', 'Russian'),
@@ -134,9 +134,29 @@ ALLOWED_DOCUMENT_TYPES = [
 
 MAX_DOCUMENT_SIZE = 2  # MB
 
+ROGUE_GEONODE_APPS = (
+    # GeoNode internal apps
+    'geonode.people',
+    'geonode.base',
+    'geonode.layers',
+    'geonode.upload',
+    'geonode.maps',
+    'geonode.proxy',
+    'geonode.security',
+    'geonode.search',
+    'geonode.social',
+    'geonode.catalogue',
+    'geonode.documents',
+    'geonode.geoserver',
+
+    # GeoNode Contrib Apps
+    'geonode.contrib.groups',
+    'rogue_geonode.file_service',
+    'rogue_geonode.core',
+    'maploom',
+)
 
 INSTALLED_APPS = (
-
     # Apps bundled with Django
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -174,25 +194,7 @@ INSTALLED_APPS = (
     'announcements',
     'actstream',
     'user_messages',
-
-    # GeoNode internal apps
-    'geonode',
-    'geonode.people',
-    'geonode.base',
-    'geonode.layers',
-    'geonode.upload',
-    'geonode.maps',
-    'geonode.proxy',
-    'geonode.security',
-    'geonode.search',
-    'geonode.catalogue',
-    'geonode.documents',
-    'geonode.social',
-    'rogue_geonode.file_service',
-    'rogue_geonode.core',
-    'maploom',
-
-)
+) + ROGUE_GEONODE_APPS
 
 LOGGING = {
     'version': 1,
@@ -273,10 +275,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
     'account.context_processors.account',
-    'pinax_theme_bootstrap_account.context_processors.theme',
-    # The context processor below adds things like SITEURL
-    # and GEOSERVER_BASE_URL to all pages that use a RequestContext
     'geonode.context_processors.resource_urls',
+    'geonode.geoserver.context_processors.geoserver_urls',
     'django_classification_banner.context_processors.classification',
     'rogue_geonode.core.context_processors.security_warnings'
 )
@@ -311,11 +311,6 @@ def get_user_url(u):
 ABSOLUTE_URL_OVERRIDES = {
     'auth.user': get_user_url
 }
-
-# Redirects to home page after login
-# FIXME(Ariel): I do not know why this setting is needed,
-# it would be best to use the ?next= parameter
-LOGIN_REDIRECT_URL = "/"
 
 #
 # Settings for default search size
@@ -392,15 +387,6 @@ DEFAULT_MAP_CENTER = (0, 0)
 # maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
 DEFAULT_MAP_ZOOM = 0
 
-# The name of the store in Geoserver
-
-LEAFLET_CONFIG = {
-    'TILES_URL': 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
-}
-
-# Default TopicCategory to be used for resources. Use the slug field here
-DEFAULT_TOPICCATEGORY = 'location'
-
 MODIFY_TOPICCATEGORY = False
 
 MISSING_THUMBNAIL = 'geonode/img/missing_thumb.png'
@@ -474,6 +460,17 @@ DOWNLOAD_FORMATS_RASTER = [
     'JPEG', 'PDF', 'PNG', 'ArcGrid', 'GeoTIFF', 'Gtopo30', 'ImageMosaic', 'KML',
     'View in Google Earth', 'Tiles',
 ]
+
+HAYSTACK_SEARCH = False
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'geonode',
+        },
+    }
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 20
 
 # Load more settings from a file called local_settings.py if it exists
 try:

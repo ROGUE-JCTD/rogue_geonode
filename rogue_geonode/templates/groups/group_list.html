@@ -1,17 +1,15 @@
-{% extends "maps/map_base.html" %}
-{% load i18n %}
-{% load maps_tags %}
+{% extends "groups/group_base.html" %}
 {% load pagination_tags %}
-{% load taggit_extras %}
+{% load i18n %}
 {% load staticfiles %}
-{% load url from future %}
 
-{% block body_class %}maps explore{% endblock %}
+{% block title %} {% trans "Groups" %} - {{ block.super }} {% endblock %}
+
+{% block body_class %}groups groups-list explore{% endblock %}
 
 {% block body %}
     <div class="span12">
-      <a href="{% url "new_map" %}" class="btn btn-large btn-primary pull-right strong">{% trans "Create a New Map" %}</a>
-      <h2 class="page-title">{% trans "Maps" %}</h2>
+      <h2 class="page-title">{% trans "Groups" %}</h2>
     </div>
     <div class="span8 filter">
       {% include "search/_sort_filters.html" %}
@@ -32,8 +30,7 @@
           </div>
           <div id="slide-pane">
             <a href="#" class="toggle toggle-pane"><i class="icon-chevron-left"></i></a>
-            {% with type='map' %}
-            {% include "search/_extent_filter.html" %}
+            {% with type='group' %}
             {% include "search/_general_filters.html" %}
             {% endwith %}
           </div>
@@ -47,9 +44,9 @@
 
 {% block extra_script %}
   <script type="text/javascript">
-  var default_type = 'map';
+  var default_type = 'group';
   </script>
-  {% with include_spatial='true' %}
+  {% with include_spatial='false' %}
   {% include 'search_scripts.html' %}
   {% endwith %}
 {% endblock extra_script %}
