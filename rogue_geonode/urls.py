@@ -25,9 +25,6 @@ urlpatterns = patterns('',
                        url(r'^help/$', TemplateView.as_view(template_name="help.html"), name='help'),
                        url(r'^developer/$', TemplateView.as_view(template_name="developer.html"), name='developer'),
                        url(r'^about/$', TemplateView.as_view(template_name="about.html"), name='about'),
-
-                       # Layer views
-                       url(r'^layers/resolve_user/?$', 'rogue_geonode.views.resolve_user', name='layer_resolve_user'),
                        (r'^layers/', include('geonode.layers.urls')),
 
                        # Map views
