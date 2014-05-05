@@ -43,7 +43,7 @@ class Command(BaseCommand):
         req = urllib2.Request(url + urllib.urlencode(params))
 
         if auth:
-            req.add_header('AUTHORIZATION', auth)
+            req.add_header('AUTHORIZATION', 'Basic ' + auth)
 
         return urllib2.urlopen(req)
 
