@@ -1,0 +1,361 @@
+[{
+    "pk": 10, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile1", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:41.362", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$0aPJxMA4uicJ$3kesnLx4vSY/KASpABHsE2Wv3I1wPF7bpPbje2pKfnI=", 
+        "email": "mobile1@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.509"
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile2", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.614", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$cozVmOFkiXyr$g1mi8yf0+KM03xELg3MK52kagCjkDvXzMVIFUa7hrcY=", 
+        "email": "mobile2@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.614"
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile3", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.682", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$BfJV5Uq4Y0Wd$Vx1fJj4kR/lr0J9KYy3jLwiI6xksFr5RSQu1e2aJAPA=", 
+        "email": "mobile3@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.682"
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile4", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.751", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$VWfv4DFtz81Y$UebfQYXZHQvGyxzsXgdRKqSHUYdjs/X+4k5gd3O2H9Y=", 
+        "email": "mobile4@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.751"
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile5", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.820", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$HFaXITb6CsGX$kcj6qgzMrMbv/L39ls7rgDIYdSSF8Ojr3MxviWZe7uU=", 
+        "email": "mobile5@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.820"
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile6", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.889", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$a7LgBQC362Vp$4c2cn7ibwDO0zKbPwLEnNlmBvglIK1Eb03ysZqGLjYY=", 
+        "email": "mobile6@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.889"
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile7", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:17.958", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$yyjKuswkGS9w$Bgw6EvNPmy218Fti2R9ZXx8icz2NurEd9RHzQfoBubg=", 
+        "email": "mobile7@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:17.958"
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile8", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.026", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$jOzkndsxcbMT$p3H5jb9pnLo/DC02m2fMhlfjvTjHMBdUkDmwOw5hFAs=", 
+        "email": "mobile8@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.026"
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile9", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.094", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$v0ChYp59wBdS$vKuX/sL8gnu7+DKhCEWJgYeaOXNI2M6eAzEZIdJhzig=", 
+        "email": "mobile9@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.094"
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "mobile10", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.165", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$7KamL68J9r77$60uCk1GqmtZW2jLAOKtWp0IpJyaCeCIKRg2NliZ7dwE=", 
+        "email": "mobile10@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.165"
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web1", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.235", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$vJDsqobJk4Ev$0VAPs5SWmwB128cBi5U6IVJtkBPMq3UOkIOLhFgwDls=", 
+        "email": "web1@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.235"
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web2", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.304", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$OdocnQbcOvgQ$280eWq0dh+07Y7xWb5gQX5CVt8cjPMt3UdL5ArpgZNE=", 
+        "email": "web2@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.304"
+    }
+},
+{
+    "pk": 22, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web3", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.373", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$x5iUvCOZWGAX$fY8h6XFdCtIR9qlJeLOdEKCFWtIxP65H6bOKlD3GnJY=", 
+        "email": "web3@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.373"
+    }
+},
+{
+    "pk": 23, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web4", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.442", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$4g70RijcYj7t$2zdMmCBf8Ag3CG0bDtV0tcu0kbhZOQfwBvsVPrUwaiQ=", 
+        "email": "web4@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.442"
+    }
+},
+{
+    "pk": 24, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web5", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.510", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$117lofZipHPW$Q0ji4G0/zNizGlkXXICavlkrSIeLtRZgyEf/nlqBKEM=", 
+        "email": "web5@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.510"
+    }
+},
+{
+    "pk": 25, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web6", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.578", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$C5apbIQrubuO$gL/i5o92lyFZPnG3/aYKOCywUwCFz+mM5zIXnWO0Vdk=", 
+        "email": "web6@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.578"
+    }
+},
+{
+    "pk": 26, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web7", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.647", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$GySoV7Lm7bp3$5WdjIFKlb2Pcj3JPDL7Ey+0eOL0/CI0g7wz2jyh0uEg=", 
+        "email": "web7@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.647"
+    }
+},
+{
+    "pk": 27, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web8", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.716", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$5prNZZYICGQd$bDnDvwy6UDTGST2+57T9+mYMvMsk5fw/trQ4AnH1Dck=", 
+        "email": "web8@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.716"
+    }
+},
+{
+    "pk": 28, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web9", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.785", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$iobtZwjQF2gW$pDUx1XTlsgq0SPC38V4anJ38juTSzWzlwiOZwd5cD6E=", 
+        "email": "web9@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.785"
+    }
+},
+{
+    "pk": 29, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "web10", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": false, 
+        "last_login": "2014-05-05T10:30:18.853", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$IVZQaexmiDy5$+f08ydn6uvNw95A6YwE2LFfdYq7V9KZDG3+qw3eIEoM=", 
+        "email": "web10@lmnsolutions.com", 
+        "date_joined": "2014-05-05T10:30:18.854"
+    }
+}
+]
