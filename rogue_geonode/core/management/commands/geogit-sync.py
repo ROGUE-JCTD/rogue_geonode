@@ -14,6 +14,10 @@ class Command(BaseCommand):
                     dest='url',
                     default='http://example.com',
                     help='The url to the repository you want to sync.'),
+        make_option('-u', '--direction',
+                    dest='direction',
+                    default='duplex',
+                    help='The direction that you want to sync in..'),
         make_option('-r', '--remote',
                     dest='remote',
                     default='origin',
@@ -50,10 +54,19 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         url = options.get('url')
+
+        if (not (url is None)) or len(url)==0:
+            raise CommandError("The url specified is either missing or blank.")
+
         index = url.rfind('/')
 
         if index != (len(url)-1):
             url += '/'
+
+        direction = options.get('direction')
+
+        if not (direction=="push" or direction=="pull" or direction=="duplex"):
+            raise CommandError("The sync direction must be either: push, pull, or duplex.")
 
         remote = options.get('remote')
         remoteBranch = options.get('remoteBranch')
@@ -108,45 +121,48 @@ class Command(BaseCommand):
         self.stdout.write('Transaction started')
         transactionId = response['response']['Transaction']['ID']
 
-        params = {'output_format': 'JSON',
-                  'remoteName': remote,
-                  'ref': remoteBranch+':'+localBranch,
-                  'transactionId': transactionId}
+        if direction=="pull" or direction=="duplex":
+            params = {'output_format': 'JSON',
+                      'remoteName': remote,
+                      'ref': remoteBranch+':'+localBranch,
+                      'transactionId': transactionId}
 
-        self.stdout.write('Beginning pull...')
-        request = self.make_request(url=url+'pull?', params=params, auth=auth)
+            self.stdout.write('Beginning pull...')
+            request = self.make_request(url=url+'pull?', params=params, auth=auth)
 
-        if request.getcode() != 200:
-            endTransaction(True, transactionId)
-            raise CommandError("Pull failed: Status Code {0}".format(request.getcode()))
-        response = json.loads(request.read())
-        if response['response']['success']:
-            if 'Merge' in response['response']:
+            if request.getcode() != 200:
                 endTransaction(True, transactionId)
-                raise CommandError("There were conflicts on pull")
-        else:
-            endTransaction(True, transactionId)
-            raise CommandError("An error occurred on pull: {0}".format(response['response']['error']))
-        self.stdout.write('Pull completed')
+                raise CommandError("Pull failed: Status Code {0}".format(request.getcode()))
+            response = json.loads(request.read())
+            if response['response']['success']:
+                if 'Merge' in response['response']:
+                    endTransaction(True, transactionId)
+                    raise CommandError("There were conflicts on pull")
+            else:
+                endTransaction(True, transactionId)
+                raise CommandError("An error occurred on pull: {0}".format(response['response']['error']))
+            self.stdout.write('Pull completed')
 
-        params = {'output_format': 'JSON',
-                  'remoteName': remote,
-                  'ref': localBranch+':'+remoteBranch,
-                  'transactionId': transactionId}
+        if direction=="push" or direction=="duplex":
+            params = {'output_format': 'JSON',
+                      'remoteName': remote,
+                      'ref': localBranch+':'+remoteBranch,
+                      'transactionId': transactionId}
 
-        self.stdout.write('Beginning push...')
-        request = self.make_request(url=url+'push?', params=params, auth=auth)
+            self.stdout.write('Beginning push...')
+            request = self.make_request(url=url+'push?', params=params, auth=auth)
 
-        if request.getcode() != 200:
-            endTransaction(True, transactionId)
-            raise CommandError("Push failed: Status Code {0}".format(request.getcode()))
-        response = json.loads(request.read())
+            if request.getcode() != 200:
+                endTransaction(True, transactionId)
+                raise CommandError("Push failed: Status Code {0}".format(request.getcode()))
+            response = json.loads(request.read())
 
-        if not response['response']['success']:
-            endTransaction(True, transactionId)
-            raise CommandError("An error occurred on push: {0}".format(response['response']['error']))
+            if not response['response']['success']:
+                endTransaction(True, transactionId)
+                raise CommandError("An error occurred on push: {0}".format(response['response']['error']))
 
-        self.stdout.write('Push completed')
+            self.stdout.write('Push completed')
+
         self.stdout.write('Finishing transaction...')
         endTransaction(False, transactionId)
         self.stdout.write('Transaction completed')
