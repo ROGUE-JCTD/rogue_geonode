@@ -55,7 +55,7 @@ class Command(BaseCommand):
 
         url = options.get('url')
 
-        if (not (url is None)) or len(url)==0:
+        if (url is None) or len(url)==0:
             raise CommandError("The url specified is either missing or blank.")
 
         index = url.rfind('/')
