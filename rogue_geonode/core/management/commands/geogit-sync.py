@@ -55,7 +55,7 @@ class Command(BaseCommand):
 
         url = options.get('url')
 
-        if (url is None) or len(url)==0:
+        if (url is None) or len(url) == 0:
             raise CommandError("The url specified is either missing or blank.")
 
         index = url.rfind('/')
@@ -65,7 +65,7 @@ class Command(BaseCommand):
 
         direction = options.get('direction')
 
-        if not (direction=="push" or direction=="pull" or direction=="duplex"):
+        if not (direction == "push" or direction == "pull" or direction == "duplex"):
             raise CommandError("The sync direction must be either: push, pull, or duplex.")
 
         remote = options.get('remote')
@@ -143,7 +143,7 @@ class Command(BaseCommand):
                 raise CommandError("An error occurred on pull: {0}".format(response['response']['error']))
             self.stdout.write('Pull completed')
 
-        if direction=="push" or direction=="duplex":
+        if direction == "push" or direction == "duplex":
             params = {'output_format': 'JSON',
                       'remoteName': remote,
                       'ref': localBranch+':'+remoteBranch,
