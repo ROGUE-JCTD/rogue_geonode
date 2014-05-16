@@ -121,7 +121,7 @@ class Command(BaseCommand):
         self.stdout.write('Transaction started')
         transactionId = response['response']['Transaction']['ID']
 
-        if direction=="pull" or direction=="duplex":
+        if direction == "pull" or direction == "duplex":
             params = {'output_format': 'JSON',
                       'remoteName': remote,
                       'ref': remoteBranch+':'+localBranch,
