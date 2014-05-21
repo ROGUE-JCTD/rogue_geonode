@@ -170,9 +170,9 @@ With point geometries, you can also manually edit the coordinates.  This is usef
 	.. figure:: img/editattribpopup.png
 	
 #. Click on the coordinates field to edit the point coordinates.
-	.. figure:: 
+	.. figure:: img/editcoordinates.png
 	
-#. Click the :guilabel::`Save` button at the bottom of the form to save the attribute updates.
+#. Click the :guilabel:`Save` button at the bottom of the form to save the attribute updates.
 
 
 Edit polygon and line geometries
