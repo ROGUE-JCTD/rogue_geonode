@@ -1,0 +1,28 @@
+.. edit.history:
+
+Working with History
+=====================
+GeoGit is a specialized database that was designed for distributed editing and supports collaborative editing of geospatial data.  It is designed for vector data (point, line, polygon, etc.).
+When a layer has been stored in GeoGit, it maintains the history of all of the changes made to the data along with who made the changes and when.
+Within the web map, you can view the history for a layer and for the features.
+
+History tab in GeoNode
+-----------------------
+
+
+View layer history
+-------------------
+You can view the history of a layer
+
+#. Click on the name of the layer you want to view.  The menu will expand to show additional layer options.  
+	.. figure::
+	
+#. Click on the :guilabel:`Show History` button.
+	.. figure:: 
+	
+
+
+View feature history
+---------------------
+
+
