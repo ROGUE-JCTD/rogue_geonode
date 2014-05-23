@@ -12,12 +12,13 @@ before_install:
   - pip install flake8
 
 install:
-  - pip install -e .
+  - pip install -e .[docs]
   - paver sync
 
 script:
   - python manage.py test rogue_geonode.core.tests
   - flake8 rogue_geonode
+  - cd docs && make html
 
 after_script:
   - paver reset_hard
