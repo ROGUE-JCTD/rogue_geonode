@@ -13,3 +13,5 @@ GeoNode maps also contain other information such as map zoom and extent, layer o
    create
    info
 
+   
+

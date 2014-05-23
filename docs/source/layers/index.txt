@@ -11,8 +11,6 @@ One of the primary components of GeoNode is the **layer**. Layers are a publishe
    upload 
    info
    manage
-   view
-   edit
    download
    
 

@@ -1,4 +1,4 @@
-.. ROGUE documentation master file, created by
+.. ROGUE_GeoNode documentation master file, created by
    sphinx-quickstart on Fri Mar 14 11:19:18 2014.
  
 
