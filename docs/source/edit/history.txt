@@ -14,11 +14,9 @@ View layer history
 -------------------
 You can view the history of a layer
 
-#. Click on the name of the layer you want to view.  The menu will expand to show additional layer options.  
-	.. figure::
+#. Click on the name of the layer you want to view.  The menu will expand to show additional layer options.
 	
 #. Click on the :guilabel:`Show History` button.
-	.. figure:: 
 	
 
 
