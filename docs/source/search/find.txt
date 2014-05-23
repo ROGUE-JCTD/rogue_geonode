@@ -1,4 +1,4 @@
-.. _search.Find
+.. _search.find:
 
 Finding Content in GeoNode
 =================================
