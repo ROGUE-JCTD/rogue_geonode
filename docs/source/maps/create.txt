@@ -9,16 +9,18 @@ New maps can be created from the Maps tab or from a layer.
 --------------------
 In the Maps tab, click on the "Create a New Map" button.
 
-	.. figure:: img/createnewmap.png
-	*Create a New Map*
-	
+   .. figure:: img/createnewmap.png
+
+      *Create a New Map*
+
 
 **Create a new map from a layer**
 ----------------------------------
 In the Layers tab, click on the "Create a map" button next to a layer
 
-	.. figure:: img/createmapfromlayer.png
-	*Create a Map from a Layer*
+   .. figure:: img/createmapfromlayer.png
+
+      *Create a Map from a Layer*
 
 A new map will open with the layer as part of the map.
 
@@ -29,12 +31,13 @@ Once you have created a map, or opened an existing map, you can add additional l
 
 #. Click on the Add Layers button by "Layers"
 
-	.. figure:: img/addlayerpopup.png
-	*Add layer*
+   .. figure:: img/addlayerpopup.png
+
+      *Add layer*
 
 #. The Add Layers dialog will open.  
 
-	.. figure:: img/addlayers.png
+   .. figure:: img/addlayers.png
 
 #. Click on the checkbox for the layer(s) you want to add to the map.
 
@@ -47,21 +50,24 @@ You can add layers from other servers besides the GeoNode you're working with.  
 
 #. Click on the Add Layers button by "Layers"
 
-	.. figure:: img/addlayerpopup.png
-	*Add layer*
+   .. figure:: img/addlayerpopup.png
+
+      *Add layer*
 
 #. In the Add Layers dialog, click on the drop down for the server list
 
-	.. figure:: img/addnewserver.png
-	*Add new server*
-	
+   .. figure:: img/addnewserver.png
+
+      *Add new server*
+
 #. Click on Add New Server
 
 #. In the Add Server dialog enter the type of server (WMS or TMS), a name for the server, and the URL.
 
-	.. figure:: img/addserverdialog.png
-	*Server details*
-	
+   .. figure:: img/addserverdialog.png
+
+      *Server details*
+
 #. Click Add to save the server.  Once you have added the server, you can select it and add layers to the map.
 
 
@@ -73,8 +79,9 @@ Layers are drawn on the map from bottom to top.  The top layer in your layer lis
 
 #. Drag the layer up or down to change it's position in the drawing order.
 
-	.. figure:: img/movelayer.png
-	*Change layer order*
+   .. figure:: img/movelayer.png
+
+      *Change layer order*
 
 #. Release the mouse button to finish moving the layer.
 
@@ -85,12 +92,12 @@ You can turn on and off the visibility for layers in the map.  This allows you t
 
 #. Click on the :guilabel:`Toggle Visibility` button to turn a layer off.
 
-	.. figure:: img/visibilityon.png
-	
+   .. figure:: img/visibilityon.png
+
 #. Click on the :guilabel:`Toggle Visibility` button again to turn it back on.
 
-	.. figure:: img/visibilityoff.png
-	
+   .. figure:: img/visibilityoff.png
+
 **Zoom to data**
 ----------------
 The :guilabel:`Zoom to data` button give you a convenient way to center the map on a layer.  Clicking the :guilabel:`Zoom to data` button zooms the map to the extent of the data currently in that layer.
@@ -99,8 +106,9 @@ The :guilabel:`Zoom to data` button give you a convenient way to center the map 
 
 #. Click on the :guilabel:`Zoom to data` button.  The map will zoom to the extent of the data for that layer.  
 
-	.. figure:: img/zoomtodata.png
-	*Zoom to data button*
+   .. figure:: img/zoomtodata.png
+
+      *Zoom to data button*
 
 Note: if a layer's visibility is dependent on scale, and the data extent is at a smaller scale, you will have to zoom in to be able to view the data.
 
@@ -113,13 +121,13 @@ You can view information about a layer in the map.  Layer information will inclu
 
 #. Click on the :guilabel:`Show layer info` button.  The Layer Info window will appear.
 
-	.. figure:: img/showlayerinfo.png
-	*Show layer info button*
-	
-	
-	.. figure:: img/layerinfo.png
-	*Layer info*
+   .. figure:: img/showlayerinfo.png
 
+      *Show layer info button*
+
+   .. figure:: img/layerinfo.png
+
+      *Layer info*
 
 
 **Remove a layer from the map**
@@ -130,13 +138,15 @@ You can remove a layer from the map.
 
 #. Click on the :guilabel:`Remove Layer` button.
 
-	.. figure:: img/removelayer.png
-	*Remove layer button*
+   .. figure:: img/removelayer.png
+
+      *Remove layer button*
 
 #. In the confirmation box, click :guilabel:`Yes` to remove the layer.
 
-	.. figure:: img/confirmremovelayer.png
-	*Remove layer confirmation*
+   .. figure:: img/confirmremovelayer.png
+
+      *Remove layer confirmation*
 
 
 **Get feature information**
@@ -145,8 +155,8 @@ In order to get information for features in a vector layer, simply click on the 
 
 #. Click on the feature you want information about.  The feature info window will appear.
 
-	.. figure:: img/featureinfo.png
-	
+   .. figure:: img/featureinfo.png
+
 
 **Change attribute visibility**
 --------------------------------
@@ -154,19 +164,22 @@ You can control the attributes that appear in the feature info window.  This is 
 
 #. Click on the the layer name in the layer list in the map.  The layer will expand to show additional options.
 
-	.. figure:: img/layerdetails.png
-	*Layer attributes*
+   .. figure:: img/layerdetails.png
+
+      *Layer attributes*
 
 #. Click on the visibility icon for the attributes to toggle their visibility.
 
-	.. figure:: img/attribvisibility.png
-	*Layer visibility options*
+   .. figure:: img/attribvisibility.png
+
+      *Layer visibility options*
 
 #. Click on a feature in that layer. You will see that the attribute fields are now hidden.
 
-	.. figure:: img/featureinfo2.png
-	*Feature info with hidden fields*
-	
+   .. figure:: img/featureinfo2.png
+
+      *Feature info with hidden fields*
+
 
 **Using the Legend**
 ----------------------
@@ -174,13 +187,15 @@ The legend displays the symbols used for vector layers in the map (not for image
 
 #. Toggle the legend by clicking on the :guilabel:`Toggle Legend` button.
 
-	.. figure:: img/togglelegend.png
-	*Click the Toggle Legend button to open and close the legend*
+   .. figure:: img/togglelegend.png
+
+      *Click the Toggle Legend button to open and close the legend*
 
 #. To collapse or expand a layer in the legend, simply click on the layer name in the Legend window.
 
-	.. figure:: img/legendcollapse.png
-	*Legend with one layer collapsed*
+   .. figure:: img/legendcollapse.png
+
+      *Legend with one layer collapsed*
 
 **Save a map**
 -------------------
