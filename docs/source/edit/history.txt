@@ -88,4 +88,60 @@ Note that through the lifetime of a feature, there can be several authors.  This
 
       *The Show Authors button* 
 
+Summarize history
+------------------
+You can visualize a summary of all of the edits within a date range for a layer. 
+
+#. Click on the :guilabel:`Show History` button for layer that you want to summarize. 
+
+   .. figure:: img/showhistorybutton.png 
+
+      *Show History Button for Layers*
+
+#. Click on the :guilabel:`History Summary` button. 
+
+   .. figure:: img/historysummarybutton.png 
+
+      *History Summary button*
+
+#. Enter the date range for the history to summarize
+
+   .. figure:: img/selectdaterange.png
+
+      *Select the Date Range* 
+
+#. Click on the :guilabel:`Summarize` button 
+
+   .. figure:: img/summaryofchanges.png 
+
+      *Summary of changes for the selected date range*
+
+#. Click on one of the edits in the list to see a detailed view 
+
+
+Export history
+---------------
+You can export a summary of all of the edits within a date range for a layer. 
+
+#. Click on the :guilabel:`Show History` button for layer that you want to summarize. 
+
+   .. figure:: img/showhistorybutton.png 
+
+      *Show History Button for Layers*
+
+#. Click on the :guilabel:`History Summary` button. 
+
+   .. figure:: img/historysummarybutton.png 
+
+      *History Summary button*
+
+#. Enter the date range for the history to summarize
+
+   .. figure:: img/selectdaterange.png
+
+      *Select the Date Range* 
+
+#. Click on the :guilabel:`Export CSV` button
+
+#. When you are prompted to save the file, browse to the location where you want to save it to your hard drive and click :guilabel:`Ok`
 

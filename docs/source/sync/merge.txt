@@ -1,0 +1,5 @@
+.. sync.merge:
+
+Merge GeoGit Branches
+======================
+

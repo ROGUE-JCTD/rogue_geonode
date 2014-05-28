@@ -1,9 +1,12 @@
 .. _documents: 
 
+
+Working with Documents
+======================
+
 You can upload documents to GeoNode so that they're readily available for users.  Documents can be actual files or links to other documents online.  You can also associate a document to a layer or a map. 
 
-Uploading Documents
-=========================
+.. toctree::
+   :maxdepth: 2
 
-GeoNode lets you upload documents to associate to layers or maps.
-
+   upload 
