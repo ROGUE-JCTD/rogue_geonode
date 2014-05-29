@@ -233,7 +233,7 @@
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
       <artifactId>gsr</artifactId>
-      <version>${geoserver.version}</version>
+      <version>${geoserverext.version}</version>
     </dependency>
 
     <!--
@@ -363,7 +363,8 @@
     <geotools.version>10.5</geotools.version>
     <geoserver.version>2.4-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
-    <geogit.version>0.9-SNAPSHOT</geogit.version>
+    <geogit.version>0.9-RC1</geogit.version>
+    <geoserverext.version>2.4-geogit09RC1</geoserverext.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles>
