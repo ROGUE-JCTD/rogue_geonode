@@ -364,7 +364,7 @@
     <geoserver.version>2.4-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
     <geogit.version>0.9-RC1</geogit.version>
-    <gsgeogit.version>2.4-20140529.005207-9</gsgeogit.version>
+    <gsgeogit.version>2.4-geogit09RC1</gsgeogit.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles>
