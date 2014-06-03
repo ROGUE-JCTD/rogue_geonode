@@ -187,6 +187,9 @@ htmlhelp_basename = 'ROGUEdoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
+  'classoptions': ',openany,onside',
+  'babel': '\\usepackage[english]{babel}'
+}
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -195,7 +198,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-}
+
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
