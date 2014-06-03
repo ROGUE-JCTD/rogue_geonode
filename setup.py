@@ -80,7 +80,7 @@ setup(
         'tests': install_requires + tests_requires,
         'docs':  docs_requires
     },
-    dependency_links=['https://github.com/garnertb/geonode/archive/td4.tar.gz'
+    dependency_links=['https://github.com/ROGUE-JCTD/geonode/archive/od2.tar.gz'
                       '#egg=geonode-2.0.1a1',
                       'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1'],
     zip_safe=False,
