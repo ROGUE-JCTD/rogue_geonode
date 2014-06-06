@@ -38,6 +38,14 @@ class Command(BaseCommand):
                     dest='password',
                     default=None,
                     help='The password to use for basic auth requests.'),
+        make_option('--authorname',
+                    dest='authorname',
+                    default=None,
+                    help='The author name to use in potential merge commits.'),
+        make_option('--authoremail',
+                    dest='authoremail',
+                    default=None,
+                    help='The author email to use in potential merge commits.'),
     )
 
     def make_request(self, url, params, auth=None):
@@ -73,6 +81,8 @@ class Command(BaseCommand):
         localBranch = options.get('localBranch')
         username = options.get('username')
         password = options.get('password')
+        authorname = options.get('authorname')
+        authoremail = options.get('authoremail')
         auth = None
 
         if username and password:
@@ -125,7 +135,9 @@ class Command(BaseCommand):
             params = {'output_format': 'JSON',
                       'remoteName': remote,
                       'ref': remoteBranch+':'+localBranch,
-                      'transactionId': transactionId}
+                      'transactionId': transactionId,
+                      'authorName': authorname,
+                      'authorEmail': authoremail}
 
             self.stdout.write('Beginning pull...')
             request = self.make_request(url=url+'pull?', params=params, auth=auth)
