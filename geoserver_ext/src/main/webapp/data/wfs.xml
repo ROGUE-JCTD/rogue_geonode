@@ -38,7 +38,7 @@ data.
       <version>V_20</version>
       <gml>
         <srsNameStyle>URN2</srsNameStyle>
-        <overrideGMLAttributes>true</overrideGMLAttributes>
+        <overrideGMLAttributes>false</overrideGMLAttributes>
       </gml>
     </entry>
     <entry>
@@ -52,7 +52,7 @@ data.
       <version>V_11</version>
       <gml>
         <srsNameStyle>URN</srsNameStyle>
-        <overrideGMLAttributes>true</overrideGMLAttributes>
+        <overrideGMLAttributes>false</overrideGMLAttributes>
       </gml>
     </entry>
   </gml>
