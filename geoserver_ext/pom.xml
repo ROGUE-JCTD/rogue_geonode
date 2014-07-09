@@ -1,10 +1,10 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengeo</groupId>
-  <artifactId>geonode-geoserver-ext</artifactId>
+  <artifactId>rogue-geoserver</artifactId>
   <packaging>jar</packaging>
-  <version>2.5.1</version>
-  <name>GeoNode GeoServer Extensions</name>
+  <version>2.5-SNAPSHOT</version>
+  <name>ROGUE GeoServer</name>
 
   <repositories>
     <repository>
@@ -23,6 +23,20 @@
       <id>osgeo</id>
       <url>http://download.osgeo.org/webdav/geotools</url>
     </repository>
+    <repository>
+      <id>oracle</id>
+      <name>Oracles Maven Repository</name>
+      <url>http://download.oracle.com/maven/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>oracleReleases</id>
+      <name>Oracle Released Java Packages</name>
+      <url>http://download.oracle.com/maven</url>
+      <layout>default</layout>
+    </repository>
   </repositories>
 
   <dependencies>
@@ -37,11 +51,13 @@
       <version>${geoserver.version}</version>
     </dependency>
     
+    <!--
     <dependency>
       <groupId>org.geoserver.community</groupId>
       <artifactId>gs-sldService</artifactId>
       <version>${geoserver.version}</version>
     </dependency>
+    -->
 
     <dependency>
       <groupId>org.geoserver.community</groupId>
@@ -117,8 +133,8 @@
         <version>${geoserver.version}</version>
         <scope>runtime</scope>
     </dependency>
-
-<!--
+<!-- TODO: make sure csv still works -->
+<!-- 
    This was discontinued from the opengeo repo for
    geoserver version 2.5. If someone is able to get a 2.5.1
    version deployed repo.opengeo.org this can be enabled again.
@@ -160,7 +176,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>11.0.1</version>
+      <version>14.0.1</version>  <!-- TODO: version in rogue used version 14.0.1 but geoserver-geonode-ext pom used 11.0.1. guava is on 17.0 now -->
     </dependency>
 
 
@@ -181,6 +197,50 @@
       <version>${geotools.version}</version>
     </dependency>
     
+    <dependency>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gsr</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>    
+    <dependency>
+      <groupId>org.geoserver.extension</groupId>    <!-- TODO: brought these over from the old pom. do we need it? -->
+      <artifactId>ogr</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    <dependency>
+     <groupId>org.geotools</groupId>
+     <artifactId>gt-imageio-ext-gdal</artifactId>
+     <version>${geotools.version}</version>
+    </dependency>
+    <!-- GeoGit -->
+    <dependency>
+      <groupId>org.opengeo.geoserver</groupId>
+      <artifactId>gs-geogit</artifactId>
+      <version>${gsgeogit.version}</version>
+      <classifier>shaded-plugin</classifier>
+      <exclusions>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-core</artifactId></exclusion>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-geotools</artifactId></exclusion>
+        <exclusion><groupId>org.geogit</groupId><artifactId>geogit-web-api</artifactId></exclusion>
+        <exclusion><groupId>com.google.code.findbugs</groupId><artifactId>jsr305</artifactId></exclusion>
+        <exclusion><groupId>com.google.guava</groupId><artifactId>guava</artifactId></exclusion>
+        <exclusion><groupId>org.geotools</groupId><artifactId>gt-geojson</artifactId></exclusion>
+        <exclusion><groupId>org.geotools.jdbc</groupId><artifactId>gt-jdbc-spatialite</artifactId></exclusion>
+      </exclusions>
+    </dependency>    
+
+    <!--
+      Commented out because the opengeo maven repository http://repo.opengeo.org/org/opengeo/geonode-geoserver-ext/
+      doesn't have it for newer than 2.3
+    -->
+    <!--
+    <dependency>
+      <groupId>org.opengeo</groupId>
+      <artifactId>geonode-geoserver-ext</artifactId>
+      <version>${geoserver.version}</version>
+    </dependency>
+    -->
+        
     <!--  test dependencies  -->
     <dependency>
       <groupId>junit</groupId>
@@ -255,12 +315,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  
   <properties>
-    <geotools.version>11.1</geotools.version>
-    <geoserver.version>2.5.1</geoserver.version>
+    <geotools.version>11-SNAPSHOT</geotools.version>
+    <geoserver.version>2.5-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
+    <!-- <geogit.version>0.9</geogit.version> -->
+    <gsgeogit.version>2.5-SNAPSHOT</gsgeogit.version> <!-- not a whole lot of choices http://repo.opengeo.org/org/opengeo/geoserver/gs-geogit/ -->    
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
+  
+  
   <profiles>
     <profile>
       <id>arcsde</id>
@@ -288,6 +354,7 @@
       </dependencies>
     </profile>
    </profiles>
+   
   <build>
     <plugins>
       <plugin>
@@ -359,6 +426,14 @@
           <packagingExcludes>**/data/</packagingExcludes>
           <packagingExcludes>**/web-app*.jar</packagingExcludes>
         </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>war</goal>
+            </goals>
+          </execution>
+        </executions>        
       </plugin>
     </plugins>
   </build>
