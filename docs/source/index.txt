@@ -2,10 +2,10 @@
    sphinx-quickstart on Fri Mar 14 11:19:18 2014.
  
 
-ROGUE GeoNode Help
+GeoSHAPE Help
 =================================
 
-These pages provide guidance on using the different tools in GeoNode and in the web map for discovering geospatial information, editing, and viewing history.  
+These pages provide guidance on using the different tools in GeoSHAPE and in the web map for discovering geospatial information, editing, and viewing history.  
 
 
 .. toctree::

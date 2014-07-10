@@ -3,8 +3,6 @@
 Managing your profile
 =====================
 
-.. todo:: This theme is messed up.  When the navigation page titles are too long, the top area becomes twice as high, obscuring the actual page title.  See this page.
-
 Your profile contains information about you.
 
 #. Click on your user name in the top right of the screen. A drop-down list will show. Click on :guilabel:`Profile` to enter the Profile settings page.
