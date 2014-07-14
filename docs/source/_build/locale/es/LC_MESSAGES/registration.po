@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:40+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 6db9bfca067448daab656f28e02a55c1
+#: ../registration.rst:4
+msgid "Creating a new account"
+msgstr "Creando una cuenta nueva"
+
+# c90f191b2d424df8a3a2d2d24cf7270f
+#: ../registration.rst:6
+msgid ""
+"Before you can save or edit any layers on a GeoNode instance, you need to "
+"create an account."
+msgstr "Antes de que usted pueda guardar o editar cualquier capa en una instancia de GeoNode, usted necesitar crear una cuenta."
+
+# 9adbd04a8bec42b4af60349837badb91
+#: ../registration.rst:8
+msgid ""
+"From any page in the web interface, you will see a :guilabel:`Register` "
+"link. Click that link, and the register form will appear."
+msgstr "Desde cualquier página en el interfase de la web, usted podré ver un :guilabel:`Registrar'.  Haga clic en ese enlace y aparecerá el formulario de registro."
+
+# ef7bd4936e25488aa33c82227a5ca221
+#: ../registration.rst:10
+msgid ""
+"The registrations in GeoNode must be open, in case you don't see the "
+"register link then it's not possible to register unless the addministrator "
+"of the site does that for you."
+msgstr "Los registros en GeoNode deben estar abiertos. En caso de que usted no puede ver el enlace de registro, entonces no es posible registrar a menos que el administrador del sitio lo hace por usted."
+
+# 69a8cc228776407cb3185ff91840bd7a
+#: ../registration.rst:14
+msgid "*Sign in screen*"
+msgstr "*Iniciar sesión con pantalla*"
+
+# f5e5095836c5413bb992f3176b573225
+#: ../registration.rst:16
+msgid ""
+"On the next page, fill out the form. Enter a user name and password in the "
+"fields. Also, enter your email address for verification."
+msgstr "En la página siguiente, rellene el siguiente formulario. Introduzca un nombre de usuario y contraseña en los campos. También, introduzca su dirección de correo electrónico para la verificación."
+
+# 26a1f40705c74f009256612d508d17ea
+#: ../registration.rst:20
+msgid "*Registering for a new account*"
+msgstr "*Registrarse para una cuenta*"
+
+# 4fe4f55a1366461fa811b3704db09e30
+#: ../registration.rst:22
+msgid ""
+"You will be returned to the welcome page. An email will be sent confirming "
+"that you have signed up. While you are now logged in, you will need to "
+"confirm your account. Navigate to the link that was sent in the email."
+msgstr "Usted ser redirigido a la página de bienvenida. Un correo electrónico será enviado confirmando que se haya registrado. Mientras que usted está ahora conectado, tendrá que confirmar su cuenta. Desplácese hasta el enlace que se envió en el correo electrónico."
+
+# 20e87106f5f745a39e528d05f5507303
+#: ../registration.rst:28
+msgid "*Confirming your email address*"
+msgstr "*Confirmando su dirección de correo electrónico*"
+
+# 79d487a03b5b4905b2a9be31abc7b4a1
+#: ../registration.rst:30
+msgid "Click :guilabel:`Confirm`. You will be returned to the homepage."
+msgstr "Clic a :guilabel:`Confirme`. Usted ser redirigido a la página de inicio."

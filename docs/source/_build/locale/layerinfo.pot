@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../layerinfo.rst:4
+# 891cbd8da4b643ed875a0164ffeb5ef5
+msgid "Layer information"
+msgstr ""
+
+#: ../layerinfo.rst:17
+# 15530285e4dc4256b9670bc9d4ee6da3
+msgid "Every layer has its own page with information about it.  This page contains lots of options for managing this layer. The page displays information about the layer such as"
+msgstr ""
+
+#: ../layerinfo.rst:6
+# c74ce9bbc737403f9a3d0a8c835d4f97
+msgid "Info"
+msgstr ""
+
+#: ../layerinfo.rst:7
+# 3361fe8a8a6044a3b9f257eed968a2fb
+msgid "Attributes"
+msgstr ""
+
+#: ../layerinfo.rst:8
+# 859343d8073544b8ae1b2907721522b1
+msgid "History"
+msgstr ""
+
+#: ../layerinfo.rst:9
+# 6a138cc338f14e00a47baa1118a02670
+msgid "Comments"
+msgstr ""
+
+#: ../layerinfo.rst:10
+# 6bec6af51c984286940b6102b97149aa
+msgid "Legend"
+msgstr ""
+
+#: ../layerinfo.rst:11
+# 800ab9048de247e28f499e50714d8a12
+msgid "Maps using this layer"
+msgstr ""
+
+#: ../layerinfo.rst:12
+# 5ec18b3e11bd4aadb9c4906883c93986
+msgid "Permissions"
+msgstr ""
+
+#: ../layerinfo.rst:13
+# 92c652b56c7247029aa874bd7989ee1b
+msgid "Styles (associated with the layer)"
+msgstr ""
+
+#: ../layerinfo.rst:14
+# 2b4e3bbec63a4bd7af0bdfae012ae172
+msgid "Owner, point of contact, and author information"
+msgstr ""
+
+#: ../layerinfo.rst:20
+# 73105122bd8e4ee993778a217234f356
+msgid "Layer Detail Tabs"
+msgstr ""
+
+#: ../layerinfo.rst:22
+# f5d1fab31c404596b82794929b36faa3
+msgid "There are up to four tabs that describe a layer: :guilabel:`Info`, :guilabel:`Attributes`, :guilabel:`History`, and :guilabel:`Comments`."
+msgstr ""
+
+#: ../layerinfo.rst:24
+# 3779212c1b93420d80a6c497e01c3b70
+msgid "The :guilabel:`Info` tab is the default tab, and presents basic information about the layer.  It also shows the overall average rating, and allows you to rate the layer."
+msgstr ""
+
+#: ../layerinfo.rst:28
+# 4dae986d11b44687a5da966ac934e40d
+msgid "*Layer Info tab*"
+msgstr ""
+
+#: ../layerinfo.rst:30
+# ced17ae2e0b3493da4165adfe2b4c84a
+msgid "The :guilabel:`Attributes` tab lists the attributes of the layer, including statistics (range, average, median and standard deviation).  Layer attribute statistics are made available only for numeric attributes.  If a layer's attributes are not numeric, then no statistics will be calculated."
+msgstr ""
+
+#: ../layerinfo.rst:34
+# 5d91fad22061456f9b3dc2737877a516
+msgid "*Attributes tab*"
+msgstr ""
+
+#: ../layerinfo.rst:36
+# f17c320bb61749778ece5befa00a70b2
+msgid "The :guilabel:`History` tab is available when the layer is a GeoGit layer and it shows the history of activity on that layer."
+msgstr ""
+
+#: ../layerinfo.rst:41
+# 68335408b6494afdb362cb6d3e453809
+msgid "The :guilabel:`Comments` tab allows you to leave a comment for others viewing this layer."
+msgstr ""
+
+#: ../layerinfo.rst:45
+# 2cad74c9de6a4429a022244f380d2609
+msgid "*Layer Comments tab*"
+msgstr ""
+
+#: ../layerinfo.rst:47
+# ba593c0f6a9741b587f4263e6d7ba779
+msgid "The :guilabel:`Add Comment` button allows you to enter a comment about the layer."
+msgstr ""
+
+#: ../layerinfo.rst:51
+# 0a51bf91304749df8ff2d864197c9b71
+msgid "*Adding a new comment*"
+msgstr ""
+

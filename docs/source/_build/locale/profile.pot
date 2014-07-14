@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../profile.rst:4
+# 494002e63f524c06bc27bdead3dea69b
+msgid "Managing your profile"
+msgstr ""
+
+#: ../profile.rst:6
+# b7403695e811430fa0aa6964b0ed9311
+msgid "Your profile contains information about you."
+msgstr ""
+
+#: ../profile.rst:8
+# a1eb4a5882a24ff184efea6d53daac22
+msgid "Click on your user name in the top right of the screen. A drop-down list will show. Click on :guilabel:`Profile` to enter the Profile settings page."
+msgstr ""
+
+#: ../profile.rst:12
+# 64f62a01166e4b46b9b43156349913a9
+msgid "*Link to your profile*"
+msgstr ""
+
+#: ../profile.rst:14
+# 0f611ae85484460099bd57ab9407ae13
+msgid "The next page shows your profile, which is currently empty."
+msgstr ""
+
+#: ../profile.rst:18
+# 0bc4443abadd4b28a87141bedee1b141
+msgid "*Profile page*"
+msgstr ""
+
+#: ../profile.rst:20
+# f58c4a68b2f24fde9d6ce202bf21ff38
+msgid "Click the :guilabel:`Edit profile information` link."
+msgstr ""
+
+#: ../profile.rst:24
+# 0be7ec438c3b4ebab2e5e5e5904e4add
+msgid "*Link to edit your profile*"
+msgstr ""
+
+#: ../profile.rst:26
+# 2c733597b3884b3bab4f8c6f1fe88307
+msgid "On this page, you can update your information, including your avatar. Enter some details in the :guilabel:`Profile` box as well as your city and country info."
+msgstr ""
+
+#: ../profile.rst:30
+# 2b08f56aa1b3459280288df81432af4d
+msgid "*Editing your profile*"
+msgstr ""
+
+#: ../profile.rst:32
+# 1cfc97c24b5e4c72b23fd994718226c3
+msgid "When finished, click :guilabel:`Update profile`."
+msgstr ""
+
+#: ../profile.rst:36
+# ba98ec73f1784e0481e837fccc68c62c
+msgid "*Link to save your profile updates*"
+msgstr ""
+
+#: ../profile.rst:38
+# 7d2c06a98ae74e5dbd8d287ece398432
+msgid "You will be returned to the main profile page. Now click :guilabel:`Account settings`."
+msgstr ""
+
+#: ../profile.rst:42
+# 5eed77b2dd8c401993370ee72a8deb43
+msgid "*Link to edit your account settings*"
+msgstr ""
+
+#: ../profile.rst:44
+# db2b889c2de1406dbd9a007f9579c45b
+msgid "On this page you can change your email address, time zone, and language. Your email should be populated already, but set the timezone to your current location."
+msgstr ""
+
+#: ../profile.rst:50
+# 725af528ca7842c4a5640d7c598a918b
+msgid "*Editing your account*"
+msgstr ""
+
+#: ../profile.rst:52
+# 885e0741d2cd45b0b876914ea090db57
+msgid "When finished, click :guilabel:`Save`."
+msgstr ""
+

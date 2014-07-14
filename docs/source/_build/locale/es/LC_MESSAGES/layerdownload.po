@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:25+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 143e508401ef45ac9f927cdbe8bc5fe2
+#: ../layerdownload.rst:4
+msgid "Downloading Data from a Layer"
+msgstr "Descargando los datos desde una capa"
+
+# d84767706761455f94112d9ebbd56dc5
+#: ../layerdownload.rst:6
+msgid ""
+"At the top of the page there are two buttons titled :guilabel:`Download "
+"Layer` and :guilabel:`Download Metadata`. These buttons provide access to "
+"the ability to extract geospatial data and metadata from within GeoNode. In "
+"this way, GeoNode allows for two way data and metadata access; one can "
+"import as well as export data."
+msgstr "En la parte superior de la página hay dos teclas tituladas :guilabel:`Descargar Capa` y :guilabel:`Descargar los Meta Datos`. Estas teclas proporcionan el acceso para que la capacidad extraiga los datos geoespaciales y los meta datos desde GeoNode. De esta manera, GeoNode le permite el acceso a través de dos vías, la de los datos y la de los meta datos; uno puede importar asÌ como exportar los datos."
+
+# 31b1db4db10a4ca4bae25f9d45a99c49
+#: ../layerdownload.rst:9
+msgid "**Data**"
+msgstr "**Data**"
+
+# 3971b3ef9bd24e0bb28b0bae22d51155
+#: ../layerdownload.rst:11
+msgid ""
+"Click the :guilabel:`Download Layer` button. You will see a list of options "
+"of the supported export formats."
+msgstr "Dele clic a :guilabel: la tecla de 'Descargar Capa'. Usted vera una lista de opciones de los formatos de exportación compatible."
+
+# 2acc9317ab144484a0f1978a77f4f02f
+#: ../layerdownload.rst:15
+msgid "*Available export formats*"
+msgstr "*Formatos de exportación disponibles*"
+
+# b7ca70598add49dcadd8e1cbb152e357
+#: ../layerdownload.rst:17
+msgid "Click the option for the desired format."
+msgstr "Para el formato deseado dele clic al a la opción."
+
+# e2ef14ced8d74be9b51f4e015a070ab8
+#: ../layerdownload.rst:19
+msgid ""
+"GeoNode will process the request and bring up a Save As dialog. Save this "
+"file to your computer."
+msgstr "GeoNode procesara el requerimiento y traerá un dialogo de salvar. Salve este archivo en su computadora."
+
+# 084554b7e3564afea96c2aa944c89072
+#: ../layerdownload.rst:24
+msgid "**Metadata**"
+msgstr "**Metadata**"
+
+# 4d88de1820514f679318f3a174c0c301
+#: ../layerdownload.rst:26
+msgid ""
+"Click the :guilabel:`Download Metadata` button. You will see a list of "
+"options of the supported export formats."
+msgstr "Dele clic a a la tecla de :guilabel:`Descargar los Meta Datos`. Usted mirará una serie de opciones de los formatos de exportación compatibles."
+
+# 85003d431a984452b36f3ed4cb12f6b3
+#: ../layerdownload.rst:30
+msgid "*Available metadata export formats*"
+msgstr "*Los formatos disponibles de exportación de los meta datos*"
+
+# 40719c3751d14ab9b4e86924d2b6797f
+#: ../layerdownload.rst:32
+msgid "Click the option for the desired metadata format."
+msgstr "Dele clic a la opción para el formato de meta datos deseados."
+
+# 9573493e1fe648ec9feab99d112cd23d
+#: ../layerdownload.rst:34
+msgid "GeoNode will process the request and display XML metadata."
+msgstr "GeoNode procesará el requerimiento y desplegara los meta datos XML."

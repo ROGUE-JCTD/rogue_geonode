@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../geogitsync.rst:4
+# 8068547e1a034c7189c5d6842d6c088d
+msgid "Synchronize GeoGit Repositories"
+msgstr ""
+
+#: ../geogitsync.rst:5
+# 02a8524248b44127bf53d0d6856739fe
+msgid "A GeoGit repository can consist of one or more layers (called FeatureTypes).  You can set up GeoGit repositories to synchronize changes with each other. This allows you to get updates to layers every few minutes."
+msgstr ""
+
+#: ../geogitsync.rst:8
+# e1c7a2f3d1ee42b199388af5b2e76e28
+msgid "You can set up repositories to sync in the map.  You can set up the sync to occur automatically or only on demand. The sync configurations set up in the map will only occur when the map is open.  This allows for a user to be present in case there is any conflict resolution that needs to be done. In order to set up a sync within the map, you will need to have administrator rights to set up the sync and you will need to be authenticated with the server with the remote repositories as well. You will also need to have added the layers you want to sync to the map."
+msgstr ""
+
+#: ../geogitsync.rst:14
+# b5deacf8b20049599a6ede0ef73e2b52
+msgid "Configure a Remote Repository"
+msgstr ""
+
+#: ../geogitsync.rst:15
+# 71060cb816604407914cd1c57ed54f8b
+msgid "In order to synchronize you will need to configure the remote repository (or repositories) that GeoGit will sync."
+msgstr ""
+
+#: ../geogitsync.rst:17
+# 1e59ae1826b64b0dbb2cc9048097461c
+msgid "Click on the :guilabel:`Remote Options` button next to the :guilabel:`Synchronization` tab in the main menu."
+msgstr ""
+
+#: ../geogitsync.rst:21
+# 184b1cf11ec444759b97c8d09015f733
+msgid "*Remote Options button to configure remotes*"
+msgstr ""
+
+#: ../geogitsync.rst:23
+# f83e4be30b9f45f4b55c44075033400d
+msgid "In the Remote Config window select the GeoGit repo that will be synchronized.  The list is populated from the repositories that correspond to the layers in the map."
+msgstr ""
+
+#: ../geogitsync.rst:25
+# 6fd5b3fb917e4cc48b8c252a667df4dd
+msgid "Note that even though you might only be working with a single layer, the entire repository contents will be synched.  This is important to maintaining the history of the repository."
+msgstr ""
+
+#: ../geogitsync.rst:29
+# e99c56b2f71b479aa17cd277c45e28cb
+msgid "*Select the repository to sync*"
+msgstr ""
+
+#: ../geogitsync.rst:31
+# d976fe6f85924a9f8b3519144aa9e1e6
+msgid "Choose the name of the :guilabel:`Remote` from the drop down menu.  If this is the remote to be set up then there will only be an option for :guilabel:`New Remote`."
+msgstr ""
+
+#: ../geogitsync.rst:35
+# 0074743ed1614e72902e9451ee4c7f2d
+msgid "*Remote Configuration Settings*"
+msgstr ""
+
+#: ../geogitsync.rst:37
+# c29599734bde42cba9ed058f6144fb6e
+msgid "In the :guilabel:`Remote Name` field, enter the name you want to call the remote.  Do not use spaces or special characters."
+msgstr ""
+
+#: ../geogitsync.rst:39
+# d34da5e625244b368e2750f703d9b663
+msgid "In the :guilabel:`URL` field, type in the URL to the remote.  The URL will have a path with this format: http://<url>/geoserver/geogit/<workspace>:<datastore"
+msgstr ""
+
+#: ../geogitsync.rst:41
+# 3a93bf6ebb194f96875015c03bb4a137
+msgid "If you do not know the workspace and datastore names you can query the server by typing the following URL in a browser.  http://<servername>/geoserver/geogit"
+msgstr ""
+
+#: ../geogitsync.rst:45
+# a7dfa2b6c82b4ee3961e5f8613370eb2
+msgid "*GeoGit Repository List from GeoServer*"
+msgstr ""
+
+#: ../geogitsync.rst:47
+# c792c0d6a85b46b0bdcbd3615978c04d
+msgid "You can also find the workspace and datastore information by searching through the GeoServer response to a WMS GetCapabilities request.  The URL will have this format: http://<servername>/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities.  Search the document for \"GEOGIT_ENTRY_POINT\""
+msgstr ""
+
+#: ../geogitsync.rst:49
+# 1f66270c23f4417da784d7e77cecb97d
+msgid "GeoServer also has information about the GeoGit repositories under :guilabel:`Stores`"
+msgstr ""
+
+#: ../geogitsync.rst:53
+# e300c2e8062c40e2ae6aa721825a9ee3
+msgid "*GeoGit Data Stores in GeoServer*"
+msgstr ""
+
+#: ../geogitsync.rst:55
+# 32f5ac78f459442fbb907e19743208c8
+msgid "Enter the username and password for the remote server."
+msgstr ""
+
+#: ../geogitsync.rst:57
+# cab00aa972eb45fd951a6ffac28d6914
+msgid "Click :guilabel:`Save`"
+msgstr ""
+
+#: ../geogitsync.rst:61
+# f1bcb12b9b2349aaa4400d8c5c18c6a9
+msgid "Add a Sync"
+msgstr ""
+
+#: ../geogitsync.rst:62
+# f73892e9291a47e689fd18d2425b9e8c
+msgid "You can set up syncs with different branches on the same remote.  The following steps explain how to add a sync to an existing remote."
+msgstr ""
+
+#: ../geogitsync.rst:64
+# 5b460959433245f5a8bd674f271702e3
+msgid "To add a sync, click on :guilabel:`Synchronization` in the menu.  The menu will expand."
+msgstr ""
+
+#: ../geogitsync.rst:68
+# 26262a4c50864452a9361237da394d86
+msgid "*Synchronization menu*"
+msgstr ""
+
+#: ../geogitsync.rst:70
+# a75c6e92e9f24f1aa61df77b6fe69e31
+msgid "Click on the :guilabel:`Add Sync` button"
+msgstr ""
+
+#: ../geogitsync.rst:72
+# 16382b3570a74e1c8531db6ea5379797
+msgid "In the Add Sync window enter a name for the sync"
+msgstr ""
+
+#: ../geogitsync.rst:74
+# db7d6c89f6d34d0a94a622bc3f4df021
+msgid "In the :guilabel:`Repo` field select the repository from the drop down"
+msgstr ""
+
+#: ../geogitsync.rst:78
+# b1d5de1227fe4eb9bc4c311ece6450ac
+msgid "*Select the Repo*"
+msgstr ""
+
+#: ../geogitsync.rst:80
+# 9584c103748a4408b265781fa6a5bc34
+msgid "Then select the branch to sync from the drop down"
+msgstr ""
+
+#: ../geogitsync.rst:84
+# 724952f34f0f4d0b900a162fb5748402
+msgid "*Select the Branch*"
+msgstr ""
+
+#: ../geogitsync.rst:86
+# 34955ac1ff5b4514aac876bba4548b95
+msgid "Repeat the process for the Remote"
+msgstr ""
+
+#: ../geogitsync.rst:90
+# 4199551ec9184b1e8aa6ac6a23c1ce66
+msgid "*Select the Remote and Branch*"
+msgstr ""
+
+#: ../geogitsync.rst:92
+# b75c53d3c71c41b6bea5791275d71e97
+msgid "Click on the :guilabel:`Add` button to complete adding the sync"
+msgstr ""
+
+#: ../geogitsync.rst:95
+# dc7c1ce388f94e159ccf9abd2f3da9dc
+msgid "Manual Sync"
+msgstr ""
+
+#: ../geogitsync.rst:96
+# 12311872fee446fba3352c4ce7bdd9be
+msgid "Once a remote is set up then you can sync between the two GeoGit repositories."
+msgstr ""
+
+#: ../geogitsync.rst:98
+# 0d2406e86e814ed4a9a0bc49358ab40f
+msgid "Click on the up and down arrows by the name of the remote you want to sync.  This initiates a one-time push/pull"
+msgstr ""
+
+#: ../geogitsync.rst:102
+# d6a3a915f72f4b09be1d6dcad679b28b
+msgid "*Manual Sync*"
+msgstr ""
+
+#: ../geogitsync.rst:106
+# 2a5f7ce361654727b1f79b6935acc63d
+msgid "Automatic Sync"
+msgstr ""
+
+#: ../geogitsync.rst:107
+# 2ae989bcb099431c8cfc0f562343ea38
+msgid "You can set up the remote to sync automatically every minute."
+msgstr ""
+
+#: ../geogitsync.rst:109
+# 9b1611de52e24febbab6b8179b8d1528
+msgid "Click on the arrows that form a box.  As long as this button is depressed, the sync will occur automatically."
+msgstr ""
+
+#: ../geogitsync.rst:113
+# 02d1edf9d4834bbd855ca071ac0adb5a
+msgid "*Auto Sync*"
+msgstr ""
+
+#: ../geogitsync.rst:115
+# 6cd6279e39944895aafda605471d7bff
+msgid "To toggle the automatic sync, click the button again."
+msgstr ""
+

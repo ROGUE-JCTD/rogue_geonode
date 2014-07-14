@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-10 10:28-0400\n"
+"PO-Revision-Date: 2014-07-10 21:17+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 266c0439b4fc44c3aee0148a0e177f49
+#: ../../../source/search/find.txt:4
+msgid "Finding Content in GeoNode"
+msgstr "Encontrando el Contenido en GeoNode"
+
+# ebbbf91e3c954119b4dd0ab332c19a55
+#: ../../../source/search/find.txt:8
+msgid "**GeoNode Search**"
+msgstr "**Búsqueda de GeoNode**"
+
+# 4850ec2db2854d7fa405bed7e062f2f2
+#: ../../../source/search/find.txt:10
+msgid ""
+"You will find the *Search* field at the top of every GeoNode page.  When you"
+" type in the search field, GeoNode will list the Layers, Maps, and Documents"
+" that match the text you've entered.  Click on the word in the list to go to"
+" that resource."
+msgstr "Usted encontrar el campo de *Búsqueda* al principio de cada una de las páginas de GeoNode.  Cuando usted introduzca en el campo de búsqueda, GeoNode enumerar la lista de las capas, mapas y documentos que coinciden con el texto que ha ingresado.  Dele clic a la palabra en la lista para ir a ese recurso."
+
+# 6178d6929de54268bf5afb830afa6542
+#: ../../../source/search/find.txt:14
+msgid "*GeoNode Toolbar*"
+msgstr "*Barra de Herramientas de GeoNode*"
+
+# fb76c779051e4f05a589ea271bb19496
+#: ../../../source/search/find.txt:17
+msgid "**Browsing Layers**"
+msgstr "**Capas de Navegación**"
+
+# 976cb097744045e886b98b1884a362a8
+#: ../../../source/search/find.txt:19
+msgid ""
+"The *Layers* page lets you browse data that has been uploaded to this "
+"GeoNode.  From the *Layers* page, you can see how many times a layer has "
+"been viewed and it's average user rating.  You can also *Download* the layer"
+" data, create a map, or go to a the layer detail page."
+msgstr "La página de las *Capas* le permite navegar los datos que han sido cargados a este GeoNode.  Desde la página de las *Capas* usted puede ver cuéntas veces una capa ha sido vista y su su calificación promedio de usuario. Usted también puede *Descargar* la capa de los datos, crear un mapa, o a la página de detalle de la capa."
+
+# 7f99a29943ed478bb5b4e30f9acb259d
+#: ../../../source/search/find.txt:23
+msgid "*Layers Page*"
+msgstr "*La Página de las Capas*"
+
+# 3f0d498e3938471ca0941673a246655c
+#: ../../../source/search/find.txt:25
+msgid "*View by Layer Type*"
+msgstr "*Ver por tipo de capa*"
+
+# 747b0bf644004130a1ecf16364fdaffd
+#: ../../../source/search/find.txt:27
+msgid "The view in the layers page can be subset by Raster or Vector"
+msgstr "La vista en la página de capas puede ser subconjunto por Raster o Vector"
+
+# 9e7f5795859f4a268f5832699d409dc4
+#: ../../../source/search/find.txt:30
+msgid "**Browsing Maps**"
+msgstr "**Navegación de Mapas**"
+
+# 801d22890c2447398d8a7a75816b6433
+#: ../../../source/search/find.txt:32
+msgid ""
+"The *Maps* page lets you browse data that has been uploaded to this GeoNode."
+"  From the *Maps* page, you can see how many times a map has been viewed and"
+" it's average user rating.  You can also *Download* the layers for the map, "
+"view the map, or go to a the map detail page for more information."
+msgstr "La página de los *Mapas* le permite navegar los datos que han sido cargados a esté GeoNode.  Desde la página de los *Mapas*, usted puede ver cuéntas veces un mapa ha sido visto y su calificación promedio del usuario. Usted también puede *Descargar* las capas para el mapa, ver el mapa o ir a la página de detalle del mapa para obtener más información."
+
+# 9bd9129762774ee98f5db406b4f2a7fa
+#: ../../../source/search/find.txt:36
+msgid "*Maps Page*"
+msgstr "*La Página de los Mapas*"
+
+# fbe46c684847411f97e2523d827bd430
+#: ../../../source/search/find.txt:39
+msgid "**Filtering Results**"
+msgstr "**Filtrando los Resultados**"
+
+# 66666206dd0e42be899ac48f5ee86d69
+#: ../../../source/search/find.txt:41
+msgid ""
+"There are several different ways to manage the list of the maps, layers or "
+"documents you're viewing.  The *Layers*, *Maps* and *Documents* pages "
+"provide the ability to filter by categories, date range, or keywords."
+msgstr "Existen varias formas para administrar las listas de los mapas, capas o documentos que usted esta viendo. Las páginas de las *Capas*, *Mapas* y *Documentos*, le proporcionan la capacidad de filtrar por categorias, rangos de datos o palabras claves."
+
+# d7fec9a8ded4494cae0c2e9d2203e99f
+#: ../../../source/search/find.txt:43
+msgid "*Filter by Categories*"
+msgstr "*Filtrar por Categorías*"
+
+# d2a2734a00ac41b5bb9fedf456fe101c
+#: ../../../source/search/find.txt:47
+msgid "*Category Filter*"
+msgstr "*Filtrar por Categoría*"
+
+# 94ec9adb739a4dcb9f2428df719a61d5
+#: ../../../source/search/find.txt:49
+msgid ""
+"You can filter Layers or Maps by Categories.  When the metadata for a layer "
+"or a map has been tagged with a specific category, it will be reflected in "
+"the *Categories* panel.  Clicking on the first category limits the layer "
+"list to those tagged with that category.  Clicking on another category adds "
+"the layers from that category to the layer list.  Clicking on the category "
+"again will remove it from the layer list."
+msgstr "usted puede filtrar las capas o los mapas por categorías.  Cuando los meta datos para una capa o mapa ha sido etiquetado con una categoría en especÌfico, ser· reflejado en el panel de las *categorías*.  Dándole clic a la primera categoría limita la lista de capas a aquellas que han sido etiquetadas en esa categoría. Dándole clic a otra categoría, agrega capas de esa categoría a la lista de las capas. Dándole nuevamente clic a una categoría, la eliminar· de la lista de las capas."
+
+# 957dfe5318554590bfd341226027dad1
+#: ../../../source/search/find.txt:51
+msgid "*Filter by Date Range*"
+msgstr "*Filtrar por Rango de Datos*"
+
+# 744cddc6f5d647269c024dd0e4280a0f
+#: ../../../source/search/find.txt:55
+msgid "*Date Range Filter*"
+msgstr "*Filtrando el Rango de los Datos*"
+
+# 591240aa7aeb486786e90924926441bc
+#: ../../../source/search/find.txt:57
+msgid ""
+"You can limit the list of layers or maps by a date range.  In the *Date* "
+"panel select the start date and the end date for the date range.  The view "
+"will update to reflect those layers or maps that were created within that "
+"timeframe."
+msgstr "Usted puede limitar la lista de las capas o mapas a través de un rango de datos.  En el panel de la *Fecha*, seleccione una fecha de inicio y una fecha final para el rango de los datos.  La vista se acualizar para reflejar esas capas o mapas que fueron creadas dentro de ese límite de tiempo."
+
+# 10e1af5e176342bab1b78451b97988d7
+#: ../../../source/search/find.txt:59
+msgid "*Filter by Keywords*"
+msgstr "*Filtrar por Palabras Claves*"
+
+# a1039bab972c49e88abf88286803c8ea
+#: ../../../source/search/find.txt:61
+msgid ""
+"You can filter the *Layers* or *Maps* associated with a particular keyword."
+"  The keywords are saved in the metadata.  To edit the keywords for an item "
+"you need to go to the *Edit Metadata* tab for the specific item (map, layer "
+"or document)."
+msgstr "Usted puede filtrar las *Capas* o *Mapas* que estén asociados con una palabra clave en particular. Las palabras claves son salvadas en los meta datos.  Para editar las palabras claves para un ítem, usted necesita ir a la vióeta de *Editar meta datos* para un ítem en particular (mapa, capa o documento)."
+
+# 37f7dddac22b447f98bc2192b6bdbfdd
+#: ../../../source/search/find.txt:65
+msgid "*Keyword Filter*"
+msgstr "*Filtro de Palabra Clave*"

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:26+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 891cbd8da4b643ed875a0164ffeb5ef5
+#: ../layerinfo.rst:4
+msgid "Layer information"
+msgstr "Información de la capa"
+
+# 15530285e4dc4256b9670bc9d4ee6da3
+#: ../layerinfo.rst:17
+msgid ""
+"Every layer has its own page with information about it.  This page contains "
+"lots of options for managing this layer. The page displays information about"
+" the layer such as"
+msgstr "Cada una de las capas tiene su propia página con información acerca de ella. Esta página contiene muchas opciones para manejar esta capa. La página despliega la información acerca de la capa, tal y como la"
+
+# c74ce9bbc737403f9a3d0a8c835d4f97
+#: ../layerinfo.rst:6
+msgid "Info"
+msgstr "Información"
+
+# 3361fe8a8a6044a3b9f257eed968a2fb
+#: ../layerinfo.rst:7
+msgid "Attributes"
+msgstr "Atributos"
+
+# 859343d8073544b8ae1b2907721522b1
+#: ../layerinfo.rst:8
+msgid "History"
+msgstr "Historia"
+
+# 6a138cc338f14e00a47baa1118a02670
+#: ../layerinfo.rst:9
+msgid "Comments"
+msgstr "Comentarios"
+
+# 6bec6af51c984286940b6102b97149aa
+#: ../layerinfo.rst:10
+msgid "Legend"
+msgstr "Leyenda"
+
+# 800ab9048de247e28f499e50714d8a12
+#: ../layerinfo.rst:11
+msgid "Maps using this layer"
+msgstr "Mapas utilizando esta capa"
+
+# 5ec18b3e11bd4aadb9c4906883c93986
+#: ../layerinfo.rst:12
+msgid "Permissions"
+msgstr "Permisos"
+
+# 92c652b56c7247029aa874bd7989ee1b
+#: ../layerinfo.rst:13
+msgid "Styles (associated with the layer)"
+msgstr "Estilos (asociados con la capa)"
+
+# 2b4e3bbec63a4bd7af0bdfae012ae172
+#: ../layerinfo.rst:14
+msgid "Owner, point of contact, and author information"
+msgstr "El dueño, punto de contacto, así como la información del autor"
+
+# 73105122bd8e4ee993778a217234f356
+#: ../layerinfo.rst:20
+msgid "Layer Detail Tabs"
+msgstr "Las viñetas con los detalles de la capa"
+
+# f5d1fab31c404596b82794929b36faa3
+#: ../layerinfo.rst:22
+msgid ""
+"There are up to four tabs that describe a layer: :guilabel:`Info`, "
+":guilabel:`Attributes`, :guilabel:`History`, and :guilabel:`Comments`."
+msgstr "Hay hasta cuatro viñetas que describen una capa: :guilabel:`Información`, :guilabel:`Atributos`, :guilabel:`Historia` y :guilabel:`Comentarios`."
+
+# 3779212c1b93420d80a6c497e01c3b70
+#: ../layerinfo.rst:24
+msgid ""
+"The :guilabel:`Info` tab is the default tab, and presents basic information "
+"about the layer.  It also shows the overall average rating, and allows you "
+"to rate the layer."
+msgstr "La viñeta de :guilabel:`Información` es una viñeta que es predeterminada y que presenta la información básica acerca de la capa.  Así mismo muestra el promedio general de los puntajes y le permite calificar su capa."
+
+# 4dae986d11b44687a5da966ac934e40d
+#: ../layerinfo.rst:28
+msgid "*Layer Info tab*"
+msgstr "*La viñeta de información de la capa*"
+
+# ced17ae2e0b3493da4165adfe2b4c84a
+#: ../layerinfo.rst:30
+msgid ""
+"The :guilabel:`Attributes` tab lists the attributes of the layer, including "
+"statistics (range, average, median and standard deviation).  Layer attribute"
+" statistics are made available only for numeric attributes.  If a layer's "
+"attributes are not numeric, then no statistics will be calculated."
+msgstr "La :guilabel: La viñeta de `Atributos` proporciona una lista de los atributos de la capa, incluyendo las estadísticas (rango, promedio, desviación estándar y media).  Las estadísticas de los atributos de la capa están disponibles solamente para los atributos númericos.  Si los atributos de una capa no son númericos, entonces las estadÌsticas no se podrán calcular."
+
+# 5d91fad22061456f9b3dc2737877a516
+#: ../layerinfo.rst:34
+msgid "*Attributes tab*"
+msgstr "*Viñeta de Aributos*"
+
+# f17c320bb61749778ece5befa00a70b2
+#: ../layerinfo.rst:36
+msgid ""
+"The :guilabel:`History` tab is available when the layer is a GeoGit layer "
+"and it shows the history of activity on that layer."
+msgstr "La viñeta de :guilabel: `Historia` está disponible cuando una capa es una capa de GeoGit y muestra el historial de la actividad en esa capa."
+
+# 68335408b6494afdb362cb6d3e453809
+#: ../layerinfo.rst:41
+msgid ""
+"The :guilabel:`Comments` tab allows you to leave a comment for others "
+"viewing this layer."
+msgstr "La :guilabel: viñeta de los `Comentarios` le permite a usted dejar un comentario para que el resto de las personas que están viendo esa capa lo vean."
+
+# 2cad74c9de6a4429a022244f380d2609
+#: ../layerinfo.rst:45
+msgid "*Layer Comments tab*"
+msgstr "*La viñeta de los comentarios de la capa*"
+
+# ba593c0f6a9741b587f4263e6d7ba779
+#: ../layerinfo.rst:47
+msgid ""
+"The :guilabel:`Add Comment` button allows you to enter a comment about the "
+"layer."
+msgstr "La tecla de :guilabel:`Agregar Comentario` le permite ingresar un comentario acerca de la capa."
+
+# 0a51bf91304749df8ff2d864197c9b71
+#: ../layerinfo.rst:51
+msgid "*Adding a new comment*"
+msgstr "*Agregando un nuevo comentario*"

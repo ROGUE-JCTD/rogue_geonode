@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qgis.rst:4
+# fa94084bee4549308108a035c5f8a74a
+msgid "QGIS"
+msgstr ""
+
+#: ../qgis.rst:6
+# a0a7dd2cb9d444e282fae120cdf39a92
+msgid "Quantum GIS or qGIS is an open source, cross platform desktop GIS app. It can also be used to add layers from your GeoNode instance as WMS or WFS. The process is very similar to how we add these same layers to ArcMap, and we will walk through the steps necessary in the following section."
+msgstr ""
+
+#: ../qgis.rst:8
+# 6c4ab25c479c474a9199b62e91e63686
+msgid "First, select \"Add WMS Layer\" from the Layer menu."
+msgstr ""
+
+#: ../qgis.rst:12
+# 93e6939399524c27a9b76ddbdd0b282c
+msgid "The Add WMS Layer Dialog will be displayed where you are able to specify the parameters to connect to your WMS server."
+msgstr ""
+
+#: ../qgis.rst:16
+# f7f6b477f8e7440f82cd993045564b94
+msgid "Next, you need to fill in the parameters to connect to your GeoNode instance. The URL for your GeoNode's WMS is the base URL + /geoserver/wms"
+msgstr ""
+
+#: ../qgis.rst:20
+# 07ec08d598e640ed907b7eb3744cd532
+msgid "After clicking the OK button, your server will show up in the list of servers. Make sure its selected, then, click the connect button to have QGIS retrieve the list of layers from your GeoNode."
+msgstr ""
+
+#: ../qgis.rst:24
+# a355840fd1004f20abb90d17c840a218
+msgid "Select the layers you want to add to your QGIS project and click \"Add\"."
+msgstr ""
+
+#: ../qgis.rst:28
+# 17fb8a61a3ea46c7bc856d5fba00be2c
+msgid "Your layer will be displayed in the map panel."
+msgstr ""
+
+#: ../qgis.rst:32
+# 0d573af60b3b4de68d572dc218e6d32f
+msgid "You can then zoom into your features in the Map."
+msgstr ""
+
+#: ../qgis.rst:36
+# 1760fe4dad1448feb68257490764c672
+msgid "From there, you can use the identify tool to inspect the attributes of one of the features on the map."
+msgstr ""
+
+#: ../qgis.rst:40
+# e3c665a774194a3da97144a3e7e5ed5d
+msgid "Or, you can look at the layer metadata by right clicking on the layer and selecting Layer Properties and selecting the metadata tab."
+msgstr ""
+
+#: ../qgis.rst:44
+# 60e191dcdd95422aa182cb81243e70db
+msgid "Adding WFS servers and layers to your QGIS project is very similar to adding WMS. Depending on your version of QGIS, you may need to add the WFS plugin. You can use the Plugin manager to add it."
+msgstr ""
+
+#: ../qgis.rst:48
+# fd88b3b21e6d4d1682fc50bb6414b8d5
+msgid "Once the plugin is installed, you can select the \"Add WFS Layer\" option from the Layer menu."
+msgstr ""
+
+#: ../qgis.rst:52
+# 89234ab5a6f7418995c73af7de149544
+msgid "Step through the same process you did for WMS to create a new WFS connection. First specify server parameters and click OK."
+msgstr ""
+
+#: ../qgis.rst:56
+# 09ea6b1503fa4c8aa28db4b5d7b9b813
+msgid "Then click Connect to retrieve the list of layers on the server and select the layers you want to add and click Apply."
+msgstr ""
+
+#: ../qgis.rst:60
+# a6730bfb6dd14d8987bc5c96d8bec992
+msgid "The layer(s) you selected will be displayed in the map panel."
+msgstr ""
+
+#: ../qgis.rst:64
+# acbb006e9aee43dba4b4e57a53b5f8d9
+msgid "You can use the same identify tool to inspect features in the map panel."
+msgstr ""
+
+#: ../qgis.rst:68
+# 47a81fc2d6fd44de869b7cfcbccead19
+msgid "To look at more information about your layer, right click the layer in the Table of Contents and select Layer Properties. You can look at the list of fields."
+msgstr ""
+
+#: ../qgis.rst:72
+# d1463c8fd2a647aaadb5b59a4f512a8c
+msgid "... or set a style to match how you want your data to be displayed."
+msgstr ""
+
+#: ../qgis.rst:76
+# 1493514aa84d4cd3bbf91fd3ce7a5ce5
+msgid "You now know how to add layers from your GeoNode instance to a QGIS project. You can explore all of the other options available to you in QGIS by consulting its documentation."
+msgstr ""
+

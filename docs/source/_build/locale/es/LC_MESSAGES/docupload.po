@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 16:59+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 9cb6dd12374f4924819d98bd44e50de1
+#: ../docupload.rst:4
+msgid "Uploading Documents"
+msgstr "Cargando los Documentos"
+
+# 575b088ccb25422aa47ae70fa8ebb090
+#: ../docupload.rst:5
+msgid "GeoNode lets you upload documents to associate to layers or maps."
+msgstr "GeoNode le permite subir los documentos a las capas o a los mapas asociados."
+
+# 256ff9f19b114f2280bd82a878c42b54
+#: ../docupload.rst:7
+msgid "In the documents page, click on :guilabel:`Upload Documents`"
+msgstr "En la página de los documentos, dele clic a :guilabel:`Upload Documents`"
+
+# 0f3de27016b24eb39ed1352c1c0252ac
+#: ../docupload.rst:11
+msgid "*Upload Documents tab*"
+msgstr "*Viñeta para subir el Documento*"
+
+# fc3235f7367647f5851f952785744c0c
+#: ../docupload.rst:13
+msgid "Type in the Title for the Document that will appear in GeoNode"
+msgstr "Escriba el Titulo del Documento que aparecerá en GeoNode"
+
+# 295c3ab530ab4948ba180896c04a226e
+#: ../docupload.rst:15
+msgid ""
+"Browse to the file to upload or enter the URL for a web page or a document "
+"that's online."
+msgstr "Navegue hasta el archivo a ser cargado o ingrese a la URL de la página web o a un documento que este en línea."
+
+# 170ef69e2a2b437fa27bf30d6e3ba401
+#: ../docupload.rst:19
+msgid "*Upload a Doc as a URL*"
+msgstr "*Cargue un documento (Doc) como una URL*"
+
+# a6d48bb37c0a4bb08eb50b49f2fce2de
+#: ../docupload.rst:21
+msgid ""
+"If you want to link the document to a map or a layer, choose it in the "
+":guilabel:`Link to` section"
+msgstr "Si usted quiere enlazar el documento a un mapa o a una capa. Escójala en el :guilabel: `Enlace a` la sección"
+
+# 0ef3de24cadd4d6cab66aa20cfbc4029
+#: ../docupload.rst:23
+msgid ""
+"Set permissions for who is able to view and manage the document accordingly"
+msgstr "Establezca los permisos para ver quien, según corresponda,  puede ver y administrar el documento."
+
+# 6b5bb8406da4491a9fef2ef76d2f68bc
+#: ../docupload.rst:25
+msgid "Click on the :guilabel:`Upload` button"
+msgstr "Dele clic en la tecla de :guilabel:`Subir`"
+
+# eb0cc77d892d4083a02512caa4a048ce
+#: ../docupload.rst:27
+msgid ""
+"The next page will allow you to enter metadata for the document.  It's good "
+"to enter the Abstract at a minimum."
+msgstr "La siguiente página le permitirá ingresar sus metadatos para el documento. Es bueno el poder ingresar el mínimo Abstracto."
+
+# 0614fdc6b0ec4002ac126985aad534a2
+#: ../docupload.rst:29
+msgid ""
+"When you have finished entering metadata click on the :guilabel:`Update` "
+"button at the bottom of the page."
+msgstr "Cuando usted haya finalizado de ingresar los metadatos, dele clic a la tecla de :guilabel:`Actualizar` en la parte inferior de la página."
+
+# ad2a5f6866354e0fb51bcfeb777f5180
+#: ../docupload.rst:31
+msgid "The document will now be listed in the documents tab."
+msgstr "Ahora el documento está en la lista en la viñeta de documentos."

@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../history.rst:4
+# 0eb0159bc3624fddba691e6156968c6f
+msgid "Working with History"
+msgstr ""
+
+#: ../history.rst:5
+# 1047958768954f6b95ecbadd68b291e4
+msgid "GeoGit is a specialized database that was designed for distributed editing and supports collaborative editing of geospatial data.  It is designed for vector data (point, line, polygon, etc.). When a layer has been stored in GeoGit, it maintains the history of all of the changes made to the data along with who made the changes and when. Within the web map, you can view the history for a layer and for the features."
+msgstr ""
+
+#: ../history.rst:10
+# aacd00bb922d4b6294474320a952e98b
+msgid "History tab in GeoNode"
+msgstr ""
+
+#: ../history.rst:11
+# f63b81ca7cd243c0a4e2590268838fce
+msgid "GeoGit layers in GeoNode will have a History tab in addition to the other tabs on the Layer detail page.  The history is a list of commits that have been made to the layer."
+msgstr ""
+
+#: ../history.rst:13
+# 4f12339780b2459b862703de5e5ff7b1
+msgid "In the Layer detail page, click on the history tab to see the chronological list of commits."
+msgstr ""
+
+#: ../history.rst:17
+# 11498e7a10544dab9a126f6242c3c5eb
+msgid "*Layer history tab in GeoNode*"
+msgstr ""
+
+#: ../history.rst:19
+# 90c3ada9b46043ec82b53e140ac46e98
+msgid "In order to search through the commit history, type in the search box in the :guilabel:`History` tab.  You can search for any value in the commit history."
+msgstr ""
+
+#: ../history.rst:23
+# a0966c747181413ca76b1bf3d24f92e0
+msgid "View layer history"
+msgstr ""
+
+#: ../history.rst:24
+# aa0816ae41e6417b8648b96bc8914cf2
+msgid "You can view the history of a layer."
+msgstr ""
+
+#: ../history.rst:26
+# 740bdfb87d1349ddb7166acbf56ad10c
+msgid "Click on the name of the layer you want to view.  The menu will expand to show additional layer options."
+msgstr ""
+
+#: ../history.rst:28
+# 68c09e6130b54153907d815fc2274c5f
+msgid "Click on the :guilabel:`Show History` button.  The history will expand at the bottom."
+msgstr ""
+
+#: ../history.rst:32
+#: ../history.rst:91
+#: ../history.rst:122
+# 4f913aed9d7b4a828b9d725624250ed7
+# 4bdfe7a991624547a59b052af6537e4c
+# dd74aec49f37444db0d6c18cff35c3fe
+msgid "*Show History Button for Layers*"
+msgstr ""
+
+#: ../history.rst:34
+# 83bbe7d2324743fea86aa014c54073bd
+msgid "To view details about a commit, hover the mouse over it.  The bar next to the commit indicates the type of edits that were made.  Green indicates a new feature was added.  Yellow indicates a feature was modified.  Red indicates a feature was deleted.  A commit can have multiple types of edits.  In such a case, the bar will have colors proportional to the types of edits that were made."
+msgstr ""
+
+#: ../history.rst:38
+# 70dce5a621ff405d9d712792798cdbc1
+msgid "*History detail for a commit*"
+msgstr ""
+
+#: ../history.rst:40
+# 695f867a195d4f1f81ad2588679c52c6
+msgid "Click on the commit and the history will update to show the individual edits within that commit.  MapLoom will make one commit per edit.  The Arbiter mobile app can upload many edits as one commit."
+msgstr ""
+
+#: ../history.rst:44
+#: ../history.rst:69
+# 1f666f51bfb84304983b601c33d88c39
+# 05b43e29f6e045a48635de4dd8a7128a
+msgid "*List of edits in a commit*"
+msgstr ""
+
+#: ../history.rst:46
+# 6c4b35656036462ab87be1238f4c8dc0
+msgid "Clicking on an edit will bring up a new window that shows the specific changes that were made.  The changes will be highlighted with the same color coding as the commits.  Green means something was added, yellow means it was changed, and red means it was deleted.  In the image below, the feature was moved, and so the point on the map is highlighted in yellow."
+msgstr ""
+
+#: ../history.rst:50
+#: ../history.rst:75
+# 505e8f4de21d4957be044d266f0b6e2b
+# f1d51a286b9e442b83dffaa831bbb8a5
+msgid "*Detailed view of changes*"
+msgstr ""
+
+#: ../history.rst:53
+# 54c8cbfb3dcb405e978e1dee3ec22080
+msgid "View feature history"
+msgstr ""
+
+#: ../history.rst:55
+# 9205e411ae9642c0adbae9bcd799bdde
+msgid "In addition to viewing the history of edits on a GeoGit layer, you can also view the history of a feature."
+msgstr ""
+
+#: ../history.rst:57
+# d8ca1265ecc34a2b829b59fcacc5199b
+msgid "Click on the feature on the map.  The feature details will appear."
+msgstr ""
+
+#: ../history.rst:59
+# e5e3b65d04de42ba8014a929b6fca087
+msgid "Click on the :guilabel:`Show History` button.  The history list will expand with the commits that contain changes for that feature."
+msgstr ""
+
+#: ../history.rst:63
+# 9d8a736b5be641d688d91dbebb24224b
+msgid "*Show History for a feature*"
+msgstr ""
+
+#: ../history.rst:65
+# 8bd50a72a42c465fa232759e671a01f6
+msgid "Click on the specific commit you want to view details for.  The history will update to show the edits made to the feature for that commit."
+msgstr ""
+
+#: ../history.rst:71
+# 55e40970de8341769324cbc488060a7a
+msgid "Clicking on the edit in the list will bring up a new window that shows the specific changes that were made.  The changes will be highlighted with the same color coding as the commits.  Green means something was added, yellow means it was changed, and red means it was deleted.  In the image below, the feature was moved, and so the point on the map is highlighted in yellow."
+msgstr ""
+
+#: ../history.rst:77
+# 5cf90852eb444fa2b22515be9c4020bb
+msgid "Click on the :guilabel:`Show Authors` button to see the names and dates for every attribute in the feature.  Note that through the lifetime of a feature, there can be several authors.  This is a good way to see who has contributed to a feature's current state."
+msgstr ""
+
+#: ../history.rst:81
+# 8d369741376b4b0cb6cb9a71b311a08f
+msgid "*The Show Authors button*"
+msgstr ""
+
+#: ../history.rst:84
+# d7ee69e3f72a4fa68c3222f5ed1df344
+msgid "Summarize history"
+msgstr ""
+
+#: ../history.rst:85
+# 961d58c0be9a4b00bddd6428f2221ab0
+msgid "You can visualize a summary of all of the edits within a date range for a layer."
+msgstr ""
+
+#: ../history.rst:87
+#: ../history.rst:118
+# 0cb05051e8fb46a483e822f71a30f025
+# 4f9b19966c004067935ca3462166a522
+msgid "Click on the :guilabel:`Show History` button for layer that you want to summarize."
+msgstr ""
+
+#: ../history.rst:93
+#: ../history.rst:124
+# ce24aa3d96ca46579ffa9f9f802a80f2
+# 662121dfff5c47d28d1425d4d6d152bd
+msgid "Click on the :guilabel:`History Summary` button."
+msgstr ""
+
+#: ../history.rst:97
+#: ../history.rst:128
+# d02a8acec73c4bfc953e2bd19518be71
+# d2f89137e753402cb119dc6a5fe508de
+msgid "*History Summary button*"
+msgstr ""
+
+#: ../history.rst:99
+#: ../history.rst:130
+# 4fc918d5de0b4f6380be14cb16a23534
+# e297d73b46504a8c87b609195510127f
+msgid "Enter the date range for the history to summarize"
+msgstr ""
+
+#: ../history.rst:103
+#: ../history.rst:134
+# ab266a8beab14de1ad32a080f5a1f571
+# 54136153f0ce42298a006c826332be66
+msgid "*Select the Date Range*"
+msgstr ""
+
+#: ../history.rst:105
+# e2c706c74dd440f1a7d75d07c0b2dab7
+msgid "Click on the :guilabel:`Summarize` button"
+msgstr ""
+
+#: ../history.rst:109
+# 9fbc212f1c624f8cb4a64b56fe33e8a5
+msgid "*Summary of changes for the selected date range*"
+msgstr ""
+
+#: ../history.rst:111
+# 94ebf69d95eb4378a4d4af9b273377d0
+msgid "Click on one of the edits in the list to see a detailed view"
+msgstr ""
+
+#: ../history.rst:115
+# e04f0d01b06049d581d3747a4c1c09a2
+msgid "Export history"
+msgstr ""
+
+#: ../history.rst:116
+# a7ff3e0dd049483ea6f8ed2c3631cd09
+msgid "You can export a summary of all of the edits within a date range for a layer."
+msgstr ""
+
+#: ../history.rst:136
+# 1284b4f6e2f74f12830e5033cf86d277
+msgid "Click on the :guilabel:`Export CSV` button"
+msgstr ""
+
+#: ../history.rst:138
+# b6bd1d03741440118298d69c43117db3
+msgid "When you are prompted to save the file, browse to the location where you want to save it to your hard drive and click :guilabel:`Ok`"
+msgstr ""
+

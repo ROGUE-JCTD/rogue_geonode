@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[ROGUE_GEONODE.accounts]
+file_filter = source/locale/<lang>/LC_MESSAGES/accounts.po
+source_file = source/_build/locale/accounts.pot
+source_lang = en
+

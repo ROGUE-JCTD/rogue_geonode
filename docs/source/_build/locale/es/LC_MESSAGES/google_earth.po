@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:47+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 5af02c5b1b0044e08347e9f6dc296deb
+#: ../google_earth.rst:4
+msgid "Google Earth"
+msgstr "Google Earth"
+
+# 3352ccd4b34f4d0894e03af65b9e10c8
+#: ../google_earth.rst:6
+msgid ""
+"GeoNode's built in map interface lets you look at your layers and maps in "
+"the Google Earth plugin directly in your browser. You can switch to this 3D "
+"viewer directly in GeoNode by clicking the google earth icon in the map "
+"panel."
+msgstr "La interfase de GeoNode para construir mapas, le permite a usted ver sus capas, asÌ como los mapas en Google Earth al directamente conectarse a su navegador.  Usted puede cambiar a esta vista en tercera dimensión directamente desde GeoNode, al darle clic al icono de Google Earth en el panel de mapas."
+
+# 858805c2e85747678cde32ed47210621
+#: ../google_earth.rst:10
+msgid ""
+"GeoServer will render your layer as an image until you are zoomed in "
+"sufficiently, and then it will switch to rendering it as a vector overlay "
+"that you can click on to view the attributes for the feature you clicked on."
+msgstr "GeoServer le proporcionara su capa como una imagen, hasta que haya incrementado suficientemente el tamaño y luego lo va a cambiar a ser representado como un vector sobre la capa al cual usted le daré clic para poder ver los atributos de la característica a la cual usted le dio clic."
+
+# 599b37c65899465f85fd964b42e66f65
+#: ../google_earth.rst:14
+msgid ""
+"You can also use this option in the GeoExplorer client by clicking the same "
+"button."
+msgstr "Usted también puede utilizar esta opción en el GeoExplorer del cliente al darle clic a la misma tecla."
+
+# 4208a043fa9c43d39ac8b55b9ef6ff18
+#: ../google_earth.rst:18
+msgid ""
+"Some of the GeoExplorer options will not be available to you when you are in"
+" this mode, they will be grayed out an inaccessible."
+msgstr "Cuando usted se encuentre en este modo, algunas de las opciones del GeoExplorer, no estarán a su disposición, estarán resaltadas en gris como inaccesibles."
+
+# 0d6e87c847be487296f3bb1f0e2e3404
+#: ../google_earth.rst:20
+msgid ""
+"If instead you want to use layers from your GeoNode in the Google Earth "
+"client itself, you have a few options available to you."
+msgstr "Si por el contrario, usted quiere utilizar las capas desde su GeoNode en el cliente de Google Earth por sÌ solo, usted tendrá varias opciones."
+
+# ec8e6ad4a2f547ac9f4ee61d51fabc89
+#: ../google_earth.rst:22
+msgid ""
+"First, you can select the KML option from the Download Layer menu to "
+"download the entire layer in a single KML file. Depending on the size of the"
+" layer, your GeoNode could take several seconds or longer to generate this "
+"KML and return it to you."
+msgstr "Primero usted podrá seleccionar la opción de KML desde el men˙ de descarga de capas en un solo archivo de KML.  Dependiendo del tamaño de la capa, su GeoNode podrá tomarse varios segundos o a˙n más para generar este KML  y regresarlo a usted."
+
+# 9181b26dffe9467e806b2e02fcc1918f
+#: ../google_earth.rst:26
+msgid ""
+"When the layer is generated, it will be downloaded to your desktop machine "
+"and you can simply double click it to open it in Google Earth."
+msgstr "Una vez que la capa haya sido generada, esta ser· descargada en su computadora de escritorio y simplemente le puede dar doble clic a el para abrirlo en Google Earth."
+
+# 53c2ab4a19ea4c0582ff87a45790294a
+#: ../google_earth.rst:30
+msgid ""
+"Alternatively, you can use the \"View in Google Earth\" option in the Layer "
+"Download menu to view the layer in Google Earth using the same methodology "
+"described above depending on the zoom level."
+msgstr "Alternativamente, usted podrá utilizar la opciÛn de \"Ver en Google Earth\"\"View que se encuentra en el menu de descarga de la capa en Google Earth, al utilizar la misma metodologÌa descrita anteriormente, dependiendo del nivel del zoom."
+
+# f787d837f4844f8c875ebe5ea517cd04
+#: ../google_earth.rst:34
+msgid ""
+"This will download a small KMZ to your desktop that contains a reference to "
+"the layers on the server and you can double click it to open it in Google "
+"Earth."
+msgstr "Esto descargara un pequeño KMZ  su escritorio, el que contiene una referencia a las capas en su servidor  y usted podrá· darle doble clic para poder abrirlo en Google Earth."
+
+# 91d1794172bf446fa63d0047e10b7577
+#: ../google_earth.rst:38
+msgid ""
+"The basic difference between these two options is that the first downloads "
+"*all* of the data to your desktop at once and as such, the downloaded file "
+"can be used offline while the second is simply a Network Link to the layer "
+"on the server. Choose whichever method is best for your own needs and "
+"purposes."
+msgstr "La diferencia básica entre estas dos opciones es que la primera descarga de un solo, *todos* los datos a su escritorio y como tal, el archivo descargado puede ser utilizado estando este desconectado, mientras que el segundo es simplemente un vínculo de la red a una capa en el servidor. Escoja el método que mejor se adapte a sus propias necesidades y propósitos."
+
+# 90934abfabd346f18ad68d15e382fa4f
+#: ../google_earth.rst:40
+msgid ""
+"Once you have added your layers to the Places panel in Google Earth, you can"
+" move them from the Temporary Places section into My Places if you wish to "
+"use them after your current Google Earth session is complete. You can "
+"arrange them in folders and use Google Earth functionality to save your "
+"project to disk. Consult Google Earths documentation for more information "
+"about how to do this."
+msgstr "Una vez que usted ha agregado sus capas en el panel de los lugares en Google Earth. Usted puede moverlos desde la sección de los lugares temporales a la sección de Mis Lugares (My Places), en el caso de que usted los utilice después de que haya finalizado su actual sesión en Google Earth. Usted puede organizarlos en carpetas y utilizar la funcionalidad de Google Earth para salvar su proyecto en un disco. Consulte la documentación de Google Earth para obtener más información acerca de cómo llevar a cabo esto."

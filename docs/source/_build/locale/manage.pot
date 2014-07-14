@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 10:33-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../manage.txt:1
+# 8efd960646c34c1cbd8e1ebea0ebc68e
+msgid ".._layers.manage:"
+msgstr ""
+
+#: ../manage.txt:4
+# 52d143298ecb4127b8930140019e8cc2
+msgid "Editing Metadata and Managing Layers"
+msgstr ""
+
+#: ../manage.txt:6
+# 17af43154e0346b48a8e3d103d131c82
+msgid "Every layer has its own page with information about it.  The layer page also provides a menu for options to edit information about the layer and manage the layer."
+msgstr ""
+
+#: ../manage.txt:11
+# 8c18d2daff5047eca798ac8b111ed237
+msgid "Edit Metadata"
+msgstr ""
+
+#: ../manage.txt:12
+# ed95f6d36c094a219612830fd430b0f0
+msgid "Metdata is information about the layer.  It contains details such as the owner, title, purpose, restrictions, and more. This is where you can also edit the Abstract - which is the description that shows up for the layer in GeoNode."
+msgstr ""
+
+#: ../manage.txt:15
+# 66728e99e80f4bc69a66c6682a6474c6
+msgid "Click on the Edit Layer button and select Edit Metadata.  This will take you to the metadata page."
+msgstr ""
+
+#: ../manage.txt:17
+# ae351a99e3d945bc9c586a0313dde16f
+msgid "Edit information in the fields as appropriate."
+msgstr ""
+
+#: ../manage.txt:19
+# 163d8d02df474601a1fc99aba64c3718
+msgid "Click Update at the bottom of the form to save the changes"
+msgstr ""
+
+#: ../manage.txt:22
+# fc49007356524e1d8e171c7557f59702
+msgid "Edit Permissions"
+msgstr ""
+
+#: ../manage.txt:23
+# 9d9f367bef7d44049f2a208602ecc680
+msgid "Layer permissions are set at the time of import. Permissions can be adjusted as needed by those who have the proper rights to administer the layer. The Permissions window allows you to manage who can view and download the data, who can edit the data, and who can manage the data."
+msgstr ""
+
+#: ../manage.txt:26
+# abe3a98f91644c8d9503640623b5cf83
+msgid "Click on the Edit Layer button and select Edit Permissions"
+msgstr ""
+
+#: ../manage.txt:30
+# 7e53b05f4f3142e882a22186e181d236
+msgid "Make adjustments to permissions as needed."
+msgstr ""
+
+#: ../manage.txt:32
+# 96fb946d44d0480fbbabb1ad85d23c33
+msgid "Click Apply Changes to persist your changes."
+msgstr ""
+
+#: ../manage.txt:35
+# aa2e00c4ec83486e8a88356cc39bcb6e
+msgid "Manage Styles"
+msgstr ""
+
+#: ../manage.txt:36
+# 7a241733ef014c75900957a553fa8780
+msgid "A layer can have a number of different styles associated with it.  There is a default style associated with the layer and there can be others that represent different views of the data."
+msgstr ""
+
+#: ../manage.txt:38
+# 1e2521ea8e1342e49fda98e7cd288fe1
+msgid "Click on the Edit Layer button and select Manage Styles."
+msgstr ""
+
+#: ../manage.txt:42
+# b6e07b8ce7684d9881c800a580354b31
+msgid "The Manage Styles page shows the available styles on the left and the styles associated with the layer on the right."
+msgstr ""
+
+#: ../manage.txt:44
+# a440ec64d10e42a689f3f286f8a93d35
+msgid "To select a style, click on the name of the style in the left-hand list.  The style will move to the right-hand list"
+msgstr ""
+
+#: ../manage.txt:46
+# e5929855961849c196a6f571553526f3
+msgid "To remove a style, click on the name of the style in the right-hand list and then click the arrows between the lists."
+msgstr ""
+
+#: ../manage.txt:48
+# 559dcd91d9914d36bc84e9aae5841076
+msgid "To persist your changes, click the Update Available Styles button."
+msgstr ""
+
+#: ../manage.txt:51
+# 7258d17d9ce9446c8575916444dd3a5f
+msgid "Replace a Layer"
+msgstr ""
+
+#: ../manage.txt:52
+# 7e644719d48a425896bdebe283ba2a4d
+msgid "Selecting \"Replace This Layer\" allows you to import data in place of the existing layer."
+msgstr ""
+
+#: ../manage.txt:54
+# 4ff2df7d6ddf49c08e5315a61d248b12
+msgid "Click on the Edit Layer button and select Replace This Layer."
+msgstr ""
+
+#: ../manage.txt:56
+# 7ae86431f03647218f073f5f90319813
+msgid "Follow the instructions to upload a new file in place of the old layer."
+msgstr ""
+
+#: ../manage.txt:59
+# c4dd9c1c18174cd7bff1c7cf336766f1
+msgid "Remove a Layer"
+msgstr ""
+
+#: ../manage.txt:60
+# 50c4b6d47d364c8d97ca10e056e478e2
+msgid "Removing a layer will remove it completely from GeoNode for all users."
+msgstr ""
+
+#: ../manage.txt:62
+# 857d6abb24df4878856840ad3f9fc19e
+msgid "Click on the Edit Layer button and select Remove This Layer"
+msgstr ""
+
+#: ../manage.txt:64
+# 00dba04fc5b9412b96428ec909aab370
+msgid "Click \"Yes, I am sure\" to remove the layer, or \"No, don't remove it\" to cancel the action."
+msgstr ""
+

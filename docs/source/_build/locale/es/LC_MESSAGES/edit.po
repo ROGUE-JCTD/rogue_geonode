@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 16:39+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 5eef955131924645b4ad2a8b97622e0a
+#: ../edit.rst:4
+msgid "Edit Features"
+msgstr "Elementos de la Edición"
+
+# d5444161e2fe4dae9c49a17c984ddaf8
+#: ../edit.rst:5
+msgid ""
+"Vector layers can be set up so that they're editable.  If you have "
+"permissions to edit a layer, the editing tools will be available in the map."
+" If a layer is a GeoGit layer, then you can work with the edit history as "
+"well."
+msgstr "Las capas de los vectores pueden ser configuradas de tal forma que estas puedan ser editables.  Si usted tiene los permisos para editar una capa, las herramientas necesarias para editar la capa estarán disponibles en el mapa.  \nSi una capa es una capa de GeoGit, entonces usted también puede trabajar con la historia de la edición."
+
+# 7e8d9e804e9643ae9b69c3ef814c50b3
+#: ../edit.rst:9
+msgid "Add a simple point feature to a layer"
+msgstr "Añadir elemento de un punto simple a una capa"
+
+# a9f40df5d74e4be6a352c076d38a4dd6
+#: ../edit.rst:10
+msgid ""
+"If a layer is editable, then the :guilabel:`Add Feature` button will be "
+"available next to the layer name."
+msgstr "Si una capa es editable, entonces la tecla de :guilabel:`Añadir Elemento` estará disponible a la par del nombre de la capa."
+
+# 9c3bdca9c7304e8d9b4f8f0f3bbd7f56
+#: ../edit.rst:14
+msgid "*Add feature button*"
+msgstr "*Añadir Elemento*"
+
+# 6473fb7914574931869a04834a4862b7
+#: ../edit.rst:16
+msgid ""
+"Click the :guilabel:`Add Feature` button.  The :guilabel:`Drawing Geometry` "
+"dialog will appear at the top of the map."
+msgstr "Dele clic a la tecla de :guilabel:`Añadir Elemento`.  El dialogo de :guilabel:`Dibujando la Geometría` aparecerá en la parte superior del mapa."
+
+# c4dea591736346d08124c0977b300cfc
+#: ../edit.rst:20
+msgid ""
+"Click on the map to add the geometry.  A simple point is placed with one "
+"click.  The sections below provide additional detail on editing different "
+"types of features."
+msgstr "Dele clic al mapa para agregar la geometría. Un simple punto se posiciona con un clic. Las secciones a continuación proporcionan detalles adicionales sobre la edición de varios tipos de características diferentes."
+
+# b77d8ff0ea5c4ccaa1155c4ba5734bd0
+# c4d5bd5c9e654f8aac4423bfc1e3549e
+#: ../edit.rst:24 ../edit.rst:73
+msgid ""
+"Click on the :guilabel:`Accept Feature` button to keep the geometry.  If you"
+" don't want to keep the feature, click the X for the :guilabel:`Cancel "
+"Feature` button."
+msgstr "Dele clic a la tecla en :guilabel:`Aceptar Funcíon` para mantener la geometría.  Si usted no quiere mantener la geometría de la característica, dele clic a la X para la tecla de :guilabel:`Cancelar Funcíon’."
+
+# 23fef6c527874333bb14dd2d68dcd20d
+# dcc742e2f3564234922820f34228538e
+# bad89e4080b843c79a827cbbd8a586e1
+# 5b659860e25e4f83baaf2693cfcc7d61
+#: ../edit.rst:28 ../edit.rst:77 ../edit.rst:125 ../edit.rst:148
+msgid ""
+"Once you click on :guilabel:`Accept Feature` the :guilabel:`Edit Attributes`"
+" window will open.  Type in the fields or select values from the dropdowns "
+"to add attribute values."
+msgstr "Una vez que usted le ha dado clic a :guilabel:`Aceptar Funcíon`, la ventana se abrirá.  Ingrese en los campos los valores o seleccione los valores del menú desplegable para agregar los valores de los atributos."
+
+# 19607285f2934e1fa07a3f19b0fac345
+# 0e2dc5322c524a3ea6d758b3763d6ad9
+# e819acf26e0d47808dd9a52606c758a2
+# 878917a962ff41c1a3b062531752493c
+# 33852102eec14fd1905b087404a1b9a6
+# 35e9973588da408da511b2560baab9c9
+#: ../edit.rst:32 ../edit.rst:54 ../edit.rst:81 ../edit.rst:106
+#: ../edit.rst:129 ../edit.rst:152
+msgid ""
+"Click the :guilabel:`Save` button at the bottom of the form to save the "
+"feature to the layer."
+msgstr "Dele clic a la tecla de :guilabel:`Guardar` en la parte inferior de la plantilla para guardar la característica a la capa."
+
+# 62bfea8dd854463f92010b019029dede
+#: ../edit.rst:36
+msgid "Add a multipoint feature to a layer"
+msgstr "Añadir elemento de un multipunto a la capa"
+
+# c4b080bed1f34af08b97782ec66b8908
+#: ../edit.rst:37
+msgid "Multipoint features can have more than one point per feature."
+msgstr "Un elemento de múltiples puntos puede tener más de un punto."
+
+# 86986a6e42784b508dcef06658f822a7
+#: ../edit.rst:39
+msgid ""
+"Click the :guilabel:`Add Feature` button.  The :guilabel:`Drawing Geometry` "
+"dialog will appear at the top of the screen."
+msgstr "Dele clic a la tecla de :guilabel:`Añadir Elemento`.  El dialogo de :guilabel:`Dibujando la Geometría` aparecerá en la parte superior del mapa."
+
+# dfbf8fc31afa4fb49dc06fef0e4836fe
+#: ../edit.rst:43
+msgid ""
+"Click on the map to add the first point.  Click on the :guilabel:`Add "
+"Geometry` button to add another point.  Continue to add points for the "
+"feature as needed."
+msgstr "Dele clic al mapa para agregar el primer punto.  Dele clic a la tecla de :guilabel:`Agregar Geometría` para agregar otro punto.  Continúe agregando puntos a la característica en la medida que así se necesiten."
+
+# 3f8b7c18505c45a29627b7bbd040fefd
+# 71e9eaabbaa4462bbc90b27d4789811e
+# 81f127f695bf42229daef852f69b076b
+# 43668336a2bc4aa4b607cff0a31ebab1
+#: ../edit.rst:47 ../edit.rst:99 ../edit.rst:121 ../edit.rst:144
+msgid "Click on the :guilabel:`Accept Feature` button to keep the geometries."
+msgstr "Dele clic a la tecla de :guilabel:`Aceptar Geometría` para mantener las geometrías."
+
+# 5d05315fc8b743059af1213294a2a18e
+# 2c23df1630a84ae5b54fdb8f1f8615c6
+#: ../edit.rst:51 ../edit.rst:103
+msgid ""
+"Once you click on :guilabel:`Accept Feature` the :guilabel:`Edit Attributes`"
+" window will open.  Type in the fields or select values from the dropdowns "
+"to add attribute values. .. figure:: img/editattribmulti.png"
+msgstr "Una vez que le de clic a :guilabel:`Aceptar Geometría`  la ventana de :guilabel:`Editar los Atributos` se abrirá.  Ingrese los valores en los campos o seleccione los valores desde el menú desplegable para agregar los valores de los atributos."
+
+# 0d9bb1fc2a6e47a88d0752931f1ffab6
+#: ../edit.rst:58
+msgid "Add a polygon feature to a layer"
+msgstr "Agregue una elemento de polígono a la capa"
+
+# 2d55fd0608df4c41a6842e4358877db6
+#: ../edit.rst:59
+msgid "A simple polygon layer has a single polygon per feature."
+msgstr "Una capa de un polígono simple, tiene un solo polígono por elemento."
+
+# ae4c4943556c4bdbbcc46790900e6314
+# ea0b41ebaa5649a4ac43d30d2366c3c7
+# 88778507991044e8825a52f80d3c164d
+# 393403525df3419f8b2e75ea94a8e607
+#: ../edit.rst:61 ../edit.rst:87 ../edit.rst:113 ../edit.rst:136
+msgid ""
+"Click on the :guilabel:`Add Feature` button.  The :guilabel:`Drawing "
+"Geometry` dialog will appear at the top of the screen."
+msgstr "Dele clic a la tecla de :guilabel:`Agregar una Elemento`.  El dialogo aparecerá en :guilabel:`Dibujando la Geometría` en la parte superior de la pantalla."
+
+# 585267e54c384a1886114471db86ea10
+#: ../edit.rst:65
+msgid ""
+"Click on the map to begin adding the polygon.  Continue to click to add all "
+"of the vertices.  To finalize the polygon, close the geometry by clicking on"
+" the first vertice again."
+msgstr "Dele clic al mapa para comenzar a agregar al polígono.  Continúe dándole clic para agregar todos los vértices.  Para finalizar el polígono, cierre la geometría al darle clic nuevamente al primer vértice."
+
+# 1f852703b9fc495ebe3f503d62138215
+#: ../edit.rst:69
+msgid ""
+"If you want the polygon to have right angle corners, you can click on the "
+"right angle button."
+msgstr "Si usted quiere que el polígono tenga las esquinas con el ángulo correcto, usted puede darle clic a la tecla del ángulo inferior derecho."
+
+# 736dffd963d9459dbe40f02e2cb749b5
+#: ../edit.rst:84
+msgid "Add a multipoylgon feature to a layer"
+msgstr "Agregar una elemento de múltiples polígono a la capa"
+
+# 745dfd51d2e242ab9486df01f937a9e7
+#: ../edit.rst:85
+msgid ""
+"A multipolygon layer has one or more polygons per feature.  A couple of "
+"examples of multipoygons are the U.S. States of Michigan and Hawaii."
+msgstr "Una capa de múltiples polígonos, tiene uno o más polígonos por elemento.  Un par de ejemplos de los múltiples polígonos son los Estados Michigan y Hawái en los estados Unidos."
+
+# 2995bf5891794705b8e403b93e265fc8
+#: ../edit.rst:91
+msgid ""
+"Click on the map to begin adding the polygon.  Continue to click to add all "
+"of the vertices.  To finalize the polygon, close the geometry by clicking on"
+" the first vertice again.  To add another polygon, click on the "
+":guilabel:`Add Geometry` button.  Repeat the process to add polygons as "
+"needed."
+msgstr ""
+
+# 77a78f83c4754f958508b8f4b3a6619c
+#: ../edit.rst:95
+msgid ""
+"If you want the polygon to have square corners, you can click on the right "
+"angle button."
+msgstr "Si usted quiere que el polígono tenga las esquinas cuadradas, usted le puede dar clic a la tecla del ángulo derecho."
+
+# 47adf3e35c114d9ab2db154c1bd13746
+#: ../edit.rst:110
+msgid "Add a line to a layer"
+msgstr "Agregar una línea a la capa"
+
+# de374401691440dca13bbbdb5f7abcf4
+#: ../edit.rst:111
+msgid ""
+"A line layer consists of lines that represent features - such as roads, "
+"powerlines, and other features."
+msgstr "Una capa de línea consiste de las líneas que representan las características – tales como ser carreteras, líneas de energía y otro tipo de características."
+
+# 09aa0d2951a6400c8a46c9438e2f5d23
+#: ../edit.rst:117
+msgid ""
+"Click on the map to begin adding the linear feature.  Continue to click to "
+"add all of the vertices.  To finalize the line, double-click on the last "
+"vertice."
+msgstr "Dele clic al mapa para comenzar a agregar los elementos lineares.  Continúe dándoles clic para agregar todos los vértices.  Para finalizar la línea, dele doble clic en el último vértice."
+
+# 94a1153c3790422a802745ab96620b09
+#: ../edit.rst:133
+msgid "Add a multiline to a layer"
+msgstr "Agregar múltiples líneas a la capa"
+
+# 27f43e90054249abaf18b40731463dad
+#: ../edit.rst:134
+msgid "A multiline layer has one or more polygons per feature."
+msgstr "Una capa de múltiples líneas tiene uno o más polígonos por elemento."
+
+# 9cb7ac93959b4bfda3e56cdd9a3ca759
+#: ../edit.rst:140
+msgid ""
+"Click on the map to begin adding the linear feature.  Continue to click to "
+"add all of the vertices.  To finalize the line, double-click on the last "
+"vertice.  To add another polygon, click on the :guilabel:`Add Geometry` "
+"button.  Repeat the process to add polygons as needed."
+msgstr "Dele clic a la tecla de :guilabel:`Agregar Elemento`.  El dialogo de :guilabel:`Dibujar la Geometría` aparecerá en la parte superior de la pantalla."
+
+# 64953d483b54465f9029ae1f09a6abd4
+#: ../edit.rst:156
+msgid "Edit attributes"
+msgstr "Editar los atributos"
+
+# 64c74125baa6426490ee01147dbe7edb
+#: ../edit.rst:157
+msgid "You can edit the attributes for any features in an editable layer."
+msgstr "Usted puede editar los atributos de cualquier característica que se encuentre en una capa editable."
+
+# a96ee959929941cc95ef2baf2654d59a
+#: ../edit.rst:159
+msgid "Click on the feature on the map.  The feature info box will appear."
+msgstr "Dele clic a la elemento en el mapa.  Aparecerá la casilla de la información del elemento."
+
+# 71f6f9c391d841d98e5098a9369c4c14
+#: ../edit.rst:163
+msgid ""
+"Click on the :guilabel:`Edit Attibutes` button.  The :guilabel`Edit "
+"Attributes` window will appear."
+msgstr "Dele clic a la tecla de :guilabel:`Editar los Atributos`.  Aparecerá la ventana de :guilabel `Editar los Atributos`."
+
+# 68e0b52533324a0fbe69a1728fa3922b
+#: ../edit.rst:167
+msgid ""
+"Type in the fields or select dropdown values for the fields you want to "
+"edit."
+msgstr "Introduzca los valores en los campos o seleccione el valor del menú desplegable para los campos que usted quiere editar."
+
+# c20b1d71a3914a018b5deb259d7a689d
+# bb847b3c7dd841b7b6b9d9e88f45497c
+#: ../edit.rst:171 ../edit.rst:207
+msgid ""
+"Click the :guilabel:`Save` button at the bottom of the form to save the "
+"attribute updates."
+msgstr "Dele clic a la tecla de :guilabel:`Guardar` en la parte inferior de la plantilla para guardar las actualizaciones del atributo."
+
+# 4337dd680a46439cb4c24c21151a5dc1
+#: ../edit.rst:175
+msgid "Edit point geometries on the map"
+msgstr "Edite un punto de geometrías en el mapa"
+
+# 54cabbedfd574727bdb479fa4045de9d
+#: ../edit.rst:176
+msgid ""
+"Point layers can be one of two types:  simple points and multipoints.  For "
+"simple points, there is one point per feature.  Multipoints can have one or "
+"more points per feature."
+msgstr "Los puntos de las capas pueden ser una de dos tipos: puntos simples y múltiples puntos.  Para los puntos simples, existe un punto por característica.  Los múltiples puntos pueden tener uno o más puntos por elemento."
+
+# acccf96cf3a74d38920563ee08c7df27
+# fd59957d0d7f4540911e90e87cbc6883
+#: ../edit.rst:178 ../edit.rst:195
+msgid ""
+"Click on the point feature on the map.  The feature info box will appear."
+msgstr "Dele clic al punto de la elemento en el mapa.  Aparecerá la casilla de la información del elemento."
+
+# 360c34cbaf334e8ba367e01b7aa3ef66
+#: ../edit.rst:182
+msgid ""
+"Click on the :guilabel:`Edit Geometry` button.  The :guilabel:`Drawing "
+"Geometry` dialog will appear at the top of the screen, and the selected "
+"feature will be highlighted in blue."
+msgstr "Dele clic a la tecla de :guilabel:`Editar la geometría `.  El dialogo de :guilabel:`Dibujando la geometría ` aparecerá en la parte superior de la pantalla y el elemento seleccionada estará resaltada en azul."
+
+# 8ccae18b75a34166bd712bf13c3fd243
+#: ../edit.rst:184
+msgid "Click on the feature and drag it to the new location."
+msgstr "Dele clic en el elemento y arrástrelo a la nueva ubicación."
+
+# e89781df416b428dbafb3edab7b02d9e
+# 34fde48b23fb4958b3412cbfe2b024b1
+#: ../edit.rst:186 ../edit.rst:226
+msgid ""
+"Click on the :guilabel:`Accept Feature` button to keep the feature.  To "
+"cancel the edit, click on the :guilabel:`Cancel Feature` button."
+msgstr "Dele clic a la tecla de :guilabel:`Aceptar el Elemento` para mantener la característica.  Para cancelar, dele clic a la tecla de :guilabel:`Cancelar el Elemento`."
+
+# 74fdf856826b4180aa0af7f50e6f1cc3
+#: ../edit.rst:192
+msgid "Edit point geometry manually"
+msgstr "Editar el punto de geometría manualmente"
+
+# 7064647631844c10a0bc72ff387caad2
+#: ../edit.rst:193
+msgid ""
+"With point geometries, you can also manually edit the coordinates.  This is "
+"useful when you have the coordinates from another source (such as a report)."
+msgstr "Con las geometrías del punto, usted puede manualmente editar las coordenadas.  Esto es muy útil cuando se tiene las coordenadas de otra fuente (como ser de un informe)."
+
+# 25cae4b2227643af866879f1af9101ea
+#: ../edit.rst:199
+msgid ""
+"Click on the :guilabel:`Edit Attributes` button.  The :guilabel:`Edit "
+"Attributes` window will appear."
+msgstr "Dele clic al punto del elemento en el mapa.  Aparecerá la casilla con la información del elemento."
+
+# cf3bb380023442dab6ed5704d2fe525e
+#: ../edit.rst:203
+msgid "Click on the coordinates field to edit the point coordinates."
+msgstr "Dele clic a la tecla de :guilabel:`Editar los Atributos`.  Aparecerá la ventana de :`Editar los Atributos’."
+
+# 6a7c8c48cd30482c85a2d2d56f0c96ba
+#: ../edit.rst:211
+msgid "Edit polygon and line geometries"
+msgstr "Editar el polígono y las geometrías de línea"
+
+# 54bcfb6288394f1ca9b57954c1ead93b
+#: ../edit.rst:212
+msgid ""
+"Any existing features in an editable layer can be modified.  If it is a "
+"GeoGit layer, the history of all of the edits will be maintain to ensure the"
+" provenance of the data."
+msgstr "Se puede editar cualquier elementos existente en una capa editable.  Si es una capa de GeoGit, el historial de todas las ediciones se mantendrá para asegurar el origen de los datos."
+
+# 90f18f4a354547b89905fb2f1a105b56
+#: ../edit.rst:214
+msgid ""
+"Click on the feature you want to edit.  The feature info box will appear."
+msgstr "Dele clic a el elemento que usted quiere editar.  Aparecerá la casilla de la información del elemento."
+
+# bdc957d80b1a4a7fa5d3373670aaed19
+#: ../edit.rst:218
+msgid ""
+"Click on the :guilabel:`Edit Geometry` button.  The :guilabel:`Drawing "
+"Geometry` dialog will appear at the top of the screen."
+msgstr "Dele clic a la tecla de :guilabel:`Editar la geometría`. El dialogo aparecerá en la parte superior de la pantalla :guilabel:`Dibujando la geometría`."
+
+# 1f756384e4e14f0c9926bc7f27e80a1d
+#: ../edit.rst:222
+msgid ""
+"Move the mouse over the geometry to highlight the vertice you want to edit."
+"  To move the vertice, click and drag it.  Repeat this process until you "
+"have completed editing."
+msgstr "Mover el ratón sobre la geometría para resaltar el vértice que usted quiere editar.  Para mover el vértice, dele clic y arrástrelo.  Repita este proceso hasta que usted haya finalizado de editar."

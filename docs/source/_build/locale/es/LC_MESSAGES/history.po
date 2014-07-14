@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:08+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 0eb0159bc3624fddba691e6156968c6f
+#: ../history.rst:4
+msgid "Working with History"
+msgstr "Trabajando con el Historial"
+
+# 1047958768954f6b95ecbadd68b291e4
+#: ../history.rst:5
+msgid ""
+"GeoGit is a specialized database that was designed for distributed editing "
+"and supports collaborative editing of geospatial data.  It is designed for "
+"vector data (point, line, polygon, etc.). When a layer has been stored in "
+"GeoGit, it maintains the history of all of the changes made to the data "
+"along with who made the changes and when. Within the web map, you can view "
+"the history for a layer and for the features."
+msgstr "GeoGit es una base de datos especializada que fue diseñada para distribuir y apoyar la edición en colaboración de los fatos geoespaciales editados. Ha sido diseñada para los datos de vector (punto, línea y polígono entre otros). Cuando una capa es guardada en GeoGit, esta mantiene su historial de todos los cambios realizados a los datos, junto con la persona que hizo los cambios y cuando se hicieron los cambios. Dentro del mapa de la web, usted puede visualizar todo el historial de esa capa, así como para las características."
+
+# aacd00bb922d4b6294474320a952e98b
+#: ../history.rst:10
+msgid "History tab in GeoNode"
+msgstr "La Viñeta del Historial en GeoNode"
+
+# f63b81ca7cd243c0a4e2590268838fce
+#: ../history.rst:11
+msgid ""
+"GeoGit layers in GeoNode will have a History tab in addition to the other "
+"tabs on the Layer detail page.  The history is a list of commits that have "
+"been made to the layer."
+msgstr "Las capas de GeoGit en GeoNode, tendrán una viñeta de historial a parte de las otras viñetas en la página de detalles de la capa.  El historial es una lista de confirmaciones que se han realizado a la capa."
+
+# 4f12339780b2459b862703de5e5ff7b1
+#: ../history.rst:13
+msgid ""
+"In the Layer detail page, click on the history tab to see the chronological "
+"list of commits."
+msgstr "En la página de detalles de la capa, dele clic a la viñeta del historial para poder visualizar la lista en orden cronológico de las confirmaciones."
+
+# 11498e7a10544dab9a126f6242c3c5eb
+#: ../history.rst:17
+msgid "*Layer history tab in GeoNode*"
+msgstr "*La Viñeta del Historial de la Capa en GeoNode* "
+
+# 90c3ada9b46043ec82b53e140ac46e98
+#: ../history.rst:19
+msgid ""
+"In order to search through the commit history, type in the search box in the"
+" :guilabel:`History` tab.  You can search for any value in the commit "
+"history."
+msgstr "A manera de buscar a través del historial de confirmaciones, en la casilla de búsqueda ingrese :guilabel:`Historial` en la viñeta.  En el historial de la compromiso, Usted puede realizar la búsqueda de cualquier valor."
+
+# a0966c747181413ca76b1bf3d24f92e0
+#: ../history.rst:23
+msgid "View layer history"
+msgstr "Mire el Historial de la Capa"
+
+# aa0816ae41e6417b8648b96bc8914cf2
+#: ../history.rst:24
+msgid "You can view the history of a layer."
+msgstr "Usted puede visualizar el historial de la capa."
+
+# 740bdfb87d1349ddb7166acbf56ad10c
+#: ../history.rst:26
+msgid ""
+"Click on the name of the layer you want to view.  The menu will expand to "
+"show additional layer options."
+msgstr "Dele clic en el nombre de la capa que usted quiere visualizar.  El menú se expandirá a manera de mostrar las opciones adicionales de la capa."
+
+# 68c09e6130b54153907d815fc2274c5f
+#: ../history.rst:28
+msgid ""
+"Click on the :guilabel:`Show History` button.  The history will expand at "
+"the bottom."
+msgstr "Dele clic a la tecla de :guilabel:`Mostrar el Historial `.  El historial se expandirá en la parte inferior."
+
+# 4f913aed9d7b4a828b9d725624250ed7
+# 4bdfe7a991624547a59b052af6537e4c
+# dd74aec49f37444db0d6c18cff35c3fe
+#: ../history.rst:32 ../history.rst:91 ../history.rst:122
+msgid "*Show History Button for Layers*"
+msgstr "*Mostrar la Tecla del Historial para las Capas*"
+
+# 83bbe7d2324743fea86aa014c54073bd
+#: ../history.rst:34
+msgid ""
+"To view details about a commit, hover the mouse over it.  The bar next to "
+"the commit indicates the type of edits that were made.  Green indicates a "
+"new feature was added.  Yellow indicates a feature was modified.  Red "
+"indicates a feature was deleted.  A commit can have multiple types of edits."
+"  In such a case, the bar will have colors proportional to the types of "
+"edits that were made."
+msgstr "Para poder ver los detalles acerca de un compromiso, mueva el ratón sobre ella.  La barra junto a la compromiso indica el tipo de ediciones fueron llevadas a cabo.\nEl color verde indica que se agregó una nueva característica.  El color amarillo indica que una característica fue modificada. El color rojo indica que una característica fue eliminada.  Un compromiso puede tener múltiples tipos de ediciones. \nEn tal caso, la barra tendrá colores proporcionales a los tipos de las ediciones que fueron llevadas a cabo."
+
+# 70dce5a621ff405d9d712792798cdbc1
+#: ../history.rst:38
+msgid "*History detail for a commit*"
+msgstr "*Detalle del Historial para una Compromiso*"
+
+# 695f867a195d4f1f81ad2588679c52c6
+#: ../history.rst:40
+msgid ""
+"Click on the commit and the history will update to show the individual edits"
+" within that commit.  MapLoom will make one commit per edit.  The Arbiter "
+"mobile app can upload many edits as one commit."
+msgstr "Dele clic al compromiso y el historial se actualizara para mostrar las ediciones del individuo para con ese compromiso.  MapLoom hará un compromiso por cada una de las ediciones. La aplicación móvil de Arbiter, puede cargar varias ediciones como un compromiso."
+
+# 1f666f51bfb84304983b601c33d88c39
+# 05b43e29f6e045a48635de4dd8a7128a
+#: ../history.rst:44 ../history.rst:69
+msgid "*List of edits in a commit*"
+msgstr "*Lista de las ediciones en un compromiso*"
+
+# 6c4b35656036462ab87be1238f4c8dc0
+#: ../history.rst:46
+msgid ""
+"Clicking on an edit will bring up a new window that shows the specific "
+"changes that were made.  The changes will be highlighted with the same color"
+" coding as the commits.  Green means something was added, yellow means it "
+"was changed, and red means it was deleted.  In the image below, the feature "
+"was moved, and so the point on the map is highlighted in yellow."
+msgstr "Al darle clic en una edición, esta abrirá una nueva ventana que muestre los cambios específicos que fueron llevados a cabo. Los cambios serán resaltados con el mismo código de color, como en los compromisos.  El color verde significa que algo fue agregado, el color amarillo significa que algo ha sido cambiado y el color rojo significa que algo fue eliminado. En las imágenes que a continuación se presentan, la característica fue movida, así que el punto en el mapa es resaltado en amarillo. "
+
+# 505e8f4de21d4957be044d266f0b6e2b
+# f1d51a286b9e442b83dffaa831bbb8a5
+#: ../history.rst:50 ../history.rst:75
+msgid "*Detailed view of changes*"
+msgstr "*Visualización detallada de los cambios*"
+
+# 54c8cbfb3dcb405e978e1dee3ec22080
+#: ../history.rst:53
+msgid "View feature history"
+msgstr "Visualizar la historia del elemento"
+
+# 9205e411ae9642c0adbae9bcd799bdde
+#: ../history.rst:55
+msgid ""
+"In addition to viewing the history of edits on a GeoGit layer, you can also "
+"view the history of a feature."
+msgstr "Agregado a visualizar la historia de las ediciones en una capa de GeoGit, usted también puede ver el historial del elemento."
+
+# d8ca1265ecc34a2b829b59fcacc5199b
+#: ../history.rst:57
+msgid "Click on the feature on the map.  The feature details will appear."
+msgstr "Dele clic a la característica en el mapa.  Aparecerán los detalles del elemento."
+
+# e5e3b65d04de42ba8014a929b6fca087
+#: ../history.rst:59
+msgid ""
+"Click on the :guilabel:`Show History` button.  The history list will expand "
+"with the commits that contain changes for that feature."
+msgstr "Dele clic a la tecla de :guilabel:`Mostrar el Historial `.  La lista del historial se expandirá con los compromisos que contengan los cambios para elemento."
+
+# 9d8a736b5be641d688d91dbebb24224b
+#: ../history.rst:63
+msgid "*Show History for a feature*"
+msgstr "*Mostrar el Historial para el elemento*"
+
+# 8bd50a72a42c465fa232759e671a01f6
+#: ../history.rst:65
+msgid ""
+"Click on the specific commit you want to view details for.  The history will"
+" update to show the edits made to the feature for that commit."
+msgstr "Dele clic al compromiso específico en el que usted quiere visualizar los detalles de este.  El historial se actualizara para mostrar las ediciones llevadas a cabo a la característica de ese compromiso."
+
+# 55e40970de8341769324cbc488060a7a
+#: ../history.rst:71
+msgid ""
+"Clicking on the edit in the list will bring up a new window that shows the "
+"specific changes that were made.  The changes will be highlighted with the "
+"same color coding as the commits.  Green means something was added, yellow "
+"means it was changed, and red means it was deleted.  In the image below, the"
+" feature was moved, and so the point on the map is highlighted in yellow."
+msgstr "Dele clic en la lista de las ediciones, la que abrirá una nueva ventana que muestra los cambios específicos que fueron llevados a cabo. Los cambios serán resaltados con la misma codificación de colores. El color verde significa que algo ha sido agregado, el color amarillo significa que algo ha sido agregado y el color rojo significa que algo ha sido eliminado. En la imagen a continuación, la característica fue movida, y por lo tanto el punto en el mapa ha sido resaltado en amarillo."
+
+# 5cf90852eb444fa2b22515be9c4020bb
+#: ../history.rst:77
+msgid ""
+"Click on the :guilabel:`Show Authors` button to see the names and dates for "
+"every attribute in the feature.  Note that through the lifetime of a "
+"feature, there can be several authors.  This is a good way to see who has "
+"contributed to a feature's current state."
+msgstr "Dele clic a la tecla de :guilabel:`Muestre los Autores ` para poder ver los nombres y las fechas para cada uno de los atributos en la característica. Note que puede haber varios autores a través del tiempo de vida de la característica.  Esta es una buena forma de ver quien ha contribuido al estado actual de la característica."
+
+# 8d369741376b4b0cb6cb9a71b311a08f
+#: ../history.rst:81
+msgid "*The Show Authors button*"
+msgstr "*La Tecla para Mostrar los Autores*"
+
+# d7ee69e3f72a4fa68c3222f5ed1df344
+#: ../history.rst:84
+msgid "Summarize history"
+msgstr "Resumen del Historial"
+
+# 961d58c0be9a4b00bddd6428f2221ab0
+#: ../history.rst:85
+msgid ""
+"You can visualize a summary of all of the edits within a date range for a "
+"layer."
+msgstr "Usted puede visualizar un resumen de todas las ediciones dentro de un rango de fechas para una capa."
+
+# 0cb05051e8fb46a483e822f71a30f025
+# 4f9b19966c004067935ca3462166a522
+#: ../history.rst:87 ../history.rst:118
+msgid ""
+"Click on the :guilabel:`Show History` button for layer that you want to "
+"summarize."
+msgstr "Dele clic en la tecla de :guilabel:`Muestre el Historial ` para la capa que usted quiere resumir."
+
+# ce24aa3d96ca46579ffa9f9f802a80f2
+# 662121dfff5c47d28d1425d4d6d152bd
+#: ../history.rst:93 ../history.rst:124
+msgid "Click on the :guilabel:`History Summary` button."
+msgstr "Dele clic en la tecla :guilabel:`Resumen del Historial`."
+
+# d02a8acec73c4bfc953e2bd19518be71
+# d2f89137e753402cb119dc6a5fe508de
+#: ../history.rst:97 ../history.rst:128
+msgid "*History Summary button*"
+msgstr "*Tecla del Resumen del Historial*"
+
+# 4fc918d5de0b4f6380be14cb16a23534
+# e297d73b46504a8c87b609195510127f
+#: ../history.rst:99 ../history.rst:130
+msgid "Enter the date range for the history to summarize"
+msgstr "Ingrese el rango de fechas a ser resumidas por el historial"
+
+# ab266a8beab14de1ad32a080f5a1f571
+# 54136153f0ce42298a006c826332be66
+#: ../history.rst:103 ../history.rst:134
+msgid "*Select the Date Range*"
+msgstr "*Seleccione los Rangos de las Fechas*"
+
+# e2c706c74dd440f1a7d75d07c0b2dab7
+#: ../history.rst:105
+msgid "Click on the :guilabel:`Summarize` button"
+msgstr "Dele clic a la tecla de :guilabel:`Resumir`"
+
+# 9fbc212f1c624f8cb4a64b56fe33e8a5
+#: ../history.rst:109
+msgid "*Summary of changes for the selected date range*"
+msgstr "*Resumen de los Cambios para los Rangos de Fecha Seleccionados*"
+
+# 94ebf69d95eb4378a4d4af9b273377d0
+#: ../history.rst:111
+msgid "Click on one of the edits in the list to see a detailed view"
+msgstr "Dele clic en una de las ediciones en la lista para tener una visualización detallada"
+
+# e04f0d01b06049d581d3747a4c1c09a2
+#: ../history.rst:115
+msgid "Export history"
+msgstr "Exportando el Historial"
+
+# a7ff3e0dd049483ea6f8ed2c3631cd09
+#: ../history.rst:116
+msgid ""
+"You can export a summary of all of the edits within a date range for a "
+"layer."
+msgstr "Usted puede exportar un resumen de todas las ediciones dentro de un rango de fechas para una capa."
+
+# 1284b4f6e2f74f12830e5033cf86d277
+#: ../history.rst:136
+msgid "Click on the :guilabel:`Export CSV` button"
+msgstr "Dele clic a la tecla de :guilabel:`Exportar CSV`"
+
+# b6bd1d03741440118298d69c43117db3
+#: ../history.rst:138
+msgid ""
+"When you are prompted to save the file, browse to the location where you "
+"want to save it to your hard drive and click :guilabel:`Ok`"
+msgstr "Cuando se le solicite que guarde un archivo, navegue por la ubicación en donde usted quiere guardar el archivo en su disco duro y dele clic a :guilabel:`Ok`"

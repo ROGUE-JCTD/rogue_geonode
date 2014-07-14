@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-10 16:46+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# d18e2c25dcd14fadb84e0b1228e5e059
+#: ../index.rst:4
+msgid "GeoSHAPE Help"
+msgstr "Ayuda de GeoSHAPE"
+
+# 722f8831b2684a2ba369ea4abeb0f103
+#: ../index.rst:6
+msgid ""
+"These pages provide guidance on using the different tools in GeoSHAPE and in"
+" the web map for discovering geospatial information, editing, and viewing "
+"history."
+msgstr "Estas páginas proporcionan una orientación acerca de cómo usar las diferentes herramientas en GeoSHAPE y en el mapa de la web para descubrir la potencial información geoespacial, así como editarla y ver el historial."

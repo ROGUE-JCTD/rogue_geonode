@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../mapinfo.rst:4
+# d849bb6c6e3649a5b527f3df114ca933
+msgid "Managing Maps"
+msgstr ""
+
+#: ../mapinfo.rst:5
+# a7ae36aa3bf24c29a784575c30e6a6d2
+msgid "Every map has it's own page that provides more information about the map along with other options such as permissions and metadata. To get to the page for a map, click on the name of the map."
+msgstr ""
+
+#: ../mapinfo.rst:10
+# 35929a4e9bbb40388a7b81fecf916bcc
+msgid "The map detail page provides a view of the map, along with information about the map. It also tells you the layers that are used in the map."
+msgstr ""
+
+#: ../mapinfo.rst:16
+# 7297e671dd474d91a317e899f635e0e5
+msgid "Download Data Layers"
+msgstr ""
+
+#: ../mapinfo.rst:17
+# 8c68593a1f1b4c0a92b36423dad887f5
+msgid "This will allow you to download the contents of the map that are stored in GeoNode.  It does not download data from other servers, however."
+msgstr ""
+
+#: ../mapinfo.rst:19
+#: ../mapinfo.rst:36
+# 05f6176eb39a4753819b709e951f8167
+# d53cdc0f4f9b485d8480e225432b1090
+msgid "Click on the :guilabel:`Download Map` button."
+msgstr ""
+
+#: ../mapinfo.rst:23
+#: ../mapinfo.rst:40
+# a2c8057339d14cfa995af0394bf6d06b
+# 257e93fee6024f26943d004f3c5bce51
+msgid "*Download map menu*"
+msgstr ""
+
+#: ../mapinfo.rst:25
+# 08aeabe67043402796ffdc035701c01c
+msgid "Select :guilabel:`Download Data Layers`"
+msgstr ""
+
+#: ../mapinfo.rst:27
+# 235eb106a01c48f8989dc394e9a372b7
+msgid "Select the layer(s) that you want to download individually OR click on :guilabel`Start downloading this map`"
+msgstr ""
+
+#: ../mapinfo.rst:33
+# 08b283b1db304c67adf6f85a9abcef74
+msgid "Download Web Map Context"
+msgstr ""
+
+#: ../mapinfo.rst:34
+# 34c7e707143f41e185449e413c628457
+msgid "The Web Map Context (WMC) is an open geospatial consortium (OGC) standard for metadata describing a map service."
+msgstr ""
+
+#: ../mapinfo.rst:42
+# 16a5d5c946b640bc81bf475f36a89e65
+msgid "Click on the :guilabel:`Download Web Map Context` button.  A new tab will open with the XML for the web map context."
+msgstr ""
+
+#: ../mapinfo.rst:46
+# df79fdecd0984c83a9be0b56cbac5fa4
+msgid "Edit Map Metadata"
+msgstr ""
+
+#: ../mapinfo.rst:47
+# 7881edb222204f33a5588c772301ea2f
+msgid "You can edit the information about the map."
+msgstr ""
+
+#: ../mapinfo.rst:49
+#: ../mapinfo.rst:68
+#: ../mapinfo.rst:85
+#: ../mapinfo.rst:102
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+msgid "Click on the :guilabel:`Edit Map` button"
+msgstr ""
+
+#: ../mapinfo.rst:53
+#: ../mapinfo.rst:72
+#: ../mapinfo.rst:89
+#: ../mapinfo.rst:106
+# ec637b391d6d4ee78bccaeee7c2745bb
+# 63caafaa0b144739801e7c145105cc3f
+# 64ca97c93e884e75889afd8c6bfd122d
+# 24079a24dc9a4b8eb8242eed0903d634
+msgid "*Edit map menu*"
+msgstr ""
+
+#: ../mapinfo.rst:55
+# f5708f9d8c744661ad04115b2169cf5d
+msgid "Click on Edit Map Metadata"
+msgstr ""
+
+#: ../mapinfo.rst:57
+# 650bb3c4bffa4b118172accc5563393a
+msgid "In the metadata page, update the information about the map."
+msgstr ""
+
+#: ../mapinfo.rst:59
+# ca6a0bf0b12448ea8a57aeb61a07f4dd
+msgid "Click the :guilabel:`Update` button at the bottom of the page to save your changes."
+msgstr ""
+
+#: ../mapinfo.rst:63
+# e724f97b59204f029d68385ccc794623
+msgid "Set Map Thumbnail"
+msgstr ""
+
+#: ../mapinfo.rst:64
+# 2f8b0f549c2a4919bd372b3a712936bc
+msgid "By default the thumbnail images for maps will only have the vector layers.  In order to include the background map you will need to use the Set Map Thumbnail button."
+msgstr ""
+
+#: ../mapinfo.rst:66
+# 5c728e9254b642b88ae41c5c236c61cd
+msgid "Pan and zoom the inset map so that it's centered on the view you would like for the map thumbnail."
+msgstr ""
+
+#: ../mapinfo.rst:74
+# dd3fb8c2560442d5a274d0d18712bb88
+msgid "Click on :guilabel:`Set Map Thumbnail`.  This will set the map thumbnail with the base map and layers included."
+msgstr ""
+
+#: ../mapinfo.rst:78
+# 68ebbbed92354cbbba024669d85e0adb
+msgid "*Map with thumbnail*"
+msgstr ""
+
+#: ../mapinfo.rst:82
+# 14dc6e87fd9c4fac960b566780d06a73
+msgid "Edit Map Permissions"
+msgstr ""
+
+#: ../mapinfo.rst:83
+# 3e181e620b004dccb4e648b210f23813
+msgid "The map permissions determine which users can view or edit a map."
+msgstr ""
+
+#: ../mapinfo.rst:91
+# 06725672ea32499784493e60fa03d882
+msgid "Set the permissions for viewing, editing, and managing as desired."
+msgstr ""
+
+#: ../mapinfo.rst:95
+# b5c46af46eee465ab6a50db483bc08d6
+msgid "Click the :guilabel:`Apply Changes` button."
+msgstr ""
+
+#: ../mapinfo.rst:99
+# 86b60395e7674936a96314f20af89758
+msgid "Remove a Map"
+msgstr ""
+
+#: ../mapinfo.rst:100
+# f110379cadc7418481797ad1f429c70e
+msgid "You can remove a map completely from GeoNode.  This action removes the map for all users."
+msgstr ""
+
+#: ../mapinfo.rst:108
+# 006b96b89633468eae991b7002cdf24d
+msgid "Click on the :guilabel:`Remove This Map` button"
+msgstr ""
+
+#: ../mapinfo.rst:110
+# 699410bad9b14b54bc9b8d2c6e68a648
+msgid "Confirm the removal of the map by clicking :guilabel:`Yes, I am Sure`"
+msgstr ""
+

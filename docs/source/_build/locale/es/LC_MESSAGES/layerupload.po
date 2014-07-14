@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:33+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# b9bdd2efc36d471d865a3da68863f24e
+#: ../layerupload.rst:4
+msgid "Uploading a layer"
+msgstr "Subir una capa"
+
+# d6702d52b0da4163ae5c51ea8706577c
+#: ../layerupload.rst:6
+msgid ""
+"GeoNode allows you to upload layers.  The supported formats are shapefile, "
+"KML, and GeoTiff.  Once the layers are uploaded, they will be available to "
+"other users in GeoNode."
+msgstr "GeoNode le permite a usted el poder subir las capas.  Los formatos de apoyo son shapefile, KML y GeoTiff.  Una vez que las capas hayan sido cargadas, estarán a la disposición de los otros usuarios en GeoNode."
+
+# a81e93022be54f0d92d7b67839c64d06
+#: ../layerupload.rst:9
+msgid ""
+"Click the :guilabel:`Layers` link on the top toolbar. This will bring up the"
+" Layers menu."
+msgstr "Dele clic al vínculo de :guilabel:`Capas` en la barra de herramientas en la parte superior. Esto jalara el Menú de las Capas."
+
+# 3a3f2679d875428aa630d5a691d788fc
+#: ../layerupload.rst:13
+msgid "*Main toolbar for GeoNode*"
+msgstr "*Principal barra de herramientas para GeoNode*"
+
+# 61b707d8896640e48cd8dc27c18f5565
+#: ../layerupload.rst:17
+msgid "*Layers menu*"
+msgstr "*Menú de las Capas*"
+
+# fd8270fd04284dd1a22aa16aa7e2d959
+#: ../layerupload.rst:19
+msgid ""
+"Click :guilabel:`Upload Layers` in the Layers toolbar. This will bring up "
+"the upload form"
+msgstr "Dele clic a :guilabel:`Subir las capas` en la barra de herramientas de las capas. Esto traera la forma de subir."
+
+# 63eb4f5c9fb441d399fc41714ebdc1cf
+#: ../layerupload.rst:23
+msgid "*Layers toolbar*"
+msgstr "*Barra de herramientas de las capas*"
+
+# 5f8956c35afe494bb5c63ccf726d7fa7
+#: ../layerupload.rst:27
+msgid "*Upload Layers form*"
+msgstr "*Forma de subir las capas*"
+
+# 236a21c71ebd4ea2ae7ee4443c34f334
+#: ../layerupload.rst:29
+msgid ""
+"Either browse to the files to be uploaded or drag and drop them in the "
+"browser.  Note that many files consist of multiple files to be complete.  If"
+" you are uploading a shapefile, then you need to include the .dbf, .prj, "
+".shp, and .shx files."
+msgstr "Ya sea navegando o arrastrando los archivos a ser cargados y dejándolos caer en el navegador.  Note que muchos de los archivos consisten de múltiples archivos a ser completados. Sí usted est· cargando un shapefile, entonces usted necesitar· incluir los archivos .dbf, .prj, .shp y .shx."
+
+# 157f042d6f414875ad087352eb597fe4
+#: ../layerupload.rst:31
+msgid ""
+"Click on the :guilabel:`Browse...` button. This will bring up a local file "
+"dialog. Navigate to your data folder and select all of the four files "
+"composing the geospatial layer.  Note that some data formats consist of "
+"multiple files.  If you are uploading a shapefile, then you need to include "
+"the .dbf, .prj, .shp, and .shx files.  Alternatively you could drag and drop"
+" the four files in the :guilabel:`Drop files here` area.  The upload form "
+"should appear like this now:"
+msgstr "Dele clic a la tecla de :guilabel:`Navegar...` . Esto jalará un dialogo de archivo local.  Navegue hasta su carpeta de datos  y seleccione uno de los cuatro archivos que componen la capa geoespacial. Note que algunos de los formatos de los datos consisten de múltiples archivos. Si usted está cargando un archivo shapefile, entonces usted necesita incluir los archivos .dbf, .prj, .shp y .shx.  Alternativamente usted podrá arrastrar y dejar caer los cuatro archivos en el rea de :guilabel:`Dejar caer los archivos aquí`."
+
+# 6222d860450f42a4a841884248950f98
+#: ../layerupload.rst:35
+msgid "*Files ready for upload*"
+msgstr "*Los archivos están listos para ser cargados*"
+
+# d29f88d724194cfd963537197020d948
+#: ../layerupload.rst:37
+msgid ""
+"GeoNode has the ability to restrict who can view, edit, and manage layers. "
+"On the right side of the page, under :guilabel:`Who can view and download "
+"this data?`, select :guilabel:`Any registered user`. This will ensure that "
+"anonymous view access is disabled."
+msgstr "El GeoNode tiene la capacidad de restringir quien puede ver, editar y administrar las capas. En el lado derecho de la página, bajo  :guilabel:`Quién puede ver y descargar estos datos?`, seleccione la :guilabel:`Cualquier usuario registrado`. Esto asegurará que el acceso de anónimos para ver este deshabilitado."
+
+# 3a1943d587e54f10829bd4cd7936796f
+#: ../layerupload.rst:39
+msgid ""
+"In the same area, under :guilabel:`Who can edit this data?`, select the "
+":guilabel:`Only the following users or groups` option and type your "
+"username. This will ensure that only you are able to edit the data in the "
+"layer."
+msgstr "En la misma área, bajo :guilabel:`Quién puede editar estos datos?`, seleccione la opción e introduzca su nombre de usuario :guilabel:`Solamente los siguientes usuarios o grupos`. Esto asegurar· que solamente usted puede editar los datos en la capa."
+
+# c0ffb3a1b4ec4519b7d767d9d84bf6a1
+#: ../layerupload.rst:43
+msgid "*Permissions for new layer*"
+msgstr "*Permisos para una nueva capa*"
+
+# a1f8be2d88e04632be88e47206f986ce
+#: ../layerupload.rst:45
+msgid ""
+"If no destination is selected, the files will be imported into the default "
+"spatial data store for GeoNode.  This will always be the destination for "
+"raster data.  If you have vector data that you want to be versioned, then "
+"check the box for 'Import to GeoGit'.  The form will update to provide a "
+"dropdown menu for existing GeoGit repositories.  To use an existing "
+"repository as the destination, select it in the dropdown. In order to import"
+" the data into a new GeoGit repository: 1. type the name of the repository "
+"and 2. select that name in the dropdown so it appears in the field."
+msgstr "Si no se seleccione ningún destino, el archivo será importado al almacenamiento predeterminado de datos espaciales para GeoNode. Este siempre será el destino para conservar los datos.  Si usted tiene datos vectores que usted quiere ser versionada, luego revise la casilla para 'Importar a GeoGit'. La forma será actualizada para proporcionar un menú desplegable para los repositorios de GeoGit existentes.  Para utilizar un deposito existente como destino, selecciónelo en el menú desplegable. A manera de importar los datos a un depósito nuevo de GeoGit: 1. Introduzca el nombre del depósito y 2. seleccione el nombre en el menú desplegable por lo que aparece en el campo."
+
+# c86f384055584876bdc752bf0369ed43
+#: ../layerupload.rst:49
+msgid ""
+"Click :guilabel:`Upload` to upload the data and create a layer. A dialog "
+"will display showing the progress of the upload."
+msgstr "Dele clic a :guilabel:`Subir` para cargar los datos y crear una capa. Un dialogo se desplegara mostrando el progreso  de la descarga."
+
+# 30a1a8d898254e9db2f90cadee8c90c8
+#: ../layerupload.rst:53
+msgid "*Upload in progress*"
+msgstr "*Subir en Progreso*"
+
+# 1fa2626dae394eecab75d8802e1400ff
+#: ../layerupload.rst:55
+msgid ""
+"Your layer has been uploaded to GeoNode. Now you will be able to access to "
+"the its info page (clicking on the :guilabel:`Layer Info` button), access to"
+" its metadata edit form (clicking on the :guilabel:`Edit Metadata` button) "
+"or to manage the styles for it (clicking on the :guilabel:`Manage Styles` "
+"button)."
+msgstr "Su capa ha sido cargada a GeoNode. Ahora usted podrá acezar a su página de información (dele clic a la tecla de :guilabel:`Información de la Capa`), acceso a so forma de editar sus meta datos (al darle clic a la tecla de :guilabel:`Editar Meta Datos`) o administrar los estilos para ello (al darle clic a la tecla en :guilabel:`Estilos de Administración)."

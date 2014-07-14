@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 16:42+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# dbe596fceb384efc9bcf8dfcad92b557
+#: ../layers.rst:4
+msgid "Working with Layers"
+msgstr "Trabajando con las capas"
+
+# e369ac69fe6f472f92da76bab179ca7f
+#: ../layers.rst:6
+msgid ""
+"One of the primary components of GeoNode is the **layer**. Layers are a "
+"published resource representing a raster or vector spatial data source. "
+"Layers also can be associated with metadata, ratings, and comments."
+msgstr "Uno de los principales componentes de GeoNode es la **capa**. Las capas son un recurso publicado que representa una fuente de datos espaciales de un raster o vector.  Las capas también pueden ser asociadas con los meta datos, clasificaciones y comentarios."

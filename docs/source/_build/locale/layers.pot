@@ -1,0 +1,28 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../layers.rst:4
+# dbe596fceb384efc9bcf8dfcad92b557
+msgid "Working with Layers"
+msgstr ""
+
+#: ../layers.rst:6
+# e369ac69fe6f472f92da76bab179ca7f
+msgid "One of the primary components of GeoNode is the **layer**. Layers are a published resource representing a raster or vector spatial data source. Layers also can be associated with metadata, ratings, and comments."
+msgstr ""
+

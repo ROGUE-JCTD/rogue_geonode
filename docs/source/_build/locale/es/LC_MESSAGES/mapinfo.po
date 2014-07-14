@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:35+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# d849bb6c6e3649a5b527f3df114ca933
+#: ../mapinfo.rst:4
+msgid "Managing Maps"
+msgstr "Administrando los Mapas"
+
+# a7ae36aa3bf24c29a784575c30e6a6d2
+#: ../mapinfo.rst:5
+msgid ""
+"Every map has it's own page that provides more information about the map "
+"along with other options such as permissions and metadata. To get to the "
+"page for a map, click on the name of the map."
+msgstr "Cada mapa tiene su propia página que proporciona más información acerca del mapa junto con otras opciones como ser los permisos y los meta datos.  \nPara obtener la página para un mapa, dele clic al nombre del mapa."
+
+# 35929a4e9bbb40388a7b81fecf916bcc
+#: ../mapinfo.rst:10
+msgid ""
+"The map detail page provides a view of the map, along with information about"
+" the map. It also tells you the layers that are used in the map."
+msgstr "La página de detalles del mapa proporciona una vista del mapa, junto con otra información acera del mapa. También le informa sobre las capas que son utilizadas en el mapa."
+
+# 7297e671dd474d91a317e899f635e0e5
+#: ../mapinfo.rst:16
+msgid "Download Data Layers"
+msgstr "Descarga de las Capas de los Datos"
+
+# 8c68593a1f1b4c0a92b36423dad887f5
+#: ../mapinfo.rst:17
+msgid ""
+"This will allow you to download the contents of the map that are stored in "
+"GeoNode.  It does not download data from other servers, however."
+msgstr "Esto le permitirá descargar los contenidos del mapa que están almacenados en GeoNode.  Sin embargo, no descarga los datos de otros servidores."
+
+# 05f6176eb39a4753819b709e951f8167
+# d53cdc0f4f9b485d8480e225432b1090
+#: ../mapinfo.rst:19 ../mapinfo.rst:36
+msgid "Click on the :guilabel:`Download Map` button."
+msgstr "Dele clic a la tecla en :guilabel:`Descargar el Mapa`."
+
+# a2c8057339d14cfa995af0394bf6d06b
+# 257e93fee6024f26943d004f3c5bce51
+#: ../mapinfo.rst:23 ../mapinfo.rst:40
+msgid "*Download map menu*"
+msgstr "*Descarga el menú del mapa*"
+
+# 08aeabe67043402796ffdc035701c01c
+#: ../mapinfo.rst:25
+msgid "Select :guilabel:`Download Data Layers`"
+msgstr "Selecciona :guilabel`Descargar las capas de los datos`"
+
+# 235eb106a01c48f8989dc394e9a372b7
+#: ../mapinfo.rst:27
+msgid ""
+"Select the layer(s) that you want to download individually OR click on "
+":guilabel`Start downloading this map`"
+msgstr "Seleccione la capa o capas que usted quiere descargar individualmente O dele clic a :guilabel`Comience la descarga de este mapa`"
+
+# 08b283b1db304c67adf6f85a9abcef74
+#: ../mapinfo.rst:33
+msgid "Download Web Map Context"
+msgstr "Descargue el Contexto del Mapa de la Web"
+
+# 34c7e707143f41e185449e413c628457
+#: ../mapinfo.rst:34
+msgid ""
+"The Web Map Context (WMC) is an open geospatial consortium (OGC) standard "
+"for metadata describing a map service."
+msgstr "El Contexto del Mapa de la Web (WMC) es un consorcio de est·ndares geoespaciales abierto (OGC) para los meta datos que describen un servicio de mapas."
+
+# 16a5d5c946b640bc81bf475f36a89e65
+#: ../mapinfo.rst:42
+msgid ""
+"Click on the :guilabel:`Download Web Map Context` button.  A new tab will "
+"open with the XML for the web map context."
+msgstr "Dele clic a la tecla de :guilabel:`Descargar el Contexto del Mapa de la Web`.  Se abrirá una nueva viñeta con XML para el contexto del mapa de la web."
+
+# df79fdecd0984c83a9be0b56cbac5fa4
+#: ../mapinfo.rst:46
+msgid "Edit Map Metadata"
+msgstr "Edite los Meta Datos del Mapa"
+
+# 7881edb222204f33a5588c772301ea2f
+#: ../mapinfo.rst:47
+msgid "You can edit the information about the map."
+msgstr "Usted puede editar la información acerca del mapa."
+
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+# a41681f9ed894a7395dbcc68ef04fea1
+#: ../mapinfo.rst:49 ../mapinfo.rst:68 ../mapinfo.rst:85 ../mapinfo.rst:102
+msgid "Click on the :guilabel:`Edit Map` button"
+msgstr "Dele clic a la tecla en :guilabel:`Editar el Mapa`"
+
+# ec637b391d6d4ee78bccaeee7c2745bb
+# 63caafaa0b144739801e7c145105cc3f
+# 64ca97c93e884e75889afd8c6bfd122d
+# 24079a24dc9a4b8eb8242eed0903d634
+#: ../mapinfo.rst:53 ../mapinfo.rst:72 ../mapinfo.rst:89 ../mapinfo.rst:106
+msgid "*Edit map menu*"
+msgstr "*Menú para Editar el Mapa*"
+
+# f5708f9d8c744661ad04115b2169cf5d
+#: ../mapinfo.rst:55
+msgid "Click on Edit Map Metadata"
+msgstr "Dele clic en editar los meta datos del mapa"
+
+# 650bb3c4bffa4b118172accc5563393a
+#: ../mapinfo.rst:57
+msgid "In the metadata page, update the information about the map."
+msgstr "En la página de los metadatos, actualice la información acera del mapa."
+
+# ca6a0bf0b12448ea8a57aeb61a07f4dd
+#: ../mapinfo.rst:59
+msgid ""
+"Click the :guilabel:`Update` button at the bottom of the page to save your "
+"changes."
+msgstr "Dele clic a la tecla de :guilabel:`Actualizar` que se encuentra en la parte inferior de la página, a manera de salvar sus cambios."
+
+# e724f97b59204f029d68385ccc794623
+#: ../mapinfo.rst:63
+msgid "Set Map Thumbnail"
+msgstr "Configure el pequeño mapa (thumbnail)"
+
+# 2f8b0f549c2a4919bd372b3a712936bc
+#: ../mapinfo.rst:64
+msgid ""
+"By default the thumbnail images for maps will only have the vector layers.  "
+"In order to include the background map you will need to use the Set Map "
+"Thumbnail button."
+msgstr "Al tener las imágenes de los mapas en miniatura predeterminadas solamente tendrán las capas de los vectores.  A manera de incluir el mapa de fondo, usted necesitará utilizar la tecla de Configurar los Mapas en Miniatura."
+
+# 5c728e9254b642b88ae41c5c236c61cd
+#: ../mapinfo.rst:66
+msgid ""
+"Pan and zoom the inset map so that it's centered on the view you would like "
+"for the map thumbnail."
+msgstr "Recorra y amplíe el mapa insertado a manera de que se centre en la vista que usted quisiera para el mapa en miniatura"
+
+# dd3fb8c2560442d5a274d0d18712bb88
+#: ../mapinfo.rst:74
+msgid ""
+"Click on :guilabel:`Set Map Thumbnail`.  This will set the map thumbnail "
+"with the base map and layers included."
+msgstr "Dele clic en :guilabel:`Configure el Mapa en Miniatura`.  Esto establecerá el mapa en miniatura con la base del mapa y las capas incluidas."
+
+# 68ebbbed92354cbbba024669d85e0adb
+#: ../mapinfo.rst:78
+msgid "*Map with thumbnail*"
+msgstr "*Mapa con la miniatura*"
+
+# 14dc6e87fd9c4fac960b566780d06a73
+#: ../mapinfo.rst:82
+msgid "Edit Map Permissions"
+msgstr "Edite los Permisos del Mapa"
+
+# 3e181e620b004dccb4e648b210f23813
+#: ../mapinfo.rst:83
+msgid "The map permissions determine which users can view or edit a map."
+msgstr "Los permisos del mapa determinan que usuarios pueden ver o editar el mapa."
+
+# 06725672ea32499784493e60fa03d882
+#: ../mapinfo.rst:91
+msgid "Set the permissions for viewing, editing, and managing as desired."
+msgstr "Establezca los permisos para ver, editar y administrar segán usted lo desee."
+
+# b5c46af46eee465ab6a50db483bc08d6
+#: ../mapinfo.rst:95
+msgid "Click the :guilabel:`Apply Changes` button."
+msgstr "Dele clic a la tecla en  :guilabel:`Aplicar los Cambios`."
+
+# 86b60395e7674936a96314f20af89758
+#: ../mapinfo.rst:99
+msgid "Remove a Map"
+msgstr "Elimine el Mapa"
+
+# f110379cadc7418481797ad1f429c70e
+#: ../mapinfo.rst:100
+msgid ""
+"You can remove a map completely from GeoNode.  This action removes the map "
+"for all users."
+msgstr "Usted puede eliminar completamente un mapa desde GeoNode.  Esta acción elimina el mapa para todos los usuarios."
+
+# 006b96b89633468eae991b7002cdf24d
+#: ../mapinfo.rst:108
+msgid "Click on the :guilabel:`Remove This Map` button"
+msgstr "Dele clic a la tecla en  :guilabel:`Eliminar este Mapa`"
+
+# 699410bad9b14b54bc9b8d2c6e68a648
+#: ../mapinfo.rst:110
+msgid "Confirm the removal of the map by clicking :guilabel:`Yes, I am Sure`"
+msgstr "Confirme la eliminación del mapa dándole clic a :guilabel:`Sí, estoy seguro`"

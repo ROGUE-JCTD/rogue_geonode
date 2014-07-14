@@ -1,0 +1,144 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[ROGUE_GEONODE.accounts]
+file_filter = locale/<lang>/LC_MESSAGES/accounts.po
+source_file = _build/locale/accounts.pot
+source_lang = en
+
+[ROGUE_GEONODE.admin]
+file_filter = locale/<lang>/LC_MESSAGES/admin.po
+source_file = _build/locale/admin.pot
+source_lang = en
+
+[ROGUE_GEONODE.announce]
+file_filter = locale/<lang>/LC_MESSAGES/announce.po
+source_file = _build/locale/announce.pot
+source_lang = en
+
+[ROGUE_GEONODE.arcgis]
+file_filter = locale/<lang>/LC_MESSAGES/arcgis.po
+source_file = _build/locale/arcgis.pot
+source_lang = en
+
+[ROGUE_GEONODE.documents]
+file_filter = locale/<lang>/LC_MESSAGES/documents.po
+source_file = _build/locale/documents.pot
+source_lang = en
+
+[ROGUE_GEONODE.docupload]
+file_filter = locale/<lang>/LC_MESSAGES/docupload.po
+source_file = _build/locale/docupload.pot
+source_lang = en
+
+[ROGUE_GEONODE.edit]
+file_filter = locale/<lang>/LC_MESSAGES/edit.po
+source_file = _build/locale/edit.pot
+source_lang = en
+
+[ROGUE_GEONODE.editing]
+file_filter = locale/<lang>/LC_MESSAGES/editing.po
+source_file = _build/locale/editing.pot
+source_lang = en
+
+[ROGUE_GEONODE.find]
+file_filter = locale/<lang>/LC_MESSAGES/find.po
+source_file = _build/locale/find.pot
+source_lang = en
+
+[ROGUE_GEONODE.geogitmerge]
+file_filter = locale/<lang>/LC_MESSAGES/geogitmerge.po
+source_file = _build/locale/geogitmerge.pot
+source_lang = en
+
+[ROGUE_GEONODE.geogitsync]
+file_filter = locale/<lang>/LC_MESSAGES/geogitsync.po
+source_file = _build/locale/geogitsync.pot
+source_lang = en
+
+[ROGUE_GEONODE.google_earth]
+file_filter = locale/<lang>/LC_MESSAGES/google_earth.po
+source_file = _build/locale/google_earth.pot
+source_lang = en
+
+[ROGUE_GEONODE.history]
+file_filter = locale/<lang>/LC_MESSAGES/history.po
+source_file = _build/locale/history.pot
+source_lang = en
+
+[ROGUE_GEONODE.index]
+file_filter = locale/<lang>/LC_MESSAGES/index.po
+source_file = _build/locale/index.pot
+source_lang = en
+
+[ROGUE_GEONODE.integration]
+file_filter = locale/<lang>/LC_MESSAGES/integration.po
+source_file = _build/locale/integration.pot
+source_lang = en
+
+[ROGUE_GEONODE.layerdownload]
+file_filter = locale/<lang>/LC_MESSAGES/layerdownload.po
+source_file = _build/locale/layerdownload.pot
+source_lang = en
+
+[ROGUE_GEONODE.layerinfo]
+file_filter = locale/<lang>/LC_MESSAGES/layerinfo.po
+source_file = _build/locale/layerinfo.pot
+source_lang = en
+
+[ROGUE_GEONODE.layermanage]
+file_filter = locale/<lang>/LC_MESSAGES/layermanage.po
+source_file = _build/locale/layermanage.pot
+source_lang = en
+
+[ROGUE_GEONODE.layers]
+file_filter = locale/<lang>/LC_MESSAGES/layers.po
+source_file = _build/locale/layers.pot
+source_lang = en
+
+[ROGUE_GEONODE.layerupload]
+file_filter = locale/<lang>/LC_MESSAGES/layerupload.po
+source_file = _build/locale/layerupload.pot
+source_lang = en
+
+[ROGUE_GEONODE.manage]
+file_filter = locale/<lang>/LC_MESSAGES/manage.po
+source_file = _build/locale/manage.pot
+source_lang = en
+
+[ROGUE_GEONODE.mapinfo]
+file_filter = locale/<lang>/LC_MESSAGES/mapinfo.po
+source_file = _build/locale/mapinfo.pot
+source_lang = en
+
+[ROGUE_GEONODE.maps]
+file_filter = locale/<lang>/LC_MESSAGES/maps.po
+source_file = _build/locale/maps.pot
+source_lang = en
+
+[ROGUE_GEONODE.profile]
+file_filter = locale/<lang>/LC_MESSAGES/profile.po
+source_file = _build/locale/profile.pot
+source_lang = en
+
+[ROGUE_GEONODE.qgis]
+file_filter = locale/<lang>/LC_MESSAGES/qgis.po
+source_file = _build/locale/qgis.pot
+source_lang = en
+
+[ROGUE_GEONODE.registration]
+file_filter = locale/<lang>/LC_MESSAGES/registration.po
+source_file = _build/locale/registration.pot
+source_lang = en
+
+[ROGUE_GEONODE.synch]
+file_filter = locale/<lang>/LC_MESSAGES/synch.po
+source_file = _build/locale/synch.pot
+source_lang = en
+
+[ROGUE_GEONODE.users]
+file_filter = locale/<lang>/LC_MESSAGES/users.po
+source_file = _build/locale/users.pot
+source_lang = en
+

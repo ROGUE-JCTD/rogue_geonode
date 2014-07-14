@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:40+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 8264b6e3ab5f44cba5bf5cf3a011f405
+#: ../synch.rst:5
+msgid "Synchronizing GeoGit Layers"
+msgstr "Sincronizando las Capas de GeoGit"
+
+# 0f6d4262d05f441b8b8717099ab57652
+#: ../synch.rst:7
+msgid ""
+"GeoGit repositories can be set up to synchronize with remote GeoGit repos "
+"when the web map is open.  This allows you to share updates between multiple"
+" repositories with the same layers with very little delay."
+msgstr "Los repositorios de GeoGit pueden ser configurados a manera de que se sincronicen  cuando el mapa este abierto, con los repositorios a control remoto de GeoGit.  Esto le permite a usted compartir con muy poco retraso, las actualizaciones entre los múltiples repositorios con las mismas capas."

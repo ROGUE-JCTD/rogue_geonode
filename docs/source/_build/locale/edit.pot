@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../edit.rst:4
+# 5eef955131924645b4ad2a8b97622e0a
+msgid "Edit Features"
+msgstr ""
+
+#: ../edit.rst:5
+# d5444161e2fe4dae9c49a17c984ddaf8
+msgid "Vector layers can be set up so that they're editable.  If you have permissions to edit a layer, the editing tools will be available in the map. If a layer is a GeoGit layer, then you can work with the edit history as well."
+msgstr ""
+
+#: ../edit.rst:9
+# 7e8d9e804e9643ae9b69c3ef814c50b3
+msgid "Add a simple point feature to a layer"
+msgstr ""
+
+#: ../edit.rst:10
+# a9f40df5d74e4be6a352c076d38a4dd6
+msgid "If a layer is editable, then the :guilabel:`Add Feature` button will be available next to the layer name."
+msgstr ""
+
+#: ../edit.rst:14
+# 9c3bdca9c7304e8d9b4f8f0f3bbd7f56
+msgid "*Add feature button*"
+msgstr ""
+
+#: ../edit.rst:16
+# 6473fb7914574931869a04834a4862b7
+msgid "Click the :guilabel:`Add Feature` button.  The :guilabel:`Drawing Geometry` dialog will appear at the top of the map."
+msgstr ""
+
+#: ../edit.rst:20
+# c4dea591736346d08124c0977b300cfc
+msgid "Click on the map to add the geometry.  A simple point is placed with one click.  The sections below provide additional detail on editing different types of features."
+msgstr ""
+
+#: ../edit.rst:24
+#: ../edit.rst:73
+# b77d8ff0ea5c4ccaa1155c4ba5734bd0
+# c4d5bd5c9e654f8aac4423bfc1e3549e
+msgid "Click on the :guilabel:`Accept Feature` button to keep the geometry.  If you don't want to keep the feature, click the X for the :guilabel:`Cancel Feature` button."
+msgstr ""
+
+#: ../edit.rst:28
+#: ../edit.rst:77
+#: ../edit.rst:125
+#: ../edit.rst:148
+# 23fef6c527874333bb14dd2d68dcd20d
+# dcc742e2f3564234922820f34228538e
+# bad89e4080b843c79a827cbbd8a586e1
+# 5b659860e25e4f83baaf2693cfcc7d61
+msgid "Once you click on :guilabel:`Accept Feature` the :guilabel:`Edit Attributes` window will open.  Type in the fields or select values from the dropdowns to add attribute values."
+msgstr ""
+
+#: ../edit.rst:32
+#: ../edit.rst:54
+#: ../edit.rst:81
+#: ../edit.rst:106
+#: ../edit.rst:129
+#: ../edit.rst:152
+# 19607285f2934e1fa07a3f19b0fac345
+# 0e2dc5322c524a3ea6d758b3763d6ad9
+# e819acf26e0d47808dd9a52606c758a2
+# 878917a962ff41c1a3b062531752493c
+# 33852102eec14fd1905b087404a1b9a6
+# 35e9973588da408da511b2560baab9c9
+msgid "Click the :guilabel:`Save` button at the bottom of the form to save the feature to the layer."
+msgstr ""
+
+#: ../edit.rst:36
+# 62bfea8dd854463f92010b019029dede
+msgid "Add a multipoint feature to a layer"
+msgstr ""
+
+#: ../edit.rst:37
+# c4b080bed1f34af08b97782ec66b8908
+msgid "Multipoint features can have more than one point per feature."
+msgstr ""
+
+#: ../edit.rst:39
+# 86986a6e42784b508dcef06658f822a7
+msgid "Click the :guilabel:`Add Feature` button.  The :guilabel:`Drawing Geometry` dialog will appear at the top of the screen."
+msgstr ""
+
+#: ../edit.rst:43
+# dfbf8fc31afa4fb49dc06fef0e4836fe
+msgid "Click on the map to add the first point.  Click on the :guilabel:`Add Geometry` button to add another point.  Continue to add points for the feature as needed."
+msgstr ""
+
+#: ../edit.rst:47
+#: ../edit.rst:99
+#: ../edit.rst:121
+#: ../edit.rst:144
+# 3f8b7c18505c45a29627b7bbd040fefd
+# 71e9eaabbaa4462bbc90b27d4789811e
+# 81f127f695bf42229daef852f69b076b
+# 43668336a2bc4aa4b607cff0a31ebab1
+msgid "Click on the :guilabel:`Accept Feature` button to keep the geometries."
+msgstr ""
+
+#: ../edit.rst:51
+#: ../edit.rst:103
+# 5d05315fc8b743059af1213294a2a18e
+# 2c23df1630a84ae5b54fdb8f1f8615c6
+msgid "Once you click on :guilabel:`Accept Feature` the :guilabel:`Edit Attributes` window will open.  Type in the fields or select values from the dropdowns to add attribute values. .. figure:: img/editattribmulti.png"
+msgstr ""
+
+#: ../edit.rst:58
+# 0d9bb1fc2a6e47a88d0752931f1ffab6
+msgid "Add a polygon feature to a layer"
+msgstr ""
+
+#: ../edit.rst:59
+# 2d55fd0608df4c41a6842e4358877db6
+msgid "A simple polygon layer has a single polygon per feature."
+msgstr ""
+
+#: ../edit.rst:61
+#: ../edit.rst:87
+#: ../edit.rst:113
+#: ../edit.rst:136
+# ae4c4943556c4bdbbcc46790900e6314
+# ea0b41ebaa5649a4ac43d30d2366c3c7
+# 88778507991044e8825a52f80d3c164d
+# 393403525df3419f8b2e75ea94a8e607
+msgid "Click on the :guilabel:`Add Feature` button.  The :guilabel:`Drawing Geometry` dialog will appear at the top of the screen."
+msgstr ""
+
+#: ../edit.rst:65
+# 585267e54c384a1886114471db86ea10
+msgid "Click on the map to begin adding the polygon.  Continue to click to add all of the vertices.  To finalize the polygon, close the geometry by clicking on the first vertice again."
+msgstr ""
+
+#: ../edit.rst:69
+# 1f852703b9fc495ebe3f503d62138215
+msgid "If you want the polygon to have right angle corners, you can click on the right angle button."
+msgstr ""
+
+#: ../edit.rst:84
+# 736dffd963d9459dbe40f02e2cb749b5
+msgid "Add a multipoylgon feature to a layer"
+msgstr ""
+
+#: ../edit.rst:85
+# 745dfd51d2e242ab9486df01f937a9e7
+msgid "A multipolygon layer has one or more polygons per feature.  A couple of examples of multipoygons are the U.S. States of Michigan and Hawaii."
+msgstr ""
+
+#: ../edit.rst:91
+# 2995bf5891794705b8e403b93e265fc8
+msgid "Click on the map to begin adding the polygon.  Continue to click to add all of the vertices.  To finalize the polygon, close the geometry by clicking on the first vertice again.  To add another polygon, click on the :guilabel:`Add Geometry` button.  Repeat the process to add polygons as needed."
+msgstr ""
+
+#: ../edit.rst:95
+# 77a78f83c4754f958508b8f4b3a6619c
+msgid "If you want the polygon to have square corners, you can click on the right angle button."
+msgstr ""
+
+#: ../edit.rst:110
+# 47adf3e35c114d9ab2db154c1bd13746
+msgid "Add a line to a layer"
+msgstr ""
+
+#: ../edit.rst:111
+# de374401691440dca13bbbdb5f7abcf4
+msgid "A line layer consists of lines that represent features - such as roads, powerlines, and other features."
+msgstr ""
+
+#: ../edit.rst:117
+# 09aa0d2951a6400c8a46c9438e2f5d23
+msgid "Click on the map to begin adding the linear feature.  Continue to click to add all of the vertices.  To finalize the line, double-click on the last vertice."
+msgstr ""
+
+#: ../edit.rst:133
+# 94a1153c3790422a802745ab96620b09
+msgid "Add a multiline to a layer"
+msgstr ""
+
+#: ../edit.rst:134
+# 27f43e90054249abaf18b40731463dad
+msgid "A multiline layer has one or more polygons per feature."
+msgstr ""
+
+#: ../edit.rst:140
+# 9cb7ac93959b4bfda3e56cdd9a3ca759
+msgid "Click on the map to begin adding the linear feature.  Continue to click to add all of the vertices.  To finalize the line, double-click on the last vertice.  To add another polygon, click on the :guilabel:`Add Geometry` button.  Repeat the process to add polygons as needed."
+msgstr ""
+
+#: ../edit.rst:156
+# 64953d483b54465f9029ae1f09a6abd4
+msgid "Edit attributes"
+msgstr ""
+
+#: ../edit.rst:157
+# 64c74125baa6426490ee01147dbe7edb
+msgid "You can edit the attributes for any features in an editable layer."
+msgstr ""
+
+#: ../edit.rst:159
+# a96ee959929941cc95ef2baf2654d59a
+msgid "Click on the feature on the map.  The feature info box will appear."
+msgstr ""
+
+#: ../edit.rst:163
+# 71f6f9c391d841d98e5098a9369c4c14
+msgid "Click on the :guilabel:`Edit Attibutes` button.  The :guilabel`Edit Attributes` window will appear."
+msgstr ""
+
+#: ../edit.rst:167
+# 68e0b52533324a0fbe69a1728fa3922b
+msgid "Type in the fields or select dropdown values for the fields you want to edit."
+msgstr ""
+
+#: ../edit.rst:171
+#: ../edit.rst:207
+# c20b1d71a3914a018b5deb259d7a689d
+# bb847b3c7dd841b7b6b9d9e88f45497c
+msgid "Click the :guilabel:`Save` button at the bottom of the form to save the attribute updates."
+msgstr ""
+
+#: ../edit.rst:175
+# 4337dd680a46439cb4c24c21151a5dc1
+msgid "Edit point geometries on the map"
+msgstr ""
+
+#: ../edit.rst:176
+# 54cabbedfd574727bdb479fa4045de9d
+msgid "Point layers can be one of two types:  simple points and multipoints.  For simple points, there is one point per feature.  Multipoints can have one or more points per feature."
+msgstr ""
+
+#: ../edit.rst:178
+#: ../edit.rst:195
+# acccf96cf3a74d38920563ee08c7df27
+# fd59957d0d7f4540911e90e87cbc6883
+msgid "Click on the point feature on the map.  The feature info box will appear."
+msgstr ""
+
+#: ../edit.rst:182
+# 360c34cbaf334e8ba367e01b7aa3ef66
+msgid "Click on the :guilabel:`Edit Geometry` button.  The :guilabel:`Drawing Geometry` dialog will appear at the top of the screen, and the selected feature will be highlighted in blue."
+msgstr ""
+
+#: ../edit.rst:184
+# 8ccae18b75a34166bd712bf13c3fd243
+msgid "Click on the feature and drag it to the new location."
+msgstr ""
+
+#: ../edit.rst:186
+#: ../edit.rst:226
+# e89781df416b428dbafb3edab7b02d9e
+# 34fde48b23fb4958b3412cbfe2b024b1
+msgid "Click on the :guilabel:`Accept Feature` button to keep the feature.  To cancel the edit, click on the :guilabel:`Cancel Feature` button."
+msgstr ""
+
+#: ../edit.rst:192
+# 74fdf856826b4180aa0af7f50e6f1cc3
+msgid "Edit point geometry manually"
+msgstr ""
+
+#: ../edit.rst:193
+# 7064647631844c10a0bc72ff387caad2
+msgid "With point geometries, you can also manually edit the coordinates.  This is useful when you have the coordinates from another source (such as a report)."
+msgstr ""
+
+#: ../edit.rst:199
+# 25cae4b2227643af866879f1af9101ea
+msgid "Click on the :guilabel:`Edit Attributes` button.  The :guilabel:`Edit Attributes` window will appear."
+msgstr ""
+
+#: ../edit.rst:203
+# cf3bb380023442dab6ed5704d2fe525e
+msgid "Click on the coordinates field to edit the point coordinates."
+msgstr ""
+
+#: ../edit.rst:211
+# 6a7c8c48cd30482c85a2d2d56f0c96ba
+msgid "Edit polygon and line geometries"
+msgstr ""
+
+#: ../edit.rst:212
+# 54bcfb6288394f1ca9b57954c1ead93b
+msgid "Any existing features in an editable layer can be modified.  If it is a GeoGit layer, the history of all of the edits will be maintain to ensure the provenance of the data."
+msgstr ""
+
+#: ../edit.rst:214
+# 90f18f4a354547b89905fb2f1a105b56
+msgid "Click on the feature you want to edit.  The feature info box will appear."
+msgstr ""
+
+#: ../edit.rst:218
+# bdc957d80b1a4a7fa5d3373670aaed19
+msgid "Click on the :guilabel:`Edit Geometry` button.  The :guilabel:`Drawing Geometry` dialog will appear at the top of the screen."
+msgstr ""
+
+#: ../edit.rst:222
+# 1f756384e4e14f0c9926bc7f27e80a1d
+msgid "Move the mouse over the geometry to highlight the vertice you want to edit.  To move the vertice, click and drag it.  Repeat this process until you have completed editing."
+msgstr ""
+

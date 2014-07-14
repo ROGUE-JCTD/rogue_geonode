@@ -1,0 +1,28 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../synch.rst:5
+# 8264b6e3ab5f44cba5bf5cf3a011f405
+msgid "Synchronizing GeoGit Layers"
+msgstr ""
+
+#: ../synch.rst:7
+# 0f6d4262d05f441b8b8717099ab57652
+msgid "GeoGit repositories can be set up to synchronize with remote GeoGit repos when the web map is open.  This allows you to share updates between multiple repositories with the same layers with very little delay."
+msgstr ""
+

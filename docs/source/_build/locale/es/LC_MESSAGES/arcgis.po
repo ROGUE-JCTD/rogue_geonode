@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 16:50+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# a8d4b437dc5645958e94d253b74e179e
+#: ../arcgis.rst:4
+msgid "ArcGIS"
+msgstr "ArcGIS"
+
+# f4db7e11f13b459a98e4f3af7df20b08
+#: ../arcgis.rst:6
+msgid ""
+"ArcGIS Desktop (ArcMap) supports adding WMS layers to your map project. The "
+"following set of steps will walk you through how to configure a WMS Layer "
+"from your GeoNode within ArcMap."
+msgstr "ArcGIS Desktop (ArcMap) apoya el agregar las capas WMS al proyecto de su mapa. El siguiente grupo de pasos, le dirigir·n paso a paso para que usted pueda configurar una capa WMS desde su GeoNode en ArcMap. "
+
+# c1850a9aa6634cad9639073659d67511
+#: ../arcgis.rst:8
+msgid ""
+"First, you can start with a new empty project or add these layers to your "
+"existing project."
+msgstr "Primero, usted puede comenzar con un proyecto vacÌo o puede agregar capas a un proyecto suyo ya existente."
+
+# 033803f085a446c28aba9008d691c5ff
+#: ../arcgis.rst:12
+msgid ""
+"Next click the ArcCatalog button on the toolbar to bring up its interface."
+msgstr "Luego dele clic a la tecla de ArcCatalog localizado en la barra de herramientas para poder acezar su interfase."
+
+# e7c0981f7ff54df7ba19d7bbe40f4059
+#: ../arcgis.rst:16
+msgid ""
+"From there, double click the \"Add WMS Server\" item in the tree to bring up"
+" the dialog that lets you enter the details for your WMS."
+msgstr "Dele doble clic en el árbol al ítem de \"Agregar Servidor WMS\" para abrir el diálogo que le permite a usted ingresar los detalles para su WMS."
+
+# 9dfb649c878046b0acd7e548f78bdfd6
+#: ../arcgis.rst:20
+msgid ""
+"Next, enter the URL for your GeoNode's WMS endpoint which is the base url "
+"with /geoserver/wms appended to the end of the URL. You can also enter your "
+"credentials into the optional Account section of this dialog to gain access "
+"to non-public layers that your user may have access to."
+msgstr "Ingrese el URL para el punto final de WMS de su GeoNode, el cual es el URL base con /geoserver/wms adjunto al final de su URL. Usted también puede ingresar sus credenciales en la sección opcional de la cuenta de esta diálogo para obtener acceso  a las capas que no son públicas en las cuales con su nombre de usuario, usted puede tener acceso a ellas."
+
+# 63ab3344c8d147a692a9f55071716545
+#: ../arcgis.rst:24
+msgid ""
+"Click the \"Get Layers\" button to ask ArcMap to query your WMS's "
+"GetCapabilities document to get the list of available layers."
+msgstr "Dele clic a la tecla de \"Obtener capas\" para preguntar a Arcmap que inquiera su documento de WMS de Obtener las Capacidades, para obtener una lista de las capas disponibles."
+
+# 22535617ff7a4409843aadb53d20a7e8
+#: ../arcgis.rst:28
+msgid ""
+"After you click the OK button, your GeoNode layers will appear in the "
+"ArcCatalog Interface."
+msgstr "Después de que le haya dado clic a la tecla de OK, sus capas de GeoNode aparecerán en el interfase de ArcCatalog."
+
+# 08ffba6cc44443feb69feec589e224c2
+#: ../arcgis.rst:32
+msgid ""
+"Once your server is configured in ArcMap, you can right click on one of the "
+"layers and investigate its properties."
+msgstr "Una vez que su servidor sea configurado en ArcMap, Usted puede darle clic derecho a una de las capas e investigar las propiedades de esta."
+
+# 927b451072d740d0bca260fc555df965
+#: ../arcgis.rst:36
+msgid ""
+"In order to actually add the layer to your project, you can drag and drop it"
+" into the Table of Contents, or right click and select \"Create Layer\". "
+"Your Layer will now be displayed in the map panel of your project."
+msgstr "A manera de que realmente se agregue una capa a su proyecto, usted puede arrastrarla y dejarla caer en la Tabla de Contenidos, o dele clic derecho y seleccione \"Crear una Capa\". Ahora su capa sera desplegada en el panel de mapas de su proyecto."
+
+# 562ff4ac436f4e7c83bbe04af59e263a
+#: ../arcgis.rst:42
+msgid ""
+"Once the layer is in your projects Table of Contents, you can right click on"
+" it and select the Layer Properties option and select the Styles Tab to "
+"choose from the available styles for that layer."
+msgstr "Una vez que la capa se encuentra en la tabla de contenidos de su proyecto, usted puede darle clic derecho sobre el y seleccionar la opción de las Propiedades de las Capas y seleccionar la vióeta de los Estilos para escoger entre los estilos disponibles para esa capa."
+
+# 592b6c677f7547e48a8a8d4cc57d7f58
+#: ../arcgis.rst:47
+msgid ""
+"Now that we have seen how to add a WMS layer to our ArcMap project, lets "
+"walk through how to add the same layers as a WFS which retrieves the actual "
+"feature data from your GeoNode rather than a rendered map as you get with "
+"WMS. Adding layers as a WFS gives you more control over how the layers are "
+"styled within ArcMap and makes them available for you to use with other "
+"ArcGIS tools like the Geoprocessing toolbox."
+msgstr "Ahora que hemos visto como agregar una capa WMS a nuestro proyecto de ArcMap, miremos los pasos para agregar las mismas capas como un WFS que recupera los datos de las características actuales de su GeoNode, en vez de un mapa generado, al igual que lo obtuvo con WMS. Agregar capas en la medida que WFS le proporciona más control acerca de como las capas han sido diseñadas con ArcMap y que estén disponibles para que usted las utilice junto con la caja de herramientas de ArcGIS, como se la caja de herramientas de GeoProcessing."
+
+# cea4fb51bb304864a128443856b1961c
+#: ../arcgis.rst:49
+msgid ""
+"Adding WFS layers to ArcMap requires that you have the Data Interoperability"
+" Extension installed. This extension is not included in ArcMap by default "
+"and is licensed and installed separately."
+msgstr "El agregar las capas de WFS a ArcMap, se requiere que usted haya instalado la Extensión de Interoperabilidad de los Datos. Esta extensión no está incluida como predeterminado en el ArcMap y su licencia e instalado de forma separada. "
+
+# 65d6d3d7677c45a9871db70d4bf37a6b
+#: ../arcgis.rst:51
+msgid ""
+"Start by opening up the ArcCatalog Interface within ArcMap and make sure "
+"that you have the \"Interoperability Connections\" option listed in the "
+"list."
+msgstr "Comience abriendo el Interfase de ArcCatalog con el ArcMap y asegúrese de que usted tiene las opciones de \"Conexiones de Interoperabilidad\" enumeradas en la lista."
+
+# 6d1016eb40ff4374b35ec0d1962c674b
+#: ../arcgis.rst:55
+msgid ""
+"Next select \"Add Interoperability Connection\" to bring up the dialog that "
+"lets you add the WFS endpoint from your GeoNode."
+msgstr "Luego seleccione la tecla de \"Agregue Conexión de Interoperabilidad\" para abrir el dialogo que le permite agregar el punto final de WFS desde su GeoNode."
+
+# cbea2e797cfd4cefb5b6b8d90b33caec
+#: ../arcgis.rst:59
+msgid ""
+"Select \"WFS (Web Feature Service)\" in the Format dropdown and enter the "
+"URL to the WFS endpoint for your GeoNode in the Dataset field. The WFS "
+"endpoint is your base URL + /geoserver/wfs"
+msgstr "Seleccione \"WFS (Servicio de Características de la Web)\" en el desplegable del formato  y ingrese el URL al punto final de WFS para su GeoNode en el campo para establecer los datos. El punto final de WFS es su base URL + /geoserver/wfs"
+
+# 75437136a76446a5b61cfecd80f01b57
+#: ../arcgis.rst:63
+msgid ""
+"You will need to click the \"Parameters\" button to supply more connection "
+"information including your credentials which will give you the ability to "
+"use private layers that you have access to."
+msgstr "Dele clic a la tecla de los \"Parámetros\" para proporcionar más información de conexión, incluyendo sus credenciales, las que le proporcionarán la capacidad de utilizar las capas privadas en las que usted tiene acceso."
+
+# 08822acdfd0b4455ba674dbd8aedd7a3
+#: ../arcgis.rst:67
+msgid ""
+"Select the Feature Types button to have ArcMap get a list of layers from the"
+" WFS Service of your GeoNode."
+msgstr "Seleccione la tecla de las características para abrir el ArcMap y obtener una lista de las capas desde el Servicio de WFS de su GeoNode."
+
+# 7f2064ecf5ca448e89ac9d7135323ec3
+#: ../arcgis.rst:71
+msgid ""
+"Select the layers that you want to add and click OK and ArcMap will import "
+"the features from your GeoNode into the system."
+msgstr "Seleccione las capas que usted quiere agregar y delé clic a la tecla de OK  y ArcMap importará las características desde su GeoNode al sistema."
+
+# 3ba29f78c98a4f2aaac658ede92a7c83
+#: ../arcgis.rst:75
+msgid ""
+"Depending on the projection of your data, you may receive a warning about "
+"Alignment and Accuracy of data transformations. You can specify the "
+"transformation manually or simply hit close to ignore this dialog. If you "
+"dont want to be warned again, use the checkboxes in this dialog to hide "
+"these warnings temporarily or permanently."
+msgstr "Dependiendo de la proyección de sus datos, usted puede recibir una advertencia acerca del Alineamiento y la Exactitud de las transformaciones de los datos. Usted puede especificar la transformación manualmente o simplemente darle clic a cerrar para ignorar este diálogo. Si usted no quiere que nuevamente se le advierta, utilice el las casillas de revisión en este diálogo para esconder estas advertencias, ya sea de forma temporal, o permanentemente."
+
+# 4f26495c4df8475da3c9cad2434f05ee
+#: ../arcgis.rst:79
+msgid ""
+"Your WFS Layer will be added to your map and you can view it in the Map "
+"Panel. If you need to, use the \"Zoom to Layer Extent\" or other zoom tools "
+"to zoom to the bounds of your layer."
+msgstr "Su capa de WFS sera agregada a su mapa y usted puede visualizarla desde el Panel de los Mapas.  Si usted lo necesita, utilice el \"Zoom a la Medida de la Capa\" o alg˙n otro zoom hasta los límites de su capa."
+
+# 33a63ec368c64bf2a87a341e9a4de2c2
+#: ../arcgis.rst:83
+msgid ""
+"You can now use the identify tool to inspect a feature in your layer, or "
+"perform any other function that you can normally use to work with Vector "
+"Layers in ArcMap."
+msgstr "Ahora usted puede utilizar, la herramienta de identificación para inspeccionar una característica en su capa o para desarrollar cualquier otra función que usted normalmente puede utilizar para trabajar con las Capas de los Vectores en ArcMap."
+
+# b44858effb364cf68ba9ed225345c9e4
+#: ../arcgis.rst:87
+msgid ""
+"Since your layer was imported as actual vector features, you can use normal "
+"ArcMap styling tools to style the layer to match how you want it to be "
+"displayed."
+msgstr "Desde que su capa fue importada  como una actual característica de vector, usted puede utilizar las herramientas normales de diseño de ArcMap para que coincida como usted lo quiere mostrar."
+
+# 8fc54e425402480ea1278d5c40749877
+#: ../arcgis.rst:91
+msgid ""
+"Now that you have added layers from your GeoNode as both WMS and WFS, you "
+"can explore the other options available to you with these layers within "
+"ArcMap."
+msgstr "Ahora que usted ha agregado las capas desde su GeoNode, tanto como WMS y WFS, ahora usted puede explorar las otras opciones que se encuentran disponibles con estas capas en ArcMap."

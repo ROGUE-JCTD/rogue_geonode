@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../find.rst:4
+# c760ea783c154f619c9bd8b8f5868780
+msgid "Finding Content in GeoNode"
+msgstr ""
+
+#: ../find.rst:8
+# 4a6661d0322b411b9a4848fffd5db6f8
+msgid "**GeoNode Search**"
+msgstr ""
+
+#: ../find.rst:10
+# e9850f1148414f3a957f1923aaa930b3
+msgid "You will find the *Search* field at the top of every GeoNode page.  When you type in the search field, GeoNode will list the Layers, Maps, and Documents that match the text you've entered.  Click on the word in the list to go to that resource."
+msgstr ""
+
+#: ../find.rst:14
+# 69aa1b689b594519ba63fb3116420e58
+msgid "*GeoNode Toolbar*"
+msgstr ""
+
+#: ../find.rst:17
+# 7f33226ab0224317982f2b44b0fccc64
+msgid "**Browsing Layers**"
+msgstr ""
+
+#: ../find.rst:19
+# 7a1ead5916bc415c81f05dc99e420964
+msgid "The *Layers* page lets you browse data that has been uploaded to this GeoNode.  From the *Layers* page, you can see how many times a layer has been viewed and it's average user rating.  You can also *Download* the layer data, create a map, or go to a the layer detail page."
+msgstr ""
+
+#: ../find.rst:23
+# e69165ccb27642de8404c73bf073cc79
+msgid "*Layers Page*"
+msgstr ""
+
+#: ../find.rst:26
+# a39e46b4d0b74c58b14c31d7e98bc26b
+msgid "**View by Layer Type**"
+msgstr ""
+
+#: ../find.rst:28
+# 09069cd1904740178114ee552908954d
+msgid "The view in the layers page can be subset by Raster or Vector"
+msgstr ""
+
+#: ../find.rst:31
+# a095774ce00b4e169a61ea56a7f4de2c
+msgid "**Browsing Maps**"
+msgstr ""
+
+#: ../find.rst:33
+# 4bc53bc8c5304946898d1c36b89479ab
+msgid "The *Maps* page lets you browse data that has been uploaded to this GeoNode.  From the *Maps* page, you can see how many times a map has been viewed and it's average user rating.  You can also *Download* the layers for the map, view the map, or go to a the map detail page for more information."
+msgstr ""
+
+#: ../find.rst:37
+# 744af56dc64a48abb38b3d6c93776a56
+msgid "*Maps Page*"
+msgstr ""
+
+#: ../find.rst:40
+# 1ea3722e0d6043129c80861400b9a20b
+msgid "**Filtering Results**"
+msgstr ""
+
+#: ../find.rst:42
+# 6d4c2362e80e452ea7d5cafc99c70107
+msgid "There are several different ways to manage the list of the maps, layers or documents you're viewing.  The *Layers*, *Maps* and *Documents* pages provide the ability to filter by categories, date range, or keywords."
+msgstr ""
+
+#: ../find.rst:44
+# 7c95422bbfed446fa3b15d6507310903
+msgid "*Filter by Categories*"
+msgstr ""
+
+#: ../find.rst:48
+# 64f2c221cd434888aa2992bb61639a74
+msgid "*Category Filter*"
+msgstr ""
+
+#: ../find.rst:50
+# a43fad7722cb4cf39d09926a46708ed2
+msgid "You can filter Layers or Maps by Categories.  When the metadata for a layer or a map has been tagged with a specific category, it will be reflected in the *Categories* panel.  Clicking on the first category limits the layer list to those tagged with that category.  Clicking on another category adds the layers from that category to the layer list.  Clicking on the category again will remove it from the layer list."
+msgstr ""
+
+#: ../find.rst:52
+# 9626b63eaafd4589ac82650290875b32
+msgid "*Filter by Date Range*"
+msgstr ""
+
+#: ../find.rst:56
+# 63fddaaf59dc477ca23cb44a91aa4a20
+msgid "*Date Range Filter*"
+msgstr ""
+
+#: ../find.rst:58
+# 6d752f2fd2b547e68b23d9996268f2d0
+msgid "You can limit the list of layers or maps by a date range.  In the *Date* panel select the start date and the end date for the date range.  The view will update to reflect those layers or maps that were created within that timeframe."
+msgstr ""
+
+#: ../find.rst:60
+# 3a2bf22df73b4732869d689cbca0bed3
+msgid "*Filter by Keywords*"
+msgstr ""
+
+#: ../find.rst:62
+# f1f31a1291e94c52b3f9d75c2eb9af01
+msgid "You can filter the *Layers* or *Maps* associated with a particular keyword.  The keywords are saved in the metadata.  To edit the keywords for an item you need to go to the *Edit Metadata* tab for the specific item (map, layer or document)."
+msgstr ""
+
+#: ../find.rst:66
+# 5794e53c568d4540877505d458850c61
+msgid "*Keyword Filter*"
+msgstr ""
+

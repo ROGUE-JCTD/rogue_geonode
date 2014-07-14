@@ -39,7 +39,7 @@ extensions = [
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = '.txt'
+source_suffix = '.rst'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -97,6 +97,11 @@ pygments_style = 'sphinx'
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
+
+# Localization configuration
+locale_dirs = ['_build/locale/'] 
+gettext_compact = False
+language = 'en'
 
 
 # -- Options for HTML output ----------------------------------------------

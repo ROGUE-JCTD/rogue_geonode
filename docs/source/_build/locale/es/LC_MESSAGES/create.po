@@ -1,0 +1,492 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 16:57+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 2a26d983828e4aef9c70b1e446c8cbc3
+#: ../create.rst:4
+msgid "Create a map"
+msgstr "Crear un mapa"
+
+# 83f67bd62a424aa1926dccc1660d848c
+#: ../create.rst:6
+msgid "New maps can be created from the Maps tab or from a layer."
+msgstr "Los nuevos mapas pueden ser creados desde la viñeta de Mapas o desde una capa."
+
+# 6d954f7732324c1db2a045bf6a8ee776
+#: ../create.rst:9
+msgid "**Create a new map**"
+msgstr "**Cree un nuevo Mapa**"
+
+# 284b8fb953f34f2cadc801d37618ebd7
+#: ../create.rst:10
+msgid "In the Maps tab, click on the \"Create a New Map\" button."
+msgstr "En la viñeta de las capas, dele clic a la tecla de \"Crear un mapa\" que se encuentra a la par de la capa."
+
+# b55b8e25e0a24ad1b296f62a1b4ec7b2
+#: ../create.rst:14
+msgid "*Create a New Map*"
+msgstr "*Cree un nuevo Mapa*"
+
+# c4eb0f194c4f44b690b8cc73c0ce7c55
+#: ../create.rst:18
+msgid "**Create a new map from a layer**"
+msgstr "**Cree un nuevo Mapa desde una capa**"
+
+# 6a078e06a9424f1386e57f50c0f0fa38
+#: ../create.rst:19
+msgid "In the Layers tab, click on the \"Create a map\" button next to a layer"
+msgstr "En la viñeta de las capas, dele clic a la tecla de \"Crear un mapa\" que se encuentra a la par de la capa"
+
+# a3a64a39dd664556b212f93473d42887
+#: ../create.rst:23
+msgid "*Create a Map from a Layer*"
+msgstr "*Cree un Mapa desde una Capa*"
+
+# 39e739181e9245b3bee8ff97ecb7a371
+#: ../create.rst:25
+msgid "A new map will open with the layer as part of the map."
+msgstr "Se abrirá un nuevo mapa con una capa cómo parte del mapa."
+
+# 2713c69e18db476ebda063714a4ed858
+#: ../create.rst:29
+msgid "**Add layers to a map**"
+msgstr "**Agregue las capas al mapa**"
+
+# c7d43718b7d346eca562960851566a2b
+#: ../create.rst:30
+msgid ""
+"Once you have created a map, or opened an existing map, you can add "
+"additional layers."
+msgstr "Una vez que usted haya creado un mapa o haya abierto un mapa ya existente, Usted puede agregar capas adicionales."
+
+# 5e7d362eeb704f37bcc8c681f04f0dbb
+# d4893c50634147608333324abd01414f
+#: ../create.rst:32 ../create.rst:51
+msgid "Click on the Add Layers button by \"Layers\""
+msgstr "Dele clic a la tecla de Agregar Capas que se encuentra a la par de \"Capas\""
+
+# 6b733bf83bfc43bdba1f67653a8a6e7e
+# 5866dbfe5fc54b1eb8cd130640e8483e
+#: ../create.rst:36 ../create.rst:55
+msgid "*Add layer*"
+msgstr "*Agregar Capas*"
+
+# bb9158dede994e178353de0eff9fe78c
+#: ../create.rst:38
+msgid "The Add Layers dialog will open."
+msgstr "Se abre el dialogo de agregar capas."
+
+# af9c47e13b0343efad5dfe855f38effb
+#: ../create.rst:42
+msgid "Click on the checkbox for the layer(s) you want to add to the map."
+msgstr "Dele clic a la casilla para chequear la capa o las capas que usted quiere agregar al mapa."
+
+# b8f2f22234dd44c3b6b743a5d2a8e5dc
+#: ../create.rst:44
+msgid "Click the Add button."
+msgstr "Dele clic a la tecla de Agregar."
+
+# 2ea3b628b6d344b88f36955941e4b329
+#: ../create.rst:48
+msgid "**Add layers from another server**"
+msgstr "**Agregue capas desde otro servidor**"
+
+# 4b219c53652347b3b5fdc773a642e3ab
+#: ../create.rst:49
+msgid ""
+"You can add layers from other servers besides the GeoNode you're working "
+"with.  These servers include web mapping servers (WMS) and tile servers."
+msgstr "Usted puede agregar capas desde los otros servidores que se encuentran en a la par del GeoNode con el que usted está trabajando. Estos servidores incluyen servidores de mapas de la web (WMS) y servidores de mosaicos (tiles)."
+
+# 2e985e01adcd49d6a54f29db6f9cd6c7
+#: ../create.rst:57
+msgid "In the Add Layers dialog, click on the drop down for the server list"
+msgstr "En el dialogo de Agregar Capas, dele clic al menú desplegable desde la lista del servidor"
+
+# 0a7d107d30b4478ba86f7e160de9a1d1
+#: ../create.rst:61
+msgid "*Add new server*"
+msgstr "*Agregar un nuevo servidor*"
+
+# d2991a2ed6454a9c82618d25caab71ac
+#: ../create.rst:63
+msgid "Click on Add New Server"
+msgstr "Dele clic en Agregar un Nuevo Servidor"
+
+# bd3965c8afb54b61b0e36d83e059984d
+#: ../create.rst:65
+msgid ""
+"In the Add Server dialog enter the type of server (WMS or TMS), a name for "
+"the server, and the URL."
+msgstr "En el dialogo de agregar un servidor, ingrese el tipo de servidor (WMS o TMS), un nombre para el servidor y el URL."
+
+# b7878f7018dd4c72aa72542cf2913e76
+#: ../create.rst:69
+msgid "*Server details*"
+msgstr "*Detalles del Servidor*"
+
+# 52e2b12a305b44c8a78d188dd27770d8
+#: ../create.rst:71
+msgid ""
+"Click Add to save the server.  Once you have added the server, you can "
+"select it and add layers to the map."
+msgstr "Dele clic a Agregar para salvar el servidor.  Una vez que usted haya agregado el servidor, puede seleccionar y agregar las capas al mapa."
+
+# ca089370cafe4cbf8e326ad24a17b3d4
+#: ../create.rst:75
+msgid "**Change layer order**"
+msgstr "**Cambie el orden de la capa**"
+
+# f6101954bf894574932dae1656d4a3b7
+#: ../create.rst:76
+msgid ""
+"Layers are drawn on the map from bottom to top.  The top layer in your layer"
+" list will also be on top in the map.  Sometimes you need to reorder layers."
+"  The following steps explain how."
+msgstr "Las capas son dibujadas de abajo hacia arriba en el mapa. La capa de arriba de la lista de su capa, también estará en la parte de arriba del mapa. Algunas veces usted necesitara reorganizar sus capas. Los siguientes pasos explican como."
+
+# 4f8edf324ea745299804e125aec45d3f
+#: ../create.rst:78
+msgid "Click on the name of the layer you want to move."
+msgstr "Dele clic al nombre de la capa que usted quiere mover."
+
+# a650c3ddebcc4cd7a555d231747b510d
+#: ../create.rst:80
+msgid ""
+"Drag the layer up or down to change it's position in the drawing order."
+msgstr "Arrastre la capa hacia arriba o hacia abajo para cambiar su posición en el orden de dibujo."
+
+# e2a9047dad56453480d8bec2cb1c798d
+#: ../create.rst:84
+msgid "*Change layer order*"
+msgstr "*Cambiar el orden de las capas*"
+
+# 49e9f39ac0bc42a8a4cbd6a7bceefd1b
+#: ../create.rst:86
+msgid "Release the mouse button to finish moving the layer."
+msgstr "Suelte el botón del ratón para finalizar el movimiento de la capa."
+
+# 8b1bc095967f4660a6c69ffb7d72a82b
+#: ../create.rst:90
+msgid "**Toggle layer visibility**"
+msgstr "**Visibilidad de las Capas de Alternancia**"
+
+# 91d480d73cd34847aa85a8fe939f0db5
+#: ../create.rst:91
+msgid ""
+"You can turn on and off the visibility for layers in the map.  This allows "
+"you to \"hide\" a layer without having to remove it from the map."
+msgstr "Usted puede activar y desactivar la visibilidad de las capas del mapa.  Esto le permite \"esconder\" una capa sin tener que eliminarla del mapa."
+
+# bbfdf4cb2de0487ea5686bd74fc3dac5
+#: ../create.rst:93
+msgid "Click on the :guilabel:`Toggle Visibility` button to turn a layer off."
+msgstr "Dele clic en la tecla de :guilabel:`Visibilidad de las Capas de Alternancia` para desactivar una capa."
+
+# 1330fecc6e394ba59c8ed6d0c9efd88f
+#: ../create.rst:97
+msgid ""
+"Click on the :guilabel:`Toggle Visibility` button again to turn it back on."
+msgstr "Dele clic a la tecla de :guilabel:`Visibilidad de las Capas de Alternancia` para volver a activar la capa."
+
+# 22463cb7af064b3fa835f59ae712a1eb
+#: ../create.rst:102
+msgid "**Zoom to data**"
+msgstr "**Amplíe los Datos**"
+
+# e3a4b5feb16d43d38af58e41a07fad0e
+#: ../create.rst:103
+msgid ""
+"The :guilabel:`Zoom to data` button give you a convenient way to center the "
+"map on a layer.  Clicking the :guilabel:`Zoom to data` button zooms the map "
+"to the extent of the data currently in that layer."
+msgstr "La tecla de :guilabel:`Amplíe los datos` le proporciona una forma conveniente de centrar el mapa en la capa.  Dele clic a la tecla de :guilabel:`Amplíe los datos` para ampliar el mapa al punto en que actualmente sus datos se encuentran en la capa."
+
+# aa08aa03ef3946e6b2859e797c0bb442
+#: ../create.rst:105
+msgid ""
+"Click on the layer name in the layer list in the map.  The menu will expand "
+"to display additional tools."
+msgstr "Dele clic al nombre de la capa en la lista de capas en el mapa.  El Menú se expandirá para desplegar las herramientas adicionales."
+
+# ad7f2b530783417780ff4356bf58cd71
+#: ../create.rst:107
+msgid ""
+"Click on the :guilabel:`Zoom to data` button.  The map will zoom to the "
+"extent of the data for that layer."
+msgstr "Dele clic en la tecla de :guilabel:`Amplíe los datos`.  El mapa se ampliara hasta el punto de sus datos para esa capa."
+
+# 14e68b0425c0487eb0e2a9f226304c40
+#: ../create.rst:111
+msgid "*Zoom to data button*"
+msgstr "*Amplíe a la tecla de datos*"
+
+# 50c817b172d743d9bfb5d1dce7e37a6b
+#: ../create.rst:113
+msgid ""
+"Note: if a layer's visibility is dependent on scale, and the data extent is "
+"at a smaller scale, you will have to zoom in to be able to view the data."
+msgstr "Nota: Si la visibilidad de la capa depende de la escala y el punto de datos se encuentra en una escala más pequeña, usted tendrá que ampliarla a manera de poder ver los datos."
+
+# f1117d8ab73649f1bc150f7d465f8727
+#: ../create.rst:117
+msgid "**Show layer info**"
+msgstr "**Muestre la información de la capa**"
+
+# 5b5200dcac6a4ae4981594297652b1a9
+#: ../create.rst:118
+msgid ""
+"You can view information about a layer in the map.  Layer information will "
+"include information about the server, basic metadata, and the projection "
+"(SRS)."
+msgstr "Usted podrá ver la información de una capa en el mapa. La información de la capa incluir· información acerca del servidor, los meta datos básicos y la proyección (SRS)."
+
+# ad1a582a64c84cb29667e953873c3eaf
+#: ../create.rst:120
+msgid "Click on the layer name in the layer list to expand the layer options."
+msgstr "Dele clic al nombre en la lista de la capa para expandir las opciones de la capa."
+
+# 70c289399c4e4b5094ecd8d077bd35ad
+#: ../create.rst:122
+msgid ""
+"Click on the :guilabel:`Show layer info` button.  The Layer Info window will"
+" appear."
+msgstr "Dele clic a la tecla de :guilabel:`Muestre la información de la capa`.  Aparecerá la ventana de la información de la capa."
+
+# c2e433361c724887be4b753908114356
+#: ../create.rst:126
+msgid "*Show layer info button*"
+msgstr "*Muestre la tecla de la información de la capa*"
+
+# 241a82ebea394b499416fe83d64595e4
+#: ../create.rst:130
+msgid "*Layer info*"
+msgstr "*Información de la capa*"
+
+# 2a87ab02671b47578dbe7d97aee13da6
+#: ../create.rst:134
+msgid "**Remove a layer from the map**"
+msgstr "**Elimina una capa del mapa**"
+
+# 4268940812334c1daa7af68838af8e96
+#: ../create.rst:135
+msgid "You can remove a layer from the map."
+msgstr "Usted puede eliminar una capa del mapa."
+
+# f5300f5908fc4115b9bd8c672eb2af2b
+#: ../create.rst:137
+msgid ""
+"Click on the name of the layer you want to remove.  The menu will expand to "
+"show all of the options for that layer"
+msgstr "Dele clic al nombre de la capa que usted quiere eliminar.  El Menú se abrirá para mostrar todas las opciones para esa capa"
+
+# 5b082a3d39594d27b12aeb16bfbf399c
+#: ../create.rst:139
+msgid "Click on the :guilabel:`Remove Layer` button."
+msgstr "Dele clic a la tecla de :guilabel:`Eliminar una Capa`."
+
+# 3a045a160d294d5c936ea78532287973
+#: ../create.rst:143
+msgid "*Remove layer button*"
+msgstr "*La tecla de eliminar una capa*"
+
+# febec000eb084558810239e626c9457a
+#: ../create.rst:145
+msgid "In the confirmation box, click :guilabel:`Yes` to remove the layer."
+msgstr "En la casilla de confirmación dele clic a :guilabel:`Sí` para eliminar la capa."
+
+# 2d1e71ffadea465998d67b6590bd640f
+#: ../create.rst:149
+msgid "*Remove layer confirmation*"
+msgstr "*Eliminar la confirmación de la capa*"
+
+# a331815ce6d049de8700c1f741c9bdfc
+#: ../create.rst:153
+msgid "**Get feature information**"
+msgstr "**Obtener la información de las características**"
+
+# 54f51d8a1e154b94a5e81e1639849a54
+#: ../create.rst:154
+msgid ""
+"In order to get information for features in a vector layer, simply click on "
+"the feature in the map."
+msgstr "A manera de ordenar para obtener información de las características en una capa de vectores, simplemente dele clic a la caracterÌstica en el mapa."
+
+# 2ce96eabe25e43c69216e40a1218196e
+#: ../create.rst:156
+msgid ""
+"Click on the feature you want information about.  The feature info window "
+"will appear."
+msgstr "Dele clic a la característica de la cual usted quiere obtener información al respecto.  Aparecerá la ventana de información de la característica."
+
+# e052f7ac3282445da546609be8b19bd7
+#: ../create.rst:162
+msgid "**Change attribute visibility**"
+msgstr "**Cambie la visibilidad del atributo**"
+
+# 340c33cd4ed441dca76da837bf067b79
+#: ../create.rst:163
+msgid ""
+"You can control the attributes that appear in the feature info window.  This"
+" is useful when a layer has a large number of fields."
+msgstr "Usted puede controlar los atributos que aparecen en la ventana de información de las características.  Esto es de utilidad cuando una capa tiene un gran número de campos."
+
+# b720fcafff4b4ee3a6ae066114075e5b
+#: ../create.rst:165
+msgid ""
+"Click on the the layer name in the layer list in the map.  The layer will "
+"expand to show additional options."
+msgstr "Dele clic en la lista en el mapa al nombre de la capa.  La capa se abrirá para mostrar opciones adicionales."
+
+# f534ea59984a4fe1b138f0130fc8c6c4
+#: ../create.rst:169
+msgid "*Layer attributes*"
+msgstr "*Atributos de la Capa*"
+
+# 3369e5b823d544e3b5a1fca7d3395b20
+#: ../create.rst:171
+msgid ""
+"Click on the visibility icon for the attributes to toggle their visibility."
+msgstr "Dele clic al icono de la visibilidad de los  atributos para alternar su visibilidad."
+
+# aa745de6a23c4c069ae56547b4001989
+#: ../create.rst:175
+msgid "*Layer visibility options*"
+msgstr "*Las opciones de visibilidad de la capa*"
+
+# 0ffac21ccb8947ea8e28e8335a1ec1d4
+#: ../create.rst:177
+msgid ""
+"Click on a feature in that layer. You will see that the attribute fields are"
+" now hidden."
+msgstr "Dele clic a la caracterÌstica en esa capa. Usted ver· que ahora los campos de los atributos son escondidos."
+
+# 0cc5cf23ea5e4931b2fa4fc31c31a5c5
+#: ../create.rst:181
+msgid "*Feature info with hidden fields*"
+msgstr "*la información de las características con los campos ocultos*"
+
+# b32a19ecbd4d48fbbebf582beed71e85
+#: ../create.rst:185
+msgid "**Using the Legend**"
+msgstr "**Utilizando la leyenda**"
+
+# 04b8b9faabf4463cb33658e8b46cc25a
+#: ../create.rst:186
+msgid ""
+"The legend displays the symbols used for vector layers in the map (not for "
+"imagery).  It can be closed to gain screen space and opened when needed.  In"
+" addition, you can collapse the legend as desired."
+msgstr "La leyenda muestra los símbolos utilizados para las capas de los vectores en el mapa (no para imágenes).  Esto se puede cerrar para ganar más espacio en la pantalla y puede ser abierto cuando esté se necesite.  Agregado a esto, usted puede formar la leyenda como usted lo desee."
+
+# 1e96f092a75047a9a10db90d7dd7cf34
+#: ../create.rst:188
+msgid "Toggle the legend by clicking on the :guilabel:`Toggle Legend` button."
+msgstr "La alternancia de la leyenda al darle clic a la tecla de :guilabel:`Alternancia de la Leyenda`."
+
+# 2b9bb02f244c479e81bc54d559464f0f
+#: ../create.rst:192
+msgid "*Click the Toggle Legend button to open and close the legend*"
+msgstr "*Dele clic a la tecla de la alternancia de la leyenda para abrir y cerrar la leyenda*"
+
+# 4edfdb1370104470a20e097294591dbc
+#: ../create.rst:194
+msgid ""
+"To collapse or expand a layer in the legend, simply click on the layer name "
+"in the Legend window."
+msgstr "Para contraer o expandir una capa en la leyenda, simplemente dele clic al nombre de la capa en la ventana."
+
+# b567ff0a577e4f62be543e2d3657d83a
+#: ../create.rst:198
+msgid "*Legend with one layer collapsed*"
+msgstr "*La leyenda con una capa contraída*"
+
+# 5ec7a8f61f064c41a49e678845f28d88
+#: ../create.rst:201
+msgid "**Save a map**"
+msgstr "**Guardar el Mapa**"
+
+# 52da8cbe436d402e9574f61a10b3c8ed
+#: ../create.rst:202
+msgid ""
+"Saving a map preserves your preferences and makes it available for other "
+"GeoNode users."
+msgstr "Guardar el mapa preserva sus preferencias y lo pone a la disposición de otros usuarios de GeoNode."
+
+# 5f87d083cae44c248e8920e0ca3ee90a
+# 7c51424a564b49b5a181b30720024b04
+#: ../create.rst:204 ../create.rst:229
+msgid "Click on the :guilabel:`Save Map` button in the toolbar."
+msgstr "Dele clic a la tecla en la barra de herramientas a  :guilabel:`Salvar el Mapa`."
+
+# 756dcebdf35d4b2cb2c6b8ed0387229a
+# 45a691a1844d45aca862f3682dca663a
+#: ../create.rst:208 ../create.rst:233
+msgid "*Save map button*"
+msgstr "*La tecla de salvar el mapa*"
+
+# c5f88452b36e46fab53fa40f966e0500
+# 3307db806f924e03a8d54cedaff7c87e
+#: ../create.rst:210 ../create.rst:235
+msgid "Enter a title and abstract for your map."
+msgstr "Ingrese un título y un resumen para su mapa."
+
+# 66129a1f5f0742a2a4848a075b2649bc
+# 5b7dc3819db5458aaaf8b4d2a0bc1d33
+#: ../create.rst:214 ../create.rst:239
+msgid "*Save map dialog*"
+msgstr "*Salvar el dialogo del mapa*"
+
+# f590ba2874744db29c21a604fa1d895b
+#: ../create.rst:216
+msgid ""
+"Click :guilabel:`Save`. Notice that the link on the top right of the page "
+"changed to reflect the map's name."
+msgstr "Dele clic a :guilabel:`Guardar`. Note que el vínculo en la parte superior derecha de la página, ha cambiado para reflejar el nombre del mapa."
+
+# 249138c8ef2944c6bb2d658751866bbd
+# dd68a0be215a4603a1876f5df165e4ec
+#: ../create.rst:220 ../create.rst:245
+msgid "*Saved map name*"
+msgstr "*Nombre del mapa Guardado*"
+
+# bb511d6afdf84e7aaee10a4f75a75982
+# 8b2a817f80294c989b2bdb02534eb14a
+#: ../create.rst:222 ../create.rst:247
+msgid "The map is now saved in the list of maps on the Maps page."
+msgstr "Ahora el mapa es guardado en la lista de mapas que se encuentra en la Página de los Mapas."
+
+# 8d0ea9a9410345258b0cf3296144208f
+#: ../create.rst:226
+msgid "**Create a copy of a map**"
+msgstr "**Cree una copia del mapa**"
+
+# a69e3e8e21654e6bbf8c3d346238f126
+#: ../create.rst:227
+msgid ""
+"You can also use a map as a starting point for another map.  This allows you"
+" to build on the work of others without changing their maps."
+msgstr "Usted también puede utilizar un mapa como punto de partida para otro mapa.  Esto permite que usted construya sobre el trabajo de otros sin cambiar sus mapas."
+
+# f88e5b869cb74b44a7103deccfe870fe
+#: ../create.rst:241
+msgid ""
+"Click :guilabel:`Save Copy`. Notice that the link on the top right of the "
+"page changed to reflect the map's name."
+msgstr "Dele clic a:guilabel:`Guardar una copia`. Note que el vínculo en la parte superior derecha de la página ha cambiado para reflejar el nombre del mapa."

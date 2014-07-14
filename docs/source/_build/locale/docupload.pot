@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoSHAPE 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docupload.rst:4
+# 9cb6dd12374f4924819d98bd44e50de1
+msgid "Uploading Documents"
+msgstr ""
+
+#: ../docupload.rst:5
+# 575b088ccb25422aa47ae70fa8ebb090
+msgid "GeoNode lets you upload documents to associate to layers or maps."
+msgstr ""
+
+#: ../docupload.rst:7
+# 256ff9f19b114f2280bd82a878c42b54
+msgid "In the documents page, click on :guilabel:`Upload Documents`"
+msgstr ""
+
+#: ../docupload.rst:11
+# 0f3de27016b24eb39ed1352c1c0252ac
+msgid "*Upload Documents tab*"
+msgstr ""
+
+#: ../docupload.rst:13
+# fc3235f7367647f5851f952785744c0c
+msgid "Type in the Title for the Document that will appear in GeoNode"
+msgstr ""
+
+#: ../docupload.rst:15
+# 295c3ab530ab4948ba180896c04a226e
+msgid "Browse to the file to upload or enter the URL for a web page or a document that's online."
+msgstr ""
+
+#: ../docupload.rst:19
+# 170ef69e2a2b437fa27bf30d6e3ba401
+msgid "*Upload a Doc as a URL*"
+msgstr ""
+
+#: ../docupload.rst:21
+# a6d48bb37c0a4bb08eb50b49f2fce2de
+msgid "If you want to link the document to a map or a layer, choose it in the :guilabel:`Link to` section"
+msgstr ""
+
+#: ../docupload.rst:23
+# 0ef3de24cadd4d6cab66aa20cfbc4029
+msgid "Set permissions for who is able to view and manage the document accordingly"
+msgstr ""
+
+#: ../docupload.rst:25
+# 6b5bb8406da4491a9fef2ef76d2f68bc
+msgid "Click on the :guilabel:`Upload` button"
+msgstr ""
+
+#: ../docupload.rst:27
+# eb0cc77d892d4083a02512caa4a048ce
+msgid "The next page will allow you to enter metadata for the document.  It's good to enter the Abstract at a minimum."
+msgstr ""
+
+#: ../docupload.rst:29
+# 0614fdc6b0ec4002ac126985aad534a2
+msgid "When you have finished entering metadata click on the :guilabel:`Update` button at the bottom of the page."
+msgstr ""
+
+#: ../docupload.rst:31
+# ad2a5f6866354e0fb51bcfeb777f5180
+msgid "The document will now be listed in the documents tab."
+msgstr ""
+

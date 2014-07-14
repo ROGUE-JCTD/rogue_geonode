@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:39+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# fa94084bee4549308108a035c5f8a74a
+#: ../qgis.rst:4
+msgid "QGIS"
+msgstr "QGIS"
+
+# a0a7dd2cb9d444e282fae120cdf39a92
+#: ../qgis.rst:6
+msgid ""
+"Quantum GIS or qGIS is an open source, cross platform desktop GIS app. It "
+"can also be used to add layers from your GeoNode instance as WMS or WFS. The"
+" process is very similar to how we add these same layers to ArcMap, and we "
+"will walk through the steps necessary in the following section."
+msgstr "Quantum GIS o QGIS es una fuente abierta, una plataforma cruzada de escritorio aplicación GIS. También puede ser utilizada para agregar capas desde su instancia de GeoNode como WMS o WFS. El proceso es muy similar a como agregamos estas mismas capas a ArcMap, y en la siguiente sección, miraremos los pasos necesarios para llevarlo a cabo."
+
+# 6c4ab25c479c474a9199b62e91e63686
+#: ../qgis.rst:8
+msgid "First, select \"Add WMS Layer\" from the Layer menu."
+msgstr "Primero seleccione \"Agregar una Capa WMS\" desde el menú de las capas."
+
+# 93e6939399524c27a9b76ddbdd0b282c
+#: ../qgis.rst:12
+msgid ""
+"The Add WMS Layer Dialog will be displayed where you are able to specify the"
+" parameters to connect to your WMS server."
+msgstr "Se desplegara la capa de WMS que se agregó, en donde usted podan especificar los parámetros para conectarse a su servidor WMS."
+
+# f7f6b477f8e7440f82cd993045564b94
+#: ../qgis.rst:16
+msgid ""
+"Next, you need to fill in the parameters to connect to your GeoNode "
+"instance. The URL for your GeoNode's WMS is the base URL + /geoserver/wms"
+msgstr "Luego, usted necesitara introducir los parametros para poder conectarse a su instancia de GeoNode. La URL para su WMS del GeoNode es la base URL + //geoserver/wms"
+
+# 07ec08d598e640ed907b7eb3744cd532
+#: ../qgis.rst:20
+msgid ""
+"After clicking the OK button, your server will show up in the list of "
+"servers. Make sure its selected, then, click the connect button to have QGIS"
+" retrieve the list of layers from your GeoNode."
+msgstr "Después de que le haya dado clic a la tecla de OK, su servidor aparecera en la lista de los servidores.  Aseg˙rese que ha sido seleccionado, luego dele clic a la tecla de conectar para que QGIS recupere la lista de las capas desde su GeoNode."
+
+# a355840fd1004f20abb90d17c840a218
+#: ../qgis.rst:24
+msgid "Select the layers you want to add to your QGIS project and click \"Add\"."
+msgstr "Seleccione las capas que usted quiere agregar a su proyecto de QGIS y dele clic a \"Agregar\"."
+
+# 17fb8a61a3ea46c7bc856d5fba00be2c
+#: ../qgis.rst:28
+msgid "Your layer will be displayed in the map panel."
+msgstr "Su capa sera desplegada en el panel del mapa."
+
+# 0d573af60b3b4de68d572dc218e6d32f
+#: ../qgis.rst:32
+msgid "You can then zoom into your features in the Map."
+msgstr "Luego usted podrá darle zoom a sus elementos en el mapa."
+
+# 1760fe4dad1448feb68257490764c672
+#: ../qgis.rst:36
+msgid ""
+"From there, you can use the identify tool to inspect the attributes of one "
+"of the features on the map."
+msgstr "Desde aquí, usted puede utilizar la herramienta de identificación  para inspeccionar los atributos de una de lo elementos en el mapa."
+
+# e3c665a774194a3da97144a3e7e5ed5d
+#: ../qgis.rst:40
+msgid ""
+"Or, you can look at the layer metadata by right clicking on the layer and "
+"selecting Layer Properties and selecting the metadata tab."
+msgstr "O, usted puede ver la capa con los meta datos, al darle clic derecho en la capa y seleccionando la Capa de las Propiedades y seleccionando la viñeta de los meta datos."
+
+# 60e191dcdd95422aa182cb81243e70db
+#: ../qgis.rst:44
+msgid ""
+"Adding WFS servers and layers to your QGIS project is very similar to adding"
+" WMS. Depending on your version of QGIS, you may need to add the WFS plugin."
+" You can use the Plugin manager to add it."
+msgstr "Agregar los servidores y capas WFS a su proyecto QGIS, lo que es muy similar a agregar el WMS. Dependiendo de su versiÛn de QGIS, usted podrá necesitar agregar una conexión WFS. Para agregarlo, usted puede utilizar el Administrador de conexiones."
+
+# fd88b3b21e6d4d1682fc50bb6414b8d5
+#: ../qgis.rst:48
+msgid ""
+"Once the plugin is installed, you can select the \"Add WFS Layer\" option "
+"from the Layer menu."
+msgstr "Una vez que la conexión ha sido instalada, usted puede seleccionar la opción de \"Agregar la Capa WFS\" desde la capa del Menú."
+
+# 89234ab5a6f7418995c73af7de149544
+#: ../qgis.rst:52
+msgid ""
+"Step through the same process you did for WMS to create a new WFS "
+"connection. First specify server parameters and click OK."
+msgstr "Lleve a cabo el mismo proceso que usted llevo a cabo para WMS, para crear una nueva conexión de WFS. Primero especifique los servidores del parámetro y dele clic a la tecla de OK."
+
+# 09ea6b1503fa4c8aa28db4b5d7b9b813
+#: ../qgis.rst:56
+msgid ""
+"Then click Connect to retrieve the list of layers on the server and select "
+"the layers you want to add and click Apply."
+msgstr "Luego dele clic a conectar para recuperar la lista de las capas en el servidor y seleccione las capas que usted quiere agregar y Aplicar."
+
+# a6730bfb6dd14d8987bc5c96d8bec992
+#: ../qgis.rst:60
+msgid "The layer(s) you selected will be displayed in the map panel."
+msgstr "La capa o las capas que usted haya seleccionado, serán desplegadas en el panel del mapa."
+
+# acbb006e9aee43dba4b4e57a53b5f8d9
+#: ../qgis.rst:64
+msgid ""
+"You can use the same identify tool to inspect features in the map panel."
+msgstr "Usted puede utilizar la misma herramienta de identificación  para inspeccionar las características en el panel del mapa."
+
+# 47a81fc2d6fd44de869b7cfcbccead19
+#: ../qgis.rst:68
+msgid ""
+"To look at more information about your layer, right click the layer in the "
+"Table of Contents and select Layer Properties. You can look at the list of "
+"fields."
+msgstr "Para poder ver más información acerca de su capa, dele clic derecho a la capa en la tabla de contenidos y selecciones la capa de las Propiedades.  usted puede ver la lista de los campos."
+
+# d1463c8fd2a647aaadb5b59a4f512a8c
+#: ../qgis.rst:72
+msgid "... or set a style to match how you want your data to be displayed."
+msgstr "o establezca un estilo para que coincida a cómo Usted quiere que sus datos sean desplegados."
+
+# 1493514aa84d4cd3bbf91fd3ce7a5ce5
+#: ../qgis.rst:76
+msgid ""
+"You now know how to add layers from your GeoNode instance to a QGIS project."
+" You can explore all of the other options available to you in QGIS by "
+"consulting its documentation."
+msgstr "Ahora usted sabe como agregar las capas desde su instancia de GeoNode a un Proyecto de QGIS. usted puede explorar todas las demás opciones disponibles en QGIS al consultar su documentación."

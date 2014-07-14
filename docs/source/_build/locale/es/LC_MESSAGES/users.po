@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 19:01+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 885a5b4a0052462a876b4a35990c0ada
+#: ../users.rst:4
+msgid "Viewing other user accounts"
+msgstr "Viendo otras cuentas de usuarios"
+
+# 4c281c27fed24b5c98c7dd1af1d2ffcb
+#: ../users.rst:6
+msgid ""
+"Once your account is created in Geonode, you can view other accounts on the "
+"system. Note that on the main profile page there are options for following "
+"(and blocking) other users."
+msgstr "Una vez que su cuenta haya sido creada en GeoNode, usted pueve ver las otras cuentas en el sistema. Note que en la principal página de su perfil, existen opciones para seguir (y bloquear) a otros usuarios."
+
+# 484783909ef24286a6bbbde5e3c80d2f
+#: ../users.rst:10
+msgid "*Profile page*"
+msgstr "*Página de perfil*"
+
+# 22b59508ebc4472083b4f15a5059f7b6
+#: ../users.rst:12
+msgid ""
+"To see information about other users on the system, click the "
+":guilabel:`People` link on the top toolbar. You will see a list of users "
+"registered on this system."
+msgstr "Para poder ver la información de los otros usuarios del sistema, dele clic al vÌnculo de :guilabel:`Personas` localizado en la barra de herramientas en la parte superior. Usted ver una lista de los usuarios registrados en el sistema."
+
+# feecdc3bf5a24b818585cd5013aad03c
+# 3e9bd6c89a8848f4961353de8704f891
+#: ../users.rst:16 ../users.rst:28
+msgid "*List of users*"
+msgstr "*Lista de usuarios*"
+
+# 4278785ea0fa43069f792b0fc7497c9b
+#: ../users.rst:18
+msgid ""
+"Click on the user name for a particular user. You will see the layers owned "
+"by this user."
+msgstr "Dele clic en el nombre del usuario, para ver un usuario en particular. usted también vera todas las capas propiedad de este usuario."
+
+# 7508854906724462b99410197445c2cd
+#: ../users.rst:22
+msgid "*List of layers owned by a user*"
+msgstr "*Lista de las capas que son propiedad de este usuario*"
+
+# a5371039d43f45a8afdf93fb167e855e
+#: ../users.rst:24
+msgid ""
+"You can also click on :guilabel:`Activities` to see the chronological list "
+"of that user's activities."
+msgstr "Usted también puede darle clic a :guilabel:`Actividades` para poder ver la lista cronológica de las actividades de ese usuario."

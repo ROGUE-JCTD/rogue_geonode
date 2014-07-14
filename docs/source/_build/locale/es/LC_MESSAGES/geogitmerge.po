@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, LMN Solutions
+# This file is distributed under the same license as the GeoSHAPE package.
+# 
+# Translators:
+# Scott Clark <sctevl@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: ROGUE_GEONODE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-14 12:34-0400\n"
+"PO-Revision-Date: 2014-07-14 17:02+0000\n"
+"Last-Translator: Scott Clark <sctevl@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 68451aa6c5a5430ba2b0e8bca53de200
+#: ../geogitmerge.rst:4
+msgid "Merging Branches"
+msgstr "Fusionando las Ramas"
+
+# fee84e4e8e5a4a6ca9edcddf2fc5b8e3
+#: ../geogitmerge.rst:5
+msgid ""
+"Merge is used to pull in changes from one branch to another within the same "
+"repository.  A branch is a different version of the data in the same "
+"repository.  Branches can be set up within GeoServer by someone with admin "
+"privileges. Merge can be used for branches in the same repository.  In order"
+" to merge two branches, the layers need to be added to the map.  The "
+"following will describe a scenario of merging master with a branch."
+msgstr "La fusión se utiliza para jalar los cambios de una rama a otra dentro del mismo repositorio.  Una rama es una versión diferente de los datos en el mismo repositorio.  Las ramas pueden ser configuradas por alguien que tenga privilegios administrativos dentro del GeoServer. La fusión puede ser utilizada por ramas en el mismo repositorio.  A manera de fusionar dos ramas, las capas necesitan ser agregadas al mapa.  Lo siguiente describe un escenario de fusión de un principal con una rama."
+
+# a0da66c1ab564e4d83918b4f5c592098
+#: ../geogitmerge.rst:9
+msgid "Merge Two Branches"
+msgstr "Fusionando dos Ramas"
+
+# 8a9a278b0fd44486ac873526ea54e5ae
+#: ../geogitmerge.rst:10
+msgid ""
+"The screenshot below shows two layers.  One is multipolygon_test and the "
+"other is multipolygon_test_branch1.  The first layer is on the master branch"
+" and the second layer is on branch1. The second layer could have any name "
+"but it's labeled this way to clearly distinguish which on is the branch. "
+"Note that the upper polygon in multipolygon_test_branch1 has been updated so"
+" that it's larger.  We want to bring that edit into master "
+"(multipolygon_test)."
+msgstr "La siguiente captura de pantalla muestra dos capas.  Una es una multipolygon_test y la otra es un multipolygon_test_branch1.  La primera capa se encuentra en la rama principal  y la segunda capa se encuentra en la rama número 1. La segunda capa podría tener cualquier nombre, pero se ha etiquetado de esta forma para claramente distinguir cual es la rama. Note que el polígono superior en los múltiples polígonos multipolygon_test_branch1 ha sido actualizado a  manera de que es más grande.  Queremos traer la edición al principal (multipolygon_test)."
+
+# 6e769c0e7a0e4c489380a9f3700dc914
+#: ../geogitmerge.rst:16
+msgid "*Two branches in the same map*"
+msgstr "*Dos ramas en el mismo mapa*"
+
+# 2ec2acfcb5b84d9685697e234f226e86
+#: ../geogitmerge.rst:18
+msgid ""
+"Click on :guilabel:`Synchronization`.  The :guilabel:`Synchronization` tab "
+"will expand."
+msgstr "Dele clic a :guilabel:`Sincronización`.  La viñeta de :guilabel:`Sincronización` se expandirá."
+
+# c64abe5db13a43479536206f5286b9c8
+#: ../geogitmerge.rst:20
+msgid "Click on :guilabel:`Merge` to open the merge dialog."
+msgstr "Dele clic a :guilabel:`Fusionar` para abrir el dialogo de la fusión."
+
+# af4404c14a8c489a817196c08069b2a9
+#: ../geogitmerge.rst:24
+msgid "*Merge Button*"
+msgstr "*Tecla de Fusión*"
+
+# 3fb475d14783416895c01e34a235576c
+#: ../geogitmerge.rst:26
+msgid "In the Merge window, click on the dropdown to select the repository."
+msgstr "En la ventana de la fusión, dele clic al menú desplegable para seleccionar el repositorio."
+
+# 44accdb337a444d0927deac5296a5522
+#: ../geogitmerge.rst:30
+msgid "*Select the Repository*"
+msgstr "*Seleccione el Repositorio*"
+
+# 0d89594e02b5437d855c845b06e3ad01
+#: ../geogitmerge.rst:32
+msgid ""
+"Choose the branches to merge.  In this case we are merging the edits from "
+"branch1 into master."
+msgstr "Escoja las ramas a fusionar.  En este caso estamos fusionando las ediciones de la branch1 al principal."
+
+# 5c1f383e7770490fbbd285362d605ea1
+#: ../geogitmerge.rst:36
+msgid "*Select the branches to merge*"
+msgstr "*Seleccione las ramas a ser fusionadas*"
+
+# 5a087ce2bfa64938b3db4c65c7421ab1
+#: ../geogitmerge.rst:38
+msgid ""
+"Click :guilabel:`Merge`.  The master branch is updated with the changes from"
+" branch1."
+msgstr "Dele clic a :guilabel:`Fusionar`.  La rama principal es actualizada con los cambios de la branch1. "
+
+# 95a9908ef04a42ceafc5105e6844d407
+#: ../geogitmerge.rst:42
+msgid "*Completed merge*"
+msgstr "*Fusión Completada*"
+
+# ff54516b063b4b1b896792e9ab6124bb
+#: ../geogitmerge.rst:45
+msgid "Conflict Resolution"
+msgstr "Resolución de Conflicto"
+
+# bab7442406ad456b941ec169e4f0e964
+#: ../geogitmerge.rst:46
+msgid ""
+"Conflicts can occur during a merge if the same attributes or geometries for "
+"features have been changed in different ways on the branch. You can resolve "
+"conflicts in MapLoom.  We will use the same branches in the previous "
+"scenario.  The geometry and attribute for the feature have been changed on "
+"both branches."
+msgstr "Los conflictos pueden ocurrir durante una fusión si los mismos atributos o geometrías para las características han sido cambiados en diferentes formas en la rama. Usted puede solucionar los conflictos en MapLoom.  En el escenario anterior, nosotros utilizaremos las mismas ramas.  La geometría y el atributo para la característica han sido cambiados en ambas ramas."
+
+# 79f35b0c4e5f48ac8a0cacdbeeb71274
+#: ../geogitmerge.rst:49
+msgid ""
+"If a conflict occurs during a merge, the :guilabel:`Merge Conflicts` dialog "
+"will appear in the map."
+msgstr "Si durante la fusión surge un conflicto, el dialogo de :guilabel:`Fusionar Conflictos ` aparecerá en el mapa."
+
+# 1d87052958034689a870542cd85d5af4
+#: ../geogitmerge.rst:53
+msgid "*Merge conflicts dialog*"
+msgstr "*Fusionar el dialogo de conflictos*"
+
+# 23d1ace966c74a6b8e472bba30627ad2
+#: ../geogitmerge.rst:55
+msgid ""
+"Click on :guilabel:`Resolve Conflicts`.  We see that there is one conflict "
+"here."
+msgstr "Dele clic a :guilabel:`Resolución de Conflictos `.  Vemos que aquí hay un conflicto."
+
+# 745abce759cc4147a78815ab13d15cc4
+#: ../geogitmerge.rst:59
+msgid "*Merge conflict displayed*"
+msgstr "*Fusionar el conflicto mostrado*"
+
+# 387039aebff14ade915d3b38591b06fe
+#: ../geogitmerge.rst:61
+msgid ""
+"Click on :guilabel:`conflict` to move to the conflict resolution dialog."
+msgstr "Dele clic a :guilabel:`conflicto` para moverse al dialogo de la resolución de conflicto."
+
+# 05f70b9924034003b326bd557632f824
+#: ../geogitmerge.rst:65
+msgid "*Merge conflict resolution dialog*"
+msgstr "*Dialogo para la fusión de la resolución de conflicto*"
+
+# 0c5614306e4840539b28689b4d90b6b0
+#: ../geogitmerge.rst:67
+msgid ""
+"Click on the arrows beside the attributes to select the final state for the "
+"merged feature.  In addition you can edit the attribute.  In this case we "
+"select the geometry from branch1 and the comments attribute from master."
+msgstr "Dele clic a las flechas que se encuentra al lado de los atributos, para seleccionar el estado final de la característica fusionada.  Adicionalmente, usted puede editar el atributo.  En este caso seleccionamos la geometría de la rama número 1 y los  atributos de los comentarios del principal."
+
+# 2bc94819018540909a0e8a5b21e136a8
+#: ../geogitmerge.rst:71
+msgid "*Final merge selections*"
+msgstr "*Selecciones finales de la fusión*"
+
+# 698b6060dfbb4f40bd7a2f99ea016544
+#: ../geogitmerge.rst:73
+msgid ""
+"Click on :guilabel:`Save` to finish and update.  The map now displays the "
+"merged feature."
+msgstr "Dele clic a :guilabel:`Guardar` para finalizar y actualizar.  El mapa ahora muestra la característica fusionada."
+
+# 21c76ce1bf1f41c9bf6b27ee0f60e18d
+#: ../geogitmerge.rst:77
+msgid "*Merged feature*"
+msgstr "*Elemento Fusionada*"
+
+# cfdbe6b6de9f48a2919fb3de7bb69601
+#: ../geogitmerge.rst:79
+msgid ""
+"Click on the :guilabel:`Done` button under :guilabel:`Merge Results` to "
+"complete the merge.  You will be prompted if you want to commit the merge."
+msgstr "Dele clic a ña tecla de :guilabel:`Hecho` bajo la :guilabel:`Fusionar los Resultados` para completar la fusión.  Se le preguntara si usted quiere comprometer la fusión."
+
+# b4cdd20ff1434e87902aa5bcdf95e498
+#: ../geogitmerge.rst:83
+msgid "*Commit merge dialog*"
+msgstr "*El dialogo de la fusión comprometida*"
+
+# 7c7e16d364e94bc999d978c9c6b8798a
+#: ../geogitmerge.rst:85
+msgid "Click the :guilabel:`Yes` button to finalize the merge."
+msgstr "Dele clic a la tecla de :guilabel:`SI` para finalizar la fusión."
