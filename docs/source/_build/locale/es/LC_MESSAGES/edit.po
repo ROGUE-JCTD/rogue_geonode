@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ROGUE_GEONODE\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-14 12:34-0400\n"
-"PO-Revision-Date: 2014-07-14 16:39+0000\n"
+"PO-Revision-Date: 2014-07-14 23:08+0000\n"
 "Last-Translator: Scott Clark <sctevl@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/rogue_geonode/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -194,7 +194,7 @@ msgid ""
 " the first vertice again.  To add another polygon, click on the "
 ":guilabel:`Add Geometry` button.  Repeat the process to add polygons as "
 "needed."
-msgstr ""
+msgstr "Dele clic a la tecla de :guilabel:`Agregar una Característica`.  El dialogo de :guilabel:`Dibujando una Geometría` aparecerá en la parte superior de la pantalla."
 
 # 77a78f83c4754f958508b8f4b3a6619c
 #: ../edit.rst:95
