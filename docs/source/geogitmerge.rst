@@ -11,7 +11,7 @@ The screenshot below shows two layers.  One is multipolygon_test and the other i
 The second layer could have any name but it's labeled this way to clearly distinguish which on is the branch.  
 Note that the upper polygon in multipolygon_test_branch1 has been updated so that it's larger.  We want to bring that edit into master (multipolygon_test).
 
-   .. figure:: img/multipolygonedit.png
+   .. figure:: img/en_multipolygonedit.png
 
       *Two branches in the same map* 
 
@@ -19,25 +19,25 @@ Note that the upper polygon in multipolygon_test_branch1 has been updated so tha
 
 #. Click on :guilabel:`Merge` to open the merge dialog. 
 
-   .. figure:: img/mergebutton.png
+   .. figure:: img/en_mergebutton.png
 
       *Merge Button* 
 
 #. In the Merge window, click on the dropdown to select the repository. 
 
-   .. figure:: img/mergeselectrepo.png 
+   .. figure:: img/en_mergeselectrepo.png 
 
       *Select the Repository* 
 
 #. Choose the branches to merge.  In this case we are merging the edits from branch1 into master. 
 
-   .. figure:: img/mergebranchselect.png 
+   .. figure:: img/en_mergebranchselect.png 
 
       *Select the branches to merge* 
 
 #. Click :guilabel:`Merge`.  The master branch is updated with the changes from branch1. 
 
-   .. figure:: img/mergecomplete.png 
+   .. figure:: img/en_mergecomplete.png 
 
       *Completed merge* 
 
@@ -48,37 +48,37 @@ You can resolve conflicts in MapLoom.  We will use the same branches in the prev
 
 If a conflict occurs during a merge, the :guilabel:`Merge Conflicts` dialog will appear in the map. 
 
-   .. figure:: img/mergeconflictsdialog.png 
+   .. figure:: img/en_mergeconflictsdialog.png 
 
       *Merge conflicts dialog* 
 
 #. Click on :guilabel:`Resolve Conflicts`.  We see that there is one conflict here.  
 
-   .. figure:: img/mergeconflicts.png 
+   .. figure:: img/en_mergeconflicts.png 
 
       *Merge conflict displayed* 
 
 #. Click on :guilabel:`conflict` to move to the conflict resolution dialog.  
 
-   .. figure:: img/mergeconflictresolution.png 
+   .. figure:: img/en_mergeconflictresolution.png 
 
       *Merge conflict resolution dialog* 
 
 #. Click on the arrows beside the attributes to select the final state for the merged feature.  In addition you can edit the attribute.  In this case we select the geometry from branch1 and the comments attribute from master.  
 
-   .. figure:: img/selectmerge.png 
+   .. figure:: img/en_selectmerge.png 
 
       *Final merge selections* 
 
 #. Click on :guilabel:`Save` to finish and update.  The map now displays the merged feature. 
 
-   .. figure:: img/mergedfeature.png 
+   .. figure:: img/en_mergedfeature.png 
 
       *Merged feature* 
 
 #. Click on the :guilabel:`Done` button under :guilabel:`Merge Results` to complete the merge.  You will be prompted if you want to commit the merge.  
 
-   .. figure:: img/commitmerge.png 
+   .. figure:: img/en_commitmerge.png 
 
       *Commit merge dialog* 
 

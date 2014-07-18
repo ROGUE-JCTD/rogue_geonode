@@ -5,11 +5,11 @@ Managing Maps
 Every map has it's own page that provides more information about the map along with other options such as permissions and metadata.  
 To get to the page for a map, click on the name of the map.
 
-   .. figure:: img/mapdetail.png
+   .. figure:: img/en_mapdetail.png
 
 The map detail page provides a view of the map, along with information about the map. It also tells you the layers that are used in the map.
 
-   .. figure:: img/mappage.png
+   .. figure:: img/en_mappage.png
 
 
 Download Data Layers
@@ -18,7 +18,7 @@ This will allow you to download the contents of the map that are stored in GeoNo
 
 #. Click on the :guilabel:`Download Map` button.
 
-   .. figure:: img/downloadmap.png
+   .. figure:: img/en_downloadmap.png
 
       *Download map menu*
 
@@ -26,7 +26,7 @@ This will allow you to download the contents of the map that are stored in GeoNo
 
 #. Select the layer(s) that you want to download individually OR click on :guilabel`Start downloading this map`
 
-   .. figure:: img/startdownloadmap.png
+   .. figure:: img/en_startdownloadmap.png
 
 
 Download Web Map Context
@@ -35,7 +35,7 @@ The Web Map Context (WMC) is an open geospatial consortium (OGC) standard for me
 
 #. Click on the :guilabel:`Download Map` button.
 
-   .. figure:: img/downloadmap.png
+   .. figure:: img/en_downloadmap.png
 
       *Download map menu*
 
@@ -48,7 +48,7 @@ You can edit the information about the map.
 
 #. Click on the :guilabel:`Edit Map` button
 
-   .. figure:: img/editmap.png
+   .. figure:: img/en_editmap.png
 
       *Edit map menu*
 
@@ -67,13 +67,13 @@ By default the thumbnail images for maps will only have the vector layers.  In o
 
 #. Click on the :guilabel:`Edit Map` button
 
-   .. figure:: img/editmap.png
+   .. figure:: img/en_editmap.png
 
       *Edit map menu*
 
 #. Click on :guilabel:`Set Map Thumbnail`.  This will set the map thumbnail with the base map and layers included.
 
-   .. figure:: img/mapthumbnail.png
+   .. figure:: img/en_mapthumbnail.png
 
       *Map with thumbnail*
 
@@ -84,13 +84,13 @@ The map permissions determine which users can view or edit a map.
 
 #. Click on the :guilabel:`Edit Map` button
 
-   .. figure:: img/editmap.png
+   .. figure:: img/en_editmap.png
 
       *Edit map menu*
 
 #. Set the permissions for viewing, editing, and managing as desired.
 
-   .. figure:: img/mappermissions.png
+   .. figure:: img/en_mappermissions.png
 
 #. Click the :guilabel:`Apply Changes` button.
 
@@ -101,7 +101,7 @@ You can remove a map completely from GeoNode.  This action removes the map for a
 
 #. Click on the :guilabel:`Edit Map` button
 
-   .. figure:: img/editmap.png
+   .. figure:: img/en_editmap.png
 
       *Edit map menu*
 

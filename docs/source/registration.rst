@@ -9,13 +9,13 @@ Before you can save or edit any layers on a GeoNode instance, you need to create
 
 .. note:: The registrations in GeoNode must be open, in case you don't see the register link then it's not possible to register unless the addministrator of the site does that for you.
 
-.. figure:: img/signin.png
+.. figure:: img/en_signin.png
 
       *Sign in screen*
 
 #. On the next page, fill out the form. Enter a user name and password in the fields. Also, enter your email address for verification.
 
-   .. figure:: img/signup.png
+   .. figure:: img/en_signup.png
 
       *Registering for a new account*
 
@@ -23,7 +23,7 @@ Before you can save or edit any layers on a GeoNode instance, you need to create
 
    .. todo:: Why confirm if you're already in?
 
-   .. figure:: img/confirm.png
+   .. figure:: img/en_confirm.png
 
       *Confirming your email address*
 

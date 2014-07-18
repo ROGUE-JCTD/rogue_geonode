@@ -16,7 +16,7 @@ In order to synchronize you will need to configure the remote repository (or rep
 
 #. Click on the :guilabel:`Remote Options` button next to the :guilabel:`Synchronization` tab in the main menu.
 
-   .. figure:: img/remoteoptions.png
+   .. figure:: img/en_remoteoptions.png
 
       *Remote Options button to configure remotes*
 
@@ -24,13 +24,13 @@ In order to synchronize you will need to configure the remote repository (or rep
 
 Note that even though you might only be working with a single layer, the entire repository contents will be synched.  This is important to maintaining the history of the repository. 
 
-   .. figure:: img/chooserepo.png 
+   .. figure:: img/en_chooserepo.png 
 
       *Select the repository to sync*
 
 #. Choose the name of the :guilabel:`Remote` from the drop down menu.  If this is the remote to be set up then there will only be an option for :guilabel:`New Remote`.
 
-   .. figure:: img/remoteconfigsettings.png 
+   .. figure:: img/en_remoteconfigsettings.png 
 
       *Remote Configuration Settings* 
 
@@ -40,7 +40,7 @@ Note that even though you might only be working with a single layer, the entire 
 
 #. If you do not know the workspace and datastore names you can query the server by typing the following URL in a browser.  http://<servername>/geoserver/geogit 
 
-   .. figure:: img/geogitrepolist.png 
+   .. figure:: img/en_geogitrepolist.png 
 
       *GeoGit Repository List from GeoServer* 
 
@@ -48,7 +48,7 @@ Note that even though you might only be working with a single layer, the entire 
 
 #. GeoServer also has information about the GeoGit repositories under :guilabel:`Stores` 
 
-   .. figure:: img/geoserverstores.png
+   .. figure:: img/en_geoserverstores.png
 
       *GeoGit Data Stores in GeoServer*
 
@@ -63,7 +63,7 @@ You can set up syncs with different branches on the same remote.  The following 
 
 #. To add a sync, click on :guilabel:`Synchronization` in the menu.  The menu will expand. 
 
-   .. figure:: img/syncmenu.png 
+   .. figure:: img/en_syncmenu.png 
 
       *Synchronization menu* 
 
@@ -73,19 +73,19 @@ You can set up syncs with different branches on the same remote.  The following 
 
 #. In the :guilabel:`Repo` field select the repository from the drop down 
 
-   .. figure:: img/addsyncrepo.png 
+   .. figure:: img/en_addsyncrepo.png 
 
       *Select the Repo* 
 
 #. Then select the branch to sync from the drop down 
 
-   .. figure:: img/choosebranch.png 
+   .. figure:: img/en_choosebranch.png 
 
       *Select the Branch* 
 
 #. Repeat the process for the Remote 
 
-   .. figure:: img/selectrepo.png 
+   .. figure:: img/en_selectrepo.png 
 
       *Select the Remote and Branch*
 
@@ -97,7 +97,7 @@ Once a remote is set up then you can sync between the two GeoGit repositories.
 
 #. Click on the up and down arrows by the name of the remote you want to sync.  This initiates a one-time push/pull 
 
-   .. figure:: img/manualsync.png 
+   .. figure:: img/en_manualsync.png 
 
       *Manual Sync* 
 
@@ -108,7 +108,7 @@ You can set up the remote to sync automatically every minute.
 
 #. Click on the arrows that form a box.  As long as this button is depressed, the sync will occur automatically. 
 
-   .. figure:: img/autosync.png 
+   .. figure:: img/en_autosync.png 
 
       *Auto Sync* 
 

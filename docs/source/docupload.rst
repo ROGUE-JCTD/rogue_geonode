@@ -6,7 +6,7 @@ GeoNode lets you upload documents to associate to layers or maps.
 
 #. In the documents page, click on :guilabel:`Upload Documents`
 
-   .. figure:: img/uploaddocs.png 
+   .. figure:: img/en_uploaddocs.png 
 
       *Upload Documents tab* 
 
@@ -14,7 +14,7 @@ GeoNode lets you upload documents to associate to layers or maps.
 
 #. Browse to the file to upload or enter the URL for a web page or a document that's online. 
 
-   .. figure:: img/docurl.png 
+   .. figure:: img/en_docurl.png 
 
       *Upload a Doc as a URL* 
 

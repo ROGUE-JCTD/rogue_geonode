@@ -5,7 +5,7 @@ Editing Metadata and Managing Layers
 
 Every layer has its own page with information about it.  The layer page also provides a menu for options to edit information about the layer and manage the layer.
 
-      .. figure:: img/editlayersanandreas.png
+      .. figure:: img/en_editlayersanandreas.png
 
 Edit Metadata
 -------------
@@ -27,7 +27,7 @@ The Permissions window allows you to manage who can view and download the data, 
 
 #. Click on the Edit Layer button and select Edit Permissions
 
-      .. figure:: img/layerpermissionsdialog.png
+      .. figure:: img/en_layerpermissionsdialog.png
 
 #. Make adjustments to permissions as needed.
 
@@ -39,7 +39,7 @@ A layer can have a number of different styles associated with it.  There is a de
 
 #. Click on the Edit Layer button and select Manage Styles.
 
-       .. figure:: img/managestyles.png
+       .. figure:: img/en_managestyles.png
 
 The Manage Styles page shows the available styles on the left and the styles associated with the layer on the right.
 

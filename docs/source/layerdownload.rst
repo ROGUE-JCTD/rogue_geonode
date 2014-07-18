@@ -10,7 +10,7 @@ At the top of the page there are two buttons titled :guilabel:`Download Layer` a
 
 #. Click the :guilabel:`Download Layer` button. You will see a list of options of the supported export formats.
 
-   .. figure:: img/downloadformats.png
+   .. figure:: img/en_downloadformats.png
 
       *Available export formats*
 
@@ -18,14 +18,14 @@ At the top of the page there are two buttons titled :guilabel:`Download Layer` a
 
 #. GeoNode will process the request and bring up a Save As dialog. Save this file to your computer.
 
-   .. todo:: Wanted to show other format options, but all of them didn't really work all that well.
+   .. todo:: show other format options
 
 **Metadata**
 ----------------
 
 #. Click the :guilabel:`Download Metadata` button. You will see a list of options of the supported export formats.
 
-   .. figure:: img/metadataformats.png
+   .. figure:: img/en_metadataformats.png
 
       *Available metadata export formats*
 

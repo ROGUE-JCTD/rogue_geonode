@@ -12,7 +12,7 @@ GeoGit layers in GeoNode will have a History tab in addition to the other tabs o
 
 #. In the Layer detail page, click on the history tab to see the chronological list of commits. 
 
-   .. figure:: img/geonodehistorytab.png 
+   .. figure:: img/en_geonodehistorytab.png 
 
       *Layer history tab in GeoNode* 
 
@@ -27,25 +27,25 @@ You can view the history of a layer.
 
 #. Click on the :guilabel:`Show History` button.  The history will expand at the bottom.  
 
-   .. figure:: img/showhistorybutton.png 
+   .. figure:: img/en_showhistorybutton.png 
 
       *Show History Button for Layers*
 
 #. To view details about a commit, hover the mouse over it.  The bar next to the commit indicates the type of edits that were made.  Green indicates a new feature was added.  Yellow indicates a feature was modified.  Red indicates a feature was deleted.  A commit can have multiple types of edits.  In such a case, the bar will have colors proportional to the types of edits that were made. 
 
-   .. figure:: img/layerhistory.png 
+   .. figure:: img/en_layerhistory.png 
 
       *History detail for a commit*
 
 #. Click on the commit and the history will update to show the individual edits within that commit.  MapLoom will make one commit per edit.  The Arbiter mobile app can upload many edits as one commit. 
 
-   .. figure:: img/commitlist.png 
+   .. figure:: img/en_commitlist.png 
 
       *List of edits in a commit*
 
 #. Clicking on an edit will bring up a new window that shows the specific changes that were made.  The changes will be highlighted with the same color coding as the commits.  Green means something was added, yellow means it was changed, and red means it was deleted.  In the image below, the feature was moved, and so the point on the map is highlighted in yellow.  
 
-   .. figure:: img/featurechange.png 
+   .. figure:: img/en_featurechange.png 
 
       *Detailed view of changes* 
 
@@ -58,25 +58,25 @@ In addition to viewing the history of edits on a GeoGit layer, you can also view
 
 #. Click on the :guilabel:`Show History` button.  The history list will expand with the commits that contain changes for that feature. 
 
-   .. figure:: img/featurehistorybutton.png 
+   .. figure:: img/en_featurehistorybutton.png 
 
       *Show History for a feature* 
 
 #. Click on the specific commit you want to view details for.  The history will update to show the edits made to the feature for that commit. 
 
-   .. figure:: img/commitlist.png 
+   .. figure:: img/en_commitlist.png 
 
       *List of edits in a commit* 
 
 #. Clicking on the edit in the list will bring up a new window that shows the specific changes that were made.  The changes will be highlighted with the same color coding as the commits.  Green means something was added, yellow means it was changed, and red means it was deleted.  In the image below, the feature was moved, and so the point on the map is highlighted in yellow.  
 
-   .. figure:: img/featurechange.png 
+   .. figure:: img/en_featurechange.png 
 
       *Detailed view of changes* 
 
 #. Click on the :guilabel:`Show Authors` button to see the names and dates for every attribute in the feature.  Note that through the lifetime of a feature, there can be several authors.  This is a good way to see who has contributed to a feature's current state. 
 
-   .. figure:: img/showauthors.png 
+   .. figure:: img/en_showauthors.png 
 
       *The Show Authors button* 
 
@@ -86,25 +86,25 @@ You can visualize a summary of all of the edits within a date range for a layer.
 
 #. Click on the :guilabel:`Show History` button for layer that you want to summarize. 
 
-   .. figure:: img/showhistorybutton.png 
+   .. figure:: img/en_showhistorybutton.png 
 
       *Show History Button for Layers*
 
 #. Click on the :guilabel:`History Summary` button. 
 
-   .. figure:: img/historysummarybutton.png 
+   .. figure:: img/en_historysummarybutton.png 
 
       *History Summary button*
 
 #. Enter the date range for the history to summarize
 
-   .. figure:: img/selectdaterange.png
+   .. figure:: img/en_selectdaterange.png
 
       *Select the Date Range* 
 
 #. Click on the :guilabel:`Summarize` button 
 
-   .. figure:: img/summaryofchanges.png 
+   .. figure:: img/en_summaryofchanges.png 
 
       *Summary of changes for the selected date range*
 
@@ -117,19 +117,19 @@ You can export a summary of all of the edits within a date range for a layer.
 
 #. Click on the :guilabel:`Show History` button for layer that you want to summarize. 
 
-   .. figure:: img/showhistorybutton.png 
+   .. figure:: img/en_showhistorybutton.png 
 
       *Show History Button for Layers*
 
 #. Click on the :guilabel:`History Summary` button. 
 
-   .. figure:: img/historysummarybutton.png 
+   .. figure:: img/en_historysummarybutton.png 
 
       *History Summary button*
 
 #. Enter the date range for the history to summarize
 
-   .. figure:: img/selectdaterange.png
+   .. figure:: img/en_selectdaterange.png
 
       *Select the Date Range* 
 

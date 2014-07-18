@@ -9,7 +9,7 @@ New maps can be created from the Maps tab or from a layer.
 --------------------
 In the Maps tab, click on the "Create a New Map" button.
 
-   .. figure:: img/createnewmap.png
+   .. figure:: img/en_createnewmap.png
 
       *Create a New Map*
 
@@ -18,7 +18,7 @@ In the Maps tab, click on the "Create a New Map" button.
 ----------------------------------
 In the Layers tab, click on the "Create a map" button next to a layer
 
-   .. figure:: img/createmapfromlayer.png
+   .. figure:: img/en_createmapfromlayer.png
 
       *Create a Map from a Layer*
 
@@ -31,13 +31,13 @@ Once you have created a map, or opened an existing map, you can add additional l
 
 #. Click on the Add Layers button by "Layers"
 
-   .. figure:: img/addlayerpopup.png
+   .. figure:: img/en_addlayerpopup.png
 
       *Add layer*
 
 #. The Add Layers dialog will open.  
 
-   .. figure:: img/addlayers.png
+   .. figure:: img/en_addlayers.png
 
 #. Click on the checkbox for the layer(s) you want to add to the map.
 
@@ -50,13 +50,13 @@ You can add layers from other servers besides the GeoNode you're working with.  
 
 #. Click on the Add Layers button by "Layers"
 
-   .. figure:: img/addlayerpopup.png
+   .. figure:: img/en_addlayerpopup.png
 
       *Add layer*
 
 #. In the Add Layers dialog, click on the drop down for the server list
 
-   .. figure:: img/addnewserver.png
+   .. figure:: img/en_addnewserver.png
 
       *Add new server*
 
@@ -64,7 +64,7 @@ You can add layers from other servers besides the GeoNode you're working with.  
 
 #. In the Add Server dialog enter the type of server (WMS or TMS), a name for the server, and the URL.
 
-   .. figure:: img/addserverdialog.png
+   .. figure:: img/en_addserverdialog.png
 
       *Server details*
 
@@ -79,7 +79,7 @@ Layers are drawn on the map from bottom to top.  The top layer in your layer lis
 
 #. Drag the layer up or down to change it's position in the drawing order.
 
-   .. figure:: img/movelayer.png
+   .. figure:: img/en_movelayer.png
 
       *Change layer order*
 
@@ -92,11 +92,11 @@ You can turn on and off the visibility for layers in the map.  This allows you t
 
 #. Click on the :guilabel:`Toggle Visibility` button to turn a layer off.
 
-   .. figure:: img/visibilityon.png
+   .. figure:: img/en_visibilityon.png
 
 #. Click on the :guilabel:`Toggle Visibility` button again to turn it back on.
 
-   .. figure:: img/visibilityoff.png
+   .. figure:: img/en_visibilityoff.png
 
 **Zoom to data**
 ----------------
@@ -106,7 +106,7 @@ The :guilabel:`Zoom to data` button give you a convenient way to center the map 
 
 #. Click on the :guilabel:`Zoom to data` button.  The map will zoom to the extent of the data for that layer.  
 
-   .. figure:: img/zoomtodata.png
+   .. figure:: img/en_zoomtodata.png
 
       *Zoom to data button*
 
@@ -121,11 +121,11 @@ You can view information about a layer in the map.  Layer information will inclu
 
 #. Click on the :guilabel:`Show layer info` button.  The Layer Info window will appear.
 
-   .. figure:: img/showlayerinfo.png
+   .. figure:: img/en_showlayerinfo.png
 
       *Show layer info button*
 
-   .. figure:: img/layerinfo.png
+   .. figure:: img/en_layerinfo.png
 
       *Layer info*
 
@@ -138,13 +138,13 @@ You can remove a layer from the map.
 
 #. Click on the :guilabel:`Remove Layer` button.
 
-   .. figure:: img/removelayer.png
+   .. figure:: img/en_removelayer.png
 
       *Remove layer button*
 
 #. In the confirmation box, click :guilabel:`Yes` to remove the layer.
 
-   .. figure:: img/confirmremovelayer.png
+   .. figure:: img/en_confirmremovelayer.png
 
       *Remove layer confirmation*
 
@@ -155,7 +155,7 @@ In order to get information for features in a vector layer, simply click on the 
 
 #. Click on the feature you want information about.  The feature info window will appear.
 
-   .. figure:: img/featureinfo.png
+   .. figure:: img/en_featureinfo.png
 
 
 **Change attribute visibility**
@@ -164,19 +164,19 @@ You can control the attributes that appear in the feature info window.  This is 
 
 #. Click on the the layer name in the layer list in the map.  The layer will expand to show additional options.
 
-   .. figure:: img/layerdetails.png
+   .. figure:: img/en_layerdetails.png
 
       *Layer attributes*
 
 #. Click on the visibility icon for the attributes to toggle their visibility.
 
-   .. figure:: img/attribvisibility.png
+   .. figure:: img/en_attribvisibility.png
 
       *Layer visibility options*
 
 #. Click on a feature in that layer. You will see that the attribute fields are now hidden.
 
-   .. figure:: img/featureinfo2.png
+   .. figure:: img/en_featureinfo2.png
 
       *Feature info with hidden fields*
 
@@ -187,13 +187,13 @@ The legend displays the symbols used for vector layers in the map (not for image
 
 #. Toggle the legend by clicking on the :guilabel:`Toggle Legend` button.
 
-   .. figure:: img/togglelegend.png
+   .. figure:: img/en_togglelegend.png
 
       *Click the Toggle Legend button to open and close the legend*
 
 #. To collapse or expand a layer in the legend, simply click on the layer name in the Legend window.
 
-   .. figure:: img/legendcollapse.png
+   .. figure:: img/en_legendcollapse.png
 
       *Legend with one layer collapsed*
 
@@ -203,19 +203,19 @@ Saving a map preserves your preferences and makes it available for other GeoNode
 
 #. Click on the :guilabel:`Save Map` button in the toolbar.
 
-   .. figure:: img/savemaptooltip.png
+   .. figure:: img/en_savemaptooltip.png
 
       *Save map button*
 
 #. Enter a title and abstract for your map.
 
-   .. figure:: img/savethismap.png
+   .. figure:: img/en_savethismap.png
 
       *Save map dialog*
 
 #. Click :guilabel:`Save`. Notice that the link on the top right of the page changed to reflect the map's name.
 
-   .. figure:: img/savedmap.png
+   .. figure:: img/en_savedmap.png
 
       *Saved map name*
 
@@ -228,19 +228,19 @@ You can also use a map as a starting point for another map.  This allows you to 
 
 #. Click on the :guilabel:`Save Map` button in the toolbar.
 
-   .. figure:: img/savemaptooltip.png
+   .. figure:: img/en_savemaptooltip.png
 
       *Save map button*
 
 #. Enter a title and abstract for your map.
 
-   .. figure:: img/savethismap.png
+   .. figure:: img/en_savethismap.png
 
       *Save map dialog*
 
 #. Click :guilabel:`Save Copy`. Notice that the link on the top right of the page changed to reflect the map's name.
 
-   .. figure:: img/savemapcopy.png
+   .. figure:: img/en_savemapcopy.png
 
       *Saved map name*
 
