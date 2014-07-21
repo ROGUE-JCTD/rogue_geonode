@@ -1,6 +1,42 @@
 {% extends "base.html" %}
+{% load classification_banner i18n %}
+
 {% block extra_head %}
       <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
 {% endblock %}
-{% block social %}
+{% block header %}
+    {% if classification_banner_enabled %}
+        <link href="{{ STATIC_URL }}lib/css/django_classification_banner_overrides.css" rel="stylesheet"/>
+        {% classification_banner %}
+    {% endif %}
+    {{ block.super }}
 {% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 small-text">
+            {% trans "Powered by" %} <a href="http://geoshape.org" target="_new">{% trans "GeoSHAPE" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
+            <a href="/docs">{% trans "Documentation" %}</a>
+          </div>
+          <div class="col-md-4 pull-right">
+            <label>{% trans "Language" %}</label>
+            {% if csrf_token != "NOTPROVIDED" %}
+            {% get_current_language as LANGUAGE %}
+            <form class="form-inline" action="/i18n/setlang/" method="post">
+            {% csrf_token %}
+              <select name="language" onchange="javascript:form.submit()">
+                {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                  {{ lang.1 }}
+                </option>
+                {% endfor %}
+              </select>
+            </form>
+          {% endif %}
+          </div> <!-- /.pull-right -->
+        </div>
+      </div> <!-- /.container -->
+    </footer>
+{% endblock footer %}

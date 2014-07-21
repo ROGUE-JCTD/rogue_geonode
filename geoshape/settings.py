@@ -5,15 +5,10 @@ import os
 
 from geonode.settings import *  # noqa
 
-SITENAME = 'GeoSHAPE'
+SITENAME = 'rogue_geonode'
 
-# Defines the directory that contains the settings file as the PROJECT_ROOT
-# It is used for relative settings elsewhere.
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-GEONODE_ROOT = os.path.abspath(os.path.dirname(geonode.__file__))
+LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-# Setting debug to true makes Django serve static media and
-# present pretty error pages.
 ALLOWED_HOSTS = ()
 CACHE_TIME = 0
 CLASSIFICATION_BANNER_ENABLED = False
@@ -22,13 +17,9 @@ GEOGIT_DATASTORE_NAME = 'DEFAULT_NAME'
 LOCKDOWN_GEONODE = True
 REGISTRATION_OPEN = False
 SOCIAL_BUTTONS = False
-MODIFY_TOPICCATEGORY = False
+
 # Set to True to load non-minified versions of (static) client dependencies
 DEBUG_STATIC = False
-
-# This is needed for integration tests, they require
-# geonode to be listening for GeoServer auth requests.
-
 
 # Defines settings for development
 DATABASES = {
@@ -42,20 +33,24 @@ DATABASES = {
 OGC_SERVER = {
     'default': {
         'BACKEND': 'geonode.geoserver',
-        'LOCATION': 'http://localhost:8080/geoserver/',
-        'PUBLIC_LOCATION': 'http://localhost:8080/geoserver/',
+        'LOCATION': 'http://localhost:8000/geoserver/',
+        # PUBLIC_LOCATION needs to be kept like this because in dev mode
+        # the proxy won't work and the integration tests will fail
+        # the entire block has to be overridden in the local_settings
+        'PUBLIC_LOCATION': 'http://localhost:8000/geoserver/',
         'USER': 'admin',
         'PASSWORD': 'geoserver',
         'MAPFISH_PRINT_ENABLED': True,
-        'PRINTNG_ENABLED': True,
+        'PRINT_NG_ENABLED': True,
         'GEONODE_SECURITY_ENABLED': True,
         'GEOGIT_ENABLED': True,
         'WMST_ENABLED': False,
         'BACKEND_WRITE_ENABLED': True,
-        'WPS_ENABLED': False,
+        'WPS_ENABLED': True,
+        'GEOGIT_DATASTORE_DIR': '/var/lib/geoserver_data/geogit',
         # Set to name of database in DATABASES dictionary to enable
-        'DATASTORE': '',
-        'TIMEOUT': 10,  # The maximum time to wait for the server to respond.
+        'DATASTORE': '',  # 'datastore',
+        'TIMEOUT': 10  # number of seconds to allow for HTTP requests
     }
 }
 
@@ -68,37 +63,20 @@ UPLOADER = {
     }
 }
 
-# Local time zone for this installation. Choices can be found here:
-# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
-# although not all choices may be available on all operating systems.
-# If running in a Windows environment this must be set to the same as your
-# system time zone.
-TIME_ZONE = 'America/Chicago'
-
-# Language code for this installation. All choices can be found here:
-# http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en'
-
 WSGI_APPLICATION = "geoshape.wsgi.application"
 
-# Additional directories which hold static files
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, "static"),
-    os.path.join(GEONODE_ROOT, "static"),
-]
 
-# Note that Django automatically includes the "templates" dir in all the
-# INSTALLED_APPS, se there is no need to add maps/templates or admin/templates
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, "templates"),
-    os.path.join(GEONODE_ROOT, "templates"),
-)
-
-# Location of translation files
 LOCALE_PATHS = (
-    os.path.join(PROJECT_ROOT, "locale"),
-    os.path.join(GEONODE_ROOT, "locale"),
+    os.path.join(LOCAL_ROOT, 'locale'),
+) + LOCALE_PATHS
+
+STATICFILES_DIRS.append(
+    os.path.join(LOCAL_ROOT, "static"),
 )
+
+TEMPLATE_DIRS = (
+    os.path.join(LOCAL_ROOT, "templates"),
+) + TEMPLATE_DIRS
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'x-#u&4x2k*$0-60fywnm5&^+&a!pd-ajrx(z@twth%i7^+oskh'
@@ -106,10 +84,8 @@ SECRET_KEY = 'x-#u&4x2k*$0-60fywnm5&^+&a!pd-ajrx(z@twth%i7^+oskh'
 # Location of url mappings
 ROOT_URLCONF = 'geoshape.urls'
 
-MAX_DOCUMENT_SIZE = 2  # MB
-
-
 INSTALLED_APPS = (
+    'geonode.contrib.geogit',
     'geoshape.file_service',
     'geoshape.core',
     'django_classification_banner',
@@ -152,7 +128,7 @@ LOGGING = {
             "handlers": ["console"],
             "level": "ERROR",
         },
-        "geoshape": {
+        "rogue_geonode": {
             "handlers": ["console"],
             "level": "DEBUG",
         },
@@ -182,7 +158,8 @@ LOGGING = {
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
-    'geoshape.core.context_processors.security_warnings'
+    'geoshape.core.context_processors.security_warnings',
+    'geoshape.core.context_processors.rogue'
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.
@@ -190,6 +167,57 @@ AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
+
+
+MAP_BASELAYERS = [
+    {
+        "source": {
+            "ptype": "gxp_wmscsource",
+            "url": OGC_SERVER['default']['LOCATION'] + "wms",
+            "restUrl": "/gs/rest",
+            "name": "local geoserver"
+        }
+    },
+    {
+        "source": {"ptype": "gxp_osmsource", "name": "OpenStreetMap"},
+        "type": "OpenLayers.Layer.OSM",
+        "name": "mapnik",
+        "title": "OpenStreetMap",
+        "args": ["OpenStreetMap"],
+        "visibility": True,
+        "fixed": True,
+        "group":"background"
+    }
+]
+
+
+
+LEAFLET_CONFIG = {
+    'TILES': [
+        # Find tiles at:
+        # http://leaflet-extras.github.io/leaflet-providers/preview/
+
+
+        ('Basemap',
+         'https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png',
+         '<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; \
+          <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, \
+          <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'),
+        ('OpenStreetMap HOT',
+         'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+         'Map tiles by <a href="http://hot.openstreetmap.org">Humanitarian OpenStreetMap Team</a>, \
+         <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; \
+         <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, \
+         <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'),
+    ],
+    'PLUGINS': {
+        'esri-leaflet': {
+            'js': 'lib/js/esri-leaflet.js',
+            'auto-include': True,
+        },
+    }
+}
+
 
 # Load more settings from a file called local_settings.py if it exists
 try:
