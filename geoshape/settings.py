@@ -91,7 +91,6 @@ INSTALLED_APPS = (
     'geoshape.core',
     'django_classification_banner',
     'maploom',
-    'south'
 ) + INSTALLED_APPS
 
 LOGGING = {
