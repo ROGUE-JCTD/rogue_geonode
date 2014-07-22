@@ -63,6 +63,7 @@ UPLOADER = {
     }
 }
 
+<<<<<<< HEAD:geoshape/settings.py
 WSGI_APPLICATION = "geoshape.wsgi.application"
 
 
@@ -90,6 +91,7 @@ INSTALLED_APPS = (
     'geoshape.core',
     'django_classification_banner',
     'maploom',
+    'south'
 ) + INSTALLED_APPS
 
 LOGGING = {
