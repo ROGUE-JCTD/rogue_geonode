@@ -16,6 +16,12 @@ body {
   margin-bottom: -100px;
   min-height: 100%;
 }
+nav.filter h4 {
+  border-radius: 3px;
+}
+nav.filter h4 a.toggle {
+  text-decoration: none;
+}
 .jumbotron {
   height: 300px;
   padding: 40px;
