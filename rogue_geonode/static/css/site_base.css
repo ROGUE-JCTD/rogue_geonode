@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+}
+.footer {
+  border-top: 1px solid #cccccc;
+  height: 100px;
+  padding: 23px;
+  background: #eee;
+  margin-top: 10px;
+}
+#wrap {
+  height: auto !important;
+  height: 100%;
+  padding: 10px 0 100px;
+  margin-bottom: -100px;
+  min-height: 100%;
+}
+.jumbotron {
+  height: 300px;
+  padding: 40px;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  background: url('../fire_background.png') no-repeat left bottom;
+  background-size: 100%;
+}
+.jumbotron h1 {
+  font-weight: 600;
+}
+span[id^="error_"].help-inline {
+  color: #d9534f;
+}
+input[id^="id_"] {
+  min-width: 300px;
+}
+.alert {
+  color: #d9534f;
+}
+.dropdown-menu > li a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu form {
+  padding: inherit;
+}
+/* Profile */
+.resource-list {
+  list-style: none;
+}
+.resource-list > li {
+  padding: 3px;
+}
+.resource-list .resource-description > h5 {
+  margin: 2px;
+}
+.resource-list .resource-thumbnail {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-widht: 100px;
+}
+.resource-list .resource-thumbnail img {
+  max-width: 50px;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.select2-container {
+  width: 250px;
+}
