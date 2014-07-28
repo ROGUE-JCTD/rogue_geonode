@@ -15,6 +15,7 @@ def security_warnings(request, PROXY_ALLOWED_HOSTS=()):
 
     return dict(warnings=warnings)
 
+
 def rogue(request):
     """ Returns the rogue_geonode version """
 

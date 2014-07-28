@@ -63,7 +63,6 @@ UPLOADER = {
     }
 }
 
-<<<<<<< HEAD:geoshape/settings.py
 WSGI_APPLICATION = "geoshape.wsgi.application"
 
 

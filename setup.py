@@ -62,7 +62,7 @@ docs_requires = [
 
 setup(
     name="geoshape",
-    version="1.0",
+    version=__import__('geoshape').get_version(),
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
     description="geoshape, based on GeoNode",
