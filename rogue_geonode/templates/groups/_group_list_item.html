@@ -1,0 +1,29 @@
+{% verbatim %}
+<ul class="resource-list">
+<li ng-repeat="group in results">
+  <div class="row">
+  <div ng-if="group.logo != ''" class="col-md-1 resource-thumbnail">
+    <img ng-src="{{ group.logo }}" alt="{{ group.title }}" class="group-logo" />
+  </div>
+  <div class="col-md-10 resource-description">
+    <h5><i class="fa fa-group"></i> <a href="{{ group.detail_url }}">{{ group.title }}</a></h5>
+    <p>{{ group.description}}</p>
+    <ul class="list-inline">
+      <li>
+        <a href="{{ group.detail_url }}">
+          <strong>{{ group.member_count }}</strong>
+          <ng-pluralize count="group.member_count" when="{'1': 'Member', 'other': 'Members'}"></ng-pluralize>
+        </a>
+      </li>
+      <li>
+        <a href="{{ group.detail_url }}">
+          <strong>{{ group.manager_count }}</strong>
+          <ng-pluralize count="group.manager_count" when="{'1': 'Manager', 'other': 'Managers'}"></ng-pluralize>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</li>
+</ul>
+{% endverbatim %}
