@@ -81,6 +81,11 @@
       <version>${geoserver.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.opengeo</groupId>
+      <artifactId>geonode-geoserver-ext</artifactId>
+      <version>${gsgeonode.version}</version>
+    </dependency>
+    <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
       <version>2.7.1</version>
@@ -321,6 +326,7 @@
     <geotools.version>11-SNAPSHOT</geotools.version>
     <geoserver.version>2.5-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
+    <gsgeonode.version>2.5.1</gsgeonode.version>
     <!-- <geogit.version>0.9</geogit.version> -->
     <gsgeogit.version>2.5-SNAPSHOT</gsgeogit.version> <!-- not a whole lot of choices http://repo.opengeo.org/org/opengeo/geoserver/gs-geogit/ -->    
     <maven.test.search.classdir>true</maven.test.search.classdir>
