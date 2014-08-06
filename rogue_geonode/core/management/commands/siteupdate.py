@@ -1,5 +1,5 @@
 from django.contrib.sites.models import Site
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from optparse import make_option
 
 
@@ -27,13 +27,7 @@ class Command(BaseCommand):
         domain = args[0] if args else options.get('domain')
         name = options.get('name')
 
-        try:
-            site = Site.objects.get(pk=int(site_id))
-        except Site.DoesNotExist:
-            raise CommandError('Site {} does not exist.'.format(site_id))
-
-        site.domain = domain
-        site.name = name
+        site, created = Site.objects.get_or_create(pk=int(site_id), defaults=dict(domain=domain, name=name))
         site.save()
         Site.objects.clear_cache()
 
