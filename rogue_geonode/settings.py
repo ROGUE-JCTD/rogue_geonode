@@ -35,6 +35,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(PROJECT_ROOT, 'development.db'),
+    },
+    'geonode_imports': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'geonode_imports',
+        'USER': 'geonode',
+        'PASSWORD': 'geonode',
     }
 }
 
@@ -54,7 +60,7 @@ OGC_SERVER = {
         'BACKEND_WRITE_ENABLED': True,
         'WPS_ENABLED': False,
         # Set to name of database in DATABASES dictionary to enable
-        'DATASTORE': '',
+        'DATASTORE': 'geonode_imports',
         'TIMEOUT': 10,  # The maximum time to wait for the server to respond.
     }
 }
