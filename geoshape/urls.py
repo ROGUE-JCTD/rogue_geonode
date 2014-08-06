@@ -1,4 +1,4 @@
-from django.conf.urls import url, patterns, include
+from django.conf.urls import patterns, include
 from geonode.urls import urlpatterns as geonode_url_patterns
 from maploom.geonode.urls import urlpatterns as maploom_urls
 

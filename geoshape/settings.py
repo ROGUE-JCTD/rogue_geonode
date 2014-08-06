@@ -3,7 +3,7 @@
 import geonode
 import os
 
-from geonode.settings import *
+from geonode.settings import *  # noqa
 
 SITENAME = 'GeoSHAPE'
 
