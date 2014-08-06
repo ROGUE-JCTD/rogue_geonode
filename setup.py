@@ -45,9 +45,10 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 install_requires = [
-        "geonode==2.0.1a1",
-        "django-classification-banner>=0.1.3",
-        "django-maploom>=0.0.1",
+        "geoshape-geonode==1.0",
+        "django-classification-banner>=0.1.4",
+        "django-maploom==1.0.0rc4",
+        "psycopg2==2.4.5"
 ]
 
 tests_requires = [
@@ -61,13 +62,13 @@ docs_requires = [
 
 setup(
     name="geoshape",
-    version="0.1.1",
+    version="1.0.0rc1",
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
     description="geoshape, based on GeoNode",
     long_description=(read('README.rst')),
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 5 - Production/Stable',
     ],
     license="BSD",
     keywords="geoshape geonode django",
@@ -80,8 +81,5 @@ setup(
         'tests': install_requires + tests_requires,
         'docs':  docs_requires
     },
-    dependency_links=['https://github.com/ROGUE-JCTD/geonode/archive/od2.tar.gz'
-                      '#egg=geonode-2.0.1a1',
-                      'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1'],
     zip_safe=False,
 )
