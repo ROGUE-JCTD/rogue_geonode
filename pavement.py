@@ -218,7 +218,7 @@ def package(options):
         geonode_dist = path('..') / 'dist' / 'GeoNode-%s.zip' % version
         justcopy(geonode_dist, out_pkg)
 
-        rogue_dist = path('../..') / 'dist' / 'rogue_geonode-0.1.zip'
+        rogue_dist = path('../..') / 'dist' / 'geoshape-0.1.zip'
         justcopy(rogue_dist, out_pkg)
 
         # Create a tar file with all files in the output package folder.

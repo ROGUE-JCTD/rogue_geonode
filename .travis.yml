@@ -16,8 +16,8 @@ install:
   - paver sync
 
 script:
-  - python manage.py test rogue_geonode.core.tests
-  - flake8 rogue_geonode
+  - python manage.py test geoshape.core.tests
+  - flake8 geoshape
   - cd docs && make html
 
 after_script:

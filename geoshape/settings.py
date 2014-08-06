@@ -5,7 +5,7 @@ import os
 
 from geonode.settings import *
 
-SITENAME = 'rogue_geonode'
+SITENAME = 'GeoSHAPE'
 
 # Defines the directory that contains the settings file as the PROJECT_ROOT
 # It is used for relative settings elsewhere.
@@ -85,7 +85,7 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en'
 
-WSGI_APPLICATION = "rogue_geonode.wsgi.application"
+WSGI_APPLICATION = "geoshape.wsgi.application"
 
 # Additional directories which hold static files
 STATICFILES_DIRS = [
@@ -110,14 +110,14 @@ LOCALE_PATHS = (
 SECRET_KEY = 'x-#u&4x2k*$0-60fywnm5&^+&a!pd-ajrx(z@twth%i7^+oskh'
 
 # Location of url mappings
-ROOT_URLCONF = 'rogue_geonode.urls'
+ROOT_URLCONF = 'geoshape.urls'
 
 MAX_DOCUMENT_SIZE = 2  # MB
 
 
 INSTALLED_APPS = (
-    'rogue_geonode.file_service',
-    'rogue_geonode.core',
+    'geoshape.file_service',
+    'geoshape.core',
     'django_classification_banner',
     'maploom',
 ) + INSTALLED_APPS
@@ -158,7 +158,7 @@ LOGGING = {
             "handlers": ["console"],
             "level": "ERROR",
         },
-        "rogue_geonode": {
+        "geoshape": {
             "handlers": ["console"],
             "level": "DEBUG",
         },
@@ -188,7 +188,7 @@ LOGGING = {
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
-    'rogue_geonode.core.context_processors.security_warnings'
+    'geoshape.core.context_processors.security_warnings'
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.

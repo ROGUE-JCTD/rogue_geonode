@@ -31,7 +31,7 @@ packages, data_files = [], []
 root_dir = os.path.dirname(__file__)
 if root_dir != '':
     os.chdir(root_dir)
-walk_dir = 'rogue_geonode'
+walk_dir = 'geoshape'
 
 excluded_folders = ['uploaded']
 
@@ -60,17 +60,17 @@ docs_requires = [
 ]
 
 setup(
-    name="rogue_geonode",
+    name="geoshape",
     version="0.1.1",
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
-    description="rogue_geonode, based on GeoNode",
+    description="geoshape, based on GeoNode",
     long_description=(read('README.rst')),
     classifiers=[
         'Development Status :: 1 - Planning',
     ],
     license="BSD",
-    keywords="rogue_geonode geonode django",
+    keywords="geoshape geonode django",
     url='https://github.com/ROGUE-JCTD/rogue_geonode',
     packages=packages,
     data_files=data_files,

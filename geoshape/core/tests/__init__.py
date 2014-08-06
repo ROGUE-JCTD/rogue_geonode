@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.test import Client, TestCase
-from rogue_geonode.core.context_processors import security_warnings
+from geoshape.core.context_processors import security_warnings
 from lxml import etree
 
 import logging
