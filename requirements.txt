@@ -1,0 +1,1 @@
+git+git://github.com/ROGUE-JCTD/django-maploom.git#egg=django-maploom
