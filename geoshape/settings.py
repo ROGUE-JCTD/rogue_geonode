@@ -22,7 +22,7 @@ GEOGIT_DATASTORE_NAME = 'DEFAULT_NAME'
 LOCKDOWN_GEONODE = True
 REGISTRATION_OPEN = False
 SOCIAL_BUTTONS = False
-
+MODIFY_TOPICCATEGORY = False
 # Set to True to load non-minified versions of (static) client dependencies
 DEBUG_STATIC = False
 
@@ -191,6 +191,11 @@ AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/',)
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
 
+# Load more settings from a file called local_settings.py if it exists
+try:
+    from local_settings import *  # noqa
+except ImportError:
+    pass
 
 MAP_BASELAYERS = [
     {
@@ -212,10 +217,3 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
-
-
-# Load more settings from a file called local_settings.py if it exists
-try:
-    from local_settings import *  # noqa
-except ImportError:
-    pass
