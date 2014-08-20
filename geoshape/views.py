@@ -59,7 +59,7 @@ def proxy(request):
     logger.debug('Outgoing request headers: {0}'.format(headers))
 
     conn = HTTPConnection(url.hostname, url.port)
-    conn.request(request.method, locator, request.raw_post_data, headers)
+    conn.request(request.method, locator, request.body, headers)
     result = conn.getresponse()
 
     logger.debug('Response headers: {0}'.format(result.getheaders()))
