@@ -8098,6 +8098,9 @@ footer.footer form {
   background-size: 38%;
   background-position: -165px;
 }
+.hero-unit h1 {
+  text-transform: none;
+}
 .hero-unit .btn {
   background-color: #ccd5bb;
   color: #605e5e;
@@ -8119,4 +8122,8 @@ footer.footer form {
 .btn.btn-primary:hover {
   background-color: #ccd5bb;
   color: #2b2b2b;
+}
+.nav-logo {
+  background: url(../img/logo.png) no-repeat;
+  margin: 4px 0px;
 }
