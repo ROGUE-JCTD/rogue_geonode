@@ -110,10 +110,12 @@ MAX_DOCUMENT_SIZE = 2  # MB
 
 
 INSTALLED_APPS = (
+    'django.contrib.gis',
     'geoshape.file_service',
     'geoshape.core',
     'django_classification_banner',
     'maploom',
+    'iaff_geoshape'
 ) + INSTALLED_APPS
 
 LOGGING = {
@@ -149,18 +151,21 @@ LOGGING = {
     },
     "loggers": {
         "django": {
-            "handlers": ["console"],
+            "handlers": ["console", "mail_admins"],
             "level": "ERROR",
         },
         "geoshape": {
-            "handlers": ["console"],
+            "handlers": ["console", "mail_admins"],
             "level": "DEBUG",
         },
         "geonode": {
-            "handlers": ["console"],
+            "handlers": ["console", "mail_admins"],
             "level": "DEBUG",
         },
-
+        "iaff_geoshape": {
+            "handlers": ["console", "mail_admins"],
+            "level": "ERROR",
+        },
         "gsconfig.catalog": {
             "handlers": ["console"],
             "level": "ERROR",
@@ -217,3 +222,5 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
+
+DATABASE_ROUTERS = ['iaff_geoshape.routers.IAFFGeoRouter',]
