@@ -28,6 +28,11 @@ class Command(BaseCommand):
         name = options.get('name')
 
         site, created = Site.objects.get_or_create(pk=int(site_id), defaults=dict(domain=domain, name=name))
+
+        if not created:
+            site.domain = domain
+            site.name = name
+
         site.save()
         Site.objects.clear_cache()
 
