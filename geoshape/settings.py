@@ -186,7 +186,7 @@ LOGGING = {
 }
 
 TEMPLATE_CONTEXT_PROCESSORS += (
-    'django_classification_banner.context_processors.classification'
+    'django_classification_banner.context_processors.classification',
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.
