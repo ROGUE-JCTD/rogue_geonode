@@ -17,6 +17,6 @@ def security_warnings(request, PROXY_ALLOWED_HOSTS=()):
 
 
 def rogue(request):
-    """ Returns the rogue_geonode version """
+    """ Returns the geoshape version """
 
     return dict(VERSION=get_version())
