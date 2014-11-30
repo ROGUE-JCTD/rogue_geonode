@@ -8124,6 +8124,7 @@ footer.footer form {
   color: #2b2b2b;
 }
 .nav-logo {
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/logo.jpg) no-repeat;
   margin: 4px 0px;
+  height: 33px; /* logo.jpg height is 33px */
 }
