@@ -6739,7 +6739,7 @@ h2 {
   width: 1000px;
 }
 .navbar-inverse .navbar-inner {
-  background-color: #2b2b2b;
+  background-color: #000000;
   background-image: none;
   background-image: -o-linear-gradient(top, #2a93fc, #2a93fc);
   border-bottom: 3px solid #de1b1b;
@@ -6926,7 +6926,7 @@ section.featured-maps h3 {
   margin-top: 10px;
 }
 section.featured-maps .map-thumb {
-  background: #2b2b2b;
+  background: #000000;
   color: white;
   font-size: 12px;
   height: 190px;
@@ -7032,7 +7032,7 @@ a.div-link {
   padding: 10px 0;
 }
 a.div-link i {
-  color: #2b2b2b;
+  color: #000000;
   margin-left: 10px;
   margin-right: -10px;
 }
@@ -7273,7 +7273,7 @@ body.people article .content {
   margin: 0;
 }
 .grid article h3 {
-  color: #2b2b2b;
+  color: #000000;
   font-size: 14px;
   margin-left: 5px;
   margin-top: 0;
@@ -7377,7 +7377,7 @@ body.data #subnav-tabs a:active,
 body.maps #subnav-tabs a:active,
 body.people #subnav-tabs a:active,
 body.documents #subnav-tabs a:active {
-  color: #2b2b2b;
+  color: #000000;
 }
 body.data #subnav-tabs li,
 body.maps #subnav-tabs li,
@@ -7888,7 +7888,7 @@ body.contacts ol.people li.group:nth-child(4n) {
 /* Footer
    ----------------------------- */
 footer.footer {
-  background: #2b2b2b;
+  background: #000000;
   border-top: 1px solid #cccccc;
   bottom: 0;
   color: #cccccc;
@@ -7980,9 +7980,9 @@ footer.footer form {
   color: white!important;
 }
 .select2-container .select2-choice {
-  background: #1f6ebd;
+  background: #808080;
   /* IE fallback color  */
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(128, 128, 128, 0.8);
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -8012,6 +8012,9 @@ footer.footer form {
 }
 .select2-container .select2-choice div b {
   background: url(../img/select2.png) no-repeat 0 1px;
+}
+.select2-search {
+  padding-top: 10px;
 }
 .select2-search input {
   background: white;
@@ -8094,7 +8097,7 @@ footer.footer form {
   font-family: 'Lato', 'Open Sans', 'Arial', sans-serif;
 }
 .hero-unit {
-  background: url('../img/iaff_transparent.png') #ffffff no-repeat;
+  background: url('../img/iaff_transparent.png') white no-repeat;
   background-size: 38%;
   background-position: -165px;
 }
@@ -8107,7 +8110,7 @@ footer.footer form {
 }
 .hero-unit .btn:hover {
   background-color: #ccd5bb;
-  color: #2b2b2b;
+  color: #000000;
 }
 .filter label {
   color: #605e5e;
@@ -8121,10 +8124,11 @@ footer.footer form {
 }
 .btn.btn-primary:hover {
   background-color: #ccd5bb;
-  color: #2b2b2b;
+  color: #000000;
 }
 .nav-logo {
   background: url(../img/logo.jpg) no-repeat;
   margin: 4px 0px;
-  height: 33px; /* logo.jpg height is 33px */
+  height: 33px;
+  /* logo.jpg height is 33px */
 }
