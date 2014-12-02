@@ -17,7 +17,7 @@
 
 /* Variables
    ----------------------------- */
-@brand-primary: #2B2B2B;
+@brand-primary: #000000;
 @brand-secondary: #DE1B1B;
 @btn-info-bg: @brand-secondary;
 @yellow-important: #CCD5BB;
@@ -1359,8 +1359,8 @@ footer.footer {
   color: white!important;
 }
 .select2-container .select2-choice {
-  background: rgb(31,110,189) ;/* IE fallback color  */
-  background: rgba(0,0,0,0.25);
+  background: rgb(128,128,128) ;/* IE fallback color  */
+  background: rgba(128,128,128,0.8);
      -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -1390,6 +1390,9 @@ footer.footer {
       background: url(../img/select2.png) no-repeat 0 1px;
     }
   }
+}
+.select2-search {
+  padding-top: 10px;
 }
 .select2-search input {
   background: white;
@@ -1513,7 +1516,8 @@ footer.footer {
 }
 
 .nav-logo {
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/logo.jpg) no-repeat;
   margin: 4px 0px;
+  height: 33px; /* logo.jpg height is 33px */
 }
 
