@@ -5265,7 +5265,7 @@ a.badge:focus {
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
-  font-size: 1.33333333em;
+  font-size: 1.33333333;
 }
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],
@@ -5276,16 +5276,16 @@ a [class*=" icon-"] {
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
-  width: 1.14285714em;
+  width: 1.14285714;
   text-align: right;
-  padding-right: 0.28571429em;
+  padding-right: 0.28571429;
 }
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
-  width: 1.42857143em;
+  width: 1.42857143;
 }
 .icons-ul {
-  margin-left: 2.14285714em;
+  margin-left: 2.14285714;
   list-style-type: none;
 }
 .icons-ul > li {
@@ -5293,8 +5293,8 @@ a [class*=" icon-"] {
 }
 .icons-ul .icon-li {
   position: absolute;
-  left: -2.14285714em;
-  width: 2.14285714em;
+  left: -2.14285714;
+  width: 2.14285714;
   text-align: center;
   line-height: inherit;
 }
@@ -7102,10 +7102,14 @@ aside .well {
   background: white;
   border: 1px solid #cccccc;
   margin-top: 20px;
-  padding: 0;
 }
 aside .well h2 {
-  margin: 0px;
+  border-bottom: 1px solid #ccc;
+  margin: -19px -19px 0;
+  padding: 4px 15px 3px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 aside h4 {
   border-bottom: 1px solid #cccccc;
