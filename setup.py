@@ -81,7 +81,7 @@ setup(
         'tests': install_requires + tests_requires,
         'docs':  docs_requires
     },
-    dependency_links=['https://github.com/geonode/geonode/archive/3de0375fa64f7908ef3e33fd730a01839f926ddc.tar.gz'
+    dependency_links=['https://github.com/geonode/geonode/archive/e62edb29a7a5a304d63860a7a7249941aea78f1e.tar.gz'
                       '#egg=geonode-2.0.1a1',
                       'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1'],
     zip_safe=False,
