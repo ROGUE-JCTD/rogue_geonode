@@ -41,9 +41,6 @@ nav.filter h4 a.toggle {
 .jumbotron h1 {
   font-weight: 600;
 }
-.alert {
-  color: #d9534f;
-}
 .dropdown-menu > li a {
   display: block;
   padding: 3px 20px;
@@ -95,4 +92,3 @@ span[id^="error_"].help-inline {
 input[id^="id_"] {
   min-width: 300px;
 }
-/* End Hacks */
