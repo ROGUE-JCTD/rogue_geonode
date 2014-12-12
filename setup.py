@@ -45,7 +45,7 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 install_requires = [
-        "geonode==2.0.1a1",
+        "custom_geonode==2.4",
         "django-classification-banner>=0.1.4",
         "django-maploom==1.0",
         "psycopg2==2.4.5"
@@ -82,7 +82,7 @@ setup(
         'docs':  docs_requires
     },
     dependency_links=['https://github.com/geonode/geonode/archive/c1351382c7e9342d07e59a77f7603cb2dacc7537.tar.gz'
-                      '#egg=geonode-2.0.1a1',
+                      '#egg=custom_geonode-2.4',
                       'https://github.com/ROGUE-JCTD/django-maploom/archive/master.tar.gz#egg=django-maploom-0.0.1'],
     zip_safe=False,
 )
