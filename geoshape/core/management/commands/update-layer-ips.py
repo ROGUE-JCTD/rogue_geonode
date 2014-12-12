@@ -24,6 +24,7 @@ from geonode.layers.models import Layer
 from django.conf import settings
 from urlparse import urlsplit
 
+
 class Command(BaseCommand):
     help = 'Update the IP of local map layers'
 
