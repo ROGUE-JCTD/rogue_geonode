@@ -62,7 +62,7 @@ docs_requires = [
 
 setup(
     name="geoshape",
-    version="1.1.1",
+    version="1.1.2",
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
     description="geoshape, based on GeoNode",
