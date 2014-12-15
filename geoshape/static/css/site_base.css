@@ -89,6 +89,3 @@ input[value='Invite User'] {
 span[id^="error_"].help-inline {
   color: #d9534f;
 }
-input[id^="id_"] {
-  min-width: 300px;
-}
