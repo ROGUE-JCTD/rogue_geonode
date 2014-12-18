@@ -6,6 +6,22 @@
   <version>2.6-SNAPSHOT</version>
   <name>ROGUE GeoServer</name>
 
+<!--
+  <distributionManagement>
+    <repository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>dav:http://repo.opengeo.org</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <snapshotRepository>
+      <id>opengeo</id>
+      <name>OpenGeo Maven Repository</name>
+      <url>dav:http://repo.opengeo.org</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+-->
   <repositories>
     <repository>
       <id>opengeo</id>
@@ -15,16 +31,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-      <!--
-    <repository>
-      <id>opengeo</id>
-      <name>OpenGeo Maven Repository</name>
-      <url>http://repo.opengeo.org/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    -->
     <repository>
       <id>org.mapfish</id>
       <url>http://dev.mapfish.org/maven/repository</url>
@@ -60,15 +66,6 @@
       <artifactId>gs-web-sec-core</artifactId>
       <version>${geoserver.version}</version>
     </dependency>
-    
-    <!--
-    <dependency>
-      <groupId>org.geoserver.community</groupId>
-      <artifactId>gs-sldService</artifactId>
-      <version>${geoserver.version}</version>
-    </dependency>
-    -->
-
     <dependency>
       <groupId>org.geoserver.extension</groupId>
       <artifactId>gs-printing</artifactId>
@@ -181,15 +178,14 @@
         <artifactId>gt-shapefile</artifactId>
         <version>${geotools.version}</version>
     </dependency>
-
+  <!-- TODO: version in rogue used version 14.0.1 but geoserver-geonode-ext pom used 11.0.1. guava is on 17.0 now -->
+<!--
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>14.0.1</version>  <!-- TODO: version in rogue used version 14.0.1 but geoserver-geonode-ext pom used 11.0.1. guava is on 17.0 now -->
+      <version>14.0.1</version>
     </dependency>
-
-
-    
+-->
 
     <!-- GeoJSON module dependencies -->
     <dependency>
@@ -205,14 +201,17 @@
       <artifactId>gt-process</artifactId>
       <version>${geotools.version}</version>
     </dependency>
-    
+
+<!--
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
       <artifactId>gsr</artifactId>
       <version>${geoserver.version}</version>
     </dependency>    
+-->
+    <!-- TODO: brought these over from the old pom. do we need it? -->
     <dependency>
-      <groupId>org.geoserver.extension</groupId>    <!-- TODO: brought these over from the old pom. do we need it? -->
+      <groupId>org.geoserver.extension</groupId>
       <artifactId>gs-ogr</artifactId>
       <version>${geoserver.version}</version>
     </dependency>
@@ -225,7 +224,7 @@
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
       <artifactId>gs-geogig</artifactId>
-      <version>${geoserver.version}</version>
+      <version>${gsgeogig.version}</version>
       <classifier>shaded-plugin</classifier>
       <exclusions>
         <exclusion><groupId>org.geogig</groupId><artifactId>geogig-core</artifactId></exclusion>
@@ -235,21 +234,15 @@
         <exclusion><groupId>com.google.guava</groupId><artifactId>guava</artifactId></exclusion>
         <exclusion><groupId>org.geotools</groupId><artifactId>gt-geojson</artifactId></exclusion>
         <exclusion><groupId>org.geotools.jdbc</groupId><artifactId>gt-jdbc-spatialite</artifactId></exclusion>
+
+        <!-- syrusm: removing these to deal with the logback binary incompatibility -->
+        <exclusion><groupId>ch.qos.logback</groupId><artifactId>logback-core</artifactId></exclusion>
+        <exclusion><groupId>ch.qos.logback</groupId><artifactId>logback-classic</artifactId></exclusion>
+        <exclusion><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId></exclusion>
+        <exclusion><groupId>org.slf4j</groupId><artifactId>jul-to-slf4j</artifactId></exclusion>
       </exclusions>
     </dependency>    
 
-    <!--
-      Commented out because the opengeo maven repository http://repo.opengeo.org/org/opengeo/geonode-geoserver-ext/
-      doesn't have it for newer than 2.3
-    -->
-    <!--
-    <dependency>
-      <groupId>org.opengeo</groupId>
-      <artifactId>geonode-geoserver-ext</artifactId>
-      <version>${geoserver.version}</version>
-    </dependency>
-    -->
-        
     <!--  test dependencies  -->
     <dependency>
       <groupId>junit</groupId>
@@ -324,19 +317,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  
   <properties>
     <geotools.version>12-SNAPSHOT</geotools.version>
     <geoserver.version>2.6-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
     <gsgeonode.version>2.6-SNAPSHOT</gsgeonode.version>
-    <!-- <geogit.version>0.9</geogit.version> -->
-    <gsgeogit.version>2.6-SNAPSHOT</gsgeogit.version> <!-- not a whole lot of choices http://repo.opengeo.org/org/opengeo/geoserver/gs-geogit/ -->
+    <!-- pegging to current latest 2.6 version because at this time, the 2.6-SNAPSHOT shaded plugin jar has not been
+         built since Aug 15. though this version was built a few days ago 2.6-20141211.151657-29  dec 11 2014.
+         http://repo.boundlessgeo.com/main/org/opengeo/geoserver/gs-geogig/2.6-SNAPSHOT/ -->
+    <gsgeogig.version>2.6-20141211.151657-29</gsgeogig.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
-  
-  
   <profiles>
     <profile>
       <id>arcsde</id>
@@ -434,7 +425,7 @@
           <warName>geoserver</warName> 
           <webappDirectory>${project.build.directory}/geoserver</webappDirectory>
           <packagingExcludes>**/data/</packagingExcludes>
-          <packagingExcludes>**/web-app*.jar</packagingExcludes>
+          <packagingExcludes>**/gs-web-app*.jar</packagingExcludes>
         </configuration>
         <executions>
           <execution>
@@ -446,6 +437,15 @@
         </executions>        
       </plugin>
     </plugins>
+
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+
   </build>
 </project>
 
