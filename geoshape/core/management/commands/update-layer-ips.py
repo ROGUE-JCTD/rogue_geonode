@@ -18,7 +18,7 @@
 #########################################################################
 
 from django.core.management.base import BaseCommand
-from django.core.exceptions import MultipleObjectsReturned
+from django.core.exceptions import FieldError, MultipleObjectsReturned
 from geonode.maps.models import MapLayer
 from geonode.layers.models import Layer
 from django.conf import settings
@@ -62,12 +62,15 @@ class Command(BaseCommand):
             except MultipleObjectsReturned:
                 self.stdout.write('MultipleObjectsReturned Error when updating layer #{0}'.format(layer.id))
 
-        for layer in layers.exclude(thumbnail_url__isnull=True).exclude(thumbnail_url__icontains=new_netloc):
-            new_url = self.replaceNetLoc(layer.thumbnail_url, new_netloc)
-            self.stdout.write('Changing a layer thumbnail url from {0} to {1}. (Layer #{2})'.format(
-                layer.thumbnail_url, new_url, layer.id))
-            layer.thumbnail_url = new_url
-            try:
-                layer.save()
-            except MultipleObjectsReturned:
-                self.stdout.write('MultipleObjectsReturned Error when updating layer #{0}'.format(layer.id))
+        try:
+            for layer in layers.exclude(thumbnail_url__isnull=True).exclude(thumbnail_url__icontains=new_netloc):
+                new_url = self.replaceNetLoc(layer.thumbnail_url, new_netloc)
+                self.stdout.write('Changing a layer thumbnail url from {0} to {1}. (Layer #{2})'.format(
+                    layer.thumbnail_url, new_url, layer.id))
+                layer.thumbnail_url = new_url
+                try:
+                    layer.save()
+                except MultipleObjectsReturned:
+                    self.stdout.write('MultipleObjectsReturned Error when updating layer #{0}'.format(layer.id))
+        except FieldError:
+            self.stdout.write('The thumbnail_url field does not exist in this version of GeoNode, skipping.')
