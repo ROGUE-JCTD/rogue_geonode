@@ -322,10 +322,11 @@
     <geoserver.version>2.6-SNAPSHOT</geoserver.version>
     <jetty.version>6.1.8</jetty.version>
     <gsgeonode.version>2.6-SNAPSHOT</gsgeonode.version>
+    <!-- build gs-geogig locally as the 2.6-SNAPSHOTS are outdated in boundless repo. last built AUG 15 2014 -->
     <!-- pegging to current latest 2.6 version because at this time, the 2.6-SNAPSHOT shaded plugin jar has not been
          built since Aug 15. though this version was built a few days ago 2.6-20141211.151657-29  dec 11 2014.
          http://repo.boundlessgeo.com/main/org/opengeo/geoserver/gs-geogig/2.6-SNAPSHOT/ -->
-    <gsgeogig.version>2.6-20141211.151657-29</gsgeogig.version>
+    <gsgeogig.version>2.6-SNAPSHOT</gsgeogig.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles>
