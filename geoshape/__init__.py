@@ -1,5 +1,5 @@
 try:
-    from .celery import app as celery_app # flake8: noqa
+    from celery_app import app as celery_app # flake8: noqa
 except ImportError:
     pass
 
