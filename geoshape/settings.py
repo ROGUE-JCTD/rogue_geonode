@@ -85,7 +85,7 @@ SECRET_KEY = 'x-#u&4x2k*$0-60fywnm5&^+&a!pd-ajrx(z@twth%i7^+oskh'
 ROOT_URLCONF = 'geoshape.urls'
 
 INSTALLED_APPS = (
-    'geonode.contrib.geogit',
+    'geonode.contrib.geogig',
     'geoshape.file_service',
     'geoshape.core',
     'django_classification_banner',
