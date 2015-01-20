@@ -66,7 +66,7 @@ setup(
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
     description="geoshape, based on GeoNode",
-    long_description=(read('README.rst')),
+    long_description=(read('README.md')),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
     ],

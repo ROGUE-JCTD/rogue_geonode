@@ -1,4 +1,4 @@
-include README.rst
+include README.md
 include MANIFEST.in
 recursive-include geoshape/ *
 recursive-exclude * *.py[co]
