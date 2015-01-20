@@ -12,7 +12,7 @@ to maximize interoperability. GeoSHAPE is the integration of a geospatial portal
 client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial
 server and database components (The OpenGeo Suite). GeoSHAPE is the outcome of the Rapid Open Geospatial User-Driven
 Enterprise (ROGUE) Joint Capability Technology Demonstration (JCTD).  For more information about GeoSHAPE visit the
-project page at [http://geoshape.org/](https://geoshape.org/).
+project page at [http://geoshape.org](https://geoshape.org/).
 
 
 What is this?
