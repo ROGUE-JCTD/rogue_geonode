@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import geonode
 import os
 
 from geonode.settings import *  # noqa
@@ -25,7 +24,7 @@ DEBUG_STATIC = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, 'development.db'),
+        'NAME': os.path.join(LOCAL_ROOT, 'development.db'),
     }
 }
 
