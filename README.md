@@ -1,6 +1,4 @@
-.. image:: https://secure.travis-ci.org/ROGUE-JCTD/rogue_geonode.png
-    :alt: Build Status
-    :target: http://travis-ci.org/ROGUE-JCTD/rogue_geonode
+[![Build Status](https://travis-ci.org/ROGUE-JCTD/rogue_geonode.svg?branch=master)](https://travis-ci.org/ROGUE-JCTD/rogue_geonode)
 
 GeoSHAPE
 ========
