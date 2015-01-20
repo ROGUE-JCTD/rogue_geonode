@@ -2,6 +2,7 @@ from django.conf import settings
 from django.utils.translation import ugettext as _
 from geoshape.version import get_version
 
+
 def security_warnings(request, PROXY_ALLOWED_HOSTS=()):
     """ Detects insecure settings and reports them to the client-side context. """
 

@@ -189,8 +189,6 @@ MAP_BASELAYERS = [
     }
 ]
 
-
-
 LEAFLET_CONFIG = {
     'TILES': [
         # Find tiles at:
