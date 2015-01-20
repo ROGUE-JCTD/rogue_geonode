@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.urlresolvers import reverse
 from django.test import Client, TestCase
 from geoshape.core.context_processors import security_warnings
@@ -7,6 +7,7 @@ from lxml import etree
 import logging
 logger = logging.getLogger(__name__)
 
+User = get_user_model()
 
 class ROGUETests(TestCase):
 
@@ -39,29 +40,6 @@ class ROGUETests(TestCase):
     def get_elements_from_xpath(content, xpath='//title'):
         html = etree.HTML(content)
         return html.xpath(xpath)
-
-    def test_overridden_title(self):
-        """
-        Test to ensure there are no regressions for https://github.com/ROGUE-JCTD/rogue_geonode/issues/9.
-        """
-
-        c = Client()
-        c.login(username=self.username, password=self.password)
-
-        custom_views = ['layer_browse', 'documents_browse', 'maps_browse', 'profile_browse', 'group_list']
-
-        for template in custom_views:
-            resp = c.get(reverse(template), follow=True)
-            title = self.get_elements_from_xpath(resp.content)
-            self.assertTrue(title, msg="The page has no title element!")
-            self.assertNotIn('Explore', title[0].text)
-
-            page_title = self.get_elements_from_xpath(resp.content, xpath="//*[contains(@class, 'page-title')]")
-            self.assertTrue(page_title, msg="The page has no page-title element!")
-
-            self.assertNotIn('Explore',
-                             page_title[0].text,
-                             msg="'Explore' was found in the {} template.".format(template))
 
     def test_security_warnings(self):
         """
