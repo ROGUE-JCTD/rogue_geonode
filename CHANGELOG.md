@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 [Unreleased][unreleased]
 ------------------------
+- Fix links in the CHANGELOG.
 
 [1.2] - 2015-01-19
 ------------------
@@ -27,7 +28,7 @@ All notable changes to this project will be documented in this file.
 - Initial ROGUE release re-released using 1.0 tag.
 
 
-[unreleased]: https://github.com/ROGUE-JCTD/MapLoom/compare/release-1.2...HEAD
-[1.2]: https://github.com/ROGUE-JCTD/MapLoom/compare/release-1.1...release-1.2
-[1.1]: https://github.com/ROGUE-JCTD/MapLoom/compare/release-1.0...release-1.1
-[1.0]: https://github.com/ROGUE-JCTD/MapLoom/tree/release-1.0
+[unreleased]: https://github.com/ROGUE-JCTD/rogue_geonode/compare/release-1.2...HEAD
+[1.2]: https://github.com/ROGUE-JCTD/rogue_geonode/compare/release-1.1...release-1.2
+[1.1]: https://github.com/ROGUE-JCTD/rogue_geonode/compare/release-1.0...release-1.1
+[1.0]: https://github.com/ROGUE-JCTD/rogue_geonode/tree/release-1.0
