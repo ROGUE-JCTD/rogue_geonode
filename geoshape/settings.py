@@ -189,6 +189,9 @@ TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
 )
 
+if 'django.middleware.clickjacking.XFrameOptionsMiddleware' not in MIDDLEWARE_CLASSES:
+    MIDDLEWARE_CLASSES += ('django.middleware.clickjacking.XFrameOptionsMiddleware',)
+
 # Add additional paths (as regular expressions) that don't require authentication.
 AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/',)
 
