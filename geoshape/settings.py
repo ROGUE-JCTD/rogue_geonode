@@ -29,12 +29,18 @@ DEBUG_STATIC = False
 # This is needed for integration tests, they require
 # geonode to be listening for GeoServer auth requests.
 
-
 # Defines settings for development
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(PROJECT_ROOT, 'development.db'),
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'iaff_geoshape',
     }
 }
 
@@ -115,7 +121,8 @@ INSTALLED_APPS = (
     'geoshape.core',
     'django_classification_banner',
     'maploom',
-    'iaff_geoshape'
+    'iaff_geoshape',
+    'geoshape.firestation'
 ) + INSTALLED_APPS
 
 LOGGING = {
@@ -225,4 +232,4 @@ MAP_BASELAYERS = [
     }
 ]
 
-DATABASE_ROUTERS = ['iaff_geoshape.routers.IAFFGeoRouter',]
+DATABASE_ROUTERS = ['iaff_geoshape.routers.IAFFGeoRouter', ]
