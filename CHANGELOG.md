@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 [Unreleased][unreleased]
 ------------------------
+- Update the proxy view to support HTTPS connections.
 - Fix links in the CHANGELOG.
 
 [1.2] - 2015-01-19

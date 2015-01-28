@@ -3,7 +3,7 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.http.request import validate_host
 from django.utils.http import is_safe_url
-from httplib import HTTPConnection
+from httplib import HTTPConnection, HTTPSConnection
 from urlparse import urlsplit
 from geonode.geoserver.helpers import ogc_server_settings
 
@@ -58,7 +58,11 @@ def proxy(request):
     logger.debug('Outgoing request locator: {0}{1}'.format(url.hostname, locator))
     logger.debug('Outgoing request headers: {0}'.format(headers))
 
-    conn = HTTPConnection(url.hostname, url.port)
+    if url.scheme == 'https':
+        conn = HTTPSConnection(url.hostname, url.port)
+    else:
+        conn = HTTPConnection(url.hostname, url.port)
+
     conn.request(request.method, locator, request.body, headers)
     result = conn.getresponse()
 
