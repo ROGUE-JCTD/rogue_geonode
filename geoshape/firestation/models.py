@@ -154,7 +154,11 @@ class USGSStructureData(models.Model):
     objects = models.GeoManager()
 
     def __unicode__(self):
-        return '{state}, {city}, {name}'.format(name=self.name, state=self.state, city=self.city)
+        return u'{state}, {city}, {name}'.format(name=self.name, state=self.state, city=self.city)
+
+    def full_address(self):
+        return u'{address}, {city}, {state}, {zipcode}'.format(address=self.address, city=self.city, state=self.state,
+                                                               zipcode=self.zipcode)
 
     class Meta:
         ordering = ('state', 'city', 'name')
@@ -399,16 +403,20 @@ class ResponseCapability(FireCaresBase):
                          ('Other', 'Other')]
 
     firestation = models.ForeignKey(FireStation)
-    apparatus = models.CharField(choices=APPARATUS_CHOICES, max_length=20)
-    firefighter = models.IntegerField(null=True, blank=True)
-    firefighter_emt = models.IntegerField(null=True, blank=True)
-    firefighter_paramedic = models.IntegerField(null=True, blank=True)
-    ems_emt = models.IntegerField(null=True, blank=True, verbose_name='EMS only EMT')
-    ems_paramedic = models.IntegerField(null=True, blank=True, verbose_name='EMS only Paramedic')
-    officer = models.IntegerField(null=True, blank=True, verbose_name='Company/Unit Officer')
-    officer_paramedic = models.IntegerField(null=True, blank=True, verbose_name='Company/Unit Officer Paramedic')
-    ems_supervisor = models.IntegerField(null=True, blank=True)
-    chief_officer = models.IntegerField(null=True, blank=True)
+    apparatus = models.CharField(choices=APPARATUS_CHOICES, max_length=20, default='Engine')
+    firefighter = models.IntegerField(null=True, blank=True, max_length=2)
+    firefighter_emt = models.IntegerField(null=True, blank=True, max_length=2, verbose_name='Firefighter EMT')
+    firefighter_paramedic = models.IntegerField(null=True, blank=True, max_length=2,
+                                                verbose_name='Firefighter Paramedic')
+    ems_emt = models.IntegerField(null=True, blank=True, verbose_name='EMS-Only EMT', max_length=2)
+    ems_paramedic = models.IntegerField(null=True, blank=True, verbose_name='EMS-Only Paramedic', max_length=2)
+    officer = models.IntegerField(null=True, blank=True, verbose_name='Company/Unit Officer', max_length=2)
+    officer_paramedic = models.IntegerField(null=True, blank=True, verbose_name='Company/Unit Officer Paramedic',
+                                            max_length=2)
+    ems_supervisor = models.IntegerField(null=True, blank=True, max_length=2, verbose_name='EMS Supervisor')
+    chief_officer = models.IntegerField(null=True, blank=True, max_length=2, verbose_name='Cheif Officer')
 
     class Meta:
         verbose_name_plural = 'Response Capabilities'
+
+

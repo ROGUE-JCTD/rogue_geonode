@@ -9,7 +9,6 @@ from geonode.geoserver.helpers import ogc_server_settings
 
 logger = logging.getLogger(__name__)
 
-
 def proxy(request):
     PROXY_ALLOWED_HOSTS = getattr(settings, 'PROXY_ALLOWED_HOSTS', ())
     hostname = (ogc_server_settings.hostname,) if ogc_server_settings else ()

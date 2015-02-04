@@ -53,7 +53,7 @@ OGC_SERVER = {
         'USER': 'admin',
         'PASSWORD': 'geoserver',
         'MAPFISH_PRINT_ENABLED': True,
-        'PRINTNG_ENABLED': True,
+        'PRINT_NG_ENABLED': True,
         'GEONODE_SECURITY_ENABLED': True,
         'GEOGIT_ENABLED': True,
         'WMST_ENABLED': False,
