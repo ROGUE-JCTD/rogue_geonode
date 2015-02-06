@@ -1,0 +1,27 @@
+.map-well {
+    padding: 0;
+}
+
+.map-well address {
+  padding: 6px;
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.station-detail-table td {
+    text-align: center;
+}
+
+.station-detail-table tr:first-child td {
+    //border-top-width: 0px;
+}
+
+.station-detail-table-attribute {
+    font-weight: 600;
+}
+
