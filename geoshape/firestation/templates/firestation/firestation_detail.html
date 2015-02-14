@@ -63,11 +63,11 @@
 				<label for="Chief_Officer">Chief Officer</label>
 				<input id="Chief_Officer" ng-model="selectedForm.chief_officer" type="number" min="0" ngMinLength=1 ngMaxLength=2>
 				
-				<button ng-click="UpdateOrAddNewRecord(selectedForm)" class="lower_right_button">
+				<button ng-click="UpdateOrAddNewRecord(selectedForm)" class="lower_right_button btn btn-primary">
 				<span ng-bind="selectedForm.name == 'Add New Response Form' ? 'Add Form' : 'Update Form'"></span>
 				</button>
 				
-				<button ng-click="DeleteForm(selectedForm)" class="lower_right_button" ng-hide="selectedForm.name == 'Add New Response Form'" style="right: 110px">
+				<button ng-click="DeleteForm(selectedForm)" class="lower_right_button btn btn-primary" ng-hide="selectedForm.name == 'Add New Response Form'" style="right: 110px">
 				<span>Delete Form</span>
 				</button>
 				
