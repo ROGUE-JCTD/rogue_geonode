@@ -4,6 +4,7 @@ from tastypie import fields
 from tastypie.authentication import SessionAuthentication, ApiKeyAuthentication, MultiAuthentication
 from tastypie.authorization import DjangoAuthorization
 from tastypie.cache import SimpleCache
+from tastypie.constants import ALL
 from tastypie.contrib.gis.resources import ModelResource
 
 logger = logging.getLogger(__name__)
@@ -56,3 +57,4 @@ class ResponseCapbabilityResource(ModelResource):
         queryset = ResponseCapability.objects.all()
         authorization = DjangoAuthorization()
         authentication = MultiAuthentication(SessionAuthentication(), ApiKeyAuthentication())
+        filtering = {'firestation': ALL}
