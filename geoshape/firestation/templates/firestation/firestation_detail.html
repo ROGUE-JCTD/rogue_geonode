@@ -14,7 +14,8 @@
 
      <script type="text/javascript">
     var config = {
-      centroid: [{{ object.geom.y }}, {{ object.geom.x }}]
+      centroid: [{{ object.geom.y }}, {{ object.geom.x }}],
+	  id: {{object.id}}
     }
     </script>
 
@@ -30,7 +31,7 @@
 
 				<fieldset style="position: relative">
 				<label for="Form">Response Capability Form</label>
-				<select id="Form" ng-model="selectedForm" ng-options="form as form.name for form in forms"></select>
+				<select id="Form" ng-model="selectedForm" ng-options="form as (form.name) for form in forms"></select>
 				
 				<label for="Apparatus">Apparatus</label>
 				<select id="Apparatus" ng-model="selectedForm.apparatus" ng-options=" opt for opt in choices"></select>
@@ -60,10 +61,14 @@
 				<input id="EMS_Supervisor" ng-model="selectedForm.ems_supervisor" type="number" min="0" ngMinLength=1 ngMaxLength=2></input>
 				
 				<label for="Chief_Officer">Chief Officer</label>
-				<input id="Chief_Officer" ng-model="selectedForm.chief" type="number" min="0" ngMinLength=1 ngMaxLength=2></input>
+				<input id="Chief_Officer" ng-model="selectedForm.chief_officer" type="number" min="0" ngMinLength=1 ngMaxLength=2></input>
 				
 				<button ng-click="UpdateOrAddNewRecord(selectedForm)" class="lower_right_button">
 				<span ng-bind="selectedForm.name == 'Add New Response Form' ? 'Add Form' : 'Update Form'"></span>
+				</button>
+				
+				<button ng-click="DeleteForm(selectedForm)" class="lower_right_button" ng-hide="selectedForm.name == 'Add New Response Form'" style="right: 110px">
+				<span>Delete Form</span>
 				</button>
 				
 				</fieldset>
