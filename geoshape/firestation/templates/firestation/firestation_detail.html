@@ -29,49 +29,44 @@
                 <h2>{{ object.name }}</h2>
                 <hr/>
 
-				<fieldset style="position: relative">
-				<label for="Form">Response Capability Form</label>
-				<select id="Form" ng-model="selectedForm" ng-options="form as (form.name) for form in forms"></select>
+				<table id="FormTable" class="table station-detail-table table-bordered table-striped">
+				<!-- Headers -->
+				<tr>
+				<th>Name</th>
+				<th>Apparatus</th>
+				<th>Firefighter</th>
+				<th>Firefighter EMT</th>
+				<th>Firefighter Paramedic</th>
+				<th>EMS-Only EMT</th>
+				<th>EMS-Only Paramedic</th>
+				<th>Company/Unit Officer</th>
+				<th>Company/Unit Officer Paramedic</th>
+				<th>EMS Supervisor</th>
+				<th>Chief Officer</th>
+				<th>Actions</th>
+				</tr>
+				<!-- Headers -->
 				
-				<label for="Apparatus">Apparatus</label>
-				<select id="Apparatus" ng-model="selectedForm.apparatus" ng-options=" opt for opt in choices"></select>
+				<tr ng-repeat="form in forms | orderBy: 'name'" ng-init="previousForm = form">
+				<!-- Form -->
+				<td ng-bind="form.name"> </td>
+				<td><select ng-model="form.apparatus" ng-options="opt for opt in choices"></select></td>
+				<td><input  ng-model="form.firefighter" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.firefighter_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.firefighter_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.ems_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.ems_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.officer" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.officer_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.ems_supervisor" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><input  ng-model="form.chief_officer" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
+				<td><button ng-click="UpdateForm(form)" class="btn btn-primary">Update</button></td>
+				<td><button ng-click="DeleteForm(form)" class="btn btn-primary">Delete</button></td>
+				<!-- Form -->
+				</tr>
+				</table>
 				
-				<label for="FireFighter">Firefighter</label>
-				<input id="FireFighter" ng-model="selectedForm.firefighter" type="number" min="0">
-				
-				<label for="FireFighter_EMT">Firefighter EMT</label>
-				<input id="FireFighter_EMT" ng-model="selectedForm.firefighter_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="FireFighter_Paramedic">Firefighter Paramedic</label>
-				<input id="FireFighter_Paramedic" ng-model="selectedForm.firefighter_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="EMS-Only_EMT">EMS-Only EMT</label>
-				<input ng-model="selectedForm.ems_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="EMS-Only_Paramedic">EMS-Only Paramedic</label>
-				<input id="EMS-Only_Paramedic" ng-model="selectedForm.ems_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="EMS-Only_Paramedic">Company/Unit Officer</label>
-				<input id="Company/Unit_Officer" ng-model="selectedForm.officer" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="Company/Unit_Officer_Paramedic">Company/Unit Officer Paramedic</label>
-				<input id="Company/Unit_Officer_Paramedic" ng-model="selectedForm.officer_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="EMS_Supervisor">EMS Supervisor</label>
-				<input id="EMS_Supervisor" ng-model="selectedForm.ems_supervisor" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<label for="Chief_Officer">Chief Officer</label>
-				<input id="Chief_Officer" ng-model="selectedForm.chief_officer" type="number" min="0" ngMinLength=1 ngMaxLength=2>
-				
-				<button ng-click="UpdateOrAddNewRecord(selectedForm)" class="lower_right_button btn btn-primary">
-				<span ng-bind="selectedForm.name == 'Add New Response Form' ? 'Add Form' : 'Update Form'"></span>
-				</button>
-				
-				<button ng-click="DeleteForm(selectedForm)" class="lower_right_button btn btn-primary" ng-hide="selectedForm.name == 'Add New Response Form'" style="right: 110px">
-				<span>Delete Form</span>
-				</button>
-				
-				</fieldset>
+				<button ng-click="AddForm()" class="lower_right_button btn btn-primary">Add Form</button>
                </div>
 
                 <aside class="span4">
