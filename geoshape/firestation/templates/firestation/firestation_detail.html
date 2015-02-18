@@ -25,51 +25,11 @@
     <div class="container" ng-controller="fireStationController" ng-app="fireStation">
         <div class="row">
             <div class="span12"></div>
-               <div class="span8">
+               <div class="span12">
                 <h2>{{ object.name }}</h2>
                 <hr/>
 
-				<table id="FormTable" class="table station-detail-table table-bordered table-striped">
-				<!-- Headers -->
-				<tr>
-				<th>Name</th>
-				<th>Apparatus</th>
-				<th>Firefighter</th>
-				<th>Firefighter EMT</th>
-				<th>Firefighter Paramedic</th>
-				<th>EMS-Only EMT</th>
-				<th>EMS-Only Paramedic</th>
-				<th>Company/Unit Officer</th>
-				<th>Company/Unit Officer Paramedic</th>
-				<th>EMS Supervisor</th>
-				<th>Chief Officer</th>
-				<th>Actions</th>
-				</tr>
-				<!-- Headers -->
-				
-				<tr ng-repeat="form in forms | orderBy: 'name'" ng-init="previousForm = form">
-				<!-- Form -->
-				<td ng-bind="form.name"> </td>
-				<td><select ng-model="form.apparatus" ng-options="opt for opt in choices"></select></td>
-				<td><input  ng-model="form.firefighter" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.firefighter_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.firefighter_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.ems_emt" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.ems_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.officer" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.officer_paramedic" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.ems_supervisor" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><input  ng-model="form.chief_officer" type="number" min="0" ngMinLength=1 ngMaxLength=2></td>
-				<td><button ng-click="UpdateForm(form)" class="btn btn-primary">Update</button></td>
-				<td><button ng-click="DeleteForm(form)" class="btn btn-primary">Delete</button></td>
-				<!-- Form -->
-				</tr>
-				</table>
-				
-				<button ng-click="AddForm()" class="lower_right_button btn btn-primary">Add Form</button>
-               </div>
-
-                <aside class="span4">
+                <aside class="span4 pull-right">
                     <div class="well map-well">
                         <div id="map" style="height:200px"></div>
                         <address>
@@ -104,6 +64,21 @@
                     </table>
                     </div>
                 </aside>
+                <div class="span7 well response-capability-well">
+                    <h4>Apparatus and Staffing</h4>
+                    <hr/>
+                    <ul class="nav nav-tabs apparatus-tabs">
+
+                      <li id="tab-{[ form.id ]}" ng-repeat="form in forms | orderBy: 'name'" ng-class="{'active': $last}">
+                          <a href="#{[ form.id ]}" data-toggle="tab">{[form.apparatus]} </a>
+                      </li>
+                      <li ng-click="AddForm()" class="nav-action">Add Apparatus</li>
+
+                    </ul>
+                    {% include "firestation/response_capability_inline.html" %}
+                </div>
+               </div>
+
         </div>
     </div>
 {%  endblock %}

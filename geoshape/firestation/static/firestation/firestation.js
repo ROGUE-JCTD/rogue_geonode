@@ -59,31 +59,29 @@
 			form.officer_paramedic = 0;
 			form.ems_supervisor = 0;
 			form.chief = 0;
-	}
+	};
 	
 	$scope.AddForm = function() {
-		var newForm = {'apparatus':'Engine',
-						'chief_officer':0,
-						'ems_emt':0,
-						'ems_paramedic':0,
-						'ems_supervisor':0,
-						'firefighter':0,
-						'firefighter_emt':0,
-						'firefighter_paramedic':0,
-						'firestation':thisFirestation,
-						'officer':0,
-						'officer_paramedic':0
+		var newForm = {'apparatus': 'Engine',
+						'chief_officer': 0,
+						'ems_emt': 0,
+						'ems_paramedic': 0,
+						'ems_supervisor': 0,
+						'firefighter': 0,
+						'firefighter_emt': 0,
+						'firefighter_paramedic': 0,
+						'firestation': thisFirestation,
+						'officer': 0,
+						'officer_paramedic': 0
 						};
 		var postUrl = '/api/v1/capabilities/?format=json';
-		$http.post(postUrl,newForm).success(function(data,status,headers){
+		$http.post(postUrl, newForm).success(function(data,status,headers){
 				$http.get(headers('Location')+'?format=json').success(function(data){
 				data.name = data.apparatus + data.id;
 				$scope.forms.push(data);
-				$scope.ClearForm(data);
 				});
-	
 		});
-	}
+	};
 	
 	$scope.UpdateForm = function(form) {
 			var updateUrl = '/api/v1/capabilities/'+form.id+'/?format=json';
@@ -91,14 +89,14 @@
 			$http.put(updateUrl,form).success(function(data){
 				form.name = form.apparatus + form.id;
 			});
-	}
+	};
 	
 	$scope.DeleteForm = function(form) {
 		
 		$http.delete('/api/v1/capabilities/'+form.id+'/?format=json').success(function(data){
-			$scope.forms.splice($scope.forms.indexOf(form),1);
+            $scope.forms.splice($scope.forms.indexOf(form), 1);
 		});
-	}
+	};
    
    L.marker(config.centroid).addTo($scope.map);
     L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png', {'attribution': '© Mapbox'})
