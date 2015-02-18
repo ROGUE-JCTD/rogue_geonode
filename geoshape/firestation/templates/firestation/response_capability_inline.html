@@ -1,5 +1,5 @@
 <div class="tab-content">
-    <div class="tab-pane" id="{[form.id]}" ng-repeat="form in forms | orderBy: 'name'" ng-init="previousForm = form"
+    <div class="tab-pane" id="{[form.id]}" ng-repeat="form in forms" ng-init="previousForm = form"
             ng-class="{'active': $last}">
         <form class="form-horizontal" name="apparatus_{[ form.id ]}" ng-submit="UpdateForm(form)">
           <div class="control-group">
