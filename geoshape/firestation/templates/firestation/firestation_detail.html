@@ -14,7 +14,8 @@
 
      <script type="text/javascript">
     var config = {
-      centroid: [{{ object.geom.y }}, {{ object.geom.x }}]
+      centroid: [{{ object.geom.y }}, {{ object.geom.x }}],
+	  id: {{object.id}}
     }
     </script>
 
@@ -24,15 +25,11 @@
     <div class="container" ng-controller="fireStationController" ng-app="fireStation">
         <div class="row">
             <div class="span12"></div>
-               <div class="span8">
+               <div class="span12">
                 <h2>{{ object.name }}</h2>
                 <hr/>
 
-                <p> Put Response Capability Form Entries Here </p>
-
-               </div>
-
-                <aside class="span4">
+                <aside class="span4 pull-right">
                     <div class="well map-well">
                         <div id="map" style="height:200px"></div>
                         <address>
@@ -67,6 +64,21 @@
                     </table>
                     </div>
                 </aside>
+                <div class="span7 well response-capability-well">
+                    <h4>Apparatus and Staffing</h4>
+                    <hr/>
+                    <ul class="nav nav-tabs apparatus-tabs">
+
+                      <li id="tab-{[ form.id ]}" ng-repeat="form in forms" ng-class="{'active': $last}">
+                          <a href="#{[ form.id ]}" data-toggle="tab">{[form.apparatus]} </a>
+                      </li>
+                      <li ng-click="AddForm()" class="nav-action">Add Apparatus</li>
+
+                    </ul>
+                    {% include "firestation/response_capability_inline.html" %}
+                </div>
+               </div>
+
         </div>
     </div>
 {%  endblock %}

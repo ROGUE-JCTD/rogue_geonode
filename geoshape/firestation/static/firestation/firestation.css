@@ -1,5 +1,5 @@
 .map-well {
-    padding: 0;
+  padding: 0;
 }
 
 .map-well address {
@@ -13,15 +13,41 @@ h2 {
   line-height: 25px;
 }
 
-.station-detail-table td {
-    text-align: center;
+.response-capability-well {
+  background-color: white;
+  padding: 8px;
+  border: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
-.station-detail-table tr:first-child td {
-    //border-top-width: 0px;
+/*
+The .nav-action class mimics nav-tab links. Only used to avoid href="#"
+which moves the window when the user clicks on the link.
+*/
+.nav-action {
+  cursor: pointer;
+  color: #0a75b6;
+  padding: 8px 12px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  margin-right: 2px;
 }
 
-.station-detail-table-attribute {
-    font-weight: 600;
+.nav-action:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+  text-decoration: none;
+  background-color: #eeeeee;
 }
 
+input.ng-invalid:focus,
+input.ng-invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+  box-shadow: 0 0 6px #f8b9b7;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+}
