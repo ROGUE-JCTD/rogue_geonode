@@ -95,6 +95,8 @@
 		$http.delete('/api/v1/capabilities/'+form.id+'/?format=json').success(function(data){
             $scope.forms.splice($scope.forms.indexOf(form), 1);
 		});
+
+        $('.apparatus-tabs li:nth-last-child(2) a').tab('show');
 	};
    
    L.marker(config.centroid).addTo($scope.map);

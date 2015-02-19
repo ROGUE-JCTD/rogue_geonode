@@ -1,5 +1,5 @@
 .map-well {
-    padding: 0;
+  padding: 0;
 }
 
 .map-well address {
@@ -14,13 +14,12 @@ h2 {
 }
 
 .response-capability-well {
-    background-color: white;
-    padding: 8px;
-    border: 0px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  background-color: white;
+  padding: 8px;
+  border: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
-
 
 /*
 The .nav-action class mimics nav-tab links. Only used to avoid href="#"
@@ -39,7 +38,16 @@ which moves the window when the user clicks on the link.
 }
 
 .nav-action:hover {
-    border-color: #eeeeee #eeeeee #dddddd;
-    text-decoration: none;
-    background-color: #eeeeee;
+  border-color: #eeeeee #eeeeee #dddddd;
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+input.ng-invalid:focus,
+input.ng-invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+  box-shadow: 0 0 6px #f8b9b7;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
 }
