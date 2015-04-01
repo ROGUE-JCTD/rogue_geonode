@@ -1,0 +1,28 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load base_tags %}
+
+{% block title %} {% trans "Security" %} - {{ block.super }} {% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block middle %}
+
+  {% block mainbody %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="padding:40px;">
+        <p class="text-left">
+        {% if SECURITY_STATEMENTS %}
+          {% for statement in SECURITY_STATEMENTS %}
+            {{ statement }}<br><br>
+          {% endfor %}
+        {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+{% endblock %}
