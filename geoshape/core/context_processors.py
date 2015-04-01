@@ -3,6 +3,12 @@ from django.utils.translation import ugettext as _
 from geoshape.version import get_version
 
 
+def security_statements(request):
+    """ Pass SECURITY_STATEMENTS from settings for security.html template. """
+
+    return dict(SECURITY_STATEMENTS=getattr(settings, 'SECURITY_STATEMENTS', None))
+
+
 def security_warnings(request, PROXY_ALLOWED_HOSTS=()):
     """ Detects insecure settings and reports them to the client-side context. """
 

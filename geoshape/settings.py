@@ -157,6 +157,7 @@ LOGGING = {
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
+    'geoshape.core.context_processors.security_statements',
     'geoshape.core.context_processors.security_warnings',
     'geoshape.core.context_processors.rogue'
 )
