@@ -7,9 +7,9 @@ def security(request):
     """ Pass CLASSIFICATION_LEVEL, DATA_STATEMENTS, and PRIVACY_STATEMENT from settings for security.html template. """
 
     return dict(
-               CLASSIFICATION_LEVEL=getattr(settings, 'CLASSIFICATION_LEVEL', None),
-               DATA_STATEMENTS=getattr(settings, 'DATA_STATEMENTS', None),
-               PRIVACY_STATEMENT=getattr(settings, 'PRIVACY_STATEMENT', None))
+        CLASSIFICATION_LEVEL=getattr(settings, 'CLASSIFICATION_LEVEL', None),
+        DATA_STATEMENTS=getattr(settings, 'DATA_STATEMENTS', None),
+        PRIVACY_STATEMENT=getattr(settings, 'PRIVACY_STATEMENT', None))
 
 
 def security_warnings(request, PROXY_ALLOWED_HOSTS=()):
