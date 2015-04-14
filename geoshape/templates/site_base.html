@@ -38,19 +38,22 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 small-text">
+          <div class="col-md-4">
+            <a href="https://hiu.state.gov/Pages/Home.aspx"><img src="/static/img/hiu_logo.png" alt="HIU"></a>
+          </div>
+          <div class="col-md-6">
             {% trans "Powered by" %} <a href="http://geoshape.org" target="_new">{% trans "GeoSHAPE" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
             <a href="/docs">{% trans "Documentation" %}</a> |
             <a href="/security/">{% trans "Security" %}</a> |
             <a href="/about/">{% trans "About" %}</a>
           </div>
-          <div class="col-md-4 pull-right">
-            <label>{% trans "Language" %}</label>
+          <div class="col-md-2">
+            <label class="hidden">{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
             <form class="form-inline" action="/i18n/setlang/" method="post">
             {% csrf_token %}
-              <select name="language" onchange="javascript:form.submit()">
+              <select class="pull-right" name="language" onchange="javascript:form.submit()">
                 {% for lang in LANGUAGES %}
                 <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
                   {{ lang.1 }}
@@ -58,8 +61,8 @@
                 {% endfor %}
               </select>
             </form>
-          {% endif %}
-          </div> <!-- /.pull-right -->
+            {% endif %}
+          </div>
         </div>
       </div> <!-- /.container -->
     </footer>

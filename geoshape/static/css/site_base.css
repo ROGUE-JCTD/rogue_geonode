@@ -10,12 +10,29 @@ body {
   width: 160px;
   height: 30px;
 }
-.footer {
+/*.footer {
   border-top: 1px solid #cccccc;
   height: 100px;
   padding: 23px;
   background: #eee;
   margin-top: 10px;
+}*/
+footer.footer img {
+ margin-right: 10px;
+ max-width: 100px;
+ max-height: 30px;
+ vertical-align:middle;
+}
+
+footer.footer {
+ position:fixed;
+ padding: 10px 0;
+ font-size: 14px;
+ left:0px;
+ bottom:0px;
+ height:50px;
+ width:100%;
+ background-color: #555555;
 }
 #wrap {
   height: auto !important;
