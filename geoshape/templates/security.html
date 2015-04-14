@@ -1,0 +1,44 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load base_tags %}
+
+{% block title %} {% trans "Security" %} - {{ block.super }} {% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block middle %}
+
+  {% block mainbody %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="padding:40px;">
+        {% if CLASSIFICATION_LEVEL %}
+          <h4>Highest Classification Level</h4>
+          <div style="margin-left:20px;"><h5>{{ CLASSIFICATION_LEVEL }}</h5></div>
+          <br>
+        {% endif %}
+        {% if DATA_STATEMENTS %}
+          <h4>Data</h4>
+          <div style="margin-left:20px;">
+          {% for statement in DATA_STATEMENTS %}
+            {{ statement }}<br><br>
+          {% endfor %}
+          </div>
+        {% endif %}
+        {% if PRIVACY_STATEMENT %}
+          <h4>Privacy</h4>
+          <div style="margin-left:20px;">{{ PRIVACY_STATEMENT }}</div>
+          <br>
+        {% endif %}
+          <h4>Password Reset</h4>
+          <div style="margin-left:20px;">You can reset your password at the following page: <a href="/account/password/">Password Reset</a></div>
+          <br>
+          <h4>Security Report</h4>
+          <div style="margin-left:20px;">If you believe the system has been compromised, please immediately alert the system administrator using out-of-band communication.</div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+{% endblock %}
