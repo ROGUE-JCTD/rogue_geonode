@@ -32,7 +32,8 @@ footer.footer {
  bottom:0px;
  height:50px;
  width:100%;
- background-color: #555555;
+ /*background-color: #555555;*/
+ background-color: rgb(10, 46, 82);
 }
 #wrap {
   height: auto !important;
