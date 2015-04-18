@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
 }
+nav.navbar.navbar-inverse {
+ background-color: rgb(10, 46, 82);
+}
 .navbar-brand {
   background: url('../img/opendata_geonode_logo.png') no-repeat;
   margin-top: 10px;

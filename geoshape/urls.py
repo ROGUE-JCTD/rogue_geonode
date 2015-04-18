@@ -6,6 +6,7 @@ urlpatterns = patterns('',
                        (r'^file-service/', include('geoshape.file_service.urls')),
                        (r'^proxy/', 'geoshape.views.proxy'),
                        (r'^security/', 'geoshape.views.security'),
+                       (r'^/about/api/', 'geoshape.views.about_api'),
                        )
 
 urlpatterns += geonode_url_patterns

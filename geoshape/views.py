@@ -84,3 +84,7 @@ def proxy(request):
 
 def security(request, template='security.html'):
     return render_to_response(template, RequestContext(request, {}))
+
+def about_api(request, template='api.html'):
+    return render_to_response(template, RequestContext(request, {}))
+
