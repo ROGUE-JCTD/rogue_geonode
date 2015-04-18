@@ -15,7 +15,7 @@ DEBUG = TEMPLATE_DEBUG = True
 GEOGIT_DATASTORE_NAME = 'DEFAULT_NAME'
 LOCKDOWN_GEONODE = True
 REGISTRATION_OPEN = False
-SOCIAL_BUTTONS = False
+SOCIAL_BUTTONS = True
 
 # Set to True to load non-minified versions of (static) client dependencies
 DEBUG_STATIC = False

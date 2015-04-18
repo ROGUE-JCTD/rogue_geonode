@@ -5,14 +5,14 @@
 
 {% block body %}
   <div class="page-header">
-    <h2><a href="{{ SITEURL }}"><i class="fa fa-globe fa-6"></i>State GeoNode</a> / <a href="{% url "about"%}">About</a> / <a href="{% url "about_api" %}">API</a></h2>
+    <h2><a href="/"><i class="fa fa-globe fa-6"></i>State GeoNode</a> / <a href="{% url "about"%}">About</a> / <a href="{% url "about_api" %}">API</a></h2>
   </div>
   <p>The State GeoNode is a digital service provided by the U.S. Department of State to provide open geographic data produced by or compiled by the U.S. Government to the public, U.S. Government decision-makers, and partners on complex emergencies, natural disasters, and diplomatic activities world-wide.</p>
   <p>Developers can interact with the State GeoNode through 3 APIs: CSW, OGC Services, and the internal GeoNode API</p>
 
   <p>State GeoNode uses <a href="http://pycsw.org/">PyCSW</a> to produce standardized CSW metadata services.</p>  The CSW endpoint is: <a href="/catalogue/csw">/catalogue/csw</a>.  To retrieve metadata records run something like this: <a href="/catalogue/csw?request=GetRecords&service=CSW&version=2.0.2&resultType=results&maxRecords=1000&elementsetname=full&typenames=csw:Record&outputschema=http://www.isotc211.org/2005/gmd">/catalogue/csw?request=GetRecords&service=CSW&version=2.0.2&resultType=results&maxRecords=1000&elementsetname=full&typenames=csw:Record&outputschema=http://www.isotc211.org/2005/gmd</a>.  This endpoint can be used by other systems, such as Data.Gov and HDX, to automatically harvest records from the State GeoNode.</p>
 
-  <p>All layers in State GeoNode are accessible via OGC Services.  The WMS Capabilities document is accessible with: <a href="/geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities">/geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities</a>.  This endpoint can be used by geospatial analysts to pull layers directly into their desktop environment (<a href="/docs/integration.html">/docs/integration.html</a>)</p>.  OGC services can also be sued to directly pull layers from the state GeoNode into web maps to make mashups.</p>
+  <p>All layers in State GeoNode are accessible via OGC Services.  The WMS Capabilities document is accessible with: <a href="/geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities">/geoserver/wms?SERVICE=WMS&REQUEST=GetCapabilities</a>.  This endpoint can be used by geospatial analysts to pull layers directly into their desktop environment (<a href="/docs/integration.html">/docs/integration.html</a>).  OGC services can also be used to pull layers directly from the state GeoNode into web maps to make mashups.</p>
 
 
 {% endblock %}

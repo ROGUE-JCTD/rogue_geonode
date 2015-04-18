@@ -5,7 +5,7 @@
 
 {% block body %}
   <div class="page-header">
-    <h2><a href="{{ SITEURL }}"><i class="fa fa-globe fa-6"></i>State GeoNode</a> / <a href="{% url "about"%}">About</a></h2>
+    <h2><a href="/"><i class="fa fa-globe fa-6"></i>State GeoNode</a> / <a href="{% url "about"%}">About</a></h2>
   </div>
   <p>The State GeoNode is a digital service provided by the U.S. Department of State to provide open geographic data produced by or compiled by the U.S. Government to the public, U.S. Government decision-makers, and partners on complex emergencies, natural disasters, and diplomatic activities world-wide.</p>
   <p>The State GeoNode was developed with support from the U.S. Department of State, <a href="https://hiu.state.gov/">Humanitarian Information Unit</a> and the U.S. Department of State, <a href="http://www.state.gov/m/irm/ediplomacy/">Office of eDiplomacy</a>.</p>
@@ -15,6 +15,16 @@
   <p>Data.Gov is the central registry of all public open datasets published by the U.S. Government.</p>
 
   <p>Humanitarian Data Exchange (HDX) is a registry of data for humanitarian response operated by the United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA).  All data from State GeoNode is published to HDX under the "USG" tag (USG stands for U.S. Government).  Click <a href="https://data.hdx.rwlabs.org/dataset?tags=usg">[here]</a> to view a list of all datasets on HDX with the "USG" tag.  HIU also has an organization on HDX (<a href="https://data.hdx.rwlabs.org/organization/us-state-hiu">https://data.hdx.rwlabs.org/organization/us-state-hiu</a>).</p>
+
+
+  <h4>Recent Activity</h4>
+  <div style="margin-left:20px;">View a list of recent activity, including new layers or maps on the <a href="{% url "recent-activity" %}">Recent Activity page</a>.</div>
+  <br>
+  <h4>API</h4>
+  <div style="margin-left:20px;">Lean more about API access on the <a href="{% url "about_api" %}">API page</a>.</div>
+  <br>
+  <h4>Related Sites</h4>
+  <div style="margin-left:20px;"><a href="http://www.data.gov/">Data.Gov</a> | <a href="https://data.hdx.rwlabs.org/">HDX</a> | <a href="https://project-open-data.cio.gov/">Project Open Data</a></div>
 
 {% endblock %}
 
