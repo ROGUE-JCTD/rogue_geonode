@@ -1,11 +1,11 @@
 {% extends "site_base.html" %}
 
 {% load i18n %}
-{% block title %} {% trans "About State GeoNode" %} — {{ block.super }} {% endblock %}
+{% block title %} {% trans "State GeoNode / About / API" %} — {{ block.super }} {% endblock %}
 
 {% block body %}
   <div class="page-header">
-    <h2><a href="{{ SITEURL }}">State GeoNode</a><i class="fa fa-globe fa-6"></i> / <a href="{% url "about"%}">About</a> / <a href="{% url "about_api" %}">API</a></h2>
+    <h2><a href="{{ SITEURL }}"><i class="fa fa-globe fa-6"></i>State GeoNode</a> / <a href="{% url "about"%}">About</a> / <a href="{% url "about_api" %}">API</a></h2>
   </div>
   <p>The State GeoNode is a digital service provided by the U.S. Department of State to provide open geographic data produced by or compiled by the U.S. Government to the public, U.S. Government decision-makers, and partners on complex emergencies, natural disasters, and diplomatic activities world-wide.</p>
   <p>Developers can interact with the State GeoNode through 3 APIs: CSW, OGC Services, and the internal GeoNode API</p>
