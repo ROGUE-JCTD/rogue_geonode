@@ -59,6 +59,14 @@ nav.filter h4 a.toggle {
   background: url('../img/opendata_geonode_banner.png') no-repeat left bottom;
   background-size: cover;
 }
+.jumbotron a {
+  color: rgb(2, 139, 175);
+  text-decoration: none;
+}
+.jumbotron a:hover {
+  text-decoration: underline;
+}
+
 .jumbotron h1 {
   font-weight: 600;
 }
