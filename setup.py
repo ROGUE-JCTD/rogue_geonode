@@ -47,7 +47,7 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
 install_requires = [
         "geoshape-geonode==1.2",
         "django-classification-banner>=0.1.4",
-        "django-maploom==1.2",
+        "django-maploom==1.2.1",
         "psycopg2==2.4.5"
 ]
 
