@@ -1,5 +1,10 @@
 import os
-from distutils.core import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+#from distutils.core import setup
+
 from distutils.command.install import INSTALL_SCHEMES
 
 def read(*rnames):
@@ -66,7 +71,7 @@ setup(
     author="LMN Solutions",
     author_email="rogue@lmnsolutions.com",
     description="geoshape, based on GeoNode",
-    long_description=(read('README.md')),
+    #long_description=(read('README.md')),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
     ],
