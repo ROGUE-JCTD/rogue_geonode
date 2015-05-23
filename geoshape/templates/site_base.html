@@ -3,6 +3,8 @@
 
 {% block extra_head %}
       <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
+      {% include "_ga.html" %}
+      {% include "_dap.html" %}
 {% endblock %}
 {% block header %}
     {% if classification_banner_enabled %}
