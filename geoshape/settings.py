@@ -15,7 +15,7 @@ DEBUG = TEMPLATE_DEBUG = True
 GEOGIT_DATASTORE_NAME = 'DEFAULT_NAME'
 LOCKDOWN_GEONODE = True
 REGISTRATION_OPEN = False
-SOCIAL_BUTTONS = False
+SOCIAL_BUTTONS = True
 
 # Set to True to load non-minified versions of (static) client dependencies
 DEBUG_STATIC = False
@@ -157,6 +157,8 @@ LOGGING = {
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_classification_banner.context_processors.classification',
+    'geoshape.core.context_processors.analytics',
+    'geoshape.core.context_processors.security',
     'geoshape.core.context_processors.security_warnings',
     'geoshape.core.context_processors.rogue'
 )

@@ -1,0 +1,4 @@
+{% if ANALYTICS_DAP_ENABLED %}
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script id="_fed_an_ua_tag" src="{{ STATIC_URL }}js/Universal-Federated-Analytics-Min.1.0.js?agency={{ ANALYTICS_DAP_AGENCY }}&subagency={{ ANALYTICS_DAP_SUBAGENCY }}"></script>
+{% endif %}

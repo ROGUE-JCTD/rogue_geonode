@@ -2,6 +2,8 @@ import logging
 from django.conf import settings
 from django.http import HttpResponse
 from django.http.request import validate_host
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 from django.utils.http import is_safe_url
 from httplib import HTTPConnection, HTTPSConnection
 from urlparse import urlsplit

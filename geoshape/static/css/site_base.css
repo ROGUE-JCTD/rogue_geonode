@@ -2,20 +2,41 @@ html,
 body {
   height: 100%;
 }
+nav.navbar.navbar-inverse {
+ background-color: rgb(10, 46, 82);
+}
 .navbar-brand {
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/cusco_geonode_logo.png') no-repeat;
   margin-top: 10px;
   overflow: hidden;
   text-indent: -9999em;
-  width: 140px;
+  width: 160px;
   height: 30px;
 }
-.footer {
+/*.footer {
   border-top: 1px solid #cccccc;
   height: 100px;
   padding: 23px;
   background: #eee;
   margin-top: 10px;
+}*/
+footer.footer img {
+ margin-right: 10px;
+ max-width: 100px;
+ max-height: 40px;
+ vertical-align:middle;
+}
+
+footer.footer {
+ position:fixed;
+ padding: 10px 0;
+ font-size: 14px;
+ left:0px;
+ bottom:0px;
+ height:60px;
+ width:100%;
+ /*background-color: #555555;*/
+ background-color: rgb(10, 46, 82);
 }
 #wrap {
   height: auto !important;
@@ -35,9 +56,17 @@ nav.filter h4 a.toggle {
   padding: 40px;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-  background: url('../img/fire_background.png') no-repeat left bottom;
+  background: url('../img/cusco_geonode_banner.png') no-repeat left bottom;
   background-size: cover;
 }
+.jumbotron a {
+  color: rgb(2, 139, 175);
+  text-decoration: none;
+}
+.jumbotron a:hover {
+  text-decoration: underline;
+}
+
 .jumbotron h1 {
   font-weight: 600;
 }

@@ -3,6 +3,8 @@
 
 {% block extra_head %}
       <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
+      {% include "_ga.html" %}
+      {% include "_dap.html" %}
 {% endblock %}
 {% block header %}
     {% if classification_banner_enabled %}
@@ -12,21 +14,47 @@
     {{ block.super }}
 {% endblock %}
 
+
+{% block tabs %}
+  <!-- Overrides https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html#L53 -->
+  <li id="nav_layers">
+    <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
+  </li>
+  <li id="nav_maps">
+    <a href="{% url "maps_browse" %}">{% trans "Maps" %}</a>
+  </li>
+  <li id="nav_documents">
+    <a href="{% url "document_browse" %}">{% trans "Documents" %}</a>
+  </li>
+  <li id="nav_people">
+    <a href="{% url "profile_browse" %}">{% trans "People" %}</a>
+  </li>
+  <li id="nav_groups">
+    <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
+  </li>
+{% endblock %}
+
 {% block footer %}
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 small-text">
-            {% trans "Powered by" %} <a href="http://geoshape.org" target="_new">{% trans "GeoSHAPE" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
-            <a href="/docs">{% trans "Documentation" %}</a>
+          <div class="col-md-4">
+            <a href="http://state.gov"><img src="/static/img/dos_logo.png" alt="DOS"></a>
           </div>
-          <div class="col-md-4 pull-right">
-            <label>{% trans "Language" %}</label>
+          <div class="col-md-6" style="color:white;">
+            {% trans "Powered by" %} <a href="http://geoshape.org" target="_new">{% trans "GeoSHAPE" %}</a> <em>{% trans "version" %} {{ VERSION }}</em> |
+            <a href="/docs">{% trans "Documentation" %}</a> |
+            <a href="/security/">{% trans "Security" %}</a> |
+            <a href="/about/api/">{% trans "API" %}</a> |
+            <a href="/about/">{% trans "About" %}</a>
+          </div>
+          <div class="col-md-2">
+            <label class="hidden">{% trans "Language" %}</label>
             {% if csrf_token != "NOTPROVIDED" %}
             {% get_current_language as LANGUAGE %}
             <form class="form-inline" action="/i18n/setlang/" method="post">
             {% csrf_token %}
-              <select name="language" onchange="javascript:form.submit()">
+              <select class="pull-right" name="language" onchange="javascript:form.submit()">
                 {% for lang in LANGUAGES %}
                 <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
                   {{ lang.1 }}
@@ -34,8 +62,8 @@
                 {% endfor %}
               </select>
             </form>
-          {% endif %}
-          </div> <!-- /.pull-right -->
+            {% endif %}
+          </div>
         </div>
       </div> <!-- /.container -->
     </footer>
