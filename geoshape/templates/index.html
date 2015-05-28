@@ -12,8 +12,8 @@
   {% block hero %}
   <div class="jumbotron">
     <div class="container" style="background: rgba(0,0,0,0.6);border-radius:20px;">
-      <h1><i class="fa fa-globe fa-6"></i>{% trans "State GeoNode" %} </h1>
-      <p>{% blocktrans %}The State GeoNode is a digital service provided by the U.S. Department of State for publishing open geographic data produced by or compiled by the U.S. Government to the public, U.S. Government decision-makers, and partners on complex emergencies, natural disasters, and diplomatic activities world-wide.  Learn more on the <a href="/about/">about page</a>.{% endblocktrans %}</p>
+      <h1><i class="fa fa-building fa-6"></i>{% trans "Cusco GeoNode" %} </h1>
+      <p>{% blocktrans %}The Cusco GeoNode is a geospatial platform provided by the U.S. Department of State, Humanitarian Information Unit as part of the Secondary Cities project.  The Cusco GeoNode is used for collaborating on and sharing geospatial data among the US Government and partners in Peru.  Learn more on the <a href="/about/">about page</a>.{% endblocktrans %}</p>
     </div>
   </div>
   {% endblock %}
@@ -27,20 +27,20 @@
         <p class="text-center"><i class="fa fa-square-o fa-5x rotate-45"></i></p>
         <h2 class="text-center">{{ facets.layer|default:"No" }} Layer{{ facets.layer|pluralize }}</h2>
 
-        <p class="text-center">{% trans "Click to search for open geographic data published by the U.S. Department of State or USAID." %}</p>
+        <p class="text-center">{% trans "Click to search for geographic data created about Cusco, Peru." %}</p>
         <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore Data" %} &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <p class="text-center"><i class="fa fa-map-marker fa-5x"></i></p>
         <h2 class="text-center">{{ facets.map|default:"No" }} Map{{ facets.map|pluralize }}</h2>
-        <p class="text-center">{% trans "Data is available to explore in pre-made maps with a focus on a geographic area or theme." %}</p>
+        <p class="text-center">{% trans "Data is available to explore in pre-made maps with a focus on a theme, such as transportation or disaster preparedness." %}</p>
         <p class="text-center"><a class="btn btn-default" href="{% url "maps_browse" %}" role="button">{% trans "View Maps" %} &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <p class="text-center"><i class="fa fa-cloud-upload fa-5x"></i></p>
-        <h2 class="text-center">{{ facets.group|default:"No" }} Group{{ facets.group|pluralize }}</h2>
-        <p class="text-center">{% trans "The State GeoNode allows groups in the U.S. Department of State and USAID to easily publish open geographic data." %}</p>
-        <p class="text-center"><a class="btn btn-default" href="{% url "group_list" %}" role="button">{% trans "View Groups" %} &raquo;</a></p>
+        <h2 class="text-center">{{ facets.user|default:"No" }} User{{ facets.user|pluralize }}</h2>
+        <p class="text-center">{% trans "The Cusco GeoNode allows users from a variety of organizations to join and contribute." %}</p>
+        <p class="text-center"><a class="btn btn-default" href="{% url "user_list" %}" role="button">{% trans "View Users" %} &raquo;</a></p>
       </div>
     {% endwith %}
     </div>
