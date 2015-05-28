@@ -6,7 +6,7 @@ nav.navbar.navbar-inverse {
  background-color: rgb(10, 46, 82);
 }
 .navbar-brand {
-  background: url('../img/opendata_geonode_logo.png') no-repeat;
+  background: url('../img/cusco_geonode_logo.png') no-repeat;
   margin-top: 10px;
   overflow: hidden;
   text-indent: -9999em;
@@ -56,7 +56,7 @@ nav.filter h4 a.toggle {
   padding: 40px;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-  background: url('../img/opendata_geonode_banner.png') no-repeat left bottom;
+  background: url('../img/cusco_geonode_banner.png') no-repeat left bottom;
   background-size: cover;
 }
 .jumbotron a {
