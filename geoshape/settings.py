@@ -89,6 +89,7 @@ INSTALLED_APPS = (
     'geoshape.core',
     'django_classification_banner',
     'maploom',
+    'tilebundler'
 ) + INSTALLED_APPS
 
 LOGGING = {
@@ -242,3 +243,8 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
+
+TILEBUNDLER_CONFIG = {
+    'tileset_dir': '/var/lib/geoserver_data/tilebundler-store'
+}
+

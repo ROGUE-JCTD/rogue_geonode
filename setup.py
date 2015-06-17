@@ -53,7 +53,8 @@ install_requires = [
         "geoshape-geonode==1.2",
         "django-classification-banner>=0.1.4",
         "django-maploom==1.2.1",
-        "psycopg2==2.4.5"
+        "psycopg2==2.4.5",
+        "tilebundler==0.1-alpha2"
 ]
 
 tests_requires = [
