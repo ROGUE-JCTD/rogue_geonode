@@ -4,7 +4,7 @@ from maploom.geonode.urls import urlpatterns as maploom_urls
 
 urlpatterns = patterns('',
                        (r'^file-service/', include('geoshape.file_service.urls')),
-                       (r'^tilesets/', include('tilebundler.urls', namespace='tilesets')),
+                       (r'^tileset/', include('tilebundler.urls', namespace='tilesets')),
                        (r'^proxy/', 'geoshape.views.proxy'),
                        )
 
