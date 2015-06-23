@@ -6,22 +6,6 @@
   <version>2.6-SNAPSHOT</version>
   <name>ROGUE GeoServer</name>
 
-<!--
-  <distributionManagement>
-    <repository>
-      <id>opengeo</id>
-      <name>OpenGeo Maven Repository</name>
-      <url>dav:http://repo.opengeo.org</url>
-      <uniqueVersion>false</uniqueVersion>
-    </repository>
-    <snapshotRepository>
-      <id>opengeo</id>
-      <name>OpenGeo Maven Repository</name>
-      <url>dav:http://repo.opengeo.org</url>
-      <uniqueVersion>false</uniqueVersion>
-    </snapshotRepository>
-  </distributionManagement>
--->
   <repositories>
     <repository>
       <id>opengeo</id>
@@ -96,11 +80,6 @@
       <artifactId>gs-excel</artifactId>
       <version>${geoserver.version}</version>
     </dependency>
-    <!--dependency>
-      <groupId>org.geoserver.community</groupId>
-      <artifactId>ftp</artifactId>
-      <version>${geoserver.version}</version>
-    </dependency-->
     <dependency>
       <groupId>org.geoserver.web</groupId>
       <artifactId>gs-web-app</artifactId>
@@ -139,6 +118,7 @@
         <version>${geoserver.version}</version>
         <scope>runtime</scope>
     </dependency>
+
 <!-- TODO: make sure csv still works -->
 <!-- 
    This was discontinued from the opengeo repo for
@@ -172,27 +152,21 @@
         <version>${geoserver.version}</version>
         <scope>runtime</scope>
     </dependency>
-<!--
+
+    <!-- uncomment if need fgdb store
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
       <artifactId>gs-fgdb</artifactId>
       <version>${geoserver.version}</version>
       <scope>runtime</scope>
     </dependency>
--->
+    -->
+
     <dependency>
         <groupId>org.geotools</groupId>
         <artifactId>gt-shapefile</artifactId>
         <version>${geotools.version}</version>
     </dependency>
-  <!-- TODO: version in rogue used version 14.0.1 but geoserver-geonode-ext pom used 11.0.1. guava is on 17.0 now -->
-<!--
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>14.0.1</version>
-    </dependency>
--->
 
     <!-- GeoJSON module dependencies -->
     <dependency>
@@ -201,21 +175,14 @@
       <version>2.2.3</version>
       <classifier>jdk15</classifier>
     </dependency>
-    
-    <!-- This dependency is temporary in order to hold a fake process while developing the REST process wrapper -->
-    <dependency>
-      <groupId>org.geotools</groupId>
-      <artifactId>gt-process</artifactId>
-      <version>${geotools.version}</version>
-    </dependency>
 
-<!--
+    <!-- ROGUE uses gsr particularly because of interoperability for PDC -->
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
       <artifactId>gsr</artifactId>
       <version>${geoserver.version}</version>
-    </dependency>    
--->
+    </dependency>
+
     <!-- TODO: brought these over from the old pom. do we need it? -->
     <dependency>
       <groupId>org.geoserver.extension</groupId>
@@ -227,6 +194,7 @@
      <artifactId>gt-imageio-ext-gdal</artifactId>
      <version>${geotools.version}</version>
     </dependency>
+
     <!-- GeoGit -->
     <dependency>
       <groupId>org.opengeo.geoserver</groupId>
@@ -265,6 +233,50 @@
       <groupId>org.geotools</groupId>
       <artifactId>gt-mbtiles</artifactId>
       <version>${geotools.version}</version>
+    </dependency>
+
+    <!--  python geoscript -->
+    <dependency>
+      <groupId>org.geoscript</groupId>
+      <artifactId>geoscript-py</artifactId>
+      <version>${geoscript.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.script</groupId>
+      <artifactId>gs-script-core</artifactId>
+      <version>${geoserver.version}</version>  <!-- Not available in boundless repo. build locally before building this pom file -->
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.script</groupId>
+      <artifactId>gs-script-py</artifactId>
+      <version>${geoserver.version}</version>  <!-- Not available in boundless repo. build locally before building this pom file -->
+    </dependency>
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-geojson</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.geotools</groupId>
+      <artifactId>gt-process</artifactId>
+      <version>${geotools.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.python</groupId>
+        <artifactId>jython-standalone</artifactId>
+        <version>2.5.2</version>
+    </dependency>
+
+    <!-- maploom statistics geoscript relies on  common.math -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math3</artifactId>
+        <version>3.3</version>
     </dependency>
 
     <!--  test dependencies  -->
@@ -351,6 +363,7 @@
          built since Aug 15. though this version was built a few days ago 2.6-20141211.151657-29  dec 11 2014.
          http://repo.boundlessgeo.com/main/org/opengeo/geoserver/gs-geogig/2.6-SNAPSHOT/ -->
     <gsgeogig.version>2.6-SNAPSHOT</gsgeogig.version>
+    <geoscript.version>1.4-SNAPSHOT</geoscript.version>
     <maven.test.search.classdir>true</maven.test.search.classdir>
   </properties>
   <profiles>
