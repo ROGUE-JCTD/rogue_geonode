@@ -54,7 +54,8 @@ install_requires = [
         "django-classification-banner>=0.1.4",
         "django-maploom==1.2.1",
         "psycopg2==2.4.5",
-        "django-tilebundler==0.1-alpha6"
+        "django-tilebundler==0.1-alpha6",
+        "django-gsschema==0.1-alpha1",
 ]
 
 tests_requires = [

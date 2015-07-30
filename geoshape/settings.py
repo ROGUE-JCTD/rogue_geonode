@@ -46,6 +46,7 @@ OGC_SERVER = {
         'WMST_ENABLED': False,
         'BACKEND_WRITE_ENABLED': True,
         'WPS_ENABLED': True,
+        'GEOSERVER_DATA_DIR': '/var/lib/geoserver_data',
         'GEOGIT_DATASTORE_DIR': '/var/lib/geoserver_data/geogit',
         # Set to name of database in DATABASES dictionary to enable
         'DATASTORE': '',  # 'datastore',
@@ -89,7 +90,8 @@ INSTALLED_APPS = (
     'geoshape.core',
     'django_classification_banner',
     'maploom',
-    'tilebundler'
+    'tilebundler',
+    'gsschema'
 ) + INSTALLED_APPS
 
 LOGGING = {
@@ -163,7 +165,7 @@ TEMPLATE_CONTEXT_PROCESSORS += (
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/', '/api/tileset/*')
+AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/', '/api/tileset/*', '/gsschema/*',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
@@ -244,7 +246,12 @@ MAP_BASELAYERS = [
     }
 ]
 
+# where to save tilebundler tilesets. Should move this to  OGC_SERVER['default']['TILEBUNDLER_DATASTORE_DIR']
 TILEBUNDLER_CONFIG = {
     'tileset_dir': '/var/lib/geoserver_data/tilebundler-store'
 }
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Used to upload schema.xsd files through gsschema app
+MEDIA_ROOT = OGC_SERVER['default']['GEOSERVER_DATA_DIR']
 

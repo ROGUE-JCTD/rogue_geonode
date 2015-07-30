@@ -8,6 +8,7 @@ tileset_resource = TilesetResource()
 urlpatterns = patterns(
     '',
     (r'^file-service/', include('geoshape.file_service.urls')),
+    (r'^gsschema/', include('gsschema.urls')),
     (r'^tileset/', include('tilebundler.urls', namespace='tilesets')),
     (r'^api/', include(tileset_resource.urls)),
     (r'^proxy/', 'geoshape.views.proxy')
