@@ -218,6 +218,15 @@ LEAFLET_CONFIG = {
     }
 }
 
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Used to upload schema.xsd files through gsschema app
+MEDIA_ROOT = OGC_SERVER['default']['GEOSERVER_DATA_DIR']
+
+# where to save tilebundler tilesets. Should move this to  OGC_SERVER['default']['TILEBUNDLER_DATASTORE_DIR']
+TILEBUNDLER_CONFIG = {
+    'tileset_dir': '/var/lib/geoserver_data/tilebundler-store'
+}
+
 
 # Load more settings from a file called local_settings.py if it exists
 try:
@@ -245,13 +254,3 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
-
-# where to save tilebundler tilesets. Should move this to  OGC_SERVER['default']['TILEBUNDLER_DATASTORE_DIR']
-TILEBUNDLER_CONFIG = {
-    'tileset_dir': '/var/lib/geoserver_data/tilebundler-store'
-}
-
-# Absolute filesystem path to the directory that will hold user-uploaded files.
-# Used to upload schema.xsd files through gsschema app
-MEDIA_ROOT = OGC_SERVER['default']['GEOSERVER_DATA_DIR']
-
