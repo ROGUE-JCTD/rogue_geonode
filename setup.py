@@ -55,7 +55,7 @@ install_requires = [
         "django-maploom==1.2.1",
         "psycopg2==2.4.5",
         "django-tilebundler==0.1-alpha6",
-        "django-gsschema==0.1-alpha1",
+        "django-gsschema==0.1-alpha2",
 ]
 
 tests_requires = [
