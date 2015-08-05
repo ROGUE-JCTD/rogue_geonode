@@ -218,9 +218,10 @@ LEAFLET_CONFIG = {
     }
 }
 
-# Absolute filesystem path to the directory that will hold user-uploaded files.
-# Used to upload schema.xsd files through gsschema app
-MEDIA_ROOT = OGC_SERVER['default']['GEOSERVER_DATA_DIR']
+# Absolute filesystem path to the directory that will be used to upload/download schema.xsd files through gsschema app
+GSSCHEMA_CONFIG = {
+    'gsschema_dir': '/var/lib/geoserver_data/'
+}
 
 # where to save tilebundler tilesets. Should move this to  OGC_SERVER['default']['TILEBUNDLER_DATASTORE_DIR']
 TILEBUNDLER_CONFIG = {
