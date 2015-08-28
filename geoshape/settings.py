@@ -86,6 +86,7 @@ ROOT_URLCONF = 'geoshape.urls'
 
 INSTALLED_APPS = (
     'geonode.contrib.geogig',
+    'geonode.contrib.slack',
     'geoshape.file_service',
     'geoshape.core',
     'django_classification_banner',
