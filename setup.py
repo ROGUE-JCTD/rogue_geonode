@@ -56,6 +56,7 @@ install_requires = [
         "psycopg2==2.4.5",
         "django-tilebundler==0.1-beta1",
         "django-gsschema==0.1-beta2",
+        "django-cors-headers>=1.1.0",
 ]
 
 tests_requires = [
