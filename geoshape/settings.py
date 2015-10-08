@@ -171,6 +171,7 @@ AUTH_EXEMPT_URLS = ('/file-service/*', '/i18n/setlang/', '/api/tileset/*', '/gss
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
 
+CORS_ENABLED = False
 
 MAP_BASELAYERS = [
     {
@@ -256,3 +257,9 @@ MAP_BASELAYERS = [
         "group":"background"
     }
 ]
+
+if CORS_ENABLED:
+    INSTALLED_APPS =  ('corsheaders',) + INSTALLED_APPS
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('corsheaders.middleware.CorsMiddleware',)
+    CORS_ORIGIN_ALLOW_ALL = True
+    CORS_ALLOW_METHODS = ('GET',)
