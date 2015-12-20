@@ -50,7 +50,7 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 install_requires = [
-        "geonode==2.4",
+        "geoshape-geonode==1.4",
         "django-classification-banner>=0.1.4",
         "django-maploom==1.2.9",
         "psycopg2==2.4.5",
