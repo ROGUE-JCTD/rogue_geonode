@@ -259,7 +259,7 @@ MAP_BASELAYERS = [
 ]
 
 if CORS_ENABLED:
-    INSTALLED_APPS =  ('corsheaders',) + INSTALLED_APPS
+    INSTALLED_APPS = ('corsheaders',) + INSTALLED_APPS
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('corsheaders.middleware.CorsMiddleware',)
     CORS_ORIGIN_ALLOW_ALL = True
     CORS_ALLOW_METHODS = ('GET',)
