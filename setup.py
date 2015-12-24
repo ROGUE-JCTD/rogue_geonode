@@ -52,7 +52,7 @@ for dirpath, dirnames, filenames in os.walk(walk_dir):
 install_requires = [
         "geoshape-geonode==1.4",
         "django-classification-banner>=0.1.4",
-        "django-maploom==1.2.9",
+        "django-maploom==1.3.0",
         "psycopg2==2.4.5",
         "django-tilebundler==0.1-beta1",
         "django-gsschema==0.1-beta2",
@@ -71,9 +71,9 @@ docs_requires = [
 setup(
     name="geoshape",
     version=__import__('geoshape').get_version(),
-    author="LMN Solutions",
-    author_email="rogue@lmnsolutions.com",
-    description="geoshape, based on GeoNode",
+    author="Prominent Edge",
+    author_email="geoshape.org@gmail.com",
+    description="geoshape, based on GeoNode and contains additional changes and services",
     #long_description=(read('README.md')),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
