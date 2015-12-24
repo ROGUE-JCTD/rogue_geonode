@@ -21,3 +21,10 @@ def rogue(request):
     """ Returns the geoshape version """
 
     return dict(VERSION=get_version())
+
+
+def fileservice(request):
+    """ Returns url template that can be used by client to resolve path to endpoint that serves media """
+
+    conf = getattr(settings, 'FILESERVICE_CONFIG', {})
+    return dict(fileservice_url_template=conf.get('url_template', '/api/fileservice/{}/view'))
