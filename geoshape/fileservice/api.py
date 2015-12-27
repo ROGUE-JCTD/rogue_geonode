@@ -138,6 +138,8 @@ class FileItemResource(Resource):
     def download(self, request, **kwargs):
         # method check to avoid bad requests
         self.method_check(request, allowed=['get'])
+        # Must be done otherwise endpoint will be wide open
+        self.is_authenticated(request)
 
         response = None
         file_item = FileItemResource.get_file_item(kwargs)
@@ -173,9 +175,12 @@ class FileItemResource(Resource):
         example use:
         http://<ip>/api/v1/fileservice/med.mp4/view/
         '''
-        response = None
         # method check to avoid bad requests
         self.method_check(request, allowed=['get'])
+        # Must be done otherwise endpoint will be wide open
+        self.is_authenticated(request)
+
+        response = None
         file_item = FileItemResource.get_file_item(kwargs)
         if file_item:
             # set content_type to '' so that content_type from nginx/apache is returned
