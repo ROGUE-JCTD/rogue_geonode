@@ -3,7 +3,8 @@ try:
 except ImportError:
     pass
 
-__version__ = (1, 7, 3, 'final', 0)
+__version__ = (1, 7, 5, 'final', 0)
+
 
 def get_version():
     import geoshape.version
