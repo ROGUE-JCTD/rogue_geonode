@@ -10,7 +10,7 @@ class DictToObject(object):
 
     def __getattr__(self, key):
         value = self.__dict__['d'][key]
-        if type(value) == type({}):
+        if isinstance(value, dict):
             return DictToObject(value)
         return value
 

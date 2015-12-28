@@ -11,7 +11,6 @@ from httplib import NOT_ACCEPTABLE
 from tastypie import fields
 import helpers
 import os
-import hashlib
 
 
 class FileItem(object):
@@ -107,14 +106,15 @@ class FileItemResource(Resource):
         # -- only allow uploading of files of types specified in FILESERVICE_CONFIG.types_allowed
         types_allowed = helpers.get_fileservice_whitelist()
         if '*' not in types_allowed and file_extension not in types_allowed:
-            return HttpResponse(status=NOT_ACCEPTABLE, content='file type is not whitelisted in FILESERVICE_CONFIG.types_allowed')
+            return HttpResponse(status=NOT_ACCEPTABLE, content='file type is not whitelisted in'
+                                                               ' FILESERVICE_CONFIG.types_allowed')
 
         file_data = bundle.data[u'file'].read()
         # TODO: support optional unique name generation from sha1 and uuid.
-        #file_sha1 = hashlib.sha1(file_data).hexdigest() # is file_data only the bytes without filename etc?
-        #if file_extension:
+        #  file_sha1 = hashlib.sha1(file_data).hexdigest() # is file_data only the bytes without filename etc?
+        #  if file_extension:
         #    filename_name = '{}{}'.format(file_sha1, file_extension)
-        #else:
+        #  else:
         #    filename_name = file_sha1
         bundle.obj.name = bundle.data[u'file'].name
         with open(helpers.get_filename_absolute(bundle.data[u'file'].name), 'wb+') as destination_file:
@@ -127,12 +127,19 @@ class FileItemResource(Resource):
     def prepend_urls(self):
         """ Add the following array of urls to the resource base urls """
         return [
-            url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/download%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('download'), name="api_fileitem_download"),
-            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/download%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('download'), name="api_fileitem_download"),
-            url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/view%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('view'), name="api_fileitem_view"),
-            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/view%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('view'), name="api_fileitem_view"),
-            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/$" % self._meta.resource_name, self.wrap_view('dispatch_detail'), name="api_dispatch_detail_name"),
-            url(r"^(?P<resource_name>%s)/(?P<id>[\d]+)/$" % self._meta.resource_name, self.wrap_view('dispatch_detail'), name="api_dispatch_detail"),
+            url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/download%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('download'), name="api_fileitem_download"),
+            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/download%s$"
+                % (self._meta.resource_name, trailing_slash()), self.wrap_view('download'),
+                name="api_fileitem_download"),
+            url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/view%s$"
+                % (self._meta.resource_name, trailing_slash()), self.wrap_view('view'), name="api_fileitem_view"),
+            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/view%s$"
+                % (self._meta.resource_name, trailing_slash()), self.wrap_view('view'), name="api_fileitem_view"),
+            url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/$"
+                % self._meta.resource_name, self.wrap_view('dispatch_detail'), name="api_dispatch_detail_name"),
+            url(r"^(?P<resource_name>%s)/(?P<id>[\d]+)/$"
+                % self._meta.resource_name, self.wrap_view('dispatch_detail'), name="api_dispatch_detail"),
         ]
 
     def download(self, request, **kwargs):
@@ -147,7 +154,8 @@ class FileItemResource(Resource):
             filename_absolute = helpers.get_filename_absolute(file_item.name)
             if os.path.isfile(filename_absolute):
                 response = serve(request, os.path.basename(filename_absolute), os.path.dirname(filename_absolute))
-                response['Content-Disposition'] = 'attachment; filename="{}"'.format(os.path.basename(filename_absolute))
+                response['Content-Disposition'] = 'attachment; filename="{}"'.format(
+                    os.path.basename(filename_absolute))
 
         if not response:
             response = self.create_response(request, {'status': 'filename not specified'})
@@ -197,4 +205,3 @@ class FileItemResource(Resource):
             response = self.create_response(request, {'status': 'filename not specified'})
 
         return response
-
