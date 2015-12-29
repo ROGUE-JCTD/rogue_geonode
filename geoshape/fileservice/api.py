@@ -193,7 +193,8 @@ class FileItemResource(Resource):
         if file_item:
             # set content_type to '' so that content_type from nginx/apache is returned
             response = HttpResponse(content_type='')
-            # needed for apache, re-test for nginx as nginx needed content_type='' but apache doesn't like that
+            # needed for apache, re-test for nginx as nginx needed content_type='' but apache doesn't like that.
+            # looks like module called django-sendfile exists which is worth considering if there are any issues here.
             del response['content-type']
             file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item.name))
             # apache header

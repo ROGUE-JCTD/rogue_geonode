@@ -167,7 +167,7 @@ TEMPLATE_CONTEXT_PROCESSORS += (
 )
 
 # Add additional paths (as regular expressions) that don't require authentication.
-AUTH_EXEMPT_URLS = ('/i18n/setlang/', '/api/tileset/*', '/gsschema/*',)
+AUTH_EXEMPT_URLS = ('/i18n/setlang/', '/api/tileset/*', '/gsschema/*', '/api/fileservice/*',)
 
 if LOCKDOWN_GEONODE:
     MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('geonode.security.middleware.LoginRequiredMiddleware',)
