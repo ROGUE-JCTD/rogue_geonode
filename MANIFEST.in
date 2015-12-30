@@ -1,7 +1,7 @@
 include README.md
 include MANIFEST.in
-include geoshape *.py
-recursive-include geoshape/*/ *
+include geoshape/*.py
+recursive-include geoshape/* *
 recursive-include geoshape/static *
 recursive-include geoshape/templates *
 recursive-exclude * *.py[co]
