@@ -9,6 +9,8 @@ from django.utils.encoding import smart_str
 from django.http import HttpResponse
 from httplib import NOT_ACCEPTABLE
 from tastypie import fields
+from mimetypes import MimeTypes
+import urllib
 import helpers
 import os
 
@@ -191,11 +193,10 @@ class FileItemResource(Resource):
         response = None
         file_item = FileItemResource.get_file_item(kwargs)
         if file_item:
-            # set content_type to '' so that content_type from nginx/apache is returned
-            response = HttpResponse(content_type='')
-            # needed for apache, re-test for nginx as nginx needed content_type='' but apache doesn't like that.
-            # looks like module called django-sendfile exists which is worth considering if there are any issues here.
-            del response['content-type']
+            mime = MimeTypes()
+            url = urllib.pathname2url(file_item.name)
+            mime_type = mime.guess_type(url)
+            response = HttpResponse(content_type=mime_type[0])
             file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item.name))
             # apache header
             response['X-Sendfile'] = file_with_route
