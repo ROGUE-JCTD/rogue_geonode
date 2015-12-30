@@ -3,7 +3,7 @@ try:
 except ImportError:
     pass
 
-__version__ = (1, 7, 8, 'final', 0)
+__version__ = (1, 7, 9, 'final', 0)
 
 
 def get_version():
