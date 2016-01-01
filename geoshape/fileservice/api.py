@@ -49,13 +49,13 @@ class FileItemResource(Resource):
     @staticmethod
     def get_file_item(kwargs):
         if 'name' in kwargs:
-            return FileItemResource.get_file_by_name(kwargs['name'])
+            return FileItemResource.get_file_item_by_name(kwargs['name'])
         elif 'pk' in kwargs:
             return FileItemResource.get_file_items()[int(kwargs['pk'])]
         return None
 
     @staticmethod
-    def get_file_by_name(name):
+    def get_file_item_by_name(name):
         file_items = FileItemResource.get_file_items()
         for file_item in file_items:
             if file_item.name == helpers.u_to_str(name):
@@ -129,6 +129,10 @@ class FileItemResource(Resource):
     def prepend_urls(self):
         """ Add the following array of urls to the resource base urls """
         return [
+            url(r"^(?P<resource_name>%s)/view/(?P<name>[\w\d_.-]+)%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('view'), name="api_fileitem_view"),
+            url(r"^(?P<resource_name>%s)/download/(?P<name>[\w\d_.-]+)%s$" % (
+            self._meta.resource_name, trailing_slash()), self.wrap_view('download'), name="api_fileitem_download"),
             url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/download%s$" % (self._meta.resource_name, trailing_slash()),
                 self.wrap_view('download'), name="api_fileitem_download"),
             url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/download%s$"
@@ -145,15 +149,21 @@ class FileItemResource(Resource):
         ]
 
     def download(self, request, **kwargs):
+        '''
+        example use:
+        http://.../fileservice/download/med.mp4/
+        or
+        http://.../fileservice/med.mp4/download/
+        '''
         # method check to avoid bad requests
         self.method_check(request, allowed=['get'])
         # Must be done otherwise endpoint will be wide open
         self.is_authenticated(request)
 
         response = None
-        file_item = FileItemResource.get_file_item(kwargs)
-        if file_item:
-            filename_absolute = helpers.get_filename_absolute(file_item.name)
+        file_item_name = kwargs.get('name', None)
+        if file_item_name:
+            filename_absolute = helpers.get_filename_absolute(file_item_name)
             if os.path.isfile(filename_absolute):
                 response = serve(request, os.path.basename(filename_absolute), os.path.dirname(filename_absolute))
                 response['Content-Disposition'] = 'attachment; filename="{}"'.format(
@@ -183,7 +193,11 @@ class FileItemResource(Resource):
         XSendFilePath /var/lib/geoserver_data/file-service-store
 
         example use:
-        http://<ip>/api/v1/fileservice/med.mp4/view/
+        /fileservice/view/med.mp4
+        or
+        /fileservice/med.mp4/view
+
+        Note that media players tend to require the route to end with the filename like /fileservice/view/med.mp4
         '''
         # method check to avoid bad requests
         self.method_check(request, allowed=['get'])
@@ -191,13 +205,13 @@ class FileItemResource(Resource):
         self.is_authenticated(request)
 
         response = None
-        file_item = FileItemResource.get_file_item(kwargs)
-        if file_item:
+        file_item_name = kwargs.get('name', None)
+        if file_item_name:
             mime = MimeTypes()
-            url = urllib.pathname2url(file_item.name)
+            url = urllib.pathname2url(file_item_name)
             mime_type = mime.guess_type(url)
             response = HttpResponse(content_type=mime_type[0])
-            file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item.name))
+            file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item_name))
             # apache header
             response['X-Sendfile'] = file_with_route
             # nginx header
