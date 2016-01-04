@@ -29,7 +29,7 @@ def get_fileservice_dir():
 
 def get_fileservice_whitelist():
     conf = getattr(settings, 'FILESERVICE_CONFIG', {})
-    return conf.get('types_allowed', [])
+    return [x.lower() for x in conf.get('types_allowed', [])]
 
 
 def get_fileservice_server_route_internal():

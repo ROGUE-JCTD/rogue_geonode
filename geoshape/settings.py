@@ -267,7 +267,8 @@ if CORS_ENABLED:
 
 FILESERVICE_CONFIG = {
     'store_dir': '/var/lib/geoserver_data/file-service-store',
-    'types_allowed': '*',
+    # example: ('*', ) or ('.mov', '.jpg', ...),
+    'types_allowed': ('*', ),
     # maploom will replace {} with the media item name such as 7ff194b54ab57a829094dc0afc624c78815ec02c.jpg
-    'url_template': '/api/fileservice/{}/view'
+    'url_template': '/api/fileservice/view/{}'
 }

@@ -1,5 +1,6 @@
 from tastypie.authentication import BasicAuthentication, SessionAuthentication, MultiAuthentication
 from tastypie.authorization import Authorization
+from tastypie.exceptions import BadRequest
 from tastypie.utils import trailing_slash
 from tastypie.bundle import Bundle
 from tastypie.resources import Resource
@@ -107,9 +108,8 @@ class FileItemResource(Resource):
 
         # -- only allow uploading of files of types specified in FILESERVICE_CONFIG.types_allowed
         types_allowed = helpers.get_fileservice_whitelist()
-        if '*' not in types_allowed and file_extension not in types_allowed:
-            return HttpResponse(status=NOT_ACCEPTABLE, content='file type is not whitelisted in'
-                                                               ' FILESERVICE_CONFIG.types_allowed')
+        if '*' not in types_allowed and file_extension.lower() not in types_allowed:
+            raise BadRequest('file type is not whitelisted in FILESERVICE_CONFIG.types_allowed')
 
         file_data = bundle.data[u'file'].read()
         # TODO: support optional unique name generation from sha1 and uuid.
