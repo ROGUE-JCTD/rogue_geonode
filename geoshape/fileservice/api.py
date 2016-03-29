@@ -8,7 +8,6 @@ from django.conf.urls import url
 from django.views.static import serve
 from django.utils.encoding import smart_str
 from django.http import HttpResponse
-from httplib import NOT_ACCEPTABLE
 from tastypie import fields
 from mimetypes import MimeTypes
 import urllib
@@ -132,7 +131,7 @@ class FileItemResource(Resource):
             url(r"^(?P<resource_name>%s)/view/(?P<name>[\w\d_.-]+)%s$" % (self._meta.resource_name, trailing_slash()),
                 self.wrap_view('view'), name="api_fileitem_view"),
             url(r"^(?P<resource_name>%s)/download/(?P<name>[\w\d_.-]+)%s$" % (
-            self._meta.resource_name, trailing_slash()), self.wrap_view('download'), name="api_fileitem_download"),
+                self._meta.resource_name, trailing_slash()), self.wrap_view('download'), name="api_fileitem_download"),
             url(r"^(?P<resource_name>%s)/(?P<pk>\w[\w/-]*)/download%s$" % (self._meta.resource_name, trailing_slash()),
                 self.wrap_view('download'), name="api_fileitem_download"),
             url(r"^(?P<resource_name>%s)/(?P<name>[\w\d_.-]+)/download%s$"
@@ -167,7 +166,7 @@ class FileItemResource(Resource):
             if os.path.isfile(filename_absolute):
                 response = serve(request, os.path.basename(filename_absolute), os.path.dirname(filename_absolute))
                 response['Content-Disposition'] = 'attachment; filename="{}"'.format(
-                    os.path.basename(filename_absolute))
+                        os.path.basename(filename_absolute))
 
         if not response:
             response = self.create_response(request, {'status': 'filename not specified'})
@@ -210,6 +209,11 @@ class FileItemResource(Resource):
             mime = MimeTypes()
             url = urllib.pathname2url(file_item_name)
             mime_type = mime.guess_type(url)
+            # If mime_type is unknown, add a known file type.
+            if not mime_type[0]:
+                file_ext = os.path.splitext(url)[1]
+                if file_ext == '.m4a':
+                    mime_type = ('audio/mp4', None)
             response = HttpResponse(content_type=mime_type[0])
             file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item_name))
             # apache header
