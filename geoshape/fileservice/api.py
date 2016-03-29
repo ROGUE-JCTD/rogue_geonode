@@ -210,6 +210,11 @@ class FileItemResource(Resource):
             mime = MimeTypes()
             url = urllib.pathname2url(file_item_name)
             mime_type = mime.guess_type(url)
+            # If mime_type is unknown, add a known file type.
+            if not mime_type[0]:
+                file_ext = os.path.splitext(url)[1]
+                if file_ext == '.m4a':
+                    mime_type = ('audio/mp4', None)
             response = HttpResponse(content_type=mime_type[0])
             file_with_route = smart_str('{}{}'.format(helpers.get_fileservice_dir(), file_item_name))
             # apache header
