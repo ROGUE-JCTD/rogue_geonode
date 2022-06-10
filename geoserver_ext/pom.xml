@@ -356,7 +356,7 @@
   <properties>
     <geotools.version>12-SNAPSHOT</geotools.version>
     <geoserver.version>2.6-SNAPSHOT</geoserver.version>
-    <jetty.version>6.1.8</jetty.version>
+    <jetty.version>6.1.23</jetty.version>
     <gsgeonode.version>2.6-SNAPSHOT</gsgeonode.version>
     <!-- build gs-geogig locally as the 2.6-SNAPSHOTS are outdated in boundless repo. last built AUG 15 2014 -->
     <!-- pegging to current latest 2.6 version because at this time, the 2.6-SNAPSHOT shaded plugin jar has not been
